@@ -186,12 +186,12 @@
    `(helm-selection        ((t :background ,base2      :foreground ,base-2 :weight bold :underline nil)))
    `(helm-match            ((t :foreground ,yellow :weight bold)))
    ;; ElScreen
-   `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :background ,base3 :foreground ,base0 :underline nil :height 1.414)
-                                       (t                                :background ,base3 :foreground ,base0 :underline nil :height 1.414)))
-   `(elscreen-tab-control-face        ((t :background ,base2 :foreground ,base0 :underline nil)))
-   `(elscreen-tab-current-screen-face ((t :background ,green :foreground ,base-2 :weight bold :underline nil)))
-   `(elscreen-tab-other-screen-face   ((((class color) (min-colors 257)) :inherit (elscreen-tab-background-face) :foreground ,base0 :height 0.70)
-                                       (t                                :inherit (elscreen-tab-background-face) :foreground ,base0 :height 0.70)))
+   `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :background ,base3 :foreground ,base-1 :underline nil :height 1.414)
+                                       (t                                :background ,base3 :foreground ,base-1 :underline nil :height 1.414)))
+   `(elscreen-tab-control-face        ((t :background ,base2 :foreground ,base-1 :underline nil)))
+   `(elscreen-tab-current-screen-face ((t :background ,green :foreground ,base4 :weight bold :underline nil)))
+   `(elscreen-tab-other-screen-face   ((((class color) (min-colors 257)) :inherit (elscreen-tab-background-face) :foreground ,base-1 :height 0.70)
+                                       (t                                :inherit (elscreen-tab-background-face) :foreground ,base-1 :height 0.70)))
    ;; Shell
    `(comint-highlight-prompt ((t :foreground ,red    :weight bold)))
    `(comint-highlight-input  ((t :foreground ,base-2 :weight bold)))
