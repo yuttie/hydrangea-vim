@@ -68,8 +68,8 @@
                          (t                                :background ,base3 :foreground ,base1 :weight bold)))
    `(menu               ((t :background ,base3    :foreground ,base-1   :inverse-video nil)))
    `(linum              ((t :inherit (fringe))))
-   `(mode-line          ((t :background ,base2    :foreground ,base-1  :box nil)))
-   `(mode-line-inactive ((t :background ,base3    :foreground ,base0   :box nil)))
+   `(mode-line          ((t :inherit (variable-pitch) :background ,base2 :foreground ,base-1 :box nil)))
+   `(mode-line-inactive ((t :inherit (variable-pitch) :background ,base3 :foreground ,base0  :box nil)))
    `(minibuffer-prompt  ((t :foreground ,base-2)))
    ;; hlinum
    `(linum-highlight-face ((t :inherit (linum) :foreground ,base-2)))
