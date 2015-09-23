@@ -53,17 +53,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       y="565.89893"
-       x="62.753658"
-       height="443.33823"
-       width="624.29993"
-       id="rect4982"
-       style="fill:#303030;fill-opacity:1" />
-    <rect
        style="fill:#202026;fill-opacity:1"
        id="rect2985"
-       width="637.08124"
-       height="394.76938"
+       width="718.88141"
+       height="758.39661"
        x="16.741074"
        y="3.5229034" />
     <g
@@ -5493,41 +5486,6 @@
         </a>
       </g>
     </g>
-    <rect
-       style="fill:#ed5c5c;fill-opacity:1"
-       id="rect10425"
-       width="39.164684"
-       height="39.164684"
-       x="405.09308"
-       y="734.14233" />
-    <rect
-       y="734.14233"
-       x="459.64398"
-       height="39.164684"
-       width="39.164684"
-       id="rect10427"
-       style="fill:#e2a206;fill-opacity:1" />
-    <rect
-       style="fill:#88a718;fill-opacity:1"
-       id="rect10429"
-       width="39.164684"
-       height="39.164684"
-       x="514.19482"
-       y="734.14233" />
-    <rect
-       y="734.14233"
-       x="566.64746"
-       height="39.164684"
-       width="39.164684"
-       id="rect10431"
-       style="fill:#0697e1;fill-opacity:1" />
-    <rect
-       style="fill:#aa62f8;fill-opacity:1"
-       id="rect10433"
-       width="39.164684"
-       height="39.164684"
-       x="623.29639"
-       y="734.14233" />
     <text
        xml:space="preserve"
        style="font-size:70.95565795999999636px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f0f0f0;fill-opacity:1;stroke:none;font-family:Sans"
@@ -5541,189 +5499,47 @@
          y="343.23846"
          style="font-size:19.51280593999999979px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#f0f0f0;fill-opacity:1;font-family:Anonymous Pro;-inkscape-font-specification:Anonymous Pro">background</tspan></text>
     <rect
-       y="774.65405"
-       x="405.09308"
-       height="39.164684"
-       width="39.164684"
-       id="rect10456"
-       style="fill:#ff9594;fill-opacity:1" />
-    <rect
-       style="fill:#f5df60;fill-opacity:1"
-       id="rect10458"
-       width="39.164684"
-       height="39.164684"
-       x="459.64398"
-       y="774.65405" />
-    <rect
-       y="774.65405"
-       x="514.19482"
-       height="39.164684"
-       width="39.164684"
-       id="rect10460"
-       style="fill:#d6f660;fill-opacity:1" />
-    <rect
-       style="fill:#80d5ff;fill-opacity:1"
-       id="rect10462"
-       width="39.164684"
-       height="39.164684"
-       x="566.64746"
-       y="774.65405" />
-    <rect
-       y="774.65405"
-       x="623.29639"
-       height="39.164684"
-       width="39.164684"
-       id="rect10464"
-       style="fill:#e89bff;fill-opacity:1" />
-    <rect
-       style="fill:#202020;fill-opacity:1"
-       id="rect11521"
-       width="77.865723"
-       height="67.084312"
-       x="410.87848"
-       y="633.61218" />
-    <text
-       xml:space="preserve"
-       style="font-size:16.35579491px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#686868;fill-opacity:1;stroke:none;font-family:Sans"
-       x="422.85782"
-       y="648.78601"
-       id="text11523"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan11525"
-         x="422.85782"
-         y="648.78601">1</tspan><tspan
-         sodipodi:role="line"
-         x="422.85782"
-         y="669.23071"
-         id="tspan11527">2</tspan><tspan
-         sodipodi:role="line"
-         x="422.85782"
-         y="689.67548"
-         id="tspan11529">3</tspan></text>
-    <rect
        style="fill:#6b151e;fill-opacity:1"
        id="rect11531"
        width="136.85295"
        height="47.465454"
-       x="110.63338"
-       y="644.91223" />
+       x="131.08342"
+       y="448.08063" />
     <rect
-       y="711.54852"
-       x="110.63338"
+       y="514.71692"
+       x="131.08342"
        height="47.465454"
        width="136.85295"
        id="rect11533"
        style="fill:#434d13;fill-opacity:1" />
     <rect
-       style="fill:#9b2534;fill-opacity:1"
+       style="fill:#d44b5d;fill-opacity:1"
        id="rect11536"
        width="115.63359"
        height="29.398291"
-       x="121.01505"
-       y="651.36456" />
+       x="141.46509"
+       y="454.53296" />
     <rect
-       style="fill:#62761a;fill-opacity:1"
+       style="fill:#92b027;fill-opacity:1"
        id="rect11538"
        width="113.67371"
        height="29.398375"
-       x="126.89471"
-       y="722.90063" />
+       x="147.34474"
+       y="526.06903" />
     <rect
        style="fill:#133f55;fill-opacity:1"
        id="rect11540"
        width="143.0721"
        height="43.117615"
-       x="108.27573"
-       y="777.77759" />
+       x="128.72577"
+       y="580.94598" />
     <rect
        style="fill:#41c0ff;fill-opacity:1"
        id="rect11542"
        width="115.7187"
        height="26.331202"
-       x="125.5313"
-       y="783.84399" />
-    <rect
-       y="830.23608"
-       x="405.09308"
-       height="39.164684"
-       width="39.164684"
-       id="rect4811"
-       style="fill:#ff5f5f;fill-opacity:1" />
-    <rect
-       style="fill:#dfaf00;fill-opacity:1"
-       id="rect4813"
-       width="39.164684"
-       height="39.164684"
-       x="459.64398"
-       y="830.23608" />
-    <rect
-       y="830.23608"
-       x="514.19482"
-       height="39.164684"
-       width="39.164684"
-       id="rect4815"
-       style="fill:#87af00;fill-opacity:1" />
-    <rect
-       style="fill:#00afff;fill-opacity:1"
-       id="rect4817"
-       width="39.164684"
-       height="39.164684"
-       x="566.64746"
-       y="830.23608" />
-    <rect
-       y="830.23608"
-       x="623.29639"
-       height="39.164684"
-       width="39.164684"
-       id="rect4819"
-       style="fill:#af5fff;fill-opacity:1" />
-    <rect
-       style="fill:#ff8787;fill-opacity:1"
-       id="rect4821"
-       width="39.164684"
-       height="39.164684"
-       x="405.09308"
-       y="870.7478" />
-    <rect
-       y="870.7478"
-       x="459.64398"
-       height="39.164684"
-       width="39.164684"
-       id="rect4823"
-       style="fill:#ffdf5f;fill-opacity:1" />
-    <rect
-       style="fill:#dfff5f;fill-opacity:1"
-       id="rect4825"
-       width="39.164684"
-       height="39.164684"
-       x="514.19482"
-       y="870.7478" />
-    <rect
-       y="870.7478"
-       x="566.64746"
-       height="39.164684"
-       width="39.164684"
-       id="rect4827"
-       style="fill:#87d7ff;fill-opacity:1" />
-    <rect
-       style="fill:#d787ff;fill-opacity:1"
-       id="rect4829"
-       width="39.164684"
-       height="39.164684"
-       x="623.29639"
-       y="870.7478" />
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-       x="358.59375"
-       y="875.79968"
-       id="text4831"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4833"
-         x="358.59375"
-         y="875.79968">256</tspan></text>
+       x="145.98134"
+       y="587.01239" />
     <use
        x="0"
        y="0"
@@ -5739,52 +5555,52 @@
        height="39.164684"
        width="39.164684"
        id="rect4824"
-       style="fill:#da8a8a;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#f0a3a3;fill-opacity:1;stroke:#ffffff" />
     <rect
        style="fill:#ffeb81;fill-opacity:1;stroke:#ffffff"
        id="rect4826"
        width="39.164684"
        height="39.164684"
-       x="198.25818"
+       x="249.8692"
        y="30.654907" />
     <rect
        y="30.654907"
-       x="249.54614"
+       x="301.31866"
        height="39.164684"
        width="39.164684"
        id="rect4828"
        style="fill:#d8f572;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#8fc6fa;fill-opacity:1;stroke:#ffffff"
+       style="fill:#85d7fc;fill-opacity:1;stroke:#ffffff"
        id="rect4830"
        width="39.164684"
        height="39.164684"
-       x="352.12207"
+       x="404.21759"
        y="30.654907" />
     <rect
        y="30.654907"
-       x="403.41003"
+       x="455.66705"
        height="39.164684"
        width="39.164684"
        id="rect4832"
-       style="fill:#b59cf8;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#c6b4f8;fill-opacity:1;stroke:#ffffff" />
     <rect
        y="30.654907"
-       x="300.83411"
+       x="352.76813"
        height="39.164684"
        width="39.164684"
        id="rect4876"
-       style="fill:#9ef9ef;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#9ff7ed;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#ecb9e1;fill-opacity:1;stroke:#ffffff"
+       style="fill:#f3c0e8;fill-opacity:1;stroke:#ffffff"
        id="rect4884"
        width="39.164684"
        height="39.164684"
-       x="454.698"
+       x="507.11652"
        y="30.654907" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffeb81;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#85d7fc;fill-opacity:1;stroke:none;"
        x="123.17799"
        y="280.21964"
        id="text4900"
@@ -5793,7 +5609,7 @@
          id="tspan4902"
          x="123.17799"
          y="280.21964"
-         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:20px;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Ultra-Light';fill:#ffeb81;fill-opacity:1;">The quick brown fox jumps over the lazy dog</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:20px;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Ultra-Light';fill:#85d7fc;fill-opacity:1;">The quick brown fox jumps over the lazy dog</tspan></text>
     <rect
        style="fill:#d75f5f;fill-opacity:1;stroke:#ffffff"
        id="rect4920"
@@ -5803,7 +5619,7 @@
        y="80.654907" />
     <rect
        y="80.654907"
-       x="198.25818"
+       x="249.8692"
        height="39.164684"
        width="39.164684"
        id="rect4922"
@@ -5813,11 +5629,11 @@
        id="rect4924"
        width="39.164684"
        height="39.164684"
-       x="249.54614"
+       x="301.31866"
        y="80.654907" />
     <rect
        y="80.654907"
-       x="352.12207"
+       x="404.21759"
        height="39.164684"
        width="39.164684"
        id="rect4926"
@@ -5827,18 +5643,18 @@
        id="rect4928"
        width="39.164684"
        height="39.164684"
-       x="403.41003"
+       x="455.66705"
        y="80.654907" />
     <rect
        style="fill:#00afaf;fill-opacity:1;stroke:#ffffff"
        id="rect4930"
        width="39.164684"
        height="39.164684"
-       x="300.83411"
+       x="352.76813"
        y="80.654907" />
     <rect
        y="80.654907"
-       x="454.698"
+       x="507.11652"
        height="39.164684"
        width="39.164684"
        id="rect4932"
@@ -5985,6 +5801,91 @@
          id="tspan4103"
          x="132.83406"
          y="222.39096">base-256</tspan></text>
+    <rect
+       style="fill:#f7b788;fill-opacity:1;stroke:#ffffff"
+       id="rect9181"
+       width="39.164684"
+       height="39.164684"
+       x="198.41971"
+       y="30.654907" />
+    <rect
+       y="80.654907"
+       x="198.41971"
+       height="39.164684"
+       width="39.164684"
+       id="rect9183"
+       style="fill:#d75f5f;fill-opacity:1;stroke:#ffffff" />
+    <rect
+       y="356.013"
+       x="334.62711"
+       height="25.608086"
+       width="63.566532"
+       id="rect9185"
+       style="fill:#fff5bd;fill-opacity:1;stroke:#065477;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#baa7ed;fill-opacity:1;stroke:none"
+       x="148.30757"
+       y="374.31018"
+       id="text4900-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4902-1"
+         x="148.30757"
+         y="374.31018"
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:20px;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Ultra-Light';fill:#baa7ed;fill-opacity:1">The quick brown fox <tspan
+   style="stroke:#000000"
+   id="tspan9205">jumps</tspan> over the lazy dog</tspan></text>
+    <rect
+       style="fill:#5955a9;fill-opacity:1;stroke:#ffffff"
+       id="rect9184"
+       width="39.164684"
+       height="39.164684"
+       x="570.44617"
+       y="30.654907" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="565.14569"
+       y="24.998774"
+       id="text9186"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9188"
+         x="565.14569"
+         y="24.998774"
+         style="font-size:16.25px">Emacs</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9191"
+       y="425.05264"
+       x="125.46987"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:16.25px"
+         y="425.05264"
+         x="125.46987"
+         id="tspan9193"
+         sodipodi:role="line">Diff</tspan></text>
+    <rect
+       y="685.89874"
+       x="206.53673"
+       height="29.398285"
+       width="486.18033"
+       id="rect9219"
+       style="fill:#a5b2f0;fill-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text9215"
+       y="706.6062"
+       x="247.41364"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#202026;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:20px;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Ultra-Light';fill:#202026;fill-opacity:1"
+         y="706.6062"
+         x="247.41364"
+         id="tspan9217"
+         sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
   </g>
   <style
      id="style7306">
