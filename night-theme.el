@@ -101,7 +101,7 @@
    `(region              ((((class color) (min-colors 257)) :background ,base2 :foreground unspecified)
                           (t                                 :background ,base2 :foreground unspecified)))
    `(secondary-selection ((t :background ,base3)))
-   `(trailing-whitespace ((((class color)) :background ,blue) (t :inverse-video t)))
+   `(trailing-whitespace ((((class color)) :background ,red) (t :inverse-video t)))
    `(escape-glyph        ((t :foreground ,yellow)))
    ;; whitespace
    `(whitespace-line ((t :background ,violet :foreground ,base4)))
