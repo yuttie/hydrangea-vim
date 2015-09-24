@@ -57,7 +57,7 @@
   (custom-theme-set-faces
    'night
    ;; Standard
-   `(default        ((t :background ,base4 :foreground ,base-2)))
+   `(default        ((t :background ,base4 :foreground ,base-1)))
    `(fixed-pitch    ((t :family "monospace")))
    `(variable-pitch ((t :family "sans serif")))
    `(shadow         ((t :foreground ,base1)))
