@@ -193,7 +193,7 @@
    `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :inherit (variable-pitch) :background ,base3 :foreground ,base-1 :underline nil :height 1.4 :box (:line-width 8 :color ,base3))
                                        (t                                :inherit (variable-pitch) :background ,base3 :foreground ,base-1 :underline nil :height 1.4 :box (:line-width 8 :color ,base3-256))))
    `(elscreen-tab-control-face        ((t :background ,base2 :foreground ,base-1 :underline nil)))
-   `(elscreen-tab-current-screen-face ((t                                :inherit (elscreen-tab-background-face) :foreground ,base-2 :height 1.0 :background unspecified :weight bold :underline ,(color-darken-name cyan 20))))
+   `(elscreen-tab-current-screen-face ((t                                :inherit (elscreen-tab-background-face) :foreground ,base-2 :height 1.0 :background unspecified :weight bold :underline ,(color-saturate-name cyan 80))))
    `(elscreen-tab-other-screen-face   ((((class color) (min-colors 257)) :inherit (elscreen-tab-background-face) :foreground ,base-1 :height 1.0)
                                        (t                                :inherit (elscreen-tab-background-face) :foreground ,base-1 :height 1.0)))
    ;; Shell
