@@ -17,7 +17,21 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="palette.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter9447"
+       x="-0.056230729"
+       width="1.1124615"
+       y="-0.32792661"
+       height="1.6558532">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.2359375"
+         id="feGaussianBlur9449" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -46,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5495,9 +5509,9 @@
        width="136.85295"
        height="47.465454"
        x="150.47021"
-       y="283.90671" />
+       y="363.90671" />
     <rect
-       y="283.90671"
+       y="363.90671"
        x="302.70016"
        height="47.465454"
        width="136.85295"
@@ -5516,63 +5530,63 @@
          id="tspan9228"
          sodipodi:role="line">background</tspan></text>
     <rect
-       y="46.654907"
+       y="126.65491"
        x="150.97021"
        height="39.164684"
        width="39.164684"
        id="rect4824"
-       style="fill:#f0a3a3;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#e38484;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#ffeb81;fill-opacity:1;stroke:#ffffff"
+       style="fill:#e7d56d;fill-opacity:1;stroke:#ffffff"
        id="rect4826"
        width="39.164684"
        height="39.164684"
        x="261.29773"
-       y="46.654907" />
+       y="126.65491" />
     <rect
-       y="46.654907"
+       y="126.65491"
        x="316.46149"
        height="39.164684"
        width="39.164684"
        id="rect4828"
-       style="fill:#d8f572;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#bdd16e;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#85d7fc;fill-opacity:1;stroke:#ffffff"
+       style="fill:#7dc0df;fill-opacity:1;stroke:#ffffff"
        id="rect4830"
        width="39.164684"
        height="39.164684"
        x="426.789"
-       y="46.654907" />
+       y="126.65491" />
     <rect
-       y="46.654907"
+       y="126.65491"
        x="481.95276"
        height="39.164684"
        width="39.164684"
        id="rect4832"
-       style="fill:#c6b4f8;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#a891e7;fill-opacity:1;stroke:#ffffff" />
     <rect
-       y="46.654907"
+       y="126.65491"
        x="371.62524"
        height="39.164684"
        width="39.164684"
        id="rect4876"
-       style="fill:#9ff7ed;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#8fd7cf;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#f3c0e8;fill-opacity:1;stroke:#ffffff"
+       style="fill:#d78cc7;fill-opacity:1;stroke:#ffffff"
        id="rect4884"
        width="39.164684"
        height="39.164684"
        x="537.11652"
-       y="46.654907" />
+       y="126.65491" />
     <rect
        style="opacity:0.5;fill:#d75f5f;fill-opacity:1;stroke:#ffffff"
        id="rect4920"
        width="39.164684"
        height="39.164684"
        x="150.97021"
-       y="96.654907" />
+       y="176.65491" />
     <rect
-       y="96.654907"
+       y="176.65491"
        x="261.29773"
        height="39.164684"
        width="39.164684"
@@ -5584,9 +5598,9 @@
        width="39.164684"
        height="39.164684"
        x="316.46149"
-       y="96.654907" />
+       y="176.65491" />
     <rect
-       y="96.654907"
+       y="176.65491"
        x="426.789"
        height="39.164684"
        width="39.164684"
@@ -5598,16 +5612,16 @@
        width="39.164684"
        height="39.164684"
        x="481.95276"
-       y="96.654907" />
+       y="176.65491" />
     <rect
        style="opacity:0.5;fill:#00afaf;fill-opacity:1;stroke:#ffffff"
        id="rect4930"
        width="39.164684"
        height="39.164684"
        x="371.62524"
-       y="96.654907" />
+       y="176.65491" />
     <rect
-       y="96.654907"
+       y="176.65491"
        x="537.11652"
        height="39.164684"
        width="39.164684"
@@ -5616,11 +5630,11 @@
     <text
        sodipodi:linespacing="125%"
        id="text4936"
-       y="122.39095"
+       y="202.39096"
        x="136.89687"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         y="122.39095"
+         y="202.39096"
          x="136.89687"
          id="tspan4938"
          sodipodi:role="line"
@@ -5631,9 +5645,9 @@
        width="39.164684"
        height="39.164684"
        x="150.97021"
-       y="163.09236" />
+       y="243.09236" />
     <rect
-       y="163.09236"
+       y="243.09236"
        x="261.29773"
        height="39.164684"
        width="39.164684"
@@ -5645,9 +5659,9 @@
        width="39.164684"
        height="39.164684"
        x="316.46149"
-       y="163.09236" />
+       y="243.09236" />
     <rect
-       y="163.09236"
+       y="243.09236"
        x="426.789"
        height="39.164684"
        width="39.164684"
@@ -5659,47 +5673,47 @@
        width="39.164684"
        height="39.164684"
        x="481.95276"
-       y="163.09236" />
+       y="243.09236" />
     <rect
        style="fill:#80808d;fill-opacity:1;stroke:#ffffff"
        id="rect4968"
        width="39.164684"
        height="39.164684"
        x="371.62524"
-       y="163.09236" />
+       y="243.09236" />
     <rect
        style="fill:#303038;fill-opacity:1;stroke:#ffffff"
        id="rect4972"
        width="39.164684"
        height="39.164684"
        x="206.13397"
-       y="163.09236" />
+       y="243.09236" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none"
        x="136.51625"
-       y="74.390953"
+       y="154.39096"
        id="text4974"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4976"
          x="136.51625"
-         y="74.390953"
+         y="154.39096"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">accent</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4978"
-       y="186.39096"
+       y="266.39096"
        x="136.83406"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         y="186.39096"
+         y="266.39096"
          x="136.83406"
          id="tspan4980"
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">base</tspan></text>
     <rect
-       y="215.09236"
+       y="295.09235"
        x="150.97021"
        height="39.164684"
        width="39.164684"
@@ -5711,9 +5725,9 @@
        width="39.164684"
        height="39.164684"
        x="261.29773"
-       y="215.09236" />
+       y="295.09235" />
     <rect
-       y="215.09236"
+       y="295.09235"
        x="316.46149"
        height="39.164684"
        width="39.164684"
@@ -5725,23 +5739,23 @@
        width="39.164684"
        height="39.164684"
        x="426.789"
-       y="215.09236" />
+       y="295.09235" />
     <rect
-       y="215.09236"
+       y="295.09235"
        x="481.95276"
        height="39.164684"
        width="39.164684"
        id="rect4095"
        style="opacity:0.5;fill:#eeeeee;fill-opacity:1;stroke:#ffffff" />
     <rect
-       y="215.09236"
+       y="295.09235"
        x="371.62524"
        height="39.164684"
        width="39.164684"
        id="rect4097"
        style="opacity:0.5;fill:#b2b2b2;fill-opacity:1;stroke:#ffffff" />
     <rect
-       y="215.09236"
+       y="295.09235"
        x="206.13397"
        height="39.164684"
        width="39.164684"
@@ -5751,23 +5765,23 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none"
        x="136.83406"
-       y="238.39096"
+       y="318.39096"
        id="text4101"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4103"
          x="136.83406"
-         y="238.39096"
+         y="318.39096"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">base-256</tspan></text>
     <rect
-       style="fill:#f7b788;fill-opacity:1;stroke:#ffffff"
+       style="fill:#dda277;fill-opacity:1;stroke:#ffffff"
        id="rect9181"
        width="39.164684"
        height="39.164684"
        x="206.13397"
-       y="46.654907" />
+       y="126.65491" />
     <rect
-       y="96.654907"
+       y="176.65491"
        x="206.13397"
        height="39.164684"
        width="39.164684"
@@ -5779,40 +5793,40 @@
        width="39.164684"
        height="39.164684"
        x="634.44617"
-       y="46.654907" />
+       y="126.65491" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="653.77948"
-       y="40.998772"
+       y="120.99877"
        id="text9186"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9188"
          x="653.77948"
-         y="40.998772"
+         y="120.99877"
          style="font-size:15px;text-align:center;text-anchor:middle">Emacs</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9191"
-       y="315.14432"
+       y="395.14432"
        x="106.06258"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:20px"
-         y="315.14432"
+         y="395.14432"
          x="106.06258"
          id="tspan9193"
          sodipodi:role="line">diff</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9163"
-       y="40.998772"
+       y="120.99877"
        x="170.47931"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:15px;text-align:center;text-anchor:middle"
-         y="40.998772"
+         y="120.99877"
          x="170.47931"
          id="tspan9165"
          sodipodi:role="line">Red</tspan></text>
@@ -5820,23 +5834,23 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="225.55151"
-       y="40.998772"
+       y="120.99877"
        id="text9167"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9169"
          x="225.55151"
-         y="40.998772"
+         y="120.99877"
          style="font-size:15px;text-align:center;text-anchor:middle">Orange</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9171"
-       y="40.998772"
+       y="120.99877"
        x="281.00458"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:15px;text-align:center;text-anchor:middle"
-         y="40.998772"
+         y="120.99877"
          x="281.00458"
          id="tspan9173"
          sodipodi:role="line">Yellow</tspan></text>
@@ -5844,23 +5858,23 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="336.1134"
-       y="40.998772"
+       y="120.99877"
        id="text9175"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9177"
          x="336.1134"
-         y="40.998772"
+         y="120.99877"
          style="font-size:15px;text-align:center;text-anchor:middle">Green</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9179"
-       y="40.998772"
+       y="120.99877"
        x="391.28815"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:15px;text-align:center;text-anchor:middle"
-         y="40.998772"
+         y="120.99877"
          x="391.28815"
          id="tspan9181"
          sodipodi:role="line">Cyan</tspan></text>
@@ -5868,23 +5882,23 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="446.01978"
-       y="40.998772"
+       y="120.99877"
        id="text9183"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9185"
          x="446.01978"
-         y="40.998772"
+         y="120.99877"
          style="font-size:15px;text-align:center;text-anchor:middle">Blue</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9187"
-       y="40.998772"
+       y="120.99877"
        x="501.6889"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:15px;text-align:center;text-anchor:middle"
-         y="40.998772"
+         y="120.99877"
          x="501.6889"
          id="tspan9189"
          sodipodi:role="line">Violet</tspan></text>
@@ -5892,56 +5906,56 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="556.49744"
-       y="40.998772"
+       y="120.99877"
        id="text9193"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9195"
          x="556.49744"
-         y="40.998772"
+         y="120.99877"
          style="font-size:15px;text-align:center;text-anchor:middle">Magenta</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="712.27069"
-       y="120.40069"
+       y="200.4007"
        id="text9197"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="712.27069"
-         y="120.40069"
+         y="200.4007"
          style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff"
          id="tspan9201">← Not yet adjusted</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9203"
-       y="239.69868"
+       y="319.69867"
        x="656.61322"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan9208"
          style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff"
-         y="239.69868"
+         y="319.69867"
          x="656.61322"
          sodipodi:role="line">← Not yet adjusted</tspan></text>
     <g
        id="g9263"
-       transform="translate(-7.0801239,6)">
+       transform="translate(-7.0801239,86)">
       <text
          sodipodi:linespacing="125%"
          id="text4900"
          y="409.12244"
          x="156.00737"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#f0a3a3;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#e38484;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#f0a3a3;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#e38484;fill-opacity:1"
            y="409.12244"
            x="156.00737"
            id="tspan4902"
            sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#f7b788;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#dda277;fill-opacity:1;stroke:none"
          x="156.00737"
          y="434.37244"
          id="text9231"
@@ -5950,22 +5964,22 @@
            id="tspan9233"
            x="156.00737"
            y="434.37244"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#f7b788;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#dda277;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text9235"
          y="459.62244"
          x="156.00737"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#ffeb81;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#e7d56d;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffeb81;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#e7d56d;fill-opacity:1"
            y="459.62244"
            x="156.00737"
            id="tspan9237"
            sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#d8f572;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#bdd16e;fill-opacity:1;stroke:none"
          x="156.00737"
          y="484.87244"
          id="text9239"
@@ -5974,22 +5988,22 @@
            id="tspan9241"
            x="156.00737"
            y="484.87244"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#d8f572;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#bdd16e;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text9243"
          y="510.12244"
          x="156.00737"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#9ff7ed;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#8fd7cf;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#9ff7ed;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#8fd7cf;fill-opacity:1"
            y="510.12244"
            x="156.00737"
            id="tspan9245"
            sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#85d7fc;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#7dc0df;fill-opacity:1;stroke:none"
          x="156.00737"
          y="535.37244"
          id="text9247"
@@ -5998,22 +6012,22 @@
            id="tspan9249"
            x="156.00737"
            y="535.37244"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#85d7fc;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#7dc0df;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text9251"
          y="560.62244"
          x="156.00737"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#c6b4f8;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#a891e7;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#c6b4f8;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#a891e7;fill-opacity:1"
            y="560.62244"
            x="156.00737"
            id="tspan9253"
            sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#f3c0e8;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#d78cc7;fill-opacity:1;stroke:none"
          x="156.00737"
          y="585.87244"
          id="text9255"
@@ -6022,7 +6036,7 @@
            id="tspan9257"
            x="156.00737"
            y="585.87244"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#f3c0e8;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:monospace;-inkscape-font-specification:monospace;fill:#d78cc7;fill-opacity:1">The quick brown fox jumps over the lazy dog</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text9259"
@@ -6036,6 +6050,56 @@
            id="tspan9261"
            sodipodi:role="line">The quick brown fox jumps over the lazy dog</tspan></text>
     </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9194"
+       y="70.865227"
+       x="52.418808"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f0f0ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9447)"
+       xml:space="preserve"><tspan
+         y="70.865227"
+         x="52.418808"
+         id="tspan9196"
+         sodipodi:role="line">Night Theme</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#303038;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="52.418808"
+       y="70.865227"
+       id="text9188"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9190"
+         x="52.418808"
+         y="70.865227">Night Theme</tspan></text>
+    <rect
+       y="-32.219734"
+       x="89.063354"
+       height="5.5151834"
+       width="5.5151834"
+       id="rect9229"
+       style="fill:#f0f0ff;fill-opacity:1;stroke:none"
+       transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+    <rect
+       transform="matrix(0,1,-1,0,0,0)"
+       style="fill:#f0f0ff;fill-opacity:1;stroke:none"
+       id="rect9233"
+       width="5.5151834"
+       height="5.5151834"
+       x="41.336742"
+       y="-88.517685" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="50.427811"
+       y="493.14432"
+       id="text9451"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9453"
+         x="50.427811"
+         y="493.14432"
+         style="font-size:20px">Examples</tspan></text>
   </g>
   <style
      id="style7306">
