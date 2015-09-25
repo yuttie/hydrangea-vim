@@ -209,6 +209,9 @@
    `(skk-dcomp-multiple-trailing-face ((t :inherit (skk-dcomp-multiple-face) :foreground ,base0)))
    `(skk-dcomp-multiple-selected-face ((t :inherit (skk-dcomp-multiple-face) :foreground ,base-2 :weight bold)))
    )
+  ;; pos-tip.el
+  (setq pos-tip-background-color base2
+        pos-tip-foreground-color base-1)
   ;; highlight-parentheses
   (setq hl-paren-colors
         '(,(color-darken-name blue  0)
