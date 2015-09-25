@@ -30,26 +30,40 @@
 
 (require 'color)
 
-(let (;; Palette
-      (base4   "#202026") (base4-256   "#303030")
-      (base3   "#303038") (base3-256   "#444444")
-      (base2   "#40404a") (base2-256   "#4e4e4e")
-      (base1   "#50505b") (base1-256   "#6c6c6c")
-      (base0   "#80808d") (base0-256   "#b2b2b2")
-      (base-1  "#d0d0de") (base-1-256  "#d0d0d0")
-      (base-2  "#f0f0ff") (base-2-256  "#eeeeee")
-      (red     "#e38484") (red-256     "#d75f5f")
-      (orange  "#dda277") (orange-256  "#d75f5f")
-      (yellow  "#e7d56d") (yellow-256  "#dfaf00")
-      (green   "#bdd16e") (green-256   "#87af00")
-      (cyan    "#8fd7cf") (cyan-256    "#00afaf")
-      (blue    "#7dc0df") (blue-256    "#0087ff")
-      (violet  "#a891e7") (violet-256  "#875fff")
-      (magenta "#d78cc7") (magenta-256 "#d75faf")
-      (emacs   "#5955a9") (emacs-256   "#5955a9")
-      (diff-rm  "#6b151e")
-      (diff-add "#434d13")
-      )
+(defcustom night-theme-tune-saturation 0
+  "Percentage of saturation by which accent colors in the palette will be adjusted.
+Both a positive value and a negative value are accepted.
+This value will be passed to the `color-saturate-name' function."
+  :type 'number
+  :group 'night-theme)
+
+(defcustom night-theme-tune-lightness 0
+  "Percentage of lightness by which accent colors in the palette will be adjusted.
+Both a positive value and a negative value are accepted.
+This value will be passed to the `color-lighten-name' function."
+  :type 'number
+  :group 'night-theme)
+
+(let* (;; Palette
+       (base4   "#202026") (base4-256   "#303030")
+       (base3   "#303038") (base3-256   "#444444")
+       (base2   "#40404a") (base2-256   "#4e4e4e")
+       (base1   "#50505b") (base1-256   "#6c6c6c")
+       (base0   "#80808d") (base0-256   "#b2b2b2")
+       (base-1  "#d0d0de") (base-1-256  "#d0d0d0")
+       (base-2  "#f0f0ff") (base-2-256  "#eeeeee")
+       (red     (color-lighten-name (color-saturate-name "#e38484" night-theme-tune-saturation) night-theme-tune-lightness)) (red-256     "#d75f5f")
+       (orange  (color-lighten-name (color-saturate-name "#dda277" night-theme-tune-saturation) night-theme-tune-lightness)) (orange-256  "#d75f5f")
+       (yellow  (color-lighten-name (color-saturate-name "#e7d56d" night-theme-tune-saturation) night-theme-tune-lightness)) (yellow-256  "#dfaf00")
+       (green   (color-lighten-name (color-saturate-name "#bdd16e" night-theme-tune-saturation) night-theme-tune-lightness)) (green-256   "#87af00")
+       (cyan    (color-lighten-name (color-saturate-name "#8fd7cf" night-theme-tune-saturation) night-theme-tune-lightness)) (cyan-256    "#00afaf")
+       (blue    (color-lighten-name (color-saturate-name "#7dc0df" night-theme-tune-saturation) night-theme-tune-lightness)) (blue-256    "#0087ff")
+       (violet  (color-lighten-name (color-saturate-name "#a891e7" night-theme-tune-saturation) night-theme-tune-lightness)) (violet-256  "#875fff")
+       (magenta (color-lighten-name (color-saturate-name "#d78cc7" night-theme-tune-saturation) night-theme-tune-lightness)) (magenta-256 "#d75faf")
+       (emacs   "#5955a9") (emacs-256   "#5955a9")
+       (diff-rm  "#6b151e")
+       (diff-add "#434d13")
+       )
   ;; Set attributes of the default face for existing frames and new frames.
   (set-face-attribute 'default nil :background base4 :foreground base-1)
   (set-face-attribute 'cursor  nil :background blue)
