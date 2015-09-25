@@ -231,6 +231,7 @@
 
 ;; Local Variables:
 ;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
+;; eval: (global-set-key (kbd "<f12>") (lambda () (interactive) (load-theme 'night)))
 ;; eval: (rainbow-mode)
 ;; End:
 
