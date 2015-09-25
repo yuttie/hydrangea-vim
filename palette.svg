@@ -6195,22 +6195,27 @@
            style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Ultra-Light'"
            id="path10383" />
       </g>
-      <rect
-         y="-74.517685"
-         x="37.336742"
-         height="5.5151834"
-         width="5.5151834"
-         id="rect9233"
-         style="fill:#d0d0de;fill-opacity:1;stroke:none"
-         transform="matrix(0,1,-1,0,0,0)" />
-      <rect
-         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
-         style="fill:#f0f0ff;fill-opacity:1;stroke:none"
-         id="rect9229"
-         width="5.5151834"
-         height="5.5151834"
-         x="76.335419"
-         y="-25.148668" />
+      <g
+         id="g10416"
+         transform="translate(-0.9186542,-0.97856622)"
+         style="opacity:1">
+        <rect
+           transform="matrix(0,1,-1,0,0,0)"
+           style="fill:#d0d0de;fill-opacity:1;stroke:none"
+           id="rect9233"
+           width="5.5151834"
+           height="5.5151834"
+           x="37.336742"
+           y="-74.517685" />
+        <rect
+           y="-25.148668"
+           x="76.335419"
+           height="5.5151834"
+           width="5.5151834"
+           id="rect9229"
+           style="fill:#f0f0ff;fill-opacity:1;stroke:none"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
     </g>
     <text
        xml:space="preserve"
