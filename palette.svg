@@ -43,14 +43,14 @@
      inkscape:cx="429.82669"
      inkscape:cy="895.51773"
      inkscape:document-units="px"
-     inkscape:current-layer="g10070"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1854"
      inkscape:window-height="990"
      inkscape:window-x="29"
      inkscape:window-y="53"
      inkscape:window-maximized="0"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      inkscape:snap-page="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -5564,13 +5564,13 @@
     <text
        sodipodi:linespacing="125%"
        id="use10423"
-       y="1023.2498"
-       x="-1015.7579"
-       style="font-style:normal;font-weight:normal;font-size:380.1831665px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#f0f0f0;fill-opacity:1;stroke:none"
+       y="949.30371"
+       x="-997.93073"
+       style="font-style:normal;font-weight:normal;font-size:380.1831665px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#f0f0ff;fill-opacity:1;stroke:none;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.55037689px;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';fill:#f0f0f0;fill-opacity:1"
-         y="1023.2498"
-         x="-1015.7579"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.55037689px;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';fill:#f0f0ff;fill-opacity:1;"
+         y="949.30371"
+         x="-997.93073"
          id="tspan9228"
          sodipodi:role="line">background</tspan></text>
     <rect
@@ -5623,7 +5623,7 @@
        x="537.11652"
        y="126.65491" />
     <rect
-       style="opacity:0.5;fill:#d75f5f;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#d78787;fill-opacity:1;stroke:#ffffff"
        id="rect4920"
        width="39.164684"
        height="39.164684"
@@ -5635,9 +5635,9 @@
        height="39.164684"
        width="39.164684"
        id="rect4922"
-       style="opacity:0.5;fill:#dfaf00;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#dfdf5f;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:0.5;fill:#87af00;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#afd75f;fill-opacity:1;stroke:#ffffff"
        id="rect4924"
        width="39.164684"
        height="39.164684"
@@ -5649,16 +5649,16 @@
        height="39.164684"
        width="39.164684"
        id="rect4926"
-       style="opacity:0.5;fill:#0087ff;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#87d7ff;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:0.5;fill:#875fff;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#af87ff;fill-opacity:1;stroke:#ffffff"
        id="rect4928"
        width="39.164684"
        height="39.164684"
        x="481.95276"
        y="176.65491" />
     <rect
-       style="opacity:0.5;fill:#00afaf;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#87d7d7;fill-opacity:1;stroke:#ffffff"
        id="rect4930"
        width="39.164684"
        height="39.164684"
@@ -5670,19 +5670,19 @@
        height="39.164684"
        width="39.164684"
        id="rect4932"
-       style="opacity:0.5;fill:#d75faf;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#d787d7;fill-opacity:1;stroke:#ffffff" />
     <text
        sodipodi:linespacing="125%"
        id="text4936"
        y="202.39096"
        x="136.89687"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;"
        xml:space="preserve"><tspan
          y="202.39096"
          x="136.89687"
          id="tspan4938"
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">accent-256</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;">accent-256</tspan></text>
     <rect
        style="fill:#202026;fill-opacity:1;stroke:#ffffff"
        id="rect4958"
@@ -5762,9 +5762,9 @@
        height="39.164684"
        width="39.164684"
        id="rect4087"
-       style="opacity:0.5;fill:#303030;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#1c1c1c;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:0.5;fill:#4e4e4e;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#444444;fill-opacity:1;stroke:#ffffff"
        id="rect4089"
        width="39.164684"
        height="39.164684"
@@ -5776,9 +5776,9 @@
        height="39.164684"
        width="39.164684"
        id="rect4091"
-       style="opacity:0.5;fill:#6c6c6c;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#4e4e4e;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:0.5;fill:#d0d0d0;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#d0d0d0;fill-opacity:1;stroke:#ffffff"
        id="rect4093"
        width="39.164684"
        height="39.164684"
@@ -5790,24 +5790,24 @@
        height="39.164684"
        width="39.164684"
        id="rect4095"
-       style="opacity:0.5;fill:#eeeeee;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#eeeeee;fill-opacity:1;stroke:#ffffff" />
     <rect
        y="295.09235"
        x="371.62524"
        height="39.164684"
        width="39.164684"
        id="rect4097"
-       style="opacity:0.5;fill:#b2b2b2;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:#ffffff" />
     <rect
        y="295.09235"
        x="206.13397"
        height="39.164684"
        width="39.164684"
        id="rect4099"
-       style="opacity:0.5;fill:#444444;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#303030;fill-opacity:1;stroke:#ffffff" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;"
        x="136.83406"
        y="318.39096"
        id="text4101"
@@ -5816,7 +5816,7 @@
          id="tspan4103"
          x="136.83406"
          y="318.39096"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">base-256</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;">base-256</tspan></text>
     <rect
        style="fill:#dda277;fill-opacity:1;stroke:#ffffff"
        id="rect9181"
@@ -5830,7 +5830,7 @@
        height="39.164684"
        width="39.164684"
        id="rect9183"
-       style="opacity:0.5;fill:#d75f5f;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#dfaf87;fill-opacity:1;stroke:#ffffff" />
     <rect
        style="fill:#5955a9;fill-opacity:1;stroke:#ffffff"
        id="rect9184"
@@ -5960,7 +5960,7 @@
          style="font-size:15px;text-align:center;text-anchor:middle">Magenta</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:1;"
        x="712.27069"
        y="200.4007"
        id="text9197"
@@ -5968,17 +5968,17 @@
          sodipodi:role="line"
          x="712.27069"
          y="200.4007"
-         style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff"
+         style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff;"
          id="tspan9201">← Not yet adjusted</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9203"
        y="319.69867"
        x="656.61322"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:1;"
        xml:space="preserve"><tspan
          id="tspan9208"
-         style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff"
+         style="font-size:15px;text-align:end;text-anchor:end;fill:#ffffff;"
          y="319.69867"
          x="656.61322"
          sodipodi:role="line">← Not yet adjusted</tspan></text>
