@@ -260,11 +260,22 @@ This value will be passed to the `color-lighten-name' function."
   (setq skk-inline-show-background-color (nth 1 (assq 'base3 palette)))
   (setq skk-inline-show-background-color-odd (color-lighten-name (nth 1 (assq 'base3 palette)) 5)))
 
+(define-minor-mode night-theme-adjustment-mode
+  "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
+  :keymap (let ((map (make-sparse-keymap)))
+            (define-key map (kbd "<f7>")  (lambda () (interactive) (setq night-theme-tune-lightness  (- night-theme-tune-lightness  5)) (load-theme 'night)))
+            (define-key map (kbd "<f8>")  (lambda () (interactive) (setq night-theme-tune-lightness  (+ night-theme-tune-lightness  5)) (load-theme 'night)))
+            (define-key map (kbd "<f9>")  (lambda () (interactive) (setq night-theme-tune-saturation (- night-theme-tune-saturation 5)) (load-theme 'night)))
+            (define-key map (kbd "<f10>") (lambda () (interactive) (setq night-theme-tune-saturation (+ night-theme-tune-saturation 5)) (load-theme 'night)))
+            (define-key map (kbd "<f11>") (lambda () (interactive) (setq night-theme-tune-saturation 0 night-theme-tune-lightness 0)    (load-theme 'night)))
+            (define-key map (kbd "<f12>") (lambda () (interactive)                                                                      (load-theme 'night)))
+            map)
+  :global)
+
 (provide-theme 'night)
 
 ;; Local Variables:
 ;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
-;; eval: (global-set-key (kbd "<f12>") (lambda () (interactive) (load-theme 'night)))
 ;; eval: (rainbow-mode)
 ;; End:
 
