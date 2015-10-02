@@ -1,10 +1,10 @@
 ;;; night-theme.el --- A night theme for Emacs  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2014  Yuta Taniguchi
+;; Copyright (C) 2015  Yuta Taniguchi
 
 ;; Author: Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
-;; Keywords: theme
-;; Version: 0.2.0
+;; Keywords: theme, dark
+;; Version: 0.2.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
