@@ -260,6 +260,10 @@ This value will be passed to the `color-lighten-name' function."
   (setq skk-inline-show-background-color (nth 1 (assq 'base3 palette)))
   (setq skk-inline-show-background-color-odd (color-lighten-name (nth 1 (assq 'base3 palette)) 5)))
 
+(defcustom night-theme-adjustment-mode-line '(:eval (format " Night[S:%+d,L%+d]" night-theme-tune-saturation night-theme-tune-lightness))
+  ""
+  :risky t)
+
 (define-minor-mode night-theme-adjustment-mode
   "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
   :keymap (let ((map (make-sparse-keymap)))
@@ -270,6 +274,7 @@ This value will be passed to the `color-lighten-name' function."
             (define-key map (kbd "<f11>") (lambda () (interactive) (setq night-theme-tune-saturation 0 night-theme-tune-lightness 0)    (load-theme 'night)))
             (define-key map (kbd "<f12>") (lambda () (interactive)                                                                      (load-theme 'night)))
             map)
+  :lighter night-theme-adjustment-mode-line
   :global)
 
 (provide-theme 'night)
