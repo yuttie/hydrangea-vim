@@ -215,21 +215,6 @@ This value will be passed to the `color-lighten-name' function."
     (skk-dcomp-multiple-trailing-face :inherit (skk-dcomp-multiple-face) :foreground base0)
     (skk-dcomp-multiple-selected-face :inherit (skk-dcomp-multiple-face) :foreground base-2 :weight bold)))
 
-(defun night-theme-clamp-hue (value)
-  (- value (floor value)))
-
-(defun night-theme-rotate-hue-hsl (H S L percent)
-  (list (night-theme-clamp-hue (+ H (/ percent 100.0))) S L))
-
-(defun night-theme-rotate-hue-name (name percent)
-  (apply 'color-rgb-to-hex
-         (apply 'color-hsl-to-rgb
-                (apply 'night-theme-rotate-hue-hsl
-                       (append
-                        (apply 'color-rgb-to-hsl
-                               (color-name-to-rgb name))
-                        (list percent))))))
-
 (defun night-theme-make-face-spec (palette spec)
   "Make a face spec based on SPEC picking up colors from PALETTE."
   (cl-labels
@@ -249,13 +234,17 @@ This value will be passed to the `color-lighten-name' function."
     `((((min-colors 65536)) ,@(eval-for 0 spec))
       (t                    ,@(eval-for 1 spec)))))
 
-(let ((palette (mapcar (lambda (def)
-                         (let ((new-def (copy-sequence def)))
-                           (setf (nth 1 new-def) (night-theme-rotate-hue-name (nth 1 new-def) night-theme-tune-hue))
-                           (setf (nth 1 new-def) (color-saturate-name (nth 1 new-def) night-theme-tune-saturation))
-                           (setf (nth 1 new-def) (color-lighten-name  (nth 1 new-def) night-theme-tune-lightness))
-                           new-def))
-                       night-theme-palette)))
+(defun night-theme-adjust (color-def)
+  (let* ((new-def (copy-sequence color-def))
+         (color (apply #'color-rgb-to-hsl (color-name-to-rgb (nth 1 color-def))))
+         (clamp-hue (lambda (value) (- value (floor value))))
+         (new-h (funcall clamp-hue (+ (nth 0 color) (/ night-theme-tune-hue        100.0))))
+         (new-s (color-clamp       (+ (nth 1 color) (/ night-theme-tune-saturation 100.0))))
+         (new-l (color-clamp       (+ (nth 2 color) (/ night-theme-tune-lightness  100.0)))))
+    (setf (nth 1 new-def) (apply #'color-rgb-to-hex (apply #'color-hsl-to-rgb (list new-h new-s new-l))))
+    new-def))
+
+(let ((palette (mapcar #'night-theme-adjust night-theme-palette)))
   ;; Set attributes of the default face for existing frames and new frames.
   (set-face-attribute 'default nil :background (nth 1 (assq 'base4 palette)) :foreground (nth 1 (assq 'base-1 palette)))
   (set-face-attribute 'cursor  nil :background (nth 1 (assq 'blue palette)))
