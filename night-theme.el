@@ -275,6 +275,7 @@ This value will be passed to the `color-lighten-name' function."
   ""
   :risky t)
 
+;;;###autoload
 (define-minor-mode night-theme-adjustment-mode
   "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
   :keymap (let ((map (make-sparse-keymap)))
