@@ -32,6 +32,12 @@
 (require 'color)
 (require 'pcase)
 
+(defcustom night-theme-tune-hue 0
+  "Percentage of hue by which accent colors in the palette will be adjusted.
+Both a positive value and a negative value are accepted."
+  :type 'number
+  :group 'night-theme)
+
 (defcustom night-theme-tune-saturation 0
   "Percentage of saturation by which accent colors in the palette will be adjusted.
 Both a positive value and a negative value are accepted.
@@ -209,6 +215,21 @@ This value will be passed to the `color-lighten-name' function."
     (skk-dcomp-multiple-trailing-face :inherit (skk-dcomp-multiple-face) :foreground base0)
     (skk-dcomp-multiple-selected-face :inherit (skk-dcomp-multiple-face) :foreground base-2 :weight bold)))
 
+(defun night-theme-clamp-hue (value)
+  (- value (floor value)))
+
+(defun night-theme-rotate-hue-hsl (H S L percent)
+  (list (night-theme-clamp-hue (+ H (/ percent 100.0))) S L))
+
+(defun night-theme-rotate-hue-name (name percent)
+  (apply 'color-rgb-to-hex
+         (apply 'color-hsl-to-rgb
+                (apply 'night-theme-rotate-hue-hsl
+                       (append
+                        (apply 'color-rgb-to-hsl
+                               (color-name-to-rgb name))
+                        (list percent))))))
+
 (defun night-theme-make-face-spec (palette spec)
   "Make a face spec based on SPEC picking up colors from PALETTE."
   (cl-labels
@@ -230,6 +251,7 @@ This value will be passed to the `color-lighten-name' function."
 
 (let ((palette (mapcar (lambda (def)
                          (let ((new-def (copy-sequence def)))
+                           (setf (nth 1 new-def) (night-theme-rotate-hue-name (nth 1 new-def) night-theme-tune-hue))
                            (setf (nth 1 new-def) (color-saturate-name (nth 1 new-def) night-theme-tune-saturation))
                            (setf (nth 1 new-def) (color-lighten-name  (nth 1 new-def) night-theme-tune-lightness))
                            new-def))
@@ -260,18 +282,20 @@ This value will be passed to the `color-lighten-name' function."
   (setq skk-inline-show-background-color (nth 1 (assq 'base3 palette)))
   (setq skk-inline-show-background-color-odd (color-lighten-name (nth 1 (assq 'base3 palette)) 5)))
 
-(defcustom night-theme-adjustment-mode-line '(:eval (format " Night[S:%+d,L%+d]" night-theme-tune-saturation night-theme-tune-lightness))
+(defcustom night-theme-adjustment-mode-line '(:eval (format " Night[H:%+d:S:%+d,L%+d]" night-theme-tune-hue night-theme-tune-saturation night-theme-tune-lightness))
   ""
   :risky t)
 
 (define-minor-mode night-theme-adjustment-mode
   "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
   :keymap (let ((map (make-sparse-keymap)))
+            (define-key map (kbd "<f5>")  (lambda () (interactive) (setq night-theme-tune-hue        (- night-theme-tune-hue        5)) (load-theme 'night)))
+            (define-key map (kbd "<f6>")  (lambda () (interactive) (setq night-theme-tune-hue        (+ night-theme-tune-hue        5)) (load-theme 'night)))
             (define-key map (kbd "<f7>")  (lambda () (interactive) (setq night-theme-tune-lightness  (- night-theme-tune-lightness  5)) (load-theme 'night)))
             (define-key map (kbd "<f8>")  (lambda () (interactive) (setq night-theme-tune-lightness  (+ night-theme-tune-lightness  5)) (load-theme 'night)))
             (define-key map (kbd "<f9>")  (lambda () (interactive) (setq night-theme-tune-saturation (- night-theme-tune-saturation 5)) (load-theme 'night)))
             (define-key map (kbd "<f10>") (lambda () (interactive) (setq night-theme-tune-saturation (+ night-theme-tune-saturation 5)) (load-theme 'night)))
-            (define-key map (kbd "<f11>") (lambda () (interactive) (setq night-theme-tune-saturation 0 night-theme-tune-lightness 0)    (load-theme 'night)))
+            (define-key map (kbd "<f11>") (lambda () (interactive) (setq night-theme-tune-hue 0 night-theme-tune-saturation 0 night-theme-tune-lightness 0)    (load-theme 'night)))
             (define-key map (kbd "<f12>") (lambda () (interactive)                                                                      (load-theme 'night)))
             map)
   :lighter night-theme-adjustment-mode-line
