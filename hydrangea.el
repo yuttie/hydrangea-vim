@@ -1,4 +1,4 @@
-;;; hydrangea.el --- Theme generator  -*- lexical-binding: t -*-
+;;; hydrangea.el --- Theme building framework for Emacs  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2015  Yuta Taniguchi
 
