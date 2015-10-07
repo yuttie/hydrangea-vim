@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015  Yuta Taniguchi
 
 ;; Author: Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
-;; Keywords: theme, dark
+;; Keywords: theme, framework
 ;; Version: 0.1.0
 
 ;; This program is free software; you can redistribute it and/or modify
