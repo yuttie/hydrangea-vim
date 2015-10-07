@@ -63,6 +63,8 @@
   `(progn
      (deftheme ,theme ,doc)
 
+     (require 'color)
+
      (defgroup ,(intern (concat (symbol-name theme) "-theme")) nil
        ""
        :group 'customize)
