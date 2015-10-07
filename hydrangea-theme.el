@@ -25,34 +25,10 @@
 
 ;;; Code:
 
-(deftheme hydrangea
-  "A hydrangea theme for Emacs")
+(eval-when-compile
+  (require 'hydrangea))
 
-(require 'cl-lib)
-(require 'color)
-(require 'pcase)
-
-(defcustom hydrangea-theme-tune-hue 0
-  "Percentage of hue by which accent colors in the palette will be adjusted.
-Both a positive value and a negative value are accepted."
-  :type 'number
-  :group 'hydrangea-theme)
-
-(defcustom hydrangea-theme-tune-saturation 0
-  "Percentage of saturation by which accent colors in the palette will be adjusted.
-Both a positive value and a negative value are accepted.
-This value will be passed to the `color-saturate-name' function."
-  :type 'number
-  :group 'hydrangea-theme)
-
-(defcustom hydrangea-theme-tune-lightness 0
-  "Percentage of lightness by which accent colors in the palette will be adjusted.
-Both a positive value and a negative value are accepted.
-This value will be passed to the `color-lighten-name' function."
-  :type 'number
-  :group 'hydrangea-theme)
-
-(defconst hydrangea-theme-palette
+(defmacro hydrangea-theme-palette ()
   ;; name     24bit-color 8bit-color
   '((base4    "#202026"   "#1c1c1c")
     (base3    "#303038"   "#303030")
@@ -73,7 +49,7 @@ This value will be passed to the `color-lighten-name' function."
     (diff-rm  "#6b151e"   "#6b151e")
     (diff-add "#434d13"   "#434d13")))
 
-(defconst hydrangea-theme-face-definitions
+(defmacro hydrangea-theme-face-definitions ()
   '(;; Standard
     (default        :background base4 :foreground base-1)
     (fixed-pitch    :family "monospace")
@@ -215,44 +191,13 @@ This value will be passed to the `color-lighten-name' function."
     (skk-dcomp-multiple-trailing-face :inherit (skk-dcomp-multiple-face) :foreground base0)
     (skk-dcomp-multiple-selected-face :inherit (skk-dcomp-multiple-face) :foreground base-2 :weight bold)))
 
-(defun hydrangea-theme-make-face-spec (palette spec)
-  "Make a face spec based on SPEC picking up colors from PALETTE."
-  (cl-labels
-      ((eval-for (i x)
-                 (pcase x
-                   (`(lighten    ,percent ,color) (color-lighten-name    (eval-for i color) percent))
-                   (`(darken     ,percent ,color) (color-darken-name     (eval-for i color) percent))
-                   (`(saturate   ,percent ,color) (color-saturate-name   (eval-for i color) percent))
-                   (`(desaturate ,percent ,color) (color-desaturate-name (eval-for i color) percent))
-                   ((pred symbolp)
-                    (pcase (assq x palette)
-                      (`(,_ . ,colors) (nth i colors))
-                      (_ x)))
-                   ((pred listp)
-                    (mapcar (lambda (y) (eval-for i y)) x))
-                   (_ x))))
-    `((((min-colors 65536)) ,@(eval-for 0 spec))
-      (t                    ,@(eval-for 1 spec)))))
-
-(defun hydrangea-theme-adjust (color-def)
-  (let* ((new-def (copy-sequence color-def))
-         (color (apply #'color-rgb-to-hsl (color-name-to-rgb (nth 1 color-def))))
-         (clamp-hue (lambda (value) (- value (floor value))))
-         (new-h (funcall clamp-hue (+ (nth 0 color) (/ hydrangea-theme-tune-hue        100.0))))
-         (new-s (color-clamp       (+ (nth 1 color) (/ hydrangea-theme-tune-saturation 100.0))))
-         (new-l (color-clamp       (+ (nth 2 color) (/ hydrangea-theme-tune-lightness  100.0)))))
-    (setf (nth 1 new-def) (apply #'color-rgb-to-hex (apply #'color-hsl-to-rgb (list new-h new-s new-l))))
-    new-def))
-
-(let ((palette (mapcar #'hydrangea-theme-adjust hydrangea-theme-palette)))
+(hydrangea-define-theme hydrangea
+  "A hydrangea theme for Emacs"
+  (hydrangea-theme-palette)
+  (hydrangea-theme-face-definitions)
   ;; Set attributes of the default face for existing frames and new frames.
   (set-face-attribute 'default nil :background (nth 1 (assq 'base4 palette)) :foreground (nth 1 (assq 'base-1 palette)))
   (set-face-attribute 'cursor  nil :background (nth 1 (assq 'blue palette)))
-  ;; Custom theme
-  (apply 'custom-theme-set-faces
-         'hydrangea
-         (mapcar (lambda (face-def) `(,(car face-def) ,(hydrangea-theme-make-face-spec palette (cdr face-def))))
-                 hydrangea-theme-face-definitions))
   ;; pos-tip.el
   (setq pos-tip-background-color (nth 1 (assq 'base2  palette))
         pos-tip-foreground-color (nth 1 (assq 'base-1 palette)))
@@ -271,30 +216,9 @@ This value will be passed to the `color-lighten-name' function."
   (setq skk-inline-show-background-color (nth 1 (assq 'base3 palette)))
   (setq skk-inline-show-background-color-odd (color-lighten-name (nth 1 (assq 'base3 palette)) 5)))
 
-(defcustom hydrangea-theme-adjustment-mode-line '(:eval (format " Hydrangea[H:%+d:S:%+d,L%+d]" hydrangea-theme-tune-hue hydrangea-theme-tune-saturation hydrangea-theme-tune-lightness))
-  ""
-  :risky t)
-
-;;;###autoload
-(define-minor-mode hydrangea-theme-adjustment-mode
-  "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
-  :keymap (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "<f5>")  (lambda () (interactive) (setq hydrangea-theme-tune-hue        (- hydrangea-theme-tune-hue        5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f6>")  (lambda () (interactive) (setq hydrangea-theme-tune-hue        (+ hydrangea-theme-tune-hue        5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f7>")  (lambda () (interactive) (setq hydrangea-theme-tune-lightness  (- hydrangea-theme-tune-lightness  5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f8>")  (lambda () (interactive) (setq hydrangea-theme-tune-lightness  (+ hydrangea-theme-tune-lightness  5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f9>")  (lambda () (interactive) (setq hydrangea-theme-tune-saturation (- hydrangea-theme-tune-saturation 5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f10>") (lambda () (interactive) (setq hydrangea-theme-tune-saturation (+ hydrangea-theme-tune-saturation 5)) (load-theme 'hydrangea)))
-            (define-key map (kbd "<f11>") (lambda () (interactive) (setq hydrangea-theme-tune-hue 0 hydrangea-theme-tune-saturation 0 hydrangea-theme-tune-lightness 0)    (load-theme 'hydrangea)))
-            (define-key map (kbd "<f12>") (lambda () (interactive)                                                                              (load-theme 'hydrangea)))
-            map)
-  :lighter hydrangea-theme-adjustment-mode-line
-  :global)
-
-(provide-theme 'hydrangea)
-
 ;; Local Variables:
 ;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
+;; eval: (add-to-list 'load-path (file-name-directory (buffer-file-name)))
 ;; eval: (rainbow-mode)
 ;; End:
 
