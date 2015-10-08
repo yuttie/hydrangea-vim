@@ -28,17 +28,17 @@
 (require 'cl-lib)
 (require 'pcase)
 
-(defun unwrap-unquote (x)
+(defun hydrangea-unwrap-unquote (x)
   (if (and (listp x) (eq (car x) '\,))
       (cadr x)
     x))
 
-(defun eval-for (palette i x)
+(defun hydrangea-eval-for (palette i x)
   (pcase x
-    (`(lighten    ,percent ,color) `(,'\, (color-lighten-name    ,(unwrap-unquote (eval-for palette i color)) ,percent)))
-    (`(darken     ,percent ,color) `(,'\, (color-darken-name     ,(unwrap-unquote (eval-for palette i color)) ,percent)))
-    (`(saturate   ,percent ,color) `(,'\, (color-saturate-name   ,(unwrap-unquote (eval-for palette i color)) ,percent)))
-    (`(desaturate ,percent ,color) `(,'\, (color-desaturate-name ,(unwrap-unquote (eval-for palette i color)) ,percent)))
+    (`(lighten    ,percent ,color) `(,'\, (color-lighten-name    ,(hydrangea-unwrap-unquote (hydrangea-eval-for palette i color)) ,percent)))
+    (`(darken     ,percent ,color) `(,'\, (color-darken-name     ,(hydrangea-unwrap-unquote (hydrangea-eval-for palette i color)) ,percent)))
+    (`(saturate   ,percent ,color) `(,'\, (color-saturate-name   ,(hydrangea-unwrap-unquote (hydrangea-eval-for palette i color)) ,percent)))
+    (`(desaturate ,percent ,color) `(,'\, (color-desaturate-name ,(hydrangea-unwrap-unquote (hydrangea-eval-for palette i color)) ,percent)))
     ((pred symbolp)
      (let ((j 0)
            (found nil))
@@ -50,12 +50,12 @@
            `(,'\, (elt (elt palette ,found) ,(+ 1 i)))
          x)))
     ((pred listp)
-     (mapcar (lambda (y) (eval-for palette i y)) x))
+     (mapcar (lambda (y) (hydrangea-eval-for palette i y)) x))
     (_ x)))
 
-(defun mkspec (palette spec)
-  `((((min-colors 65536)) ,@(eval-for palette 0 spec))
-    (t                    ,@(eval-for palette 1 spec))))
+(defun hydrangea-mkspec (palette spec)
+  `((((min-colors 65536)) ,@(hydrangea-eval-for palette 0 spec))
+    (t                    ,@(hydrangea-eval-for palette 1 spec))))
 
 (defmacro hydrangea-define-theme (theme doc palette face-defs &rest body)
   ""
@@ -129,7 +129,7 @@ This value will be passed to the `color-lighten-name' function."
 
      (let ((palette (mapcar #',(intern (concat (symbol-name theme) "-theme-adjust")) ',(macroexpand palette))))
        (custom-theme-set-faces ',theme
-                               ,@(mapcar (lambda (def) `(backquote (,(car def) ,(mkspec (macroexpand palette) (cdr def))))) (macroexpand face-defs)))
+                               ,@(mapcar (lambda (def) `(backquote (,(car def) ,(hydrangea-mkspec (macroexpand palette) (cdr def))))) (macroexpand face-defs)))
        ,@body)
 
      (provide-theme ',theme)))
