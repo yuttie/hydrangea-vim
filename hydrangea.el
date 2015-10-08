@@ -68,6 +68,7 @@
      (defgroup ,(intern (concat (symbol-name theme) "-theme")) nil
        ""
        :group 'customize)
+
      (defcustom ,(intern (concat (symbol-name theme) "-theme-tune-hue")) 0
        "Percentage of hue by which accent colors in the palette will be adjusted.
 Both a positive value and a negative value are accepted."
