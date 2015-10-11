@@ -111,22 +111,58 @@ This value will be passed to the `color-lighten-name' function."
          :risky t
          :group ',(theme-sym))
 
+       (defun ,(theme-sym "reload") ()
+         (interactive)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "reset") ()
+         (interactive)
+         (setq ,(theme-sym "tune-hue")        0
+               ,(theme-sym "tune-saturation") 0
+               ,(theme-sym "tune-lightness")  0)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "decrease-hue") (delta)
+         (interactive "P")
+         (cl-decf ,(theme-sym "tune-hue") delta)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "increase-hue") (delta)
+         (interactive "P")
+         (cl-incf ,(theme-sym "tune-hue") delta)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "decrease-saturation") (delta)
+         (interactive "P")
+         (cl-decf ,(theme-sym "tune-saturation") delta)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "increase-saturation") (delta)
+         (interactive "P")
+         (cl-incf ,(theme-sym "tune-saturation") delta)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "decrease-lightness") (delta)
+         (interactive "P")
+         (cl-decf ,(theme-sym "tune-lightness") delta)
+         (load-theme ',theme))
+
+       (defun ,(theme-sym "increase-lightness") (delta)
+         (interactive "P")
+         (cl-incf ,(theme-sym "tune-lightness") delta)
+         (load-theme ',theme))
+
        (define-minor-mode ,(theme-sym "adjustment-mode")
          "Provides key bindings for a user to adjust the saturation and the lightness of the theme easily."
          :keymap (let ((map (make-sparse-keymap)))
-                   (define-key map (kbd "<f5>")  (lambda () (interactive) (load-theme ',theme)))
-                   (define-key map (kbd "<f6>")  (lambda ()
-                                                   (interactive)
-                                                   (setq ,(theme-sym "tune-hue") 0
-                                                         ,(theme-sym "tune-saturation") 0
-                                                         ,(theme-sym "tune-lightness") 0)
-                                                   (load-theme ',theme)))
-                   (define-key map (kbd "<f7>")  (lambda () (interactive) (setq ,(theme-sym "tune-hue")        (- ,(theme-sym "tune-hue")        5)) (load-theme ',theme)))
-                   (define-key map (kbd "<f8>")  (lambda () (interactive) (setq ,(theme-sym "tune-hue")        (+ ,(theme-sym "tune-hue")        5)) (load-theme ',theme)))
-                   (define-key map (kbd "<f9>")  (lambda () (interactive) (setq ,(theme-sym "tune-saturation") (- ,(theme-sym "tune-saturation") 5)) (load-theme ',theme)))
-                   (define-key map (kbd "<f10>") (lambda () (interactive) (setq ,(theme-sym "tune-saturation") (+ ,(theme-sym "tune-saturation") 5)) (load-theme ',theme)))
-                   (define-key map (kbd "<f11>") (lambda () (interactive) (setq ,(theme-sym "tune-lightness")  (- ,(theme-sym "tune-lightness")  5)) (load-theme ',theme)))
-                   (define-key map (kbd "<f12>") (lambda () (interactive) (setq ,(theme-sym "tune-lightness")  (+ ,(theme-sym "tune-lightness")  5)) (load-theme ',theme)))
+                   (define-key map (kbd "<f5>")  #',(theme-sym "reload"))
+                   (define-key map (kbd "<f6>")  #',(theme-sym "reset"))
+                   (define-key map (kbd "<f7>")  #',(theme-sym "decrease-hue"))
+                   (define-key map (kbd "<f8>")  #',(theme-sym "increase-hue"))
+                   (define-key map (kbd "<f9>")  #',(theme-sym "decrease-saturation"))
+                   (define-key map (kbd "<f10>") #',(theme-sym "increase-saturation"))
+                   (define-key map (kbd "<f11>") #',(theme-sym "decrease-lightness"))
+                   (define-key map (kbd "<f12>") #',(theme-sym "increase-lightness"))
                    map)
          :lighter ,(theme-sym "adjustment-mode-line")
          :global)
