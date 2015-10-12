@@ -199,9 +199,6 @@
   "A hydrangea theme for Emacs"
   (hydrangea-theme-palette)
   (hydrangea-theme-face-definitions)
-  ;; Set attributes of the default face for existing frames and new frames.
-  (set-face-attribute 'default nil :background (nth 1 (assq 'base4 palette)) :foreground (nth 1 (assq 'base-1 palette)))
-  (set-face-attribute 'cursor  nil :background (nth 1 (assq 'blue palette)))
   ;; pos-tip.el
   (setq pos-tip-background-color (nth 1 (assq 'base2  palette))
         pos-tip-foreground-color (nth 1 (assq 'base-1 palette)))
