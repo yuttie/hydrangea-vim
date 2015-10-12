@@ -116,7 +116,7 @@
       (completions-common-part      :foreground violet :weight bold)
       (completions-first-difference :foreground blue)
       ;; show-paren-mode
-      (show-paren-match-face :background nil :foreground blue)
+      (show-paren-match-face :background blue :foreground base4 :weight bold)
       ;; auto-complete
       (ac-completion-face :inherit (shadow) :foreground base-2 :underline unspecified)
       (ac-candidate-face  :inherit(default) :background base3)
