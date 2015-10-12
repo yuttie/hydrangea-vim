@@ -57,7 +57,7 @@
   `((((min-colors 65536)) ,@(hydrangea-eval-for palette 0 spec))
     (t                    ,@(hydrangea-eval-for palette 1 spec))))
 
-(defmacro hydrangea-define-theme (theme doc palette face-defs &rest body)
+(defmacro hydrangea-define-theme (theme palette face-defs doc &rest body)
   ""
   (declare (indent defun) (debug t))
   (cl-labels

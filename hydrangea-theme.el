@@ -196,9 +196,9 @@
       (skk-dcomp-multiple-selected-face :inherit (skk-dcomp-multiple-face) :foreground base-2 :weight bold))))
 
 (hydrangea-define-theme hydrangea
-  "A hydrangea theme for Emacs"
   (hydrangea-theme-palette)
   (hydrangea-theme-face-definitions)
+  "A hydrangea theme for Emacs"
   ;; pos-tip.el
   (setq pos-tip-background-color (nth 1 (assq 'base2  palette))
         pos-tip-foreground-color (nth 1 (assq 'base-1 palette)))
