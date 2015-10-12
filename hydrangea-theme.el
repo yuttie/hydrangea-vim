@@ -43,7 +43,7 @@
       (green    "#bdd16e"   "#afd75f")
       (cyan     "#8cdad1"   "#87d7d7")
       (blue     "#71b2eb"   "#5fafff")
-      (violet   "#a891e7"   "#af87ff")
+      (violet   "#a58aee"   "#af87ff")
       (magenta  "#d78cc7"   "#d787d7")
       (emacs    "#5955a9"   "#5955a9")
       (diff-rm  "#6b151e"   "#6b151e")
