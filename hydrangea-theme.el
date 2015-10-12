@@ -57,14 +57,14 @@
       (shadow         :foreground base1)
       ;; Frame
       (cursor             :background blue)
-      (fringe             :background base3 :foreground base1 :weight bold)
+      (fringe             :background base3 :foreground base1)
       (menu               :background base3    :foreground base-1   :inverse-video nil)
-      (linum              :inherit (fringe) :box nil)
+      (linum              :inherit (fringe) :box nil :weight normal)
       (mode-line          :inherit (variable-pitch) :background base2 :foreground base-1 :box nil)
       (mode-line-inactive :inherit (variable-pitch) :background base3 :foreground base0  :box nil)
       (minibuffer-prompt  :foreground base-2)
       ;; hlinum
-      (linum-highlight-face :inherit (linum) :foreground base-2)
+      (linum-highlight-face :inherit (linum) :foreground base-2 :weight bold)
       ;; powerline
       (powerline-mode-normal        :background "#afd700" :foreground "#005f00" :box nil :weight bold)
       (powerline-mode-insert        :background "#ffffff" :foreground "#005f5f" :box nil :weight bold)
