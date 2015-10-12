@@ -5630,13 +5630,13 @@
     <text
        sodipodi:linespacing="125%"
        id="use10423"
-       y="949.30371"
-       x="-997.93073"
-       style="font-style:normal;font-weight:normal;font-size:380.1831665px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#f0f0ff;fill-opacity:1;stroke:none;"
+       y="957.43768"
+       x="-803.61963"
+       style="font-style:normal;font-weight:normal;font-size:380.1831665px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#585864;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.55037689px;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';fill:#f0f0ff;fill-opacity:1;"
-         y="949.30371"
-         x="-997.93073"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.55037689px;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';fill:#585864;fill-opacity:1"
+         y="957.43768"
+         x="-803.61963"
          id="tspan9228"
          sodipodi:role="line">background</tspan></text>
     <rect
@@ -5764,7 +5764,7 @@
        id="rect4960"
        style="fill:#40404a;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#50505b;fill-opacity:1;stroke:#ffffff"
+       style="fill:#585864;fill-opacity:1;stroke:#ffffff"
        id="rect4962"
        width="39.164684"
        height="39.164684"
