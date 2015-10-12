@@ -121,6 +121,10 @@
       (ac-completion-face :inherit (shadow) :foreground base-2 :underline unspecified)
       (ac-candidate-face  :inherit(default) :background base3)
       (ac-selection-face  :inherit (ac-candidate-face) :background base2 :foreground base-2 :weight bold)
+      ;; avy
+      (avy-lead-face   :foreground base4 :background red)
+      (avy-lead-face-0 :foreground base4 :background red)
+      (avy-lead-face-2 :foreground base4 :background red)
       ;; company-mode
       (company-tooltip                  :inherit (default) :background base3)
       (company-tooltip-selection        :inherit (company-tooltip) :background base2 :foreground base-2 :weight bold)
