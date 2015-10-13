@@ -177,6 +177,8 @@
       (helm-candidate-number :background unspecified :foreground base0)
       (helm-selection        :background base2      :foreground base-2 :weight bold :underline nil)
       (helm-match            :foreground green :weight bold)
+      ;; highlight-symbol
+      (highlight-symbol-face :background unspecified :inverse-video t)
       ;; ElScreen
       (elscreen-tab-background-face     :inherit (variable-pitch) :background base3 :foreground base-1 :underline nil :height 1.4 :box (:line-width 8 :color base3))
       (elscreen-tab-control-face        :background base2 :foreground base-1 :underline nil)
