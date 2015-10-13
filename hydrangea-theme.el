@@ -57,9 +57,9 @@
       (shadow         :foreground base1)
       ;; Frame
       (cursor             :background base-1)
-      (fringe             :background base3 :foreground base1)
+      (fringe             :background base3 :foreground base1 :box nil :inverse-video nil)
       (menu               :background base3    :foreground base-1   :inverse-video nil)
-      (linum              :inherit (fringe) :box nil :weight normal)
+      (linum              :inherit (fringe) :weight normal)
       (mode-line          :inherit (variable-pitch) :background base2 :foreground base-1 :box nil)
       (mode-line-inactive :inherit (variable-pitch) :background base3 :foreground base0  :box nil)
       (minibuffer-prompt  :foreground base-2)
