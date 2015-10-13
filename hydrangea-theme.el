@@ -111,7 +111,7 @@
       (font-lock-string-face               :foreground cyan)
       (font-lock-type-face                 :foreground violet)
       (font-lock-variable-name-face        :foreground green)
-      (font-lock-warning-face              :background violet :foreground base4)
+      (font-lock-warning-face              :background red :foreground base4)
       ;; completions
       (completions-common-part      :foreground violet :weight bold)
       (completions-first-difference :foreground blue)
