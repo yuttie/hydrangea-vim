@@ -56,7 +56,7 @@
       (variable-pitch :family "sans serif")
       (shadow         :foreground base1)
       ;; Frame
-      (cursor             :background blue)
+      (cursor             :background base-1)
       (fringe             :background base3 :foreground base1)
       (menu               :background base3    :foreground base-1   :inverse-video nil)
       (linum              :inherit (fringe) :box nil :weight normal)
