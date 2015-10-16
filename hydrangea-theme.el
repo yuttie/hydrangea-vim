@@ -125,6 +125,9 @@
       (avy-lead-face   :foreground base4 :background red)
       (avy-lead-face-0 :foreground base4 :background red)
       (avy-lead-face-2 :foreground base4 :background red)
+      ;; ace-window
+      (aw-leading-char-face :inherit (default) :foreground green :height 8.0)
+      (aw-background-face   :inherit (default) :foreground base4)
       ;; company-mode
       (company-tooltip                  :inherit (default) :background base3)
       (company-tooltip-selection        :inherit (company-tooltip) :background base2 :foreground base-2 :weight bold)
