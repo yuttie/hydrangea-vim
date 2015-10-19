@@ -1,0 +1,30 @@
+#ifndef APP
+#  define APP
+#endif
+
+APP*foreground: #d0d0de
+APP*background: #202026
+! black
+APP*color0:     #202026
+APP*color8:     #585864
+! red
+APP*color1:     #d03030
+APP*color9:     #de6f6f
+! green
+APP*color2:     #76a434
+APP*color10:    #9cca5a
+! yellow
+APP*color3:     #ccb321
+APP*color11:    #e3ce57
+! blue
+APP*color4:     #1e81d7
+APP*color12:    #5aa5e7
+! magenta
+APP*color5:     #6030e1
+APP*color13:    #9373ea
+! cyan
+APP*color6:     #3ec1b2
+APP*color14:    #78d3c9
+! white
+APP*color7:     #80808d
+APP*color15:    #d0d0de
