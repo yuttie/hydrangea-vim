@@ -3,6 +3,30 @@
 This is a ["Custom theme"](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html)
 for Emacs 24 or above.
 
+## Installation
+
+### For El-get users
+
+You can define a local recipe and call `el-get`:
+
+``` lisp
+;; Add a local recipe for hydrangea-theme
+(add-to-list 'el-get-sources
+             '(:name hydrangea-theme
+                     :description "Theme building framework for Emacs"
+                     :website "https://github.com/yuttie/hydrangea-theme"
+                     :type github
+                     :pkgname "yuttie/hydrangea-theme"
+                     :post-init (add-to-list 'custom-theme-load-path default-directory)))
+;; Let el-get install it!
+(el-get 'sync '(... hydrangea-theme ...))
+```
+
+, or use `el-get-bundle` macro:
+``` lisp
+(el-get-bundle yuttie/hydrangea-theme
+  :post-init (add-to-list 'custom-theme-load-path default-directory))
+```
 
 ## Features
 
