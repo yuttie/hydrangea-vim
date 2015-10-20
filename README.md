@@ -19,7 +19,7 @@ for Emacs 24 or above.
 
 You can define a local recipe and call `el-get`:
 
-``` lisp
+```elisp
 ;; Add a local recipe for hydrangea-theme
 (add-to-list 'el-get-sources
              '(:name hydrangea-theme
@@ -33,7 +33,7 @@ You can define a local recipe and call `el-get`:
 ```
 
 , or use `el-get-bundle` macro:
-``` lisp
+```elisp
 (el-get-bundle yuttie/hydrangea-theme
   :post-init (add-to-list 'custom-theme-load-path default-directory))
 ```
