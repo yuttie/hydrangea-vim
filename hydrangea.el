@@ -123,32 +123,32 @@ This value will be passed to the `color-lighten-name' function."
          (load-theme ',theme))
 
        (defun ,(theme-sym "decrease-hue") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-decf ,(theme-sym "tune-hue") delta)
          (load-theme ',theme))
 
        (defun ,(theme-sym "increase-hue") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-incf ,(theme-sym "tune-hue") delta)
          (load-theme ',theme))
 
        (defun ,(theme-sym "decrease-saturation") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-decf ,(theme-sym "tune-saturation") delta)
          (load-theme ',theme))
 
        (defun ,(theme-sym "increase-saturation") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-incf ,(theme-sym "tune-saturation") delta)
          (load-theme ',theme))
 
        (defun ,(theme-sym "decrease-lightness") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-decf ,(theme-sym "tune-lightness") delta)
          (load-theme ',theme))
 
        (defun ,(theme-sym "increase-lightness") (delta)
-         (interactive "P")
+         (interactive "p")
          (cl-incf ,(theme-sym "tune-lightness") delta)
          (load-theme ',theme))
 
