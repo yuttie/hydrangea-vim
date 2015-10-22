@@ -3,6 +3,8 @@
 This is a ["Custom theme"](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html)
 for Emacs 24 or above.
 
+![Screenshot of Emacs Lisp](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-elisp.png)
+
 
 ## Features
 
