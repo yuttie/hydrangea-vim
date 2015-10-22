@@ -17,7 +17,7 @@ for Emacs 24 or above.
 
 ## Installation
 
-### For El-get users
+### For El-Get users
 
 You can define a local recipe and call `el-get`:
 
