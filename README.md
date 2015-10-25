@@ -28,14 +28,20 @@ You can define a local recipe and call `el-get`:
                      :description "Theme building framework for Emacs"
                      :website "https://github.com/yuttie/hydrangea-theme"
                      :type github
-                     :pkgname "yuttie/hydrangea-theme"))
+                     :pkgname "yuttie/hydrangea-theme"
+                     :autoloads "hydrangea-autoloads"
+                     :build `((,el-get-emacs "-batch" "--quick" "--eval"
+                                             "(let ((generated-autoload-file (expand-file-name \"hydrangea-autoloads.el\" \".\")) (backup-inhibited t)) (update-directory-autoloads \".\"))"))))
 ;; Let el-get install it!
 (el-get 'sync '(... hydrangea-theme ...))
 ```
 
 , or use `el-get-bundle` macro:
 ```elisp
-(el-get-bundle yuttie/hydrangea-theme)
+(el-get-bundle yuttie/hydrangea-theme
+  :autoloads "hydrangea-autoloads"
+  :build `((,el-get-emacs "-batch" "--quick" "--eval"
+                          "(let ((generated-autoload-file (expand-file-name \"hydrangea-autoloads.el\" \".\")) (backup-inhibited t)) (update-directory-autoloads \".\"))")))
 ```
 
 
