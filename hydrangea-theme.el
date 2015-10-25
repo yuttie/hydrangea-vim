@@ -63,6 +63,9 @@
       (mode-line          :inherit (variable-pitch) :background base2 :foreground base-1 :box nil)
       (mode-line-inactive :inherit (variable-pitch) :background base3 :foreground base0  :box nil)
       (minibuffer-prompt  :foreground base-2)
+      (window-divider     :foreground (darken 4 base4))
+      (window-divider-first-pixel :inherit (window-divider))
+      (window-divider-last-pixel  :inherit (window-divider))
       ;; hlinum
       (linum-highlight-face :inherit (linum) :foreground base-2 :weight bold)
       ;; powerline
