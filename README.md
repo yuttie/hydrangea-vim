@@ -28,16 +28,14 @@ You can define a local recipe and call `el-get`:
                      :description "Theme building framework for Emacs"
                      :website "https://github.com/yuttie/hydrangea-theme"
                      :type github
-                     :pkgname "yuttie/hydrangea-theme"
-                     :post-init (add-to-list 'custom-theme-load-path default-directory)))
+                     :pkgname "yuttie/hydrangea-theme"))
 ;; Let el-get install it!
 (el-get 'sync '(... hydrangea-theme ...))
 ```
 
 , or use `el-get-bundle` macro:
 ```elisp
-(el-get-bundle yuttie/hydrangea-theme
-  :post-init (add-to-list 'custom-theme-load-path default-directory))
+(el-get-bundle yuttie/hydrangea-theme)
 ```
 
 

@@ -225,6 +225,12 @@
   (setq skk-inline-show-background-color (nth 1 (assq 'base3 palette)))
   (setq skk-inline-show-background-color-odd (color-lighten-name (nth 1 (assq 'base3 palette)) 5)))
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory
+                (file-name-directory load-file-name))))
+
 ;; Local Variables:
 ;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
 ;; eval: (add-to-list 'load-path (file-name-directory (buffer-file-name)))
