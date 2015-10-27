@@ -59,6 +59,7 @@
       (cursor             :background base-1)
       (fringe             :background base3 :foreground base1 :box nil :inverse-video nil)
       (menu               :background base3    :foreground base-1   :inverse-video nil)
+      (tooltip            :background base2 :foreground base-1)
       (linum              :inherit (fringe) :weight normal)
       (mode-line          :inherit (variable-pitch) :background base2 :foreground base-1 :box nil)
       (mode-line-inactive :inherit (variable-pitch) :background base3 :foreground base0  :box nil)
@@ -207,6 +208,8 @@
   (hydrangea-theme-palette)
   (hydrangea-theme-face-definitions)
   "A hydrangea theme for Emacs"
+  ;; Force the appearance of tooltip specified by this theme
+  (setq x-gtk-use-system-tooltips nil)
   ;; pos-tip.el
   (setq pos-tip-background-color (nth 1 (assq 'base2  palette))
         pos-tip-foreground-color (nth 1 (assq 'base-1 palette)))
