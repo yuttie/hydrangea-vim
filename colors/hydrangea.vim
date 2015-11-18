@@ -49,7 +49,7 @@ let s:color['Cursor']          = { 'guifg': 'NONE',        'guibg': s:base_1,   
 let s:color['CursorIM']        = { 'guifg': 'NONE',        'guibg': s:base_1,                              }
 let s:color['CursorLine']      = { 'guifg': 'NONE',        'guibg': s:base3,       'gui': 'none'           }
 let s:color['CursorColumn']    = { 'guifg': 'NONE',        'guibg': s:base3,       'gui': 'none'           }
-let s:color['Visual']          = { 'guifg': s:base4,       'guibg': s:yellow,      'gui': 'none'           }
+let s:color['Visual']          = { 'guifg': 'NONE',        'guibg': s:base2,       'gui': 'none'           }
 let s:color['VisualNOS']       = { 'guifg': 'fg',                                  'gui': 'underline'      }
 
 let s:color['Folded']          = { 'guifg': '#a0a8b0',     'guibg': '#384048',     'gui': 'none'           }
