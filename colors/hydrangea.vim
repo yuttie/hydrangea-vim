@@ -27,6 +27,11 @@ let s:blue    = "#7aa4c9"
 let s:violet  = "#8979bd"
 let s:magenta = "#b577a7"
 
+let s:diff_added   = "#323e1b"
+let s:diff_removed = "#532626"
+let s:diff_changed = "#594913"
+let s:diff_fine    = "#81691b"
+
 let s:base4_256   = "#1c1c1c"
 let s:base3_256   = "#303030"
 let s:base2_256   = "#444444"
@@ -100,10 +105,13 @@ let s:color['SpellCap']        = {                                              
 let s:color['SpellRare']       = {                                                 'gui': 'undercurl'      }
 let s:color['SpellLocal']      = {                                                 'gui': 'undercurl'      }
 
-let s:color['DiffAdd']         = { 'guifg': s:green,       'guibg': '#006600',     'gui': 'none'           }
-let s:color['DiffChange']      = { 'guifg': s:yellow,      'guibg': '#666600',     'gui': 'none'           }
-let s:color['DiffDelete']      = { 'guifg': s:red,         'guibg': '#660000',     'gui': 'none'           }
-let s:color['DiffText']        = { 'guifg': s:yellow,      'guibg': '#666600',     'gui': 'bold'           }
+let s:color['DiffAdd']         = { 'guifg': s:green,       'guibg': s:diff_added,  'gui': 'none'           }
+let s:color['DiffChange']      = { 'guifg': s:yellow,      'guibg': s:diff_changed,'gui': 'none'           }
+let s:color['DiffDelete']      = { 'guifg': s:red,         'guibg': s:diff_removed,'gui': 'none'           }
+let s:color['DiffText']        = { 'guifg': s:yellow,      'guibg': s:diff_fine,   'gui': 'bold'           }
+
+let s:color['diffAdded']       = { 'guifg': s:green,       'guibg': s:diff_added,  'gui': 'none'           }
+let s:color['diffRemoved']     = { 'guifg': s:red,         'guibg': s:diff_removed,'gui': 'none'           }
 
 let s:color['Directory']       = { 'guifg': '#c0e0b0',                             'gui': 'none'           }
 let s:color['ErrorMsg']        = { 'guifg': '#ee0000',     'guibg': 'NONE',        'gui': 'none'           }
@@ -114,9 +122,6 @@ let s:color['Question']        = { 'guifg': 'fg',                               
 let s:color['WarningMsg']      = { 'guifg': '#e5786d',                             'gui': 'none'           }
 let s:color['WildMenu']        = { 'guifg': '#cae682',     'guibg': '#363946',     'gui': 'bold,underline' }
 let s:color['ColorColumn']     = { 'guifg': 'NONE',        'guibg': '#403630',     'gui': 'none'           }
-
-let s:color['diffAdded']       = { 'guifg': s:green,       'guibg': 'bg',          'gui': 'none'           }
-let s:color['diffRemoved']     = { 'guifg': s:red,         'guibg': 'bg',          'gui': 'none'           }
 
 hi link phpFunction Function
 hi link phpClass    Type
