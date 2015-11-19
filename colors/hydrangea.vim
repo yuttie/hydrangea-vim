@@ -24,7 +24,7 @@ let s:yellow  = "#e4c374"
 let s:green   = "#a0bc65"
 let s:cyan    = "#88b8b0"
 let s:blue    = "#7aa4c9"
-let s:violet  = "#8979bd"
+let s:violet  = "#887cb2"
 let s:magenta = "#b577a7"
 
 let s:diff_added   = "#323e1b"
