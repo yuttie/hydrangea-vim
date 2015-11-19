@@ -123,6 +123,7 @@ let s:color['WarningMsg']      = { 'guifg': '#e5786d',                          
 let s:color['WildMenu']        = { 'guifg': '#cae682',     'guibg': '#363946',     'gui': 'bold,underline' }
 let s:color['ColorColumn']     = { 'guifg': 'NONE',        'guibg': '#403630',     'gui': 'none'           }
 
+hi phpFunctions NONE
 hi link phpFunction Function
 hi link phpClass    Type
 
