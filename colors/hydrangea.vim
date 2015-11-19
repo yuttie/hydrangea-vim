@@ -89,7 +89,7 @@ let s:color['Typedef']         = { 'guifg': s:blue,                             
 let s:color['Special']         = { 'guifg': s:magenta,                             'gui': 'none'           }
 let s:color['Underlined']      = { 'guifg': 'fg',                                  'gui': 'underline'      }
 let s:color['Ignore']          = { 'guifg': 'bg'                                                           }
-let s:color['Error']           = { 'guifg': '#800000',     'guibg': s:red,         'gui': 'none'           }
+let s:color['Error']           = { 'guifg': '#800000',     'guibg': '#d16464',     'gui': 'bold'           }
 let s:color['Todo']            = { 'guifg': '#000000',     'guibg': '#ffff00',     'gui': 'bold'           }
 
 let s:color['IncSearch']       = { 'guifg': s:base4,       'guibg': s:orange,      'gui': 'none'           }
