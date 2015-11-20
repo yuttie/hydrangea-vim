@@ -124,6 +124,7 @@ let s:color['WildMenu']        = { 'guifg': '#cae682',     'guibg': '#363946',  
 let s:color['ColorColumn']     = { 'guifg': 'NONE',        'guibg': '#403630',     'gui': 'NONE'           }
 
 hi phpFunctions NONE
+hi phpClasses   NONE
 hi link phpFunction Function
 hi link phpClass    Type
 
