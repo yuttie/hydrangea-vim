@@ -2,29 +2,29 @@
 #  define APP
 #endif
 
-APP*foreground: #d0d0de
-APP*background: #202026
+APP*foreground: #d0d5de
+APP*background: #202226
 ! black
-APP*color0:     #202026
-APP*color8:     #585864
+APP*color0:     #202226
+APP*color8:     #80848d
 ! red
-APP*color1:     #d03030
-APP*color9:     #de6f6f
+APP*color1:     #753636
+APP*color9:     #b05353
 ! green
-APP*color2:     #76a434
-APP*color10:    #9cca5a
+APP*color2:     #5d7231
+APP*color10:    #a0bc65
 ! yellow
-APP*color3:     #ccb321
-APP*color11:    #e3ce57
+APP*color3:     #7d671a
+APP*color11:    #e4c374
 ! blue
-APP*color4:     #1e81d7
-APP*color12:    #5aa5e7
+APP*color4:     #355e83
+APP*color12:    #7aa4c9
 ! magenta
-APP*color5:     #6030e1
-APP*color13:    #9373ea
+APP*color5:     #4d4371
+APP*color13:    #887cb2
 ! cyan
-APP*color6:     #3ec1b2
-APP*color14:    #78d3c9
+APP*color6:     #47776f
+APP*color14:    #88b8b0
 ! white
-APP*color7:     #80808d
-APP*color15:    #d0d0de
+APP*color7:     #d0d5de
+APP*color15:    #f0f5ff
