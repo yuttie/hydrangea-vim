@@ -110,13 +110,21 @@ let s:color['WarningMsg']      = { 'fg': ['#e5786d', 174],                      
 let s:color['WildMenu']        = { 'fg': ['#cae682', 186], 'bg': ['#363946', 237], 'deco': 'bold,underline' }
 let s:color['ColorColumn']     = { 'fg': 'NONE',           'bg': ['#403630', 237], 'deco': 'NONE'           }
 
-hi phpFunctions NONE
-hi phpClasses   NONE
-hi link phpFunction Function
-hi link phpClass    Type
+let s:color['phpFunctions'] = 'NONE'
+let s:color['phpClasses']   = 'NONE'
+let s:color['phpFunction']  = 'Function'
+let s:color['phpClass']     = 'Type'
 
 for [name, def] in items(s:color)
-  if type(def) ==# 4 && len(def) > 0
+  if type(def) ==# 1
+    if def ==# 'NONE'
+      " Disable
+      execute 'highlight ' . name . ' NONE'
+    else
+      " Link
+      execute 'highlight link ' . name . ' ' . def
+    endif
+  elseif type(def) ==# 4 && len(def) > 0
     let def2 = {}
     for [key, val] in items(def)
       if key ==# 'fg'
@@ -151,4 +159,5 @@ for [name, def] in items(s:color)
     endfor
     execute 'highlight ' . name . ' ' . join(values(map(copy(def2), 'v:key . "=" . v:val')), ' ')
   endif
+  unlet def
 endfor
