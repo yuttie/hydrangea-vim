@@ -117,49 +117,49 @@ let s:color['phpClass']     = 'Type'
 
 
 " Apply
-for [name, def] in items(s:color)
-  if type(def) ==# 1
-    if def ==# 'NONE'
+for [s:name, s:def] in items(s:color)
+  if type(s:def) ==# 1
+    if s:def ==# 'NONE'
       " Disable
-      execute 'highlight ' . name . ' NONE'
+      execute 'highlight ' . s:name . ' NONE'
     else
       " Link
-      execute 'highlight link ' . name . ' ' . def
+      execute 'highlight link ' . s:name . ' ' . s:def
     endif
-  elseif type(def) ==# 4 && len(def) > 0
-    let def2 = {}
-    for [key, val] in items(def)
-      if key ==# 'fg'
-        if type(val) ==# 3
-          let def2.guifg = val[0]
-          let def2.ctermfg = val[1]
-        elseif type(val) ==# 1
-          let def2.guifg = val
-        elseif type(val) ==# 0
-          let def2.ctermfg = val
+  elseif type(s:def) ==# 4 && len(s:def) > 0
+    let s:def2 = {}
+    for [s:key, s:val] in items(s:def)
+      if s:key ==# 'fg'
+        if type(s:val) ==# 3
+          let s:def2.guifg = s:val[0]
+          let s:def2.ctermfg = s:val[1]
+        elseif type(s:val) ==# 1
+          let s:def2.guifg = s:val
+        elseif type(s:val) ==# 0
+          let s:def2.ctermfg = s:val
         endif
-      elseif key ==# 'bg'
-        if type(val) ==# 3
-          let def2.guibg = val[0]
-          let def2.ctermbg = val[1]
-        elseif type(val) ==# 1
-          let def2.guibg = val
-        elseif type(val) ==# 0
-          let def2.ctermbg = val
+      elseif s:key ==# 'bg'
+        if type(s:val) ==# 3
+          let s:def2.guibg = s:val[0]
+          let s:def2.ctermbg = s:val[1]
+        elseif type(s:val) ==# 1
+          let s:def2.guibg = s:val
+        elseif type(s:val) ==# 0
+          let s:def2.ctermbg = s:val
         endif
-      elseif key ==# 'deco'
-        if type(val) ==# 3
-          let def2.gui = val[0]
-          let def2.cterm = val[1]
-        elseif type(val) ==# 1
-          let def2.gui = val
-        elseif type(val) ==# 0
-          let def2.cterm = val
+      elseif s:key ==# 'deco'
+        if type(s:val) ==# 3
+          let s:def2.gui = s:val[0]
+          let s:def2.cterm = s:val[1]
+        elseif type(s:val) ==# 1
+          let s:def2.gui = s:val
+        elseif type(s:val) ==# 0
+          let s:def2.cterm = s:val
         endif
       endif
-      unlet val
+      unlet s:val
     endfor
-    execute 'highlight ' . name . ' ' . join(values(map(copy(def2), 'v:key . "=" . v:val')), ' ')
+    execute 'highlight ' . s:name . ' ' . join(values(map(copy(s:def2), 'v:key . "=" . v:val')), ' ')
   endif
-  unlet def
+  unlet s:def
 endfor
