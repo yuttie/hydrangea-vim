@@ -11,117 +11,104 @@ let colors_name = "steady-dark"
 set background=dark
 
 
-let s:base4   = "#202226"
-let s:base3   = "#303338"
-let s:base2   = "#40434a"
-let s:base1   = "#585c64"
-let s:base0   = "#80848d"
-let s:base_1  = "#d0d5de"
-let s:base_2  = "#f0f5ff"
-let s:red     = "#b05353"
-let s:orange  = "#c8946d"
-let s:yellow  = "#e4c374"
-let s:green   = "#a0bc65"
-let s:cyan    = "#88b8b0"
-let s:blue    = "#7aa4c9"
-let s:violet  = "#887cb2"
-let s:magenta = "#b577a7"
+" Palette
+let s:base4        = ["#202226", 235]
+let s:base3        = ["#303338", 236]
+let s:base2        = ["#40434a", 238]
+let s:base1        = ["#585c64",  59]
+let s:base0        = ["#80848d", 102]
+let s:base_1       = ["#d0d5de", 188]
+let s:base_2       = ["#f0f5ff", 255]
+let s:red          = ["#b05353", 131]
+let s:orange       = ["#c8946d", 173]
+let s:yellow       = ["#e4c374", 179]
+let s:green        = ["#a0bc65", 107]
+let s:cyan         = ["#88b8b0", 109]
+let s:blue         = ["#7aa4c9", 110]
+let s:violet       = ["#887cb2", 103]
+let s:magenta      = ["#b577a7", 139]
 
-let s:diff_added   = "#323e1b"
-let s:diff_removed = "#532626"
-let s:diff_changed = "#594913"
-let s:diff_fine    = "#81691b"
+let s:diff_added   = ["#323e1b", 237]
+let s:diff_removed = ["#532626", 236]
+let s:diff_changed = ["#594913",  58]
+let s:diff_fine    = ["#81691b",  94]
 
-let s:base4_256   = "#1c1c1c"
-let s:base3_256   = "#303030"
-let s:base2_256   = "#444444"
-let s:base1_256   = "#585858"
-let s:base0_256   = "#808080"
-let s:base_1_256  = "#d0d0d0"
-let s:base_2_256  = "#eeeeee"
-let s:red_256     = "#d18686"
-let s:orange_256  = "#c8946d"
-let s:yellow_256  = "#cfc770"
-let s:green_256   = "#9eb576"
-let s:cyan_256    = "#89b7b0"
-let s:blue_256    = "#87aed1"
-let s:violet_256  = "#9889c1"
-let s:magenta_256 = "#b985ad"
 
+" Definitions
 let s:color = {}
-let s:color['Normal']          = { 'guifg': s:base_1,      'guibg': s:base4,                               }
-let s:color['Cursor']          = { 'guifg': 'NONE',        'guibg': s:base_1,      'gui': 'NONE'           }
-let s:color['CursorIM']        = { 'guifg': 'NONE',        'guibg': s:base_1,                              }
-let s:color['CursorLine']      = { 'guifg': 'NONE',        'guibg': s:base3,       'gui': 'NONE'           }
-let s:color['CursorColumn']    = { 'guifg': 'NONE',        'guibg': s:base3,       'gui': 'NONE'           }
-let s:color['Visual']          = { 'guifg': 'NONE',        'guibg': s:base2,       'gui': 'NONE'           }
-let s:color['VisualNOS']       = { 'guifg': 'fg',                                  'gui': 'underline'      }
+let s:color['Normal']          = { 'fg': s:base_1,         'bg': s:base4,                                   }
+let s:color['Cursor']          = { 'fg': 'NONE',           'bg': s:base_1,         'deco': 'NONE'           }
+let s:color['CursorIM']        = { 'fg': 'NONE',           'bg': s:base_1,                                  }
+let s:color['CursorLine']      = { 'fg': 'NONE',           'bg': s:base3,          'deco': 'NONE'           }
+let s:color['CursorColumn']    = { 'fg': 'NONE',           'bg': s:base3,          'deco': 'NONE'           }
+let s:color['Visual']          = { 'fg': 'NONE',           'bg': s:base2,          'deco': 'NONE'           }
+let s:color['VisualNOS']       = { 'fg': 'fg',                                     'deco': 'underline'      }
 
-let s:color['Folded']          = { 'guifg': '#a0a8b0',     'guibg': '#384048',     'gui': 'NONE'           }
-let s:color['FoldColumn']      = { 'guifg': '#a0a8b0',     'guibg': '#384048',     'gui': 'NONE'           }
-let s:color['Folded']          = { 'guifg': '#d0e0f0',     'guibg': '#202020',     'gui': 'NONE'           }
-let s:color['FoldColumn']      = { 'guifg': '#c0c0d0',     'guibg': '#363946',     'gui': 'NONE'           }
-let s:color['Title']           = { 'guifg': '#f6f3e8',     'guibg': 'NONE',        'gui': 'bold'           }
-let s:color['StatusLine']      = { 'guifg': s:base_2,      'guibg': s:base2,       'gui': 'NONE'           }
-let s:color['StatusLineNC']    = { 'guifg': s:base0,       'guibg': s:base3,       'gui': 'NONE'           }
-let s:color['VertSplit']       = { 'guifg': s:base0,       'guibg': s:base2,       'gui': 'NONE'           }
-let s:color['LineNr']          = { 'guifg': s:base1,       'guibg': s:base3,       'gui': 'NONE'           }
-let s:color['CursorLineNR']    = { 'guifg': s:base_2,      'guibg': s:base3,       'gui': 'bold'           }
-let s:color['SpecialKey']      = { 'guifg': '#808080',     'guibg': '#343434',     'gui': 'NONE'           }
-let s:color['NonText']         = { 'guifg': s:base1,       'guibg': s:base4,       'gui': 'NONE'           }
-let s:color['MatchParen']      = { 'guifg': '#ff0000',     'guibg': 'NONE',        'gui': 'bold'           }
-let s:color['Pmenu']           = { 'guifg': '#f6f3e8',     'guibg': '#444444'                              }
-let s:color['PmenuSel']        = { 'guifg': '#000000',     'guibg': '#cae682'                              }
+let s:color['Folded']          = { 'fg': ['#a0a8b0', 248], 'bg': ['#384048', 238], 'deco': 'NONE'           }
+let s:color['FoldColumn']      = { 'fg': ['#a0a8b0', 248], 'bg': ['#384048', 238], 'deco': 'NONE'           }
+let s:color['Folded']          = { 'fg': ['#d0e0f0', 253], 'bg': ['#202020', 234], 'deco': 'NONE'           }
+let s:color['FoldColumn']      = { 'fg': ['#c0c0d0',   7], 'bg': ['#363946', 237], 'deco': 'NONE'           }
+let s:color['Title']           = { 'fg': ['#f6f3e8', 255], 'bg': 'NONE',           'deco': 'bold'           }
+let s:color['StatusLine']      = { 'fg': s:base_2,         'bg': s:base2,          'deco': 'NONE'           }
+let s:color['StatusLineNC']    = { 'fg': s:base0,          'bg': s:base3,          'deco': 'NONE'           }
+let s:color['VertSplit']       = { 'fg': s:base0,          'bg': s:base2,          'deco': 'NONE'           }
+let s:color['LineNr']          = { 'fg': s:base1,          'bg': s:base3,          'deco': 'NONE'           }
+let s:color['CursorLineNR']    = { 'fg': s:base_2,         'bg': s:base3,          'deco': 'bold'           }
+let s:color['SpecialKey']      = { 'fg': ['#808080',   8], 'bg': ['#343434',   8], 'deco': 'NONE'           }
+let s:color['NonText']         = { 'fg': s:base1,          'bg': s:base4,          'deco': 'NONE'           }
+let s:color['MatchParen']      = { 'fg': ['#ff0000',   9], 'bg': 'NONE',           'deco': 'bold'           }
+let s:color['Pmenu']           = { 'fg': ['#f6f3e8', 255], 'bg': ['#444444', 238]                           }
+let s:color['PmenuSel']        = { 'fg': ['#000000',   0], 'bg': ['#cae682', 186]                           }
 
-let s:color['Comment']         = { 'guifg': s:base1,                               'gui': 'NONE'           }
-let s:color['Constant']        = { 'guifg': s:violet,                              'gui': 'NONE'           }
-let s:color['String']          = { 'guifg': s:cyan,                                'gui': 'NONE'           }
-let s:color['Number']          = { 'guifg': s:red,                                 'gui': 'NONE'           }
-let s:color['Identifier']      = { 'guifg': s:green,                               'gui': 'NONE'           }
-let s:color['Function']        = { 'guifg': s:yellow,                              'gui': 'italic'         }
-let s:color['Statement']       = { 'guifg': s:blue,                                'gui': 'NONE'           }
-let s:color['Operator']        = { 'guifg': s:yellow,                              'gui': 'NONE'           }
-let s:color['PreProc']         = { 'guifg': s:magenta,                             'gui': 'NONE'           }
-let s:color['Type']            = { 'guifg': s:violet,                              'gui': 'NONE'           }
-let s:color['StorageClass']    = { 'guifg': s:blue,                                'gui': 'NONE'           }
-let s:color['Structure']       = { 'guifg': s:blue,                                'gui': 'NONE'           }
-let s:color['Typedef']         = { 'guifg': s:blue,                                'gui': 'NONE'           }
-let s:color['Special']         = { 'guifg': s:magenta,                             'gui': 'NONE'           }
-let s:color['Underlined']      = { 'guifg': 'fg',                                  'gui': 'underline'      }
-let s:color['Ignore']          = { 'guifg': 'bg'                                                           }
-let s:color['Error']           = { 'guifg': '#800000',     'guibg': '#d16464',     'gui': 'bold'           }
-let s:color['Todo']            = { 'guifg': '#000000',     'guibg': '#ffff00',     'gui': 'bold'           }
+let s:color['Comment']         = { 'fg': s:base1,                                  'deco': 'NONE'           }
+let s:color['Constant']        = { 'fg': s:violet,                                 'deco': 'NONE'           }
+let s:color['String']          = { 'fg': s:cyan,                                   'deco': 'NONE'           }
+let s:color['Number']          = { 'fg': s:red,                                    'deco': 'NONE'           }
+let s:color['Identifier']      = { 'fg': s:green,                                  'deco': 'NONE'           }
+let s:color['Function']        = { 'fg': s:yellow,                                 'deco': 'italic'         }
+let s:color['Statement']       = { 'fg': s:blue,                                   'deco': 'NONE'           }
+let s:color['Operator']        = { 'fg': s:yellow,                                 'deco': 'NONE'           }
+let s:color['PreProc']         = { 'fg': s:magenta,                                'deco': 'NONE'           }
+let s:color['Type']            = { 'fg': s:violet,                                 'deco': 'NONE'           }
+let s:color['StorageClass']    = { 'fg': s:blue,                                   'deco': 'NONE'           }
+let s:color['Structure']       = { 'fg': s:blue,                                   'deco': 'NONE'           }
+let s:color['Typedef']         = { 'fg': s:blue,                                   'deco': 'NONE'           }
+let s:color['Special']         = { 'fg': s:magenta,                                'deco': 'NONE'           }
+let s:color['Underlined']      = { 'fg': 'fg',                                     'deco': 'underline'      }
+let s:color['Ignore']          = { 'fg': 'bg'                                                               }
+let s:color['Error']           = { 'fg': ['#800000',   1], 'bg': ['#d16464', 167], 'deco': 'bold'           }
+let s:color['Todo']            = { 'fg': ['#000000',   0], 'bg': ['#ffff00',  11], 'deco': 'bold'           }
 
-let s:color['IncSearch']       = { 'guifg': s:base4,       'guibg': s:orange,      'gui': 'NONE'           }
-let s:color['Search']          = {                         'guibg': s:yellow,      'gui': 'NONE'           }
-let s:color['PMenuSbar']       = {                         'guibg': '#505860',     'gui': 'NONE'           }
-let s:color['PMenuThumb']      = {                         'guibg': '#808890',     'gui': 'NONE'           }
-let s:color['TabLine']         = { 'guifg': s:base1,       'guibg': s:base3,       'gui': 'NONE'           }
-let s:color['TabLineSel']      = { 'guifg': s:cyan,        'guibg': s:base3,       'gui': 'bold'           }
-let s:color['TabLineFill']     = { 'guifg': '#b6bf98',     'guibg': s:base3,       'gui': 'NONE'           }
+let s:color['IncSearch']       = { 'fg': s:base4,          'bg': s:orange,         'deco': 'NONE'           }
+let s:color['Search']          = {                         'bg': s:yellow,         'deco': 'NONE'           }
+let s:color['PMenuSbar']       = {                         'bg': ['#505860', 240], 'deco': 'NONE'           }
+let s:color['PMenuThumb']      = {                         'bg': ['#808890', 102], 'deco': 'NONE'           }
+let s:color['TabLine']         = { 'fg': s:base1,          'bg': s:base3,          'deco': 'NONE'           }
+let s:color['TabLineSel']      = { 'fg': s:cyan,           'bg': s:base3,          'deco': 'bold'           }
+let s:color['TabLineFill']     = { 'fg': ['#b6bf98', 144], 'bg': s:base3,          'deco': 'NONE'           }
 
-let s:color['SpellBad']        = {                                                 'gui': 'undercurl'      }
-let s:color['SpellCap']        = {                                                 'gui': 'undercurl'      }
-let s:color['SpellRare']       = {                                                 'gui': 'undercurl'      }
-let s:color['SpellLocal']      = {                                                 'gui': 'undercurl'      }
+let s:color['SpellBad']        = {                                                 'deco': 'undercurl'      }
+let s:color['SpellCap']        = {                                                 'deco': 'undercurl'      }
+let s:color['SpellRare']       = {                                                 'deco': 'undercurl'      }
+let s:color['SpellLocal']      = {                                                 'deco': 'undercurl'      }
 
-let s:color['DiffAdd']         = { 'guifg': s:green,       'guibg': s:diff_added,  'gui': 'NONE'           }
-let s:color['DiffChange']      = { 'guifg': s:yellow,      'guibg': s:diff_changed,'gui': 'NONE'           }
-let s:color['DiffDelete']      = { 'guifg': s:red,         'guibg': s:diff_removed,'gui': 'NONE'           }
-let s:color['DiffText']        = { 'guifg': s:yellow,      'guibg': s:diff_fine,   'gui': 'bold'           }
+let s:color['DiffAdd']         = { 'fg': s:green,          'bg': s:diff_added,     'deco': 'NONE'           }
+let s:color['DiffChange']      = { 'fg': s:yellow,         'bg': s:diff_changed,   'deco': 'NONE'           }
+let s:color['DiffDelete']      = { 'fg': s:red,            'bg': s:diff_removed,   'deco': 'NONE'           }
+let s:color['DiffText']        = { 'fg': s:yellow,         'bg': s:diff_fine,      'deco': 'bold'           }
 
-let s:color['diffAdded']       = { 'guifg': s:green,       'guibg': s:diff_added,  'gui': 'NONE'           }
-let s:color['diffRemoved']     = { 'guifg': s:red,         'guibg': s:diff_removed,'gui': 'NONE'           }
+let s:color['diffAdded']       = { 'fg': s:green,          'bg': s:diff_added,     'deco': 'NONE'           }
+let s:color['diffRemoved']     = { 'fg': s:red,            'bg': s:diff_removed,   'deco': 'NONE'           }
 
-let s:color['Directory']       = { 'guifg': '#c0e0b0',                             'gui': 'NONE'           }
-let s:color['ErrorMsg']        = { 'guifg': '#ee0000',     'guibg': 'NONE',        'gui': 'NONE'           }
-let s:color['SignColumn']      = { 'guifg': '#9fafaf',     'guibg': '#181818',     'gui': 'NONE'           }
-let s:color['MoreMsg']         = { 'guifg': '#2e8b57',                             'gui': 'NONE'           }
-let s:color['ModeMsg']         = { 'guifg': '#76d5f8',     'guibg': 'NONE',        'gui': 'NONE'           }
-let s:color['Question']        = { 'guifg': 'fg',                                  'gui': 'NONE'           }
-let s:color['WarningMsg']      = { 'guifg': '#e5786d',                             'gui': 'NONE'           }
-let s:color['WildMenu']        = { 'guifg': '#cae682',     'guibg': '#363946',     'gui': 'bold,underline' }
-let s:color['ColorColumn']     = { 'guifg': 'NONE',        'guibg': '#403630',     'gui': 'NONE'           }
+let s:color['Directory']       = { 'fg': ['#c0e0b0', 151],                         'deco': 'NONE'           }
+let s:color['ErrorMsg']        = { 'fg': ['#ee0000',   9], 'bg': 'NONE',           'deco': 'NONE'           }
+let s:color['SignColumn']      = { 'fg': ['#9fafaf', 145], 'bg': ['#181818', 234], 'deco': 'NONE'           }
+let s:color['MoreMsg']         = { 'fg': ['#2e8b57',  29],                         'deco': 'NONE'           }
+let s:color['ModeMsg']         = { 'fg': ['#76d5f8',  81], 'bg': 'NONE',           'deco': 'NONE'           }
+let s:color['Question']        = { 'fg': 'fg',                                     'deco': 'NONE'           }
+let s:color['WarningMsg']      = { 'fg': ['#e5786d', 174],                         'deco': 'NONE'           }
+let s:color['WildMenu']        = { 'fg': ['#cae682', 186], 'bg': ['#363946', 237], 'deco': 'bold,underline' }
+let s:color['ColorColumn']     = { 'fg': 'NONE',           'bg': ['#403630', 237], 'deco': 'NONE'           }
 
 hi phpFunctions NONE
 hi phpClasses   NONE
@@ -129,5 +116,37 @@ hi link phpFunction Function
 hi link phpClass    Type
 
 for [name, def] in items(s:color)
-    execute 'hi ' . name . ' ' . join(values(map(copy(def), 'v:key . "=" . v:val')), ' ')
+    let def2 = {}
+    for [key, val] in items(def)
+      if key ==# 'fg'
+        if type(val) ==# 3
+          let def2.guifg = val[0]
+          let def2.ctermfg = val[1]
+        elseif type(val) ==# 1
+          let def2.guifg = val
+        elseif type(val) ==# 0
+          let def2.ctermfg = val
+        endif
+      elseif key ==# 'bg'
+        if type(val) ==# 3
+          let def2.guibg = val[0]
+          let def2.ctermbg = val[1]
+        elseif type(val) ==# 1
+          let def2.guibg = val
+        elseif type(val) ==# 0
+          let def2.ctermbg = val
+        endif
+      elseif key ==# 'deco'
+        if type(val) ==# 3
+          let def2.gui = val[0]
+          let def2.cterm = val[1]
+        elseif type(val) ==# 1
+          let def2.gui = val
+        elseif type(val) ==# 0
+          let def2.cterm = val
+        endif
+      endif
+      unlet val
+    endfor
+    execute 'hi ' . name . ' ' . join(values(map(copy(def2), 'v:key . "=" . v:val')), ' ')
 endfor
