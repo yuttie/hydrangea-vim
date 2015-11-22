@@ -116,6 +116,7 @@ hi link phpFunction Function
 hi link phpClass    Type
 
 for [name, def] in items(s:color)
+  if type(def) ==# 4 && len(def) > 0
     let def2 = {}
     for [key, val] in items(def)
       if key ==# 'fg'
@@ -148,5 +149,6 @@ for [name, def] in items(s:color)
       endif
       unlet val
     endfor
-    execute 'hi ' . name . ' ' . join(values(map(copy(def2), 'v:key . "=" . v:val')), ' ')
+    execute 'highlight ' . name . ' ' . join(values(map(copy(def2), 'v:key . "=" . v:val')), ' ')
+  endif
 endfor
