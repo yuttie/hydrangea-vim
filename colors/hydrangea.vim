@@ -1,12 +1,12 @@
-" Name:     hydrangea.vim --- A hydrangea theme for Vim
+" Name:     hydrangea.vim --- Hydrangea theme for Vim
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 " URL:      https://github.com/yuttie/hydrangea-theme
 
 hi clear
-if exists("syntax_on")
-    syntax reset
+if exists('syntax_on')
+  syntax reset
 endif
-let colors_name = "steady-dark"
+let g:colors_name = 'hydrangea'
 
 set background=dark
 
@@ -115,6 +115,8 @@ let s:color['phpClasses']   = 'NONE'
 let s:color['phpFunction']  = 'Function'
 let s:color['phpClass']     = 'Type'
 
+
+" Apply
 for [name, def] in items(s:color)
   if type(def) ==# 1
     if def ==# 'NONE'
