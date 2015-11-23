@@ -2,16 +2,17 @@
 """to256.py
 
 Usage:
-  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>]
+  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>] [--grayscale | --chromatic]
   to256.py benchmark [--samples=<number>]
   to256.py (-h | --help)
 
 Options:
-  --metric=<name>         Metric to measure similarities among colors [default: euclidean/rgb].
-  --type=<name>           Type of output representation of picked colors [default: code].
-  --top=<number>          Output top-<number> similar colors [default: 1].
-  -n, --samples=<number>  Number of color samples [default: 100].
-  -h, --help              Show this message.
+  --metric=<name>           Metric to measure similarities among colors [default: euclidean/rgb].
+  --type=<name>             Type of output representation of picked colors [default: code].
+  --top=<number>            Output top-<number> similar colors [default: 1].
+  --grayscale, --chromatic  Include only grayscale/chromatic colors.
+  -n, --samples=<number>    Number of color samples [default: 100].
+  -h, --help                Show this message.
 """
 from docopt import docopt
 from bisect import insort
@@ -125,6 +126,10 @@ def approx(color, palette, metric):
         insort(ranking, (d, i))
     return ranking
 
+# Grayscale / Chromatic
+def is_grayscale(color):
+    return color[0] == color[1] == color[2]
+
 
 # main
 args = docopt(__doc__)
@@ -155,7 +160,14 @@ if args['pick']:
             ranking = approx(lab, palette, metric)
         else:
             raise
-        indices = map(lambda x: x[1], islice(ranking, 0, int(args['--top'])))
+        indices = map(lambda x: x[1], ranking)
+        if args['--grayscale']:
+            indices = filter(lambda i:     is_grayscale(XTERM_COLORS[i]), indices)
+        elif args['--chromatic']:
+            indices = filter(lambda i: not is_grayscale(XTERM_COLORS[i]), indices)
+        else:
+            pass
+        indices = islice(indices, 0, int(args['--top']))
         if args['--type'] == 'code':
             print(' '.join(map(lambda i: '{:d}'.format(i), indices)))
         elif args['--type'] == 'hex':
