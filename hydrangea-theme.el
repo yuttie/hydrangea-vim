@@ -40,7 +40,7 @@
       (red      "#b05353"   "#af5f5f")
       (orange   "#c8946d"   "#d7875f")
       (yellow   "#e4c374"   "#d7af5f")
-      (green    "#a0bc65"   "#87af5f")
+      (green    "#a0bc65"   "#afaf5f")
       (cyan     "#88b8b0"   "#87afaf")
       (blue     "#7aa4c9"   "#87afd7")
       (violet   "#887cb2"   "#8787af")
