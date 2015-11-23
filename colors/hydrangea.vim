@@ -1,7 +1,7 @@
 " Name:     hydrangea.vim --- Hydrangea theme for Vim
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 " URL:      https://github.com/yuttie/hydrangea-theme
-" Version:  2.0.0
+" Version:  2.0.1
 
 hi clear
 if exists('syntax_on')
