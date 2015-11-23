@@ -1,7 +1,9 @@
-# Hydrangea: a theme and a theme framework for Emacs
+# Hydrangea theme
 
-This is a ["Custom theme"](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html)
-for Emacs 24 or above.
+This repository includes
+["Custom theme"](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html)
+for Emacs 24 or above,
+and a color scheme file for Vim.
 
 ![Screenshot of Emacs Lisp](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-elisp.png)
 
@@ -10,14 +12,16 @@ for Emacs 24 or above.
 
 * A dark theme with main colors from hydrangea flowers
 * Midnight blue is used as the background color
-* The theme comes with a minor mode for adjusting its [HSL components](https://en.wikipedia.org/wiki/HSL_and_HSV) on-the-fly
-* You can make the adjustment persistent through custom variables
 * Also an Xresources file is included which provides colors based on the palette
+* Emacs: The theme comes with a minor mode for adjusting its [HSL components](https://en.wikipedia.org/wiki/HSL_and_HSV) on-the-fly
+* Emacs: You can make the adjustment persistent through custom variables
 
 
 ## Installation
 
-### For El-Get users
+### Emacs
+
+##### For El-Get users
 
 You can define a local recipe and call `el-get`:
 
@@ -44,7 +48,9 @@ You can define a local recipe and call `el-get`:
                           "(let ((generated-autoload-file (expand-file-name \"hydrangea-autoloads.el\" \".\")) (backup-inhibited t)) (update-directory-autoloads \".\"))")))
 ```
 
+### Vim
 
-## TODO
-
-* [ ] Add screenshots
+##### For vim-plug users
+```viml
+Plug 'yuttie/hydrangea-theme'
+```
