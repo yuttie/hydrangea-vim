@@ -28,8 +28,8 @@ let s:blue         = ["#7aa4c9", 110]
 let s:violet       = ["#887cb2", 103]
 let s:magenta      = ["#b577a7", 139]
 
-let s:diff_added   = ["#323e1b", 237]
-let s:diff_removed = ["#532626", 236]
+let s:diff_added   = ["#323e1b",  58]
+let s:diff_removed = ["#532626",  52]
 let s:diff_changed = ["#594913",  58]
 let s:diff_fine    = ["#81691b",  94]
 
