@@ -4,7 +4,7 @@
 
 ;; Author: Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 ;; Keywords: theme, dark
-;; Version: 1.0.0
+;; Version: 2.0.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
