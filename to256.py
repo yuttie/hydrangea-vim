@@ -2,7 +2,7 @@
 """to256.py
 
 Usage:
-  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>] [--grayscale | --chromatic]
+  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>] [--grayscale | --chromatic] [--show-input]
   to256.py benchmark [--samples=<number>]
   to256.py (-h | --help)
 
@@ -168,6 +168,8 @@ if args['pick']:
         else:
             pass
         indices = islice(indices, 0, int(args['--top']))
+        if args['--show-input']:
+            print('{}: '.format(color), end='')
         if args['--type'] == 'code':
             print(' '.join(map(lambda i: '{:d}'.format(i), indices)))
         elif args['--type'] == 'hex':
