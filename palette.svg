@@ -5895,7 +5895,7 @@
          y="160.99878"
          style="font-size:15px;text-align:center;text-anchor:middle">Magenta</tspan></text>
     <rect
-       style="fill:#753636;fill-opacity:1;stroke:#ffffff"
+       style="fill:#823e3e;fill-opacity:1;stroke:#ffffff"
        id="rect9205"
        width="39.164684"
        height="39.164684"
@@ -5907,9 +5907,9 @@
        height="39.164684"
        width="39.164684"
        id="rect9207"
-       style="fill:#7d671a;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#a88c24;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#5d7231;fill-opacity:1;stroke:#ffffff"
+       style="fill:#698038;fill-opacity:1;stroke:#ffffff"
        id="rect9209"
        width="39.164684"
        height="39.164684"
@@ -5921,16 +5921,16 @@
        height="39.164684"
        width="39.164684"
        id="rect9211"
-       style="fill:#355e83;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#416d97;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#4d4371;fill-opacity:1;stroke:#ffffff"
+       style="fill:#5f5484;fill-opacity:1;stroke:#ffffff"
        id="rect9213"
        width="39.164684"
        height="39.164684"
        x="481.95276"
        y="513.75336" />
     <rect
-       style="fill:#47776f;fill-opacity:1;stroke:#ffffff"
+       style="fill:#53857d;fill-opacity:1;stroke:#ffffff"
        id="rect9215"
        width="39.164684"
        height="39.164684"
@@ -6256,9 +6256,9 @@
        id="text9217"
        y="566.25867"
        x="136.83406"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;fill-opacity:1;"
          y="566.25867"
          x="136.83406"
          id="tspan9219"
