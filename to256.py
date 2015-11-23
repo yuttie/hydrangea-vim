@@ -2,16 +2,20 @@
 """to256.py
 
 Usage:
-  to256.py pick <color>... [--metric=<name>]
+  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>]
   to256.py benchmark [--samples=<number>]
   to256.py (-h | --help)
 
 Options:
   --metric=<name>         Metric to measure similarities among colors [default: euclidean/rgb].
+  --type=<name>           Type of output representation of picked colors [default: code].
+  --top=<number>          Output top-<number> similar colors [default: 1].
   -n, --samples=<number>  Number of color samples [default: 100].
   -h, --help              Show this message.
 """
 from docopt import docopt
+from bisect import insort
+from itertools import islice
 from math   import sqrt
 from random import randint
 import sys
@@ -115,14 +119,11 @@ def delta_e(color1, color2):
 
 # Approximation
 def approx(color, palette, metric):
-    min_i = -1
-    min_dist = sys.float_info.max
+    ranking = []
     for i, c in enumerate(palette):
         d = metric(color, c)
-        if d < min_dist:
-            min_i = i
-            min_dist = d
-    return min_i
+        insort(ranking, (d, i))
+    return ranking
 
 
 # main
@@ -148,13 +149,21 @@ if args['pick']:
         else:
             raise
         if space == 'rgb':
-            i = approx(rgb, palette, metric)
+            ranking = approx(rgb, palette, metric)
         elif space == 'lab':
             lab = xyz2lab(rgb2xyz(rgb))
-            i = approx(lab, palette, metric)
+            ranking = approx(lab, palette, metric)
         else:
             raise
-        print(i)
+        indices = map(lambda x: x[1], islice(ranking, 0, int(args['--top'])))
+        if args['--type'] == 'code':
+            print(' '.join(map(lambda i: '{:d}'.format(i), indices)))
+        elif args['--type'] == 'hex':
+            print(' '.join(map(lambda i: '#{:02x}{:02x}{:02x}'.format(*XTERM_COLORS[i]), indices)))
+        elif args['--type'] == 'HEX':
+            print(' '.join(map(lambda i: '#{:02X}{:02X}{:02X}'.format(*XTERM_COLORS[i]), indices)))
+        else:
+            raise
 
 if args['benchmark']:
     print('''<!doctype html>
