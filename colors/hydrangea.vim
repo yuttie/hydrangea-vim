@@ -154,7 +154,6 @@ for [s:name, s:def] in items(s:color)
           let s:def2.cterm = s:val[1]
         elseif type(s:val) ==# 1
           let s:def2.gui = s:val
-        elseif type(s:val) ==# 0
           let s:def2.cterm = s:val
         endif
       endif
