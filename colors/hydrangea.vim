@@ -144,6 +144,7 @@ for [s:name, s:def] in items(s:color)
     if s:def ==# 'NONE'
       " Disable
       execute 'highlight ' . s:name . ' NONE'
+      execute 'highlight link ' . s:name . ' NONE'
     else
       " Link
       execute 'highlight link ' . s:name . ' ' . s:def
