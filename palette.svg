@@ -5515,7 +5515,7 @@
        height="47.465454"
        width="136.85295"
        id="rect11533"
-       style="fill:#323e1b;fill-opacity:1" />
+       style="fill:#383e1b;fill-opacity:1" />
     <text
        sodipodi:linespacing="125%"
        id="use10423"
@@ -5706,7 +5706,7 @@
        height="39.164684"
        width="39.164684"
        id="rect4828"
-       style="fill:#a0bc65;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#adbc65;fill-opacity:1;stroke:#ffffff" />
     <rect
        style="fill:#7aa4c9;fill-opacity:1;stroke:#ffffff"
        id="rect4830"
@@ -5909,7 +5909,7 @@
        id="rect9207"
        style="fill:#a88c24;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#698038;fill-opacity:1;stroke:#ffffff"
+       style="fill:#7d8a3c;fill-opacity:1;stroke:#ffffff"
        id="rect9209"
        width="39.164684"
        height="39.164684"
@@ -5949,7 +5949,7 @@
          rx="19.582342"
          ry="19.582342" />
       <rect
-         style="fill:#a0bc65;fill-opacity:1;stroke:none"
+         style="fill:#adbc65;fill-opacity:1;stroke:none"
          id="rect9279"
          width="39.164684"
          height="39.164684"
@@ -6005,7 +6005,7 @@
       <rect
          ry="19.582342"
          rx="19.582342"
-         style="fill:#a0bc65;fill-opacity:1;stroke:none"
+         style="fill:#adbc65;fill-opacity:1;stroke:none"
          id="rect12469"
          width="39.164684"
          height="39.164684"
@@ -6151,7 +6151,7 @@
          style="font-size:20px;fill:#e2ca76;fill-opacity:1">diff</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a0bc65;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#adbc65;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="355.51855"
        y="447.14432"
        id="text9396"
@@ -6160,7 +6160,7 @@
          id="tspan9398"
          x="355.51855"
          y="447.14432"
-         style="font-size:20px;fill:#a0bc65;fill-opacity:1">diff</tspan></text>
+         style="font-size:20px;fill:#adbc65;fill-opacity:1;">diff</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9400"
@@ -6224,7 +6224,7 @@
        id="rect9271"
        style="fill:#e4c374;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#a0bc65;fill-opacity:1;stroke:#ffffff"
+       style="fill:#adbc65;fill-opacity:1;stroke:#ffffff"
        id="rect9273"
        width="39.164684"
        height="39.164684"
@@ -6256,9 +6256,9 @@
        id="text9217"
        y="566.25867"
        x="136.83406"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#7d8a3c;fill-opacity:1;stroke:none;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;fill-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#7d8a3c;fill-opacity:1;"
          y="566.25867"
          x="136.83406"
          id="tspan9219"
