@@ -132,6 +132,13 @@ let s:color['WarningMsg']   = { 'fg': ['#e5786d', 174],                         
 let s:color['WildMenu']     = { 'fg': ['#cae682', 186], 'bg': ['#363946', 237], 'deco': 'bold,underline' }
 let s:color['ColorColumn']  = { 'fg': 'NONE',           'bg': ['#403630', 237], 'deco': 'NONE'           }
 
+" make
+let s:color['makeIdent']      = 'Type'
+let s:color['makeSpecTarget'] = 'Special'
+let s:color['makeTarget']     = 'Function'
+let s:color['makeCommands']   = 'NONE'
+
+" php
 let s:color['phpFunctions'] = 'NONE'
 let s:color['phpClasses']   = 'NONE'
 let s:color['phpFunction']  = 'Function'
