@@ -39,7 +39,7 @@ let s:violet  = ["#887cb2", 103]
 let s:magenta = ["#b577a7", 139]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left     = [ [ s:base3,  s:green  ], [ s:base_1, s:base1 ] ]
+let s:p.normal.left     = [ [ s:base3,  s:violet ], [ s:base_1, s:base1 ] ]
 let s:p.normal.middle   = [ [ s:base0,  s:base2  ],                       ]
 let s:p.normal.right    = [ [ s:base3,  s:base0  ], [ s:base_1, s:base1 ] ]
 
@@ -57,6 +57,6 @@ let s:p.normal.warning  = [ [ s:yellow, s:base1  ] ]
 let s:p.tabline.left    = [ [ s:base0,  s:base2  ] ]
 let s:p.tabline.middle  = [ [ s:base0,  s:base3  ] ]
 let s:p.tabline.right   = [ [ s:base3,  s:base1  ] ]
-let s:p.tabline.tabsel  = [ [ s:base3,  s:violet ] ]
+let s:p.tabline.tabsel  = [ [ s:base3,  s:cyan   ] ]
 
 let g:lightline#colorscheme#hydrangea#palette = lightline#colorscheme#flatten(s:p)
