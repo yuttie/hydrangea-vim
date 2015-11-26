@@ -148,6 +148,7 @@ let s:color['phpClass']     = 'Type'
 " Apply
 for [s:name, s:def] in items(s:color)
   if type(s:def) ==# 1
+    " The definition is a string
     if s:def ==# 'NONE'
       " Disable
       execute 'highlight ' . s:name . ' NONE'
@@ -157,12 +158,16 @@ for [s:name, s:def] in items(s:color)
       execute 'highlight link ' . s:name . ' ' . s:def
     endif
   elseif type(s:def) ==# 4 && len(s:def) > 0
+    " The definition is a dictionary
     let s:def2 = {}
     for [s:key, s:val] in items(s:def)
       if s:key ==# 'fg'
         if type(s:val) ==# 3
           let s:def2.guifg = s:val[0]
           let s:def2.ctermfg = s:val[1]
+        elseif type(s:val) ==# 1 && s:val ==# 'NONE'
+          let s:def2.guifg = s:val
+          let s:def2.ctermfg = s:val
         elseif type(s:val) ==# 1
           let s:def2.guifg = s:val
         elseif type(s:val) ==# 0
@@ -172,6 +177,9 @@ for [s:name, s:def] in items(s:color)
         if type(s:val) ==# 3
           let s:def2.guibg = s:val[0]
           let s:def2.ctermbg = s:val[1]
+        elseif type(s:val) ==# 1 && s:val ==# 'NONE'
+          let s:def2.guibg = s:val
+          let s:def2.ctermbg = s:val
         elseif type(s:val) ==# 1
           let s:def2.guibg = s:val
         elseif type(s:val) ==# 0
