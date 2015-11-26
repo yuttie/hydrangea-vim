@@ -38,12 +38,19 @@ let s:blue    = ["#7aa4c9", 110]
 let s:violet  = ["#887cb2", 103]
 let s:magenta = ["#b577a7", 139]
 
+let s:blue0 = s:blue
+let s:blue1 = ["#365f85",  67]
+let s:blue2 = ["#244059",  24]
+
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base3,  s:green  ], [ s:base_1, s:base1 ] ]
 let s:p.normal.middle   = [ [ s:base0,  s:base2  ],                       ]
 let s:p.normal.right    = [ [ s:base3,  s:base0  ], [ s:base_1, s:base1 ] ]
 
-let s:p.insert.left     = [ [ s:base3,  s:blue   ], [ s:base_1, s:base1 ] ]
+let s:p.insert.left     = [ [ s:blue1,  s:base_1 ], [ s:base_1, s:blue1 ] ]
+let s:p.insert.middle   = [ [ s:blue0,  s:blue2  ]                        ]
+let s:p.insert.right    = [ [ s:blue1,  s:blue0  ], [ s:blue0, s:blue1  ] ]
+
 let s:p.visual.left     = [ [ s:base3,  s:yellow ], [ s:base_1, s:base1 ] ]
 let s:p.replace.left    = [ [ s:base3,  s:red    ], [ s:base_1, s:base1 ] ]
 
