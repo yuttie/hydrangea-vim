@@ -6263,6 +6263,51 @@
          x="136.83406"
          id="tspan9219"
          sodipodi:role="line">Terminal</tspan></text>
+    <rect
+       y="659.27399"
+       x="206.13397"
+       height="39.164684"
+       width="39.164684"
+       id="rect11545"
+       style="fill:#365f85;fill-opacity:1;stroke:#ffffff" />
+    <rect
+       style="fill:#244059;fill-opacity:1;stroke:#ffffff"
+       id="rect11547"
+       width="39.164684"
+       height="39.164684"
+       x="261.29773"
+       y="659.27399" />
+    <rect
+       y="659.27399"
+       x="150.97021"
+       height="39.164684"
+       width="39.164684"
+       id="rect9221"
+       style="fill:#7aa4c9;fill-opacity:1;stroke:#ffffff" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="136.83406"
+       y="686.25867"
+       id="text9221"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9223"
+         x="136.83406"
+         y="686.25867"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;fill-opacity:1">insert mode</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9225"
+       y="646.25867"
+       x="136.83406"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;fill-opacity:1"
+         y="646.25867"
+         x="136.83406"
+         id="tspan9227"
+         sodipodi:role="line">Powerline</tspan></text>
   </g>
   <style
      id="style7306">
