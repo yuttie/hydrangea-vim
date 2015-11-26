@@ -129,7 +129,7 @@ let s:color['MoreMsg']      = { 'fg': ['#2e8b57',  29],                         
 let s:color['ModeMsg']      = { 'fg': ['#76d5f8',  81], 'bg': 'NONE',            'deco': 'NONE'           }
 let s:color['Question']     = { 'fg': 'fg',                                      'deco': 'NONE'           }
 let s:color['WarningMsg']   = { 'fg': ['#e5786d', 174],                          'deco': 'NONE'           }
-let s:color['WildMenu']     = { 'fg': ['#cae682', 186], 'bg': ['#363946', 237],  'deco': 'bold,underline' }
+let s:color['WildMenu']     = { 'fg': s:green,          'bg': s:base1,           'deco': 'bold'           }
 let s:color['ColorColumn']  = { 'fg': 'NONE',           'bg': ['#403630', 237],  'deco': 'NONE'           }
 
 " GitGutter
