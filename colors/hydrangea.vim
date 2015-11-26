@@ -79,8 +79,6 @@ let s:color['CursorLineNR'] = { 'fg': s:base_2,         'bg': s:base3,          
 let s:color['SpecialKey']   = { 'fg': ['#808080',   8], 'bg': ['#343434',   8], 'deco': 'NONE'           }
 let s:color['NonText']      = { 'fg': s:base1,          'bg': s:base4,          'deco': 'NONE'           }
 let s:color['MatchParen']   = { 'fg': ['#ff0000',   9], 'bg': 'NONE',           'deco': 'bold'           }
-let s:color['Pmenu']        = { 'fg': ['#f6f3e8', 255], 'bg': ['#444444', 238]                           }
-let s:color['PmenuSel']     = { 'fg': ['#000000',   0], 'bg': ['#cae682', 186]                           }
 
 let s:color['Comment']      = { 'fg': s:base1,                                  'deco': 'NONE'           }
 let s:color['Constant']     = { 'fg': s:violet,                                 'deco': 'NONE'           }
@@ -103,8 +101,10 @@ let s:color['Todo']         = { 'fg': ['#000000',   0], 'bg': ['#ffff00',  11], 
 
 let s:color['IncSearch']    = { 'fg': s:base4,          'bg': s:orange,         'deco': 'NONE'           }
 let s:color['Search']       = {                         'bg': s:yellow,         'deco': 'NONE'           }
-let s:color['PMenuSbar']    = {                         'bg': ['#505860', 240], 'deco': 'NONE'           }
-let s:color['PMenuThumb']   = {                         'bg': ['#808890', 102], 'deco': 'NONE'           }
+let s:color['Pmenu']        = { 'fg': s:base_1,         'bg': s:base2,          'deco': 'NONE'           }
+let s:color['PmenuSel']     = { 'fg': s:green,          'bg': s:base1,          'deco': 'bold'           }
+let s:color['PmenuSbar']    = {                         'bg': s:base3,          'deco': 'NONE'           }
+let s:color['PmenuThumb']   = {                         'bg': s:base0,          'deco': 'NONE'           }
 let s:color['TabLine']      = { 'fg': s:base1,          'bg': s:base3,          'deco': 'NONE'           }
 let s:color['TabLineSel']   = { 'fg': s:cyan,           'bg': s:base3,          'deco': 'bold'           }
 let s:color['TabLineFill']  = { 'fg': ['#b6bf98', 144], 'bg': s:base3,          'deco': 'NONE'           }
