@@ -39,7 +39,7 @@ let s:violet  = ["#887cb2", 103]
 let s:magenta = ["#b577a7", 139]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left     = [ [ s:base3,  s:violet ], [ s:base_1, s:base1 ] ]
+let s:p.normal.left     = [ [ s:base3,  s:green  ], [ s:base_1, s:base1 ] ]
 let s:p.normal.middle   = [ [ s:base0,  s:base2  ],                       ]
 let s:p.normal.right    = [ [ s:base3,  s:base0  ], [ s:base_1, s:base1 ] ]
 
