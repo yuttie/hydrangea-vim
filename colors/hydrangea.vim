@@ -1,7 +1,7 @@
 " Name:     hydrangea.vim --- Hydrangea theme for Vim
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 " URL:      https://github.com/yuttie/hydrangea-theme
-" Version:  2.0.2
+" Version:  2.1.0
 " License:  The MIT License (MIT)
 "     Copyright (c) 2015 Yuta Taniguchi
 "
