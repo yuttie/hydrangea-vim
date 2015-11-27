@@ -55,7 +55,7 @@
       (default        :background base03 :foreground base2)
       (fixed-pitch    :family "monospace")
       (variable-pitch :family "sans serif")
-      (shadow         :foreground base00)
+      (shadow         :foreground base01)
       ;; Frame
       (cursor             :background base2)
       (fringe             :background base02 :foreground base01 :box nil :inverse-video nil)
