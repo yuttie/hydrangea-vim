@@ -58,7 +58,7 @@
       (shadow         :foreground base00)
       ;; Frame
       (cursor             :background base2)
-      (fringe             :background base02 :foreground base00 :box nil :inverse-video nil)
+      (fringe             :background base02 :foreground base01 :box nil :inverse-video nil)
       (menu               :background base02 :foreground base2           :inverse-video nil)
       (tooltip            :background base01 :foreground base2)
       (linum              :inherit (fringe) :weight normal)
@@ -69,7 +69,7 @@
       (window-divider-first-pixel :inherit (window-divider))
       (window-divider-last-pixel  :inherit (window-divider))
       ;; hlinum
-      (linum-highlight-face :inherit (linum) :foreground base3 :weight bold)
+      (linum-highlight-face :inherit (linum) :foreground base2 :weight bold)
       ;; powerline
       (powerline-mode-normal        :background "#afd700" :foreground "#005f00" :box nil :weight bold)
       (powerline-mode-insert        :background "#ffffff" :foreground "#005f5f" :box nil :weight bold)
