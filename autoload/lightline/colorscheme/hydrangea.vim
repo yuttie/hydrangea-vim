@@ -44,9 +44,9 @@ let s:blue1 = ["#365f85",  67]
 let s:blue2 = ["#244059",  24]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left     = [ [ s:base02, s:green  ], [ s:base2, s:base00 ] ]
-let s:p.normal.middle   = [ [ s:base0,  s:base01 ],                       ]
-let s:p.normal.right    = [ [ s:base02, s:base0  ], [ s:base2, s:base00 ] ]
+let s:p.normal.left     = [ [ s:base02, s:green  ], [ s:base2, s:base01 ] ]
+let s:p.normal.middle   = [ [ s:base0,  s:base02 ],                       ]
+let s:p.normal.right    = [ [ s:base02, s:base1  ], [ s:base2, s:base01 ] ]
 
 let s:p.insert.left     = [ [ s:blue2,  s:base2  ], [ s:base2, s:blue1  ] ]
 let s:p.insert.middle   = [ [ s:blue0,  s:blue2  ]                        ]
@@ -62,7 +62,7 @@ let s:p.inactive.right  = [ [ s:base02, s:base00 ], [ s:base0, s:base01 ] ]
 let s:p.normal.error    = [ [ s:red,    s:base01 ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:base00 ] ]
 
-let s:p.tabline.left    = [ [ s:base0,  s:base01 ] ]
+let s:p.tabline.left    = [ [ s:base1,  s:base01 ] ]
 let s:p.tabline.middle  = [ [ s:base0,  s:base02 ] ]
 let s:p.tabline.right   = [ [ s:base02, s:base00 ] ]
 let s:p.tabline.tabsel  = [ [ s:base02, s:cyan   ] ]
