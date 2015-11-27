@@ -2,11 +2,11 @@
 #  define APP
 #endif
 
-APP*foreground: #d0d5de
-APP*background: #202226
+APP*foreground: #cbd4e0
+APP*background: #1f2226
 ! black
-APP*color0:     #202226
-APP*color8:     #80848d
+APP*color0:     #1f2226
+APP*color8:     #272b30
 ! red
 APP*color1:     #823e3e
 APP*color9:     #b05353
@@ -26,5 +26,5 @@ APP*color13:    #887cb2
 APP*color6:     #53857d
 APP*color14:    #88b8b0
 ! white
-APP*color7:     #d0d5de
-APP*color15:    #f0f5ff
+APP*color7:     #cbd4e0
+APP*color15:    #edf5ff
