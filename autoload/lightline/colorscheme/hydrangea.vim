@@ -47,16 +47,16 @@ let s:p.normal.left     = [ [ s:base3,  s:green  ], [ s:base_1, s:base1 ] ]
 let s:p.normal.middle   = [ [ s:base0,  s:base2  ],                       ]
 let s:p.normal.right    = [ [ s:base3,  s:base0  ], [ s:base_1, s:base1 ] ]
 
-let s:p.insert.left     = [ [ s:blue1,  s:base_1 ], [ s:base_1, s:blue1 ] ]
+let s:p.insert.left     = [ [ s:blue2,  s:base_1 ], [ s:base_1, s:blue1 ] ]
 let s:p.insert.middle   = [ [ s:blue0,  s:blue2  ]                        ]
-let s:p.insert.right    = [ [ s:blue1,  s:blue0  ], [ s:blue0, s:blue1  ] ]
+let s:p.insert.right    = [ [ s:blue2,  s:blue0  ], [ s:blue0,  s:blue1 ] ]
 
 let s:p.visual.left     = [ [ s:base3,  s:yellow ], [ s:base_1, s:base1 ] ]
 let s:p.replace.left    = [ [ s:base3,  s:red    ], [ s:base_1, s:base1 ] ]
 
 let s:p.inactive.left   = [ [ s:base0,  s:base1  ], [ s:green,  s:base2 ] ]
 let s:p.inactive.middle = [ [ s:base0,  s:base3  ],                       ]
-let s:p.inactive.right  = [ [ s:base3,  s:base1  ], [ s:base0, s:base2  ] ]
+let s:p.inactive.right  = [ [ s:base3,  s:base1  ], [ s:base0,  s:base2 ] ]
 
 let s:p.normal.error    = [ [ s:red,    s:base2  ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:base1  ] ]
