@@ -64,17 +64,23 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="レイヤー 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer2"
+     inkscape:label="background"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#202226;fill-opacity:1"
        id="rect2985"
        width="744.09448"
        height="1052.3622"
        x="0"
-       y="0"
+       y="4.7244093e-06"
        ry="0" />
+  </g>
+  <g
+     inkscape:label="objects"
+     inkscape:groupmode="layer"
+     id="layer1">
     <g
        id="g9383"
        transform="translate(-1041.886,-269.56827)">
@@ -5541,7 +5547,7 @@
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">accent-256</tspan></text>
     <rect
-       style="fill:#202226;fill-opacity:1;stroke:#ffffff"
+       style="fill:#121518;fill-opacity:1;stroke:#ffffff"
        id="rect4958"
        width="39.164684"
        height="39.164684"
@@ -5553,9 +5559,9 @@
        height="39.164684"
        width="39.164684"
        id="rect4960"
-       style="fill:#40434a;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#34393f;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#585c64;fill-opacity:1;stroke:#ffffff"
+       style="fill:#484e55;fill-opacity:1;stroke:#ffffff"
        id="rect4962"
        width="39.164684"
        height="39.164684"
@@ -5563,27 +5569,27 @@
        y="283.09235" />
     <rect
        y="283.09235"
-       x="426.789"
+       x="481.95276"
        height="39.164684"
        width="39.164684"
        id="rect4964"
-       style="fill:#d0d5de;fill-opacity:1;stroke:#ffffff" />
+       style="fill:#aeb8c5;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="fill:#f0f5ff;fill-opacity:1;stroke:#ffffff"
+       style="fill:#ecf4ff;fill-opacity:1;stroke:#ffffff"
        id="rect4966"
        width="39.164684"
        height="39.164684"
-       x="481.95276"
+       x="537.11652"
        y="283.09235" />
     <rect
-       style="fill:#80848d;fill-opacity:1;stroke:#ffffff"
+       style="fill:#626972;fill-opacity:1;stroke:#ffffff"
        id="rect4968"
        width="39.164684"
        height="39.164684"
        x="371.62524"
        y="283.09235" />
     <rect
-       style="fill:#303338;fill-opacity:1;stroke:#ffffff"
+       style="fill:#1f2329;fill-opacity:1;stroke:#ffffff;opacity:0.99"
        id="rect4972"
        width="39.164684"
        height="39.164684"
@@ -5621,7 +5627,7 @@
        id="rect4087"
        style="opacity:1;fill:#262626;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:1;fill:#444444;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#4e4e4e;fill-opacity:1;stroke:#ffffff"
        id="rect4089"
        width="39.164684"
        height="39.164684"
@@ -5633,17 +5639,17 @@
        height="39.164684"
        width="39.164684"
        id="rect4091"
-       style="opacity:1;fill:#5f5f5f;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#626262;fill-opacity:1;stroke:#ffffff" />
     <rect
-       style="opacity:1;fill:#d7d7d7;fill-opacity:1;stroke:#ffffff"
+       style="opacity:1;fill:#d0d0d0;fill-opacity:1;stroke:#ffffff"
        id="rect4093"
        width="39.164684"
        height="39.164684"
-       x="426.789"
+       x="481.95276"
        y="335.09235" />
     <rect
        y="335.09235"
-       x="481.95276"
+       x="537.11652"
        height="39.164684"
        width="39.164684"
        id="rect4095"
@@ -5654,7 +5660,7 @@
        height="39.164684"
        width="39.164684"
        id="rect4097"
-       style="opacity:1;fill:#878787;fill-opacity:1;stroke:#ffffff" />
+       style="opacity:1;fill:#767676;fill-opacity:1;stroke:#ffffff" />
     <rect
        y="335.09235"
        x="206.13397"
@@ -6308,6 +6314,20 @@
          x="136.83406"
          id="tspan9227"
          sodipodi:role="line">Powerline</tspan></text>
+    <rect
+       y="283.09235"
+       x="426.789"
+       height="39.164684"
+       width="39.164684"
+       id="rect10406"
+       style="fill:#818994;fill-opacity:1;stroke:#ffffff" />
+    <rect
+       style="fill:#8a8a8a;fill-opacity:1;stroke:#ffffff"
+       id="rect10408"
+       width="39.164684"
+       height="39.164684"
+       x="426.789"
+       y="335.09235" />
   </g>
   <style
      id="style7306">
