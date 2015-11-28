@@ -2,13 +2,13 @@
 """to256.py
 
 Usage:
-  to256.py pick <color>... [--metric=<name>] [--type=<name>] [--top=<number>] [--grayscale | --chromatic] [--show-input]
+  to256.py pick <color>... [--metric=<name>] [--format=<type>...] [--top=<number>] [--grayscale | --chromatic] [--show-input]
   to256.py benchmark [--samples=<number>]
   to256.py (-h | --help)
 
 Options:
   --metric=<name>           Metric to measure similarities among colors [default: euclidean/rgb].
-  --type=<name>             Type of output representation of picked colors [default: code].
+  --format=<type>           Types of output representation of picked colors [default: code,hex].
   --top=<number>            Output top-<number> similar colors [default: 1].
   --grayscale, --chromatic  Include only grayscale/chromatic colors.
   -n, --samples=<number>    Number of color samples [default: 100].
@@ -131,6 +131,19 @@ def is_grayscale(color):
     return color[0] == color[1] == color[2]
 
 
+# Render xterm colors into a string
+def render_xterm_color(i, fmt):
+    if fmt == 'code':
+        return '{:d}'.format(i)
+    elif fmt == 'hex':
+        return '#{:02x}{:02x}{:02x}'.format(*XTERM_COLORS[i])
+    elif fmt == 'HEX':
+        return '#{:02X}{:02X}{:02X}'.format(*XTERM_COLORS[i])
+        print(indices)
+    else:
+        raise
+
+
 # main
 args = docopt(__doc__)
 
@@ -170,14 +183,8 @@ if args['pick']:
         indices = islice(indices, 0, int(args['--top']))
         if args['--show-input']:
             print('{}: '.format(color), end='')
-        if args['--type'] == 'code':
-            print(' '.join(map(lambda i: '{:d}'.format(i), indices)))
-        elif args['--type'] == 'hex':
-            print(' '.join(map(lambda i: '#{:02x}{:02x}{:02x}'.format(*XTERM_COLORS[i]), indices)))
-        elif args['--type'] == 'HEX':
-            print(' '.join(map(lambda i: '#{:02X}{:02X}{:02X}'.format(*XTERM_COLORS[i]), indices)))
-        else:
-            raise
+        rendered = ('/'.join((render_xterm_color(i, fmt) for fmt in args['--format'])) for i in indices)
+        print(' '.join(rendered))
 
 if args['benchmark']:
     print('''<!doctype html>
