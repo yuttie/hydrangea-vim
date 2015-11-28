@@ -22,14 +22,14 @@
 "     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "     THE SOFTWARE.
 
-let s:base03  = ["#1f2226", 235]
-let s:base02  = ["#272b30", 236]
-let s:base01  = ["#4d5259", 239]
-let s:base00  = ["#5c626a", 241]
-let s:base0   = ["#6e747d", 243]
-let s:base1   = ["#838a94", 245]
-let s:base2   = ["#cbd4e0", 252]
-let s:base3   = ["#edf5ff", 255]
+let s:base03  = ["#121518", 233]
+let s:base02  = ["#1f2329", 235]
+let s:base01  = ["#34393f", 237]
+let s:base00  = ["#484e55", 239]
+let s:base0   = ["#626972", 242]
+let s:base1   = ["#818994", 102]
+let s:base2   = ["#aeb8c5", 249]
+let s:base3   = ["#ecf4ff", 255]
 let s:red     = ["#b05353", 131]
 let s:orange  = ["#c8946d", 173]
 let s:yellow  = ["#e4c374", 179]
@@ -44,9 +44,9 @@ let s:blue1 = ["#365f85",  67]
 let s:blue2 = ["#244059",  24]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left     = [ [ s:base02, s:green  ], [ s:base2, s:base01 ] ]
-let s:p.normal.middle   = [ [ s:base0,  s:base02 ],                       ]
-let s:p.normal.right    = [ [ s:base02, s:base1  ], [ s:base2, s:base01 ] ]
+let s:p.normal.left     = [ [ s:base02, s:green  ], [ s:base2, s:base00 ] ]
+let s:p.normal.middle   = [ [ s:base1,  s:base01 ],                       ]
+let s:p.normal.right    = [ [ s:base02, s:base1  ], [ s:base2, s:base00 ] ]
 
 let s:p.insert.left     = [ [ s:blue2,  s:base2  ], [ s:base2, s:blue1  ] ]
 let s:p.insert.middle   = [ [ s:blue0,  s:blue2  ]                        ]
@@ -55,16 +55,16 @@ let s:p.insert.right    = [ [ s:blue2,  s:blue0  ], [ s:blue0,  s:blue1 ] ]
 let s:p.visual.left     = [ [ s:base02, s:yellow ], [ s:base2, s:base00 ] ]
 let s:p.replace.left    = [ [ s:base02, s:red    ], [ s:base2, s:base00 ] ]
 
-let s:p.inactive.left   = [ [ s:base03, s:base01 ], [ s:base0, s:base02 ] ]
-let s:p.inactive.middle = [ [ s:base00, s:base03 ],                       ]
-let s:p.inactive.right  = [ [ s:base03, s:base01 ], [ s:base0, s:base02 ] ]
+let s:p.inactive.left   = [ [ s:base01, s:base0  ], [ s:base1, s:base00 ] ]
+let s:p.inactive.middle = [ [ s:base0,  s:base01 ],                       ]
+let s:p.inactive.right  = [ [ s:base01, s:base0  ], [ s:base1, s:base00 ] ]
 
 let s:p.normal.error    = [ [ s:red,    s:base01 ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:base00 ] ]
 
-let s:p.tabline.left    = [ [ s:base1,  s:base01 ] ]
+let s:p.tabline.left    = [ [ s:base1,  s:base00 ] ]
 let s:p.tabline.middle  = [ [ s:base0,  s:base02 ] ]
-let s:p.tabline.right   = [ [ s:base02, s:base00 ] ]
+let s:p.tabline.right   = [ [ s:base1,  s:base00 ] ]
 let s:p.tabline.tabsel  = [ [ s:base02, s:cyan   ] ]
 
 let g:lightline#colorscheme#hydrangea#palette = lightline#colorscheme#flatten(s:p)
