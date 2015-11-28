@@ -145,10 +145,12 @@ let s:color['makeTarget']     = 'Function'
 let s:color['makeCommands']   = 'NONE'
 
 " php
-let s:color['phpFunctions'] = 'NONE'
-let s:color['phpClasses']   = 'NONE'
-let s:color['phpFunction']  = 'Function'
-let s:color['phpClass']     = 'Type'
+let s:color['phpVarSelector'] = 'Identifier'
+let s:color['phpIdentifier']  = 'NONE'
+let s:color['phpFunctions']   = 'NONE'
+let s:color['phpClasses']     = 'NONE'
+let s:color['phpFunction']    = 'Function'
+let s:color['phpClass']       = 'Type'
 
 
 " Apply
