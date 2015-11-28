@@ -3,16 +3,22 @@
 This repository includes
 ["Custom theme"](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html)
 for Emacs 24 or above,
-and a color scheme file for Vim.
+a color scheme file for Vim,
+and an Xresources file for terminals.
 
-![Screenshot of Emacs Lisp](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-elisp.png)
+
+# Screenshots
+## Emacs
+![Screenshot of Emacs](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-elisp.png)
+## Vim
+![Screenshot of Vim](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-viml.png)
 
 
 ## Features
 
 * A dark theme with main colors from hydrangea flowers
-* Midnight blue is used as the background color
-* Also an Xresources file is included which provides colors based on the palette
+* Midnight blue as the background color
+* Support 256 color terminals
 * Emacs: The theme comes with a minor mode for adjusting its [HSL components](https://en.wikipedia.org/wiki/HSL_and_HSV) on-the-fly
 * Emacs: You can make the adjustment persistent through custom variables
 
