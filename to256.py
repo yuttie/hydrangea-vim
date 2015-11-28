@@ -14,11 +14,11 @@ Options:
   -n, --samples=<number>    Number of color samples [default: 100].
   -h, --help                Show this message.
 """
-from docopt import docopt
-from bisect import insort
+from docopt    import docopt
+from bisect    import insort
 from itertools import islice
-from math   import sqrt
-from random import randint
+from math      import sqrt
+from random    import randint
 import sys
 
 # ANSI colors
@@ -41,6 +41,8 @@ ANSI_COLORS = [(0x00, 0x00, 0x00),
 
 # xterm's 256 colors
 CUBE_INTENSITIES = [0x00, 0x5f, 0x87, 0xaf, 0xd7, 0xff]
+
+
 def index2xtermrgb(i):
     if i < 16:
         return ANSI_COLORS[i]
@@ -57,6 +59,7 @@ def index2xtermrgb(i):
         return (v, v, v)
 
 XTERM_COLORS = [index2xtermrgb(i) for i in range(256)]
+
 
 # Conversion
 def rgb2xyz(color):
@@ -75,6 +78,7 @@ def rgb2xyz(color):
     z = 0.0193 * r_lin + 0.1192 * g_lin + 0.9505 * b_lin
     return (x, y, z)
 
+
 def xyz2lab(color):
     def f(t):
         return t**(1/3) if t > (6/29)**3 else (29/6)**2 * t / 3 + 4/29
@@ -87,11 +91,13 @@ def xyz2lab(color):
     b = 200 * (f(y / y_n) - f(z / z_n))
     return (l, a, b)
 
+
 # Euclidean distance
 def euclidean(color1, color2):
     r1, g1, b1 = color1
     r2, g2, b2 = color2
     return sqrt((r2 - r1)**2 + (g2 - g1)**2 + (b2 - b1)**2)
+
 
 # Delta E based on the CIE94 algorithm
 # https://en.wikipedia.org/wiki/Color_difference#CIE94
@@ -118,6 +124,7 @@ def delta_e(color1, color2):
     d_e = 0 if d_e2 < 0 else sqrt(d_e2)
     return d_e
 
+
 # Approximation
 def approx(color, palette, metric):
     ranking = []
@@ -125,6 +132,7 @@ def approx(color, palette, metric):
         d = metric(color, c)
         insort(ranking, (d, i))
     return ranking
+
 
 # Grayscale / Chromatic
 def is_grayscale(color):
