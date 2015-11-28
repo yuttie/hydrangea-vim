@@ -152,6 +152,9 @@ let s:color['phpClasses']     = 'NONE'
 let s:color['phpFunction']    = 'Function'
 let s:color['phpClass']       = 'Type'
 
+" vim
+let s:color['vimVar'] = 'NONE'
+
 
 " Apply
 for [s:name, s:def] in items(s:color)
