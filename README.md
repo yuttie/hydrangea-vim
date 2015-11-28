@@ -7,7 +7,7 @@ a color scheme file for Vim,
 and an Xresources file for terminals.
 
 
-# Screenshots
+## Screenshots
 ## Emacs
 ![Screenshot of Emacs](https://raw.githubusercontent.com/yuttie/hydrangea-theme/gh-pages/screenshot-elisp.png)
 ## Vim
