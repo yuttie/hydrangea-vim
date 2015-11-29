@@ -21,7 +21,7 @@ and an Xresources file for terminals.
 * Support 256 color terminals
 * Emacs: The theme comes with a minor mode for adjusting its [HSL components](https://en.wikipedia.org/wiki/HSL_and_HSV) on-the-fly
 * Emacs: You can make the adjustment persistent through custom variables
-* Vim: Includes colorscheme file for [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim)
+* Vim: Includes colorscheme file for [lightline.vim](https://github.com/itchyny/lightline.vim)
 
 
 ## Installation
@@ -60,4 +60,20 @@ You can define a local recipe and call `el-get`:
 ##### For vim-plug users
 ```viml
 Plug 'yuttie/hydrangea-theme'
+```
+
+
+## Configuration
+
+### Vim
+To use the bundled colorscheme for lightline.vim, specify `'hydrangea'` in a definition of your lightline as follows:
+```viml
+let g:lightline = {
+      \ 'colorscheme': 'hydrangea',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator':    { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' },
+      \ }
 ```
