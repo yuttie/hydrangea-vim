@@ -21,6 +21,7 @@ and an Xresources file for terminals.
 * Support 256 color terminals
 * Emacs: The theme comes with a minor mode for adjusting its [HSL components](https://en.wikipedia.org/wiki/HSL_and_HSV) on-the-fly
 * Emacs: You can make the adjustment persistent through custom variables
+* Vim: Includes colorscheme file for [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim)
 
 
 ## Installation
