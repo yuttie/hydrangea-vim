@@ -8,7 +8,7 @@ Usage:
 
 Options:
   --metric=<name>           Metric to measure similarities among colors [default: euclidean/rgb].
-  --format=<type>           Types of output representation of picked colors [default: code,hex].
+  --format=<type>           Types of output representation of picked colors [default: code hex].
   --top=<number>            Output top-<number> similar colors [default: 1].
   --grayscale, --chromatic  Include only grayscale/chromatic colors.
   -n, --samples=<number>    Number of color samples [default: 100].
