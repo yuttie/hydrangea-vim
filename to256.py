@@ -147,7 +147,6 @@ def render_xterm_color(i, fmt):
         return '#{:02x}{:02x}{:02x}'.format(*XTERM_COLORS[i])
     elif fmt == 'HEX':
         return '#{:02X}{:02X}{:02X}'.format(*XTERM_COLORS[i])
-        print(indices)
     else:
         raise
 
