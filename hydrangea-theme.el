@@ -110,7 +110,7 @@
       ;; Main
       (font-lock-builtin-face :foreground blue)
       (font-lock-comment-delimiter-face    :inherit (font-lock-comment-face))
-      (font-lock-comment-face              :foreground unspecified :inherit (shadow))
+      (font-lock-comment-face              :foreground base0)
       (font-lock-constant-face             :foreground violet)
       (font-lock-doc-face                  :slant italic :inherit (shadow))
       (font-lock-function-name-face        :foreground yellow :slant italic)

@@ -81,7 +81,7 @@ let s:color['SpecialKey']   = { 'fg': ['#808080',   8], 'bg': ['#343434',   8], 
 let s:color['NonText']      = { 'fg': s:base01,         'bg': s:base03,          'deco': 'NONE'      }
 let s:color['MatchParen']   = { 'fg': ['#ff0000',   9], 'bg': 'NONE',            'deco': 'bold'      }
 
-let s:color['Comment']      = { 'fg': s:base00,                                  'deco': 'NONE'      }
+let s:color['Comment']      = { 'fg': s:base0,                                   'deco': 'NONE'      }
 let s:color['Constant']     = { 'fg': s:violet,                                  'deco': 'NONE'      }
 let s:color['String']       = { 'fg': s:cyan,                                    'deco': 'NONE'      }
 let s:color['Number']       = { 'fg': s:violet,                                  'deco': 'NONE'      }
