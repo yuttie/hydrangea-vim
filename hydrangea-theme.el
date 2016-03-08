@@ -185,6 +185,10 @@
       (ediff-fine-diff-A    :inherit (diff-refine-removed)                  :foreground unspecified)
       (ediff-fine-diff-B    :inherit (diff-refine-added)                    :foreground unspecified)
       (ediff-fine-diff-C                            :background base2       :foreground unspecified)
+      ;; git-gutter-plus
+      (git-gutter+-modified :foreground magenta)
+      (git-gutter+-added    :foreground green)
+      (git-gutter+-deleted  :foreground red)
       ;; Helm
       (helm-source-header    :background unspecified :foreground blue :height 1.414 :weight bold)
       (helm-header           :background violet      :foreground base02 :height 1.414)
