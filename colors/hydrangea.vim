@@ -98,7 +98,7 @@ let s:color['Special']      = { 'fg': s:magenta,                                
 let s:color['Underlined']   = { 'fg': 'fg',                                      'deco': 'underline' }
 let s:color['Ignore']       = { 'fg': 'bg'                                                           }
 let s:color['Error']        = { 'fg': ['#800000',   1], 'bg': ['#d16464', 167],  'deco': 'bold'      }
-let s:color['Todo']         = { 'fg': ['#000000',   0], 'bg': ['#ffff00',  11],  'deco': 'bold'      }
+let s:color['Todo']         = { 'fg': s:base2,          'bg': s:base02,          'deco': 'bold'      }
 
 let s:color['IncSearch']    = { 'fg': s:base02,         'bg': s:orange,          'deco': 'NONE'      }
 let s:color['Search']       = { 'fg': s:base02,         'bg': s:yellow,          'deco': 'NONE'      }
