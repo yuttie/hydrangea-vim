@@ -66,6 +66,9 @@ Plug 'yuttie/hydrangea-theme'
 ## Configuration
 
 ### Vim
+
+#### lightline.vim
+[lightline.vim](https://github.com/itchyny/lightline.vim) support is included.
 To use the bundled colorscheme for lightline.vim, specify `'hydrangea'` in a definition of your lightline as follows:
 ```viml
 let g:lightline = {
