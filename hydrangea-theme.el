@@ -196,7 +196,7 @@
       (helm-selection        :background base01      :foreground base3 :weight bold :underline nil)
       (helm-match            :foreground green :weight bold)
       ;; highlight-symbol
-      (highlight-symbol-face :background unspecified :inverse-video t)
+      (highlight-symbol-face :background unspecified :underline t)
       ;; ElScreen
       (elscreen-tab-background-face     :inherit (variable-pitch) :background base01 :foreground base2 :underline nil :height 1.4 :box (:line-width 8 :color base01))
       (elscreen-tab-control-face        :background base01 :foreground base2 :underline nil)
