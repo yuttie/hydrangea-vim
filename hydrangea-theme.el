@@ -104,6 +104,7 @@
       (powerline-buffer-id-inactive :inherit (powerline-second-inactive))
       ;; Highlight
       (highlight           :background base01 :foreground unspecified)
+      (hl-line             :background base03)
       (isearch             :background yellow :foreground base02)
       (query-replace       :inherit (isearch))
       (lazy-highlight      :background nil :inherit (isearch))
