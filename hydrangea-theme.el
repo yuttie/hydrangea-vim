@@ -66,13 +66,18 @@
       (tooltip            :background base01 :foreground base2)
       (linum              :inherit (fringe) :weight normal)
       (mode-line          :background base01 :foreground base2 :box nil)
-      (mode-line-inactive :background base02 :foreground base0 :box nil)
+      (mode-line-inactive :background base01 :foreground base1 :box nil)
       (minibuffer-prompt  :foreground base2)
       (window-divider     :foreground (darken 4 base02))
       (window-divider-first-pixel :inherit (window-divider))
       (window-divider-last-pixel  :inherit (window-divider))
       ;; hlinum
       (linum-highlight-face :inherit (linum) :foreground base2 :weight bold)
+      ;; powerline
+      (powerline-active1       :foreground base2 :background blue1)
+      (powerline-active2       :foreground base2 :background blue1)
+      (powerline-inactive1     :foreground base0 :background base02)
+      (powerline-inactive2     :foreground base0 :background base02)
       ;; powerline (for my vim-like setup)
       ;; See https://github.com/yuttie/dot-emacs/blob/master/packages.d/init-powerline.el
       (powerline-mode-normal   :foreground base02 :background green  :box nil)
@@ -80,7 +85,7 @@
       (powerline-second-normal :foreground base2  :background base00         )
       (powerline-third-normal  :foreground base1  :background base01         )
       (powerline-buffer-id-normal :inherit (powerline-second-normal))
-      
+
       (powerline-mode-insert   :foreground blue2 :background base2 :box nil)
       (powerline-first-insert  :foreground blue2 :background blue0         )
       (powerline-second-insert :foreground base2 :background blue1         )
