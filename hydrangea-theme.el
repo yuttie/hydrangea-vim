@@ -73,7 +73,8 @@
       (window-divider-last-pixel  :inherit (window-divider))
       ;; hlinum
       (linum-highlight-face :inherit (linum) :foreground base2 :weight bold)
-      ;; powerline
+      ;; powerline (for my vim-like setup)
+      ;; See https://github.com/yuttie/dot-emacs/blob/master/packages.d/init-powerline.el
       (powerline-mode-normal   :foreground base02 :background green  :box nil)
       (powerline-first-normal  :foreground base02 :background base1          )
       (powerline-second-normal :foreground base2  :background base00         )
