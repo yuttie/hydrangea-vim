@@ -68,7 +68,8 @@
       (mode-line          :background base01 :foreground base2 :box nil)
       (mode-line-inactive :background base01 :foreground base1 :box nil)
       (minibuffer-prompt  :foreground base2)
-      (window-divider     :foreground (darken 4 base02))
+      (vertical-border    :foreground base03)
+      (window-divider     :foreground base03)
       (window-divider-first-pixel :inherit (window-divider))
       (window-divider-last-pixel  :inherit (window-divider))
       ;; hlinum
