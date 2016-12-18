@@ -152,7 +152,7 @@
       (diff-refine-added   :foreground diff-add-hi :weight bold)
       (diff-refine-change  :inherit (diff-refine-added))
       ;; Magit
-      (magit-item-highlight :inherit (highlight))
+      (magit-section-highlight :inherit (highlight))
       (magit-diff-context-highlight :inherit (highlight))
       (magit-diff-removed :inherit (diff-removed))
       (magit-diff-added   :inherit (diff-added))
