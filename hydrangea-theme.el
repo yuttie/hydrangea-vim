@@ -90,6 +90,12 @@
       ;; whitespace
       (whitespace-space :background unspecified :foreground base00)
       (whitespace-line :inherit (highlight))
+      ;; Spacemacs
+      (spacemacs-normal-face  :background base2)
+      (spacemacs-insert-face  :background cyan)
+      (spacemacs-visual-face  :background magenta-light)
+      (spacemacs-replace-face :background red)
+      (spacemacs-emacs-face   :background emacs)
       ;; Main
       (font-lock-builtin-face :foreground cyan)
       (font-lock-comment-delimiter-face    :inherit (font-lock-comment-face))
