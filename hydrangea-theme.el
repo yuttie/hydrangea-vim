@@ -106,7 +106,7 @@
       (font-lock-comment-delimiter-face    :inherit (font-lock-comment-face))
       (font-lock-comment-face              :foreground base0)
       (font-lock-constant-face             :foreground blue :background blue-dark)
-      (font-lock-doc-face                  :slant italic :inherit (shadow))
+      (font-lock-doc-face                  :inherit (font-lock-comment-face))
       (font-lock-function-name-face        :foreground base3 :weight bold)
       (font-lock-keyword-face              :foreground cyan :weight bold)
       (font-lock-negation-char-face        :foreground blue)
