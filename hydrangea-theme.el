@@ -169,6 +169,10 @@
       (magit-diff-added   :inherit (diff-added))
       (magit-diff-removed-highlight :inherit (magit-diff-removed))
       (magit-diff-added-highlight :inherit (magit-diff-added))
+      ;; markdown-mode
+      (markdown-list-face             :foreground violet)
+      (markdown-header-delimiter-face :foreground magenta)
+      (markdown-pre-face              :background base01)
       ;; Minimap
       (minimap-active-region-background :inherit (highlight))
       ;; Ediff
