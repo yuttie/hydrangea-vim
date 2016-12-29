@@ -189,7 +189,7 @@
       (ediff-fine-diff-B    :inherit (diff-refine-added)                    :foreground unspecified)
       (ediff-fine-diff-C                            :background base2       :foreground unspecified)
       ;; git-gutter-plus
-      (git-gutter+-modified :foreground magenta)
+      (git-gutter+-modified :foreground diff-rm-fg)
       (git-gutter+-added    :foreground diff-add-fg)
       (git-gutter+-deleted  :foreground diff-rm-fg)
       ;; Helm
