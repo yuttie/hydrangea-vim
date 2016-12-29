@@ -123,6 +123,9 @@ let s:color['DiffChange']   = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,     
 let s:color['DiffDelete']   = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,      'deco': 'NONE'      }
 let s:color['DiffText']     = { 'fg': s:diff_rm_hi,     'bg': s:diff_rm_bg,      'deco': 'bold'      }
 
+let s:color['diffAdded']    = { 'fg': s:diff_add_fg,    'bg': s:diff_add_bg,     'deco': 'NONE'      }
+let s:color['diffRemoved']  = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,      'deco': 'NONE'      }
+
 let s:color['Directory']    = { 'fg': ['#c0e0b0', 151],                          'deco': 'NONE'      }
 let s:color['ErrorMsg']     = { 'fg': s:red,            'bg': 'NONE',            'deco': 'NONE'      }
 let s:color['SignColumn']   = { 'fg': ['#9fafaf', 145], 'bg': s:color.LineNr.bg, 'deco': 'NONE'      }
