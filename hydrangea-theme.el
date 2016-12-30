@@ -79,6 +79,8 @@
       (powerline-active2   :background base00 :foreground base2)
       (powerline-inactive1 :background base01 :foreground base1)
       (powerline-inactive2 :background base01 :foreground base1)
+      ;; nlinum
+      (nlinum-current-line  :inherit (linum) :foreground base3 :background base0 :weight bold)
       ;; hlinum
       (linum-highlight-face :inherit (linum) :foreground base3 :background base0 :weight bold)
       ;; Highlight
