@@ -81,7 +81,7 @@ let s:color['VertSplit']    = { 'fg': s:base01,         'bg': s:base01,         
 let s:color['LineNr']       = { 'fg': s:base0,          'bg': s:base01,          'deco': 'NONE'      }
 let s:color['CursorLineNr'] = { 'fg': s:base3,          'bg': s:base0,           'deco': 'bold'      }
 let s:color['SpecialKey']   = { 'fg': ['#808080',   8], 'bg': ['#343434',   8],  'deco': 'NONE'      }
-let s:color['NonText']      = { 'fg': s:base01,         'bg': s:base03,          'deco': 'NONE'      }
+let s:color['NonText']      = { 'fg': s:base0,          'bg': s:base02,          'deco': 'NONE'      }
 let s:color['MatchParen']   = { 'fg': ['#ff0000',   9], 'bg': 'NONE',            'deco': 'bold'      }
 
 let s:color['Comment']      = { 'fg': s:base0,                                   'deco': 'NONE'      }
