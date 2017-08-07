@@ -65,8 +65,8 @@ let s:color = {}
 let s:color['Normal']       = { 'fg': s:base2,          'bg': s:base02,                              }
 let s:color['Cursor']       = { 'fg': 'NONE',           'bg': s:base3,           'deco': 'NONE'      }
 let s:color['CursorIM']     = { 'fg': 'NONE',           'bg': s:base3,                               }
-let s:color['CursorLine']   = { 'fg': 'NONE',           'bg': s:base03,          'deco': 'NONE'      }
-let s:color['CursorColumn'] = { 'fg': 'NONE',           'bg': s:base03,          'deco': 'NONE'      }
+let s:color['CursorLine']   = { 'fg': 'NONE',           'bg': s:base01,          'deco': 'bold'      }
+let s:color['CursorColumn'] = { 'fg': 'NONE',           'bg': s:base01,          'deco': 'NONE'      }
 let s:color['Visual']       = { 'fg': 'NONE',           'bg': s:base00,          'deco': 'NONE'      }
 let s:color['VisualNOS']    = { 'fg': 'fg',                                      'deco': 'underline' }
 

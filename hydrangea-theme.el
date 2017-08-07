@@ -86,7 +86,7 @@
       ;; Highlight
       (link                :foreground blue)
       (highlight           :background base01 :foreground unspecified)
-      (hl-line             :background base03)
+      (hl-line             :background base01 :weight bold)
       (isearch             :background magenta :foreground base3)
       (query-replace       :inherit (isearch))
       (lazy-highlight      :background nil :inherit (isearch))
