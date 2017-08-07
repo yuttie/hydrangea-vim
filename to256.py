@@ -189,9 +189,9 @@ if args['pick']:
             pass
         indices = islice(indices, 0, int(args['--top']))
         if args['--show-input']:
-            print('{}: '.format(color), end='')
+            print('{}:\t'.format(color), end='')
         rendered = ('/'.join((render_xterm_color(i, fmt) for fmt in args['--format'])) for i in indices)
-        print(' '.join(rendered))
+        print('\t'.join(rendered))
 
 if args['benchmark']:
     print('''<!doctype html>
