@@ -34,23 +34,24 @@ set background=dark
 
 
 " Palette
-let s:base03        = ["#1c1f26", 234]
-let s:base02        = ["#2b303b", 236]
-let s:base01        = ["#333946", 237]
-let s:base00        = ["#3c4453", 238]
-let s:base0         = ["#565f72",  59]
+let s:base03        = ["#1d1f25", 234]
+let s:base02        = ["#2c303a", 236]
+let s:base01        = ["#343945", 237]
+let s:base00        = ["#3e4451", 238]
+let s:base0         = ["#555d6f",  59]
 let s:base1         = ["#626c82", 242]
-let s:base2         = ["#c1d0e3", 252]
-let s:base3         = ["#dfedff", 255]
+let s:base2         = ["#c6d0de", 252]
+let s:base3         = ["#e8eff8", 255]
 let s:red           = ["#e91e63", 197]
-let s:aqua          = ["#36c399",  43]
-let s:aqua_dark     = ["#114335", 237]
-let s:cyan          = ["#1cc7de",  45]
-let s:blue          = ["#6d88ff",  69]
-let s:blue_dark     = ["#243166", 236]
-let s:violet        = ["#b490ff", 141]
+let s:aqua          = ["#36c2c2",  43]
+let s:aqua_dark     = ["#134242", 237]
+let s:cyan          = ["#54a7eb",  45]
+let s:blue          = ["#a46cff",  69]
+let s:blue_dark     = ["#3e2566", 236]
+let s:blue_light    = ['#9fd3ed',   0]
+let s:violet        = ["#e242ac", 141]
 let s:magenta       = ["#e242ac", 169]
-let s:magenta_light = ["#e481ce", 176]
+let s:magenta_light = ["#ccacff", 176]
 let s:emacs         = ["#5955a9",  61]
 let s:diff_add_fg   = ["#00bbff",  39]
 let s:diff_add_bg   = ["#0d4a60", 238]
@@ -85,19 +86,20 @@ let s:color['NonText']      = { 'fg': s:base0,          'bg': s:base02,         
 let s:color['MatchParen']   = { 'fg': ['#ff0000',   9], 'bg': 'NONE',            'deco': 'bold'      }
 
 let s:color['Comment']      = { 'fg': s:base0,                                   'deco': 'NONE'      }
-let s:color['Constant']     = { 'fg': s:violet,                                  'deco': 'NONE'      }
-let s:color['String']       = { 'fg': s:aqua,           "bg": s:aqua_dark,       'deco': 'NONE'      }
-let s:color['Number']       = { 'fg': s:blue,           "bg": s:blue_dark,       'deco': 'NONE'      }
+let s:color['Constant']     = { 'fg': s:aqua,           "bg": s:aqua_dark,       'deco': 'NONE'      }
+let s:color['String']       = 'Constant'
+let s:color['Number']       = 'Constant'
 let s:color['Identifier']   = { 'fg': s:base3,                                   'deco': 'bold'      }
 let s:color['Function']     = { 'fg': s:base3,                                   'deco': 'bold'      }
 let s:color['Statement']    = { 'fg': s:cyan,                                    'deco': 'bold'      }
 let s:color['Operator']     = { 'fg': s:violet,                                  'deco': 'NONE'      }
+let s:color['Include']      = { 'fg': s:blue,                                    'deco': 'NONE'      }
 let s:color['PreProc']      = { 'fg': s:magenta_light,                           'deco': 'NONE'      }
 let s:color['Type']         = { 'fg': s:magenta,                                 'deco': 'NONE'      }
 let s:color['StorageClass'] = { 'fg': s:cyan,                                    'deco': 'bold'      }
 let s:color['Structure']    = { 'fg': s:violet,                                  'deco': 'NONE'      }
 let s:color['Typedef']      = { 'fg': s:cyan,                                    'deco': 'bold'      }
-let s:color['Special']      = { 'fg': 'fg',                                      'deco': 'NONE'      }
+let s:color['Special']      = { 'fg': 'NONE',           'bg': 'NONE',            'deco': 'bold'      }
 let s:color['Underlined']   = { 'fg': 'fg',                                      'deco': 'underline' }
 let s:color['Ignore']       = { 'fg': 'bg'                                                           }
 let s:color['Error']        = { 'fg': ['#800000',   1], 'bg': ['#d16464', 167],  'deco': 'bold'      }
@@ -156,7 +158,8 @@ let s:color['phpFunction']    = 'Function'
 let s:color['phpClass']       = 'Type'
 
 " rust
-let s:color['rustFuncCall'] = 'Normal'
+let s:color['rustFuncCall'] = { 'fg': s:blue_light }
+let s:color['rustQuestionMark'] = 'Operator'
 
 " vim
 let s:color['vimVar'] = 'NONE'
