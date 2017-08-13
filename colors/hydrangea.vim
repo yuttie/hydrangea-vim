@@ -3,7 +3,7 @@
 " URL:      https://github.com/yuttie/hydrangea-theme
 " Version:  3.0.0
 " License:  The MIT License (MIT)
-"     Copyright (c) 2015 Yuta Taniguchi
+"     Copyright (c) 2015-2016 Yuta Taniguchi
 "
 "     Permission is hereby granted, free of charge, to any person obtaining a copy
 "     of this software and associated documentation files (the "Software"), to deal
@@ -34,27 +34,31 @@ set background=dark
 
 
 " Palette
-let s:base03       = ["#121518", 233]
-let s:base02       = ["#1f2329", 235]
-let s:base01       = ["#34393f", 237]
-let s:base00       = ["#484e55", 239]
-let s:base0        = ["#626972", 242]
-let s:base1        = ["#818994", 102]
-let s:base2        = ["#aeb8c5", 249]
-let s:base3        = ["#ecf4ff", 255]
-let s:red          = ["#b05353", 131]
-let s:orange       = ["#c8946d", 173]
-let s:yellow       = ["#e4c374", 179]
-let s:green        = ["#a0bc65", 143]
-let s:cyan         = ["#88b8b0", 109]
-let s:blue         = ["#7aa4c9", 110]
-let s:violet       = ["#887cb2", 103]
-let s:magenta      = ["#b577a7", 139]
-
-let s:diff_added   = ["#323e1b",  58]
-let s:diff_removed = ["#532626",  52]
-let s:diff_changed = ["#594913",  58]
-let s:diff_fine    = ["#81691b",  94]
+let s:base03        = ["#1d1f25", 234]
+let s:base02        = ["#2c303a", 236]
+let s:base01        = ["#343945", 237]
+let s:base00        = ["#3e4451", 238]
+let s:base0         = ["#555d6f",  59]
+let s:base1         = ["#626c82", 242]
+let s:base2         = ["#c6d0de", 252]
+let s:base3         = ["#e8eff8", 255]
+let s:red           = ["#e91e63", 197]
+let s:aqua          = ["#36c2c2",  43]
+let s:aqua_dark     = ["#134242", 237]
+let s:cyan          = ["#54a7eb",  45]
+let s:blue          = ["#a46cff",  69]
+let s:blue_dark     = ["#3e2566", 236]
+let s:blue_light    = ['#9fd3ed',   0]
+let s:violet        = ["#e242ac", 141]
+let s:magenta       = ["#e242ac", 169]
+let s:magenta_light = ["#ccacff", 176]
+let s:emacs         = ["#5955a9",  61]
+let s:diff_add_fg   = ["#00bbff",  39]
+let s:diff_add_bg   = ["#0d4a60", 238]
+let s:diff_add_hi   = ["#97e3ff", 117]
+let s:diff_rm_fg    = ["#e246ae", 169]
+let s:diff_rm_bg    = ["#66184c",  89]
+let s:diff_rm_hi    = ["#fface3", 218]
 
 
 " Definitions
@@ -62,7 +66,7 @@ let s:color = {}
 let s:color['Normal']       = { 'fg': s:base2,          'bg': s:base02,                              }
 let s:color['Cursor']       = { 'fg': 'NONE',           'bg': s:base3,           'deco': 'NONE'      }
 let s:color['CursorIM']     = { 'fg': 'NONE',           'bg': s:base3,                               }
-let s:color['CursorLine']   = { 'fg': 'NONE',           'bg': s:base01,          'deco': 'NONE'      }
+let s:color['CursorLine']   = { 'fg': 'NONE',           'bg': s:base01,          'deco': 'bold'      }
 let s:color['CursorColumn'] = { 'fg': 'NONE',           'bg': s:base01,          'deco': 'NONE'      }
 let s:color['Visual']       = { 'fg': 'NONE',           'bg': s:base00,          'deco': 'NONE'      }
 let s:color['VisualNOS']    = { 'fg': 'fg',                                      'deco': 'underline' }
@@ -76,32 +80,33 @@ let s:color['StatusLine']   = { 'fg': s:base2,          'bg': s:base00,         
 let s:color['StatusLineNC'] = { 'fg': s:base0,          'bg': s:base01,          'deco': 'NONE'      }
 let s:color['VertSplit']    = { 'fg': s:base01,         'bg': s:base01,          'deco': 'NONE'      }
 let s:color['LineNr']       = { 'fg': s:base0,          'bg': s:base01,          'deco': 'NONE'      }
-let s:color['CursorLineNr'] = { 'fg': s:base2,          'bg': s:base01,          'deco': 'bold'      }
+let s:color['CursorLineNr'] = { 'fg': s:base3,          'bg': s:base0,           'deco': 'bold'      }
 let s:color['SpecialKey']   = { 'fg': ['#808080',   8], 'bg': ['#343434',   8],  'deco': 'NONE'      }
-let s:color['NonText']      = { 'fg': s:base01,         'bg': s:base03,          'deco': 'NONE'      }
+let s:color['NonText']      = { 'fg': s:base0,          'bg': s:base02,          'deco': 'NONE'      }
 let s:color['MatchParen']   = { 'fg': ['#ff0000',   9], 'bg': 'NONE',            'deco': 'bold'      }
 
 let s:color['Comment']      = { 'fg': s:base0,                                   'deco': 'NONE'      }
-let s:color['Constant']     = { 'fg': s:violet,                                  'deco': 'NONE'      }
-let s:color['String']       = { 'fg': s:cyan,                                    'deco': 'NONE'      }
-let s:color['Number']       = { 'fg': s:violet,                                  'deco': 'NONE'      }
-let s:color['Identifier']   = { 'fg': s:green,                                   'deco': 'NONE'      }
-let s:color['Function']     = { 'fg': s:yellow,                                  'deco': 'italic'    }
-let s:color['Statement']    = { 'fg': s:blue,                                    'deco': 'NONE'      }
-let s:color['Operator']     = { 'fg': s:yellow,                                  'deco': 'NONE'      }
-let s:color['PreProc']      = { 'fg': s:magenta,                                 'deco': 'NONE'      }
-let s:color['Type']         = { 'fg': s:violet,                                  'deco': 'NONE'      }
-let s:color['StorageClass'] = { 'fg': s:blue,                                    'deco': 'NONE'      }
-let s:color['Structure']    = { 'fg': s:blue,                                    'deco': 'NONE'      }
-let s:color['Typedef']      = { 'fg': s:blue,                                    'deco': 'NONE'      }
-let s:color['Special']      = { 'fg': s:magenta,                                 'deco': 'NONE'      }
+let s:color['Constant']     = { 'fg': s:aqua,           "bg": s:aqua_dark,       'deco': 'NONE'      }
+let s:color['String']       = 'Constant'
+let s:color['Number']       = 'Constant'
+let s:color['Identifier']   = { 'fg': s:base3,                                   'deco': 'bold'      }
+let s:color['Function']     = { 'fg': s:base3,                                   'deco': 'bold'      }
+let s:color['Statement']    = { 'fg': s:cyan,                                    'deco': 'bold'      }
+let s:color['Operator']     = { 'fg': s:violet,                                  'deco': 'NONE'      }
+let s:color['Include']      = { 'fg': s:blue,                                    'deco': 'NONE'      }
+let s:color['PreProc']      = { 'fg': s:magenta_light,                           'deco': 'NONE'      }
+let s:color['Type']         = { 'fg': s:magenta,                                 'deco': 'NONE'      }
+let s:color['StorageClass'] = { 'fg': s:cyan,                                    'deco': 'bold'      }
+let s:color['Structure']    = { 'fg': s:violet,                                  'deco': 'NONE'      }
+let s:color['Typedef']      = { 'fg': s:cyan,                                    'deco': 'bold'      }
+let s:color['Special']      = { 'fg': 'NONE',           'bg': 'NONE',            'deco': 'bold'      }
 let s:color['Underlined']   = { 'fg': 'fg',                                      'deco': 'underline' }
 let s:color['Ignore']       = { 'fg': 'bg'                                                           }
 let s:color['Error']        = { 'fg': ['#800000',   1], 'bg': ['#d16464', 167],  'deco': 'bold'      }
 let s:color['Todo']         = { 'fg': s:base2,          'bg': s:base02,          'deco': 'bold'      }
 
-let s:color['IncSearch']    = { 'fg': s:base02,         'bg': s:orange,          'deco': 'NONE'      }
-let s:color['Search']       = { 'fg': s:base02,         'bg': s:yellow,          'deco': 'NONE'      }
+let s:color['IncSearch']    = { 'fg': s:base3,          'bg': s:magenta_light,   'deco': 'NONE'      }
+let s:color['Search']       = { 'fg': s:base3,          'bg': s:magenta,         'deco': 'NONE'      }
 let s:color['Pmenu']        = { 'fg': s:base2,          'bg': s:base01,          'deco': 'NONE'      }
 let s:color['PmenuSel']     = { 'fg': s:base3,          'bg': s:base00,          'deco': 'bold'      }
 let s:color['PmenuSbar']    = {                         'bg': s:base01,          'deco': 'NONE'      }
@@ -115,13 +120,13 @@ let s:color['SpellCap']     = {                                                 
 let s:color['SpellRare']    = {                                                  'deco': 'undercurl' }
 let s:color['SpellLocal']   = {                                                  'deco': 'undercurl' }
 
-let s:color['DiffAdd']      = { 'fg': s:green,          'bg': s:diff_added,      'deco': 'NONE'      }
-let s:color['DiffChange']   = { 'fg': s:yellow,         'bg': s:diff_changed,    'deco': 'NONE'      }
-let s:color['DiffDelete']   = { 'fg': s:red,            'bg': s:diff_removed,    'deco': 'NONE'      }
-let s:color['DiffText']     = { 'fg': s:yellow,         'bg': s:diff_fine,       'deco': 'bold'      }
+let s:color['DiffAdd']      = { 'fg': s:diff_add_fg,    'bg': s:diff_add_bg,     'deco': 'NONE'      }
+let s:color['DiffChange']   = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,      'deco': 'NONE'      }
+let s:color['DiffDelete']   = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,      'deco': 'NONE'      }
+let s:color['DiffText']     = { 'fg': s:diff_rm_hi,     'bg': s:diff_rm_bg,      'deco': 'bold'      }
 
-let s:color['diffAdded']    = { 'fg': s:green,          'bg': s:diff_added,      'deco': 'NONE'      }
-let s:color['diffRemoved']  = { 'fg': s:red,            'bg': s:diff_removed,    'deco': 'NONE'      }
+let s:color['diffAdded']    = { 'fg': s:diff_add_fg,    'bg': s:diff_add_bg,     'deco': 'NONE'      }
+let s:color['diffRemoved']  = { 'fg': s:diff_rm_fg,     'bg': s:diff_rm_bg,      'deco': 'NONE'      }
 
 let s:color['Directory']    = { 'fg': ['#c0e0b0', 151],                          'deco': 'NONE'      }
 let s:color['ErrorMsg']     = { 'fg': s:red,            'bg': 'NONE',            'deco': 'NONE'      }
@@ -134,9 +139,9 @@ let s:color['WildMenu']     = { 'fg': s:base3,          'bg': s:base0,          
 let s:color['ColorColumn']  = { 'fg': 'NONE',           'bg': ['#403630', 237],  'deco': 'NONE'      }
 
 " GitGutter
-let s:color['GitGutterAdd']    = { 'fg': s:green,  'bg': s:color.SignColumn.bg, 'deco': 'bold' }
-let s:color['GitGutterChange'] = { 'fg': s:yellow, 'bg': s:color.SignColumn.bg, 'deco': 'bold' }
-let s:color['GitGutterDelete'] = { 'fg': s:red,    'bg': s:color.SignColumn.bg, 'deco': 'bold' }
+let s:color['GitGutterAdd']    = { 'fg': s:diff_add_fg, 'bg': s:color.SignColumn.bg, 'deco': 'bold' }
+let s:color['GitGutterChange'] = { 'fg': s:diff_rm_fg,  'bg': s:color.SignColumn.bg, 'deco': 'bold' }
+let s:color['GitGutterDelete'] = { 'fg': s:diff_rm_fg,  'bg': s:color.SignColumn.bg, 'deco': 'bold' }
 
 " make
 let s:color['makeIdent']      = 'Type'
@@ -151,6 +156,10 @@ let s:color['phpFunctions']   = 'NONE'
 let s:color['phpClasses']     = 'NONE'
 let s:color['phpFunction']    = 'Function'
 let s:color['phpClass']       = 'Type'
+
+" rust
+let s:color['rustFuncCall'] = { 'fg': s:blue_light }
+let s:color['rustQuestionMark'] = 'Operator'
 
 " vim
 let s:color['vimVar'] = 'NONE'
