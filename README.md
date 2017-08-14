@@ -4,7 +4,7 @@ This repository includes a color scheme file for Vim.
 
 
 ## Screenshots
-## Vim
+
 ![Screenshot](https://raw.githubusercontent.com/yuttie/hydrangea-vim/gh-pages/screenshot.png)
 
 
