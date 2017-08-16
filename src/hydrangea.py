@@ -1,7 +1,7 @@
 HEADER = """" Name:     hydrangea.vim --- Hydrangea theme for Vim
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 " URL:      https://github.com/yuttie/hydrangea-vim
-" Version:  4.0.2
+" Version:  4.1.0
 " License:  The MIT License (MIT)
 "     Copyright (c) 2015-2017 Yuta Taniguchi
 "
