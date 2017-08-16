@@ -182,11 +182,11 @@ for name, cdef in color.items():
         # The definition is a string
         if cdef == 'NONE':
             # Disable
-            execute('highlight ' + name + ' NONE')
-            execute('highlight link ' + name + ' NONE')
+            execute('hi ' + name + ' NONE')
+            execute('hi link ' + name + ' NONE')
         else:
             # Link
-            execute('highlight link ' + name + ' ' + cdef)
+            execute('hi link ' + name + ' ' + cdef)
     elif type(cdef) is dict and len(cdef) > 0:
         # The definition is a dictionary
         def2 = {}
@@ -220,4 +220,4 @@ for name, cdef in color.items():
                 elif type(val) is str:
                     def2['gui'] = val
                     def2['cterm'] = val
-        execute('highlight ' + name + ' ' + ' '.join(k + '=' + str(v) for k, v in def2.items()))
+        execute('hi ' + name + ' ' + ' '.join(k + '=' + str(v) for k, v in def2.items()))
