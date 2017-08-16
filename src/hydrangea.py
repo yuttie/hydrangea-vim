@@ -40,14 +40,14 @@ except ImportError:
 
 
 # Palette
-base03       = ("#1d1f25", 234)
-base02       = ("#2c303a", 236)
-base01       = ("#343945", 237)
-base00       = ("#3e4451", 238)
-base0        = ("#555d6f",  59)
-base1        = ("#626c82", 242)
-base2        = ("#c6d0de", 252)
-base3        = ("#e8eff8", 255)
+base03       = ("#171a1f", 234)
+base02       = ("#1f232c", 236)
+base01       = ("#373d4a", 237)
+base00       = ("#474e5c", 238)
+base0        = ("#6f788c",  59)
+base1        = ("#8792a7", 242)
+base2        = ("#c3d0ec", 252)
+base3        = ("#e3f2ff", 255)
 red          = ("#e91e63", 197)
 red_dark     = ("#792340",  52)
 teal         = ("#36c2c2",  44)
