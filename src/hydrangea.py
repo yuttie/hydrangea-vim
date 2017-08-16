@@ -177,16 +177,17 @@ let g:colors_name = 'hydrangea'
 set background=dark
 """)
 
+links = []
 for name, cdef in color.items():
     if type(cdef) is str:
         # The definition is a string
         if cdef == 'NONE':
             # Disable
             execute('hi ' + name + ' NONE')
-            execute('hi link ' + name + ' NONE')
+            links.append('hi link ' + name + ' NONE')
         else:
             # Link
-            execute('hi link ' + name + ' ' + cdef)
+            links.append('hi link ' + name + ' ' + cdef)
     elif type(cdef) is dict and len(cdef) > 0:
         # The definition is a dictionary
         def2 = {}
@@ -221,3 +222,6 @@ for name, cdef in color.items():
                     def2['gui'] = val
                     def2['cterm'] = val
         execute('hi ' + name + ' ' + ' '.join(k + '=' + str(v) for k, v in def2.items()))
+
+for link in links:
+    execute(link)
