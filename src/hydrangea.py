@@ -124,7 +124,7 @@ color['DiffAdd']      = {'fg': diff_add_fg,      'bg': diff_add_bg,           'd
 color['DiffChange']   = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
 color['DiffDelete']   = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
 color['DiffText']     = {'fg': diff_rm_hi,       'bg': diff_rm_bg,            'deco': 'bold'     }
-                                                                              
+
 color['diffAdded']    = {'fg': diff_add_fg,      'bg': diff_add_bg,           'deco': 'NONE'     }
 color['diffRemoved']  = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
 
