@@ -1,5 +1,5 @@
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
-" URL:      https://github.com/yuttie/hydrangea-theme
+" URL:      https://github.com/yuttie/hydrangea-vim
 " Version:  3.0.0
 " License:  The MIT License (MIT)
 "     Copyright (c) 2015-2016 Yuta Taniguchi
@@ -22,22 +22,23 @@
 "     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "     THE SOFTWARE.
 
-let s:base03        = ["#1d1f25", 234]
-let s:base02        = ["#2c303a", 236]
-let s:base01        = ["#343945", 237]
-let s:base00        = ["#3e4451", 238]
-let s:base0         = ["#555d6f",  59]
-let s:base1         = ["#626c82", 242]
-let s:base2         = ["#c6d0de", 252]
-let s:base3         = ["#e8eff8", 255]
-let s:red           = ["#e91e63", 197]
-let s:teal          = ["#36c2c2",  44]
-let s:teal_dark     = ["#134242",  23]
-let s:blue          = ["#54a7eb",  75]
-let s:blue_light    = ['#9fd3ed', 153]
-let s:violet        = ["#a46cff", 135]
-let s:violet_light  = ["#ccacff", 183]
-let s:magenta       = ["#e242ac", 169]
+let s:base03       = ["#1d1f25", 234]
+let s:base02       = ["#2c303a", 236]
+let s:base01       = ["#343945", 237]
+let s:base00       = ["#3e4451", 238]
+let s:base0        = ["#555d6f",  59]
+let s:base1        = ["#626c82", 242]
+let s:base2        = ["#c6d0de", 252]
+let s:base3        = ["#e8eff8", 255]
+let s:red          = ["#e91e63", 197]
+let s:red_dark     = ["#792340",  52]
+let s:teal         = ["#36c2c2",  44]
+let s:teal_dark    = ["#134242",  23]
+let s:blue         = ["#537dd5",  68]
+let s:blue_light   = ['#91b5ff', 111]
+let s:violet       = ["#996ddb",  98]
+let s:violet_light = ["#ceadff", 183]
+let s:magenta      = ["#e242ac", 162]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base02,  s:base2         ], [ s:base2, s:base00 ] ]
