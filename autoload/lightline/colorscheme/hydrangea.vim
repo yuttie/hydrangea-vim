@@ -1,8 +1,8 @@
 " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 " URL:      https://github.com/yuttie/hydrangea-vim
-" Version:  3.0.0
+" Version:  4.0.0
 " License:  The MIT License (MIT)
-"     Copyright (c) 2015-2016 Yuta Taniguchi
+"     Copyright (c) 2015-2017 Yuta Taniguchi
 "
 "     Permission is hereby granted, free of charge, to any person obtaining a copy
 "     of this software and associated documentation files (the "Software"), to deal
