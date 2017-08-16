@@ -73,10 +73,8 @@ color['CursorColumn'] = {'fg': 'NONE',           'bg': base01,                'd
 color['Visual']       = {'fg': 'NONE',           'bg': base00,                'deco': 'NONE'     }
 color['VisualNOS']    = {'fg': 'fg',                                          'deco': 'underline'}
 
-color['Folded']       = {'fg': ('#a0a8b0', 248), 'bg': ('#384048', 238),      'deco': 'NONE'     }
-color['FoldColumn']   = {'fg': ('#a0a8b0', 248), 'bg': ('#384048', 238),      'deco': 'NONE'     }
-color['Folded']       = {'fg': ('#d0e0f0', 253), 'bg': ('#202020', 234),      'deco': 'NONE'     }
-color['FoldColumn']   = {'fg': ('#c0c0d0',   7), 'bg': ('#363946', 237),      'deco': 'NONE'     }
+color['Folded']       = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
+color['FoldColumn']   = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
 color['Title']        = {'fg': ('#f6f3e8', 255), 'bg': 'NONE',                'deco': 'bold'     }
 color['StatusLine']   = {'fg': base2,            'bg': base00,                'deco': 'NONE'     }
 color['StatusLineNC'] = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
