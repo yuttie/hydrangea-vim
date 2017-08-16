@@ -177,6 +177,8 @@ let g:colors_name = 'hydrangea'
 set background=dark
 """)
 
+HI_ARGS = ['ctermfg', 'ctermbg', 'cterm', 'guifg', 'guibg', 'gui']
+
 links = []
 for name, cdef in color.items():
     if type(cdef) is str:
@@ -221,7 +223,8 @@ for name, cdef in color.items():
                 elif type(val) is str:
                     def2['gui'] = val
                     def2['cterm'] = val
-        execute('hi ' + name + ' ' + ' '.join(k + '=' + str(v) for k, v in def2.items()))
+        def2 = sorted(def2.items(), key=lambda x: HI_ARGS.index(x[0]))
+        execute('hi ' + name + ' ' + ' '.join(k + '=' + str(v) for k, v in def2))
 
 for link in links:
     execute(link)
