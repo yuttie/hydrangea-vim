@@ -25,6 +25,8 @@ HEADER = """" Name:     hydrangea.vim --- Hydrangea theme for Vim
 """
 
 
+from collections import OrderedDict
+
 try:
     import vim
 
@@ -64,7 +66,7 @@ diff_rm_hi   = ("#fface3", 218)
 
 
 # Definitions
-color = {}
+color = OrderedDict()
 color['Normal']       = {'fg': base2,            'bg': base02,                                   }
 color['Cursor']       = {'fg': 'NONE',           'bg': base3,                 'deco': 'NONE'     }
 color['CursorIM']     = {'fg': 'NONE',           'bg': base3,                                    }
