@@ -18,6 +18,7 @@ base1        = ("#626c82", 242)
 base2        = ("#c6d0de", 252)
 base3        = ("#e8eff8", 255)
 red          = ("#e91e63", 197)
+red_dark     = ("#792340",  52)
 teal         = ("#36c2c2",  44)
 teal_dark    = ("#134242",  23)
 blue         = ("#537dd5",  68)
@@ -55,7 +56,7 @@ color['LineNr']       = {'fg': base0,            'bg': base01,                'd
 color['CursorLineNr'] = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
 color['SpecialKey']   = {'fg': ('#808080',   8), 'bg': ('#343434',   8),      'deco': 'NONE'     }
 color['NonText']      = {'fg': base0,            'bg': base02,                'deco': 'NONE'     }
-color['MatchParen']   = {'fg': ('#ff0000',   9), 'bg': 'NONE',                'deco': 'bold'     }
+color['MatchParen']   = {'fg': red,              'bg': 'NONE',                'deco': 'bold'     }
 
 color['Comment']      = {'fg': base0,                                         'deco': 'NONE'     }
 color['Constant']     = {'fg': teal,             "bg": teal_dark,             'deco': 'NONE'     }
@@ -74,7 +75,7 @@ color['Typedef']      = {'fg': blue,                                          'd
 color['Special']      = {'fg': 'NONE',           'bg': 'NONE',                'deco': 'bold'     }
 color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
 color['Ignore']       = {'fg': 'bg'                                                              }
-color['Error']        = {'fg': ('#800000',   1), 'bg': ('#d16464', 167),      'deco': 'bold'     }
+color['Error']        = {'fg': red,              'bg': red_dark,              'deco': 'bold'     }
 color['Todo']         = {'fg': base2,            'bg': base02,                'deco': 'bold'     }
 
 color['IncSearch']    = {'fg': base3,            'bg': violet_light,          'deco': 'NONE'     }
@@ -106,7 +107,7 @@ color['SignColumn']   = {'fg': ('#9fafaf', 145), 'bg': color['LineNr']['bg'], 'd
 color['MoreMsg']      = {'fg': ('#2e8b57',  29),                              'deco': 'NONE'     }
 color['ModeMsg']      = {'fg': ('#76d5f8',  81), 'bg': 'NONE',                'deco': 'NONE'     }
 color['Question']     = {'fg': 'fg',                                          'deco': 'NONE'     }
-color['WarningMsg']   = {'fg': ('#e5786d', 174),                              'deco': 'NONE'     }
+color['WarningMsg']   = {'fg': red,                                           'deco': 'NONE'     }
 color['WildMenu']     = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
 color['ColorColumn']  = {'fg': 'NONE',           'bg': ('#403630', 237),      'deco': 'NONE'     }
 
