@@ -41,11 +41,11 @@ except ImportError:
 
 # Palette
 base03       = ("#171a1f", 234)
-base02       = ("#1f232c", 236)
+base02       = ("#1f232c", 235)
 base01       = ("#373d4a", 237)
-base00       = ("#474e5c", 238)
-base0        = ("#6f788c",  59)
-base1        = ("#8792a7", 242)
+base00       = ("#474e5c", 239)
+base0        = ("#6f788c", 243)
+base1        = ("#8792a7", 246)
 base2        = ("#c3d0ec", 252)
 base3        = ("#e3f2ff", 255)
 red          = ("#e91e63", 197)
