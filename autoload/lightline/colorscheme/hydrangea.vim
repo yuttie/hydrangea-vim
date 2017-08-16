@@ -22,14 +22,14 @@
 "     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "     THE SOFTWARE.
 
-let s:base03       = ["#1d1f25", 234]
-let s:base02       = ["#2c303a", 236]
-let s:base01       = ["#343945", 237]
-let s:base00       = ["#3e4451", 238]
-let s:base0        = ["#555d6f",  59]
-let s:base1        = ["#626c82", 242]
-let s:base2        = ["#c6d0de", 252]
-let s:base3        = ["#e8eff8", 255]
+let s:base03       = ["#171a1f", 234]
+let s:base02       = ["#1f232c", 235]
+let s:base01       = ["#373d4a", 237]
+let s:base00       = ["#474e5c", 239]
+let s:base0        = ["#6f788c", 243]
+let s:base1        = ["#8792a7", 246]
+let s:base2        = ["#c3d0ec", 252]
+let s:base3        = ["#e3f2ff", 255]
 let s:red          = ["#e91e63", 197]
 let s:red_dark     = ["#792340",  52]
 let s:teal         = ["#36c2c2",  44]
