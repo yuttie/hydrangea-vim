@@ -75,13 +75,13 @@ color['VisualNOS']    = {'fg': 'fg',                                          'd
 
 color['Folded']       = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
 color['FoldColumn']   = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
-color['Title']        = {'fg': ('#f6f3e8', 255), 'bg': 'NONE',                'deco': 'bold'     }
+color['Title']        = {'fg': magenta,          'bg': 'NONE',                'deco': 'bold'     }
 color['StatusLine']   = {'fg': base2,            'bg': base00,                'deco': 'NONE'     }
 color['StatusLineNC'] = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
 color['VertSplit']    = {'fg': base01,           'bg': base01,                'deco': 'NONE'     }
 color['LineNr']       = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
 color['CursorLineNr'] = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
-color['SpecialKey']   = {'fg': ('#808080',   8), 'bg': ('#343434',   8),      'deco': 'NONE'     }
+color['SpecialKey']   = {'fg': teal_dark,        'bg': teal,                  'deco': 'bold'     }
 color['NonText']      = {'fg': base0,            'bg': base02,                'deco': 'NONE'     }
 color['MatchParen']   = {'fg': red,              'bg': 'NONE',                'deco': 'bold'     }
 
@@ -99,7 +99,7 @@ color['Type']         = {'fg': magenta,                                       'd
 color['StorageClass'] = {'fg': blue,                                          'deco': 'bold'     }
 color['Structure']    = {'fg': magenta,                                       'deco': 'NONE'     }
 color['Typedef']      = {'fg': blue,                                          'deco': 'bold'     }
-color['Special']      = {'fg': 'NONE',           'bg': 'NONE',                'deco': 'bold'     }
+color['Special']      = {'fg': blue_light,       'bg': 'NONE',                'deco': 'bold'     }
 color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
 color['Ignore']       = {'fg': 'bg'                                                              }
 color['Error']        = {'fg': red,              'bg': red_dark,              'deco': 'bold'     }
@@ -128,15 +128,15 @@ color['DiffText']     = {'fg': diff_rm_hi,       'bg': diff_rm_bg,            'd
 color['diffAdded']    = {'fg': diff_add_fg,      'bg': diff_add_bg,           'deco': 'NONE'     }
 color['diffRemoved']  = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
 
-color['Directory']    = {'fg': ('#c0e0b0', 151),                              'deco': 'NONE'     }
+color['Directory']    = {'fg': teal,                                          'deco': 'NONE'     }
 color['ErrorMsg']     = {'fg': red,              'bg': 'NONE',                'deco': 'NONE'     }
-color['SignColumn']   = {'fg': ('#9fafaf', 145), 'bg': color['LineNr']['bg'], 'deco': 'NONE'     }
-color['MoreMsg']      = {'fg': ('#2e8b57',  29),                              'deco': 'NONE'     }
-color['ModeMsg']      = {'fg': ('#76d5f8',  81), 'bg': 'NONE',                'deco': 'NONE'     }
+color['SignColumn']   = {'fg': base2,            'bg': color['LineNr']['bg'], 'deco': 'NONE'     }
+color['MoreMsg']      = {'fg': teal,                                          'deco': 'NONE'     }
+color['ModeMsg']      = {                                                     'deco': 'bold'     }
 color['Question']     = {'fg': 'fg',                                          'deco': 'NONE'     }
 color['WarningMsg']   = {'fg': red,                                           'deco': 'NONE'     }
 color['WildMenu']     = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
-color['ColorColumn']  = {'fg': 'NONE',           'bg': ('#403630', 237),      'deco': 'NONE'     }
+color['ColorColumn']  = {'fg': 'NONE',           'bg': red_dark,              'deco': 'NONE'     }
 
 # GitGutter
 color['GitGutterAdd']    = {'fg': diff_add_fg, 'bg': color['SignColumn']['bg'], 'deco': 'bold'}
