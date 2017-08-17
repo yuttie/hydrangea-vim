@@ -17,7 +17,7 @@ This repository includes a color scheme file for Vim.
 
 ### For vim-plug users
 ```viml
-Plug 'yuttie/hydrangea-theme'
+Plug 'yuttie/hydrangea-vim'
 ```
 
 
