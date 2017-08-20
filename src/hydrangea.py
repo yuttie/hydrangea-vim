@@ -40,14 +40,12 @@ except ImportError:
 
 
 # Palette
-base03       = ("#171a1f", 234)
-base02       = ("#1f232c", 235)
-base01       = ("#373d4a", 237)
-base00       = ("#474e5c", 239)
-base0        = ("#6f788c", 243)
-base1        = ("#8792a7", 246)
-base2        = ("#c3d0ec", 252)
-base3        = ("#e3f2ff", 255)
+base03       = ("#1e222c", 235)  # L* = 44
+base02       = ("#2a303b", 236)  # L* = 50
+base01       = ("#373d4b", 237)  # L* = 56
+base00       = ("#474e5c", 239)  # L* = 62
+base2        = ("#c3d0ec", 252)  # L* = 93
+base3        = ("#edf9ff", 231)  # L* = 99
 red          = ("#e91e63", 197)
 red_dark     = ("#792340",  52)
 teal         = ("#36c2c2",  44)
@@ -67,27 +65,27 @@ diff_rm_hi   = ("#fface3", 218)
 
 # Definitions
 color = OrderedDict()
-color['Normal']       = {'fg': base2,            'bg': base02,                                   }
+color['Normal']       = {'fg': base2,            'bg': base03,                                   }
 color['Cursor']       = {'fg': 'NONE',           'bg': base3,                 'deco': 'NONE'     }
 color['CursorIM']     = {'fg': 'NONE',           'bg': base3,                                    }
-color['CursorLine']   = {'fg': 'NONE',           'bg': base01,                'deco': 'bold'     }
-color['CursorColumn'] = {'fg': 'NONE',           'bg': base01,                'deco': 'NONE'     }
-color['Visual']       = {'fg': 'NONE',           'bg': base00,                'deco': 'NONE'     }
+color['CursorLine']   = {'fg': 'NONE',           'bg': base02,                'deco': 'bold'     }
+color['CursorColumn'] = {'fg': 'NONE',           'bg': base02,                'deco': 'NONE'     }
+color['Visual']       = {'fg': 'NONE',           'bg': base01,                'deco': 'NONE'     }
 color['VisualNOS']    = {'fg': 'fg',                                          'deco': 'underline'}
 
-color['Folded']       = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
-color['FoldColumn']   = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
+color['Folded']       = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
+color['FoldColumn']   = {'fg': base2,            'bg': base03,                'deco': 'NONE'     }
 color['Title']        = {'fg': magenta,          'bg': 'NONE',                'deco': 'bold'     }
-color['StatusLine']   = {'fg': base2,            'bg': base00,                'deco': 'NONE'     }
-color['StatusLineNC'] = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
-color['VertSplit']    = {'fg': base01,           'bg': base01,                'deco': 'NONE'     }
-color['LineNr']       = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
-color['CursorLineNr'] = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
+color['StatusLine']   = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
+color['StatusLineNC'] = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
+color['VertSplit']    = {'fg': base02,           'bg': base02,                'deco': 'NONE'     }
+color['LineNr']       = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
+color['CursorLineNr'] = {'fg': base3,            'bg': base00,                'deco': 'bold'     }
 color['SpecialKey']   = {'fg': teal_dark,        'bg': teal,                  'deco': 'bold'     }
-color['NonText']      = {'fg': base0,            'bg': base02,                'deco': 'NONE'     }
+color['NonText']      = {'fg': base00,           'bg': base03,                'deco': 'NONE'     }
 color['MatchParen']   = {'fg': red,              'bg': 'NONE',                'deco': 'bold'     }
 
-color['Comment']      = {'fg': base0,                                         'deco': 'NONE'     }
+color['Comment']      = {'fg': base00,                                        'deco': 'NONE'     }
 color['Constant']     = {'fg': teal,             "bg": teal_dark,             'deco': 'NONE'     }
 color['String']       = 'Constant'
 color['Number']       = 'Constant'
@@ -105,17 +103,17 @@ color['Special']      = {'fg': blue_light,       'bg': 'NONE',                'd
 color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
 color['Ignore']       = {'fg': 'bg'                                                              }
 color['Error']        = {'fg': red,              'bg': red_dark,              'deco': 'bold'     }
-color['Todo']         = {'fg': base2,            'bg': base02,                'deco': 'bold'     }
+color['Todo']         = {'fg': base2,            'bg': base03,                'deco': 'bold'     }
 
 color['IncSearch']    = {'fg': base3,            'bg': violet_light,          'deco': 'NONE'     }
 color['Search']       = {'fg': base3,            'bg': magenta,               'deco': 'NONE'     }
-color['Pmenu']        = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
-color['PmenuSel']     = {'fg': base3,            'bg': base00,                'deco': 'bold'     }
-color['PmenuSbar']    = {                        'bg': base01,                'deco': 'NONE'     }
-color['PmenuThumb']   = {                        'bg': base0,                 'deco': 'NONE'     }
-color['TabLine']      = {'fg': base0,            'bg': base01,                'deco': 'NONE'     }
-color['TabLineSel']   = {'fg': base02,           'bg': blue,                  'deco': 'bold'     }
-color['TabLineFill']  = {'fg': base01,           'bg': base02,                'deco': 'underline'}
+color['Pmenu']        = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
+color['PmenuSel']     = {'fg': base3,            'bg': base01,                'deco': 'bold'     }
+color['PmenuSbar']    = {                        'bg': base02,                'deco': 'NONE'     }
+color['PmenuThumb']   = {                        'bg': base00,                'deco': 'NONE'     }
+color['TabLine']      = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
+color['TabLineSel']   = {'fg': base03,           'bg': blue,                  'deco': 'bold'     }
+color['TabLineFill']  = {'fg': base02,           'bg': base03,                'deco': 'underline'}
 
 color['SpellBad']     = {                                                     'deco': 'undercurl'}
 color['SpellCap']     = {                                                     'deco': 'undercurl'}
@@ -137,7 +135,7 @@ color['MoreMsg']      = {'fg': blue,                                          'd
 color['ModeMsg']      = {                                                     'deco': 'bold'     }
 color['Question']     = {'fg': 'fg',                                          'deco': 'NONE'     }
 color['WarningMsg']   = {'fg': red,                                           'deco': 'NONE'     }
-color['WildMenu']     = {'fg': base3,            'bg': base0,                 'deco': 'bold'     }
+color['WildMenu']     = {'fg': base3,            'bg': base00,                'deco': 'bold'     }
 color['ColorColumn']  = {'fg': 'NONE',           'bg': red_dark,              'deco': 'NONE'     }
 
 # GitGutter
