@@ -23,10 +23,10 @@ except ImportError:
 # Palette
 base03       = ("#1e222c", 235)  # L* = 44
 base02       = ("#2a303b", 236)  # L* = 50
-base01       = ("#373d4b", 237)  # L* = 56
-base00       = ("#474e5c", 239)  # L* = 62
-base2        = ("#c3d0ec", 252)  # L* = 93
-base3        = ("#edf9ff", 231)  # L* = 99
+base01       = ("#3b4351", 238)  # L* = 58
+base00       = ("#586374", 241)  # L* = 68
+base2        = ("#c3d5ec", 252)  # L* = 93
+base3        = ("#edf5ff", 255)  # L* = 99
 red          = ("#e91e63", 197)
 red_dark     = ("#681c36",  52)
 teal         = ("#36c2c2",  44)
