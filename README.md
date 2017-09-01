@@ -11,6 +11,7 @@ This repository includes a color scheme file for Vim.
 * Midnight blue as the background color
 * Support 256 color terminals
 * Includes colorscheme file for [lightline.vim](https://github.com/itchyny/lightline.vim)
+* Customization via colorscheme [generator script](src/hydrangea.py) written in Python
 
 
 ## Installation
