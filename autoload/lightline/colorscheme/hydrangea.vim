@@ -60,15 +60,15 @@ let s:p.replace.middle  = [ [ s:base03,   s:magenta3 ]                          
 let s:p.replace.right   = [ [ s:base03,   s:magenta1 ], [ s:base03, s:magenta2 ] ]
 
 let s:p.inactive.left   = [ [ s:base03,   s:base00   ], [ s:base03, s:base01   ] ]
-let s:p.inactive.middle = [ [ s:base03,   s:base02   ]                           ]
+let s:p.inactive.middle = [ [ s:base03,   s:base01   ]                           ]
 let s:p.inactive.right  = [ [ s:base03,   s:base00   ], [ s:base03, s:base01   ] ]
 
 let s:p.normal.error    = [ [ s:red,      s:base02   ] ]
-let s:p.normal.warning  = [ [ s:magenta1, s:base01   ] ]
+let s:p.normal.warning  = [ [ s:violet1,  s:base01   ] ]
 
-let s:p.tabline.left    = [ [ s:base03,   s:base00   ] ]
-let s:p.tabline.middle  = [ [ s:base03,   s:base02   ] ]
-let s:p.tabline.right   = [ [ s:base03,   s:base00   ] ]
-let s:p.tabline.tabsel  = [ [ s:base03,   s:base2    ] ]
+let s:p.tabline.left    = [ [ s:base2,    s:base01   ]                           ]
+let s:p.tabline.middle  = [ [ s:base2,    s:base03   ]                           ]
+let s:p.tabline.right   = [ [ s:base03,   s:violet1  ], [ s:base02, s:violet2  ] ]
+let s:p.tabline.tabsel  = [ [ s:base03,   s:magenta1 ] ]
 
 let g:lightline#colorscheme#hydrangea#palette = lightline#colorscheme#flatten(s:p)
