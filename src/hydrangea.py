@@ -28,23 +28,23 @@ base00       = ("#586374", 241)  # L* = 68
 base2        = ("#c3d5ec", 252)  # L* = 93
 base3        = ("#edf5ff", 255)  # L* = 99
 red01        = ("#681c36",  52)
-red1         = ("#e91e63", 197)
+red1         = ("#e91e63", 161)
 teal01       = ("#134242",  23)
 teal2        = ("#36c2c2",  44)
-cyan01       = ("#064253",  44)
-cyan1        = ("#169ec4",  44)
-cyan2        = ("#56c7ee",  23)
-cyan3        = ("#bcebfe",  23)
+cyan01       = ("#064253",  23)
+cyan1        = ("#169ec4",  38)
+cyan2        = ("#56c7ee",  81)
+cyan3        = ("#bcebfe", 153)
 blue1        = ("#537dd5",  68)
 blue2        = ('#8baafe', 111)
-blue3        = ('#c9d4fd', 111)
+blue3        = ('#c9d4fd', 189)
 violet1      = ("#996ddb",  98)
 violet2      = ("#c398fe", 183)
-violet3      = ("#e2ccfe", 183)
-magenta01    = ("#68024b", 162)
+violet3      = ("#e2ccfe", 225)
+magenta01    = ("#68024b",  89)
 magenta1     = ("#e242ac", 162)
-magenta2     = ("#fe7ecd", 162)
-magenta3     = ("#ffc3e4", 162)
+magenta2     = ("#fe7ecd", 213)
+magenta3     = ("#ffc3e4", 218)
 
 
 # Definitions
