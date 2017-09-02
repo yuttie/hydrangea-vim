@@ -27,21 +27,24 @@ base01       = ("#3b4351", 238)  # L* = 58
 base00       = ("#586374", 241)  # L* = 68
 base2        = ("#c3d5ec", 252)  # L* = 93
 base3        = ("#edf5ff", 255)  # L* = 99
-red          = ("#e91e63", 197)
-red_dark     = ("#681c36",  52)
-teal         = ("#36c2c2",  44)
-teal_dark    = ("#134242",  23)
-blue         = ("#537dd5",  68)
-blue_light   = ('#91b5ff', 111)
-violet       = ("#996ddb",  98)
-violet_light = ("#ceadff", 183)
-magenta      = ("#e242ac", 162)
-diff_add_fg  = ("#52c4ff",  81)
-diff_add_bg  = ("#0d435f",  24)
-diff_add_hi  = ("#97dcff", 117)
-diff_rm_fg   = ("#e242ac", 162)
-diff_rm_bg   = ("#66184c",  53)
-diff_rm_hi   = ("#fface3", 218)
+red01        = ("#681c36",  52)
+red1         = ("#e91e63", 197)
+teal01       = ("#134242",  23)
+teal2        = ("#36c2c2",  44)
+cyan01       = ("#064253",  44)
+cyan1        = ("#169ec4",  44)
+cyan2        = ("#56c7ee",  23)
+cyan3        = ("#bcebfe",  23)
+blue1        = ("#537dd5",  68)
+blue2        = ('#8baafe', 111)
+blue3        = ('#c9d4fd', 111)
+violet1      = ("#996ddb",  98)
+violet2      = ("#c398fe", 183)
+violet3      = ("#e2ccfe", 183)
+magenta01    = ("#68024b", 162)
+magenta1     = ("#e242ac", 162)
+magenta2     = ("#fe7ecd", 162)
+magenta3     = ("#ffc3e4", 162)
 
 
 # Definitions
@@ -56,73 +59,73 @@ color['VisualNOS']    = {'fg': 'fg',                                          'd
 
 color['Folded']       = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
 color['FoldColumn']   = {'fg': base2,            'bg': base03,                'deco': 'NONE'     }
-color['Title']        = {'fg': magenta,          'bg': 'NONE',                'deco': 'bold'     }
+color['Title']        = {'fg': magenta1,         'bg': 'NONE',                'deco': 'bold'     }
 color['StatusLine']   = {'fg': base2,            'bg': base01,                'deco': 'NONE'     }
 color['StatusLineNC'] = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
 color['VertSplit']    = {'fg': base02,           'bg': base02,                'deco': 'NONE'     }
 color['LineNr']       = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
 color['CursorLineNr'] = {'fg': base3,            'bg': base00,                'deco': 'bold'     }
-color['SpecialKey']   = {'fg': teal_dark,        'bg': teal,                  'deco': 'bold'     }
+color['SpecialKey']   = {'fg': cyan01,           'bg': cyan1,                 'deco': 'bold'     }
 color['NonText']      = {'fg': base00,           'bg': base03,                'deco': 'NONE'     }
-color['MatchParen']   = {'fg': red,              'bg': 'NONE',                'deco': 'bold'     }
+color['MatchParen']   = {'fg': red1,             'bg': 'NONE',                'deco': 'bold'     }
 
 color['Comment']      = {'fg': base00,                                        'deco': 'NONE'     }
-color['Constant']     = {'fg': teal,             "bg": teal_dark,             'deco': 'NONE'     }
+color['Constant']     = {'fg': teal2,            "bg": teal01,                'deco': 'NONE'     }
 color['String']       = 'Constant'
-color['Number']       = 'Constant'
+color['Number']       = {'fg': cyan2,            'bg': cyan01,                'deco': 'NONE'     }
 color['Identifier']   = {'fg': base3,                                         'deco': 'bold'     }
 color['Function']     = {'fg': base3,                                         'deco': 'bold'     }
-color['Statement']    = {'fg': blue,                                          'deco': 'bold'     }
-color['Operator']     = {'fg': magenta,                                       'deco': 'NONE'     }
-color['Include']      = {'fg': violet,                                        'deco': 'NONE'     }
-color['PreProc']      = {'fg': violet_light,                                  'deco': 'NONE'     }
-color['Type']         = {'fg': magenta,                                       'deco': 'NONE'     }
-color['StorageClass'] = {'fg': blue,                                          'deco': 'bold'     }
-color['Structure']    = {'fg': magenta,                                       'deco': 'NONE'     }
-color['Typedef']      = {'fg': blue,                                          'deco': 'bold'     }
-color['Special']      = {'fg': blue_light,       'bg': 'NONE',                'deco': 'bold'     }
+color['Statement']    = {'fg': blue1,                                         'deco': 'bold'     }
+color['Operator']     = {'fg': magenta1,                                      'deco': 'NONE'     }
+color['Include']      = {'fg': violet1,                                       'deco': 'NONE'     }
+color['PreProc']      = {'fg': violet2,                                       'deco': 'NONE'     }
+color['Type']         = {'fg': magenta1,                                      'deco': 'NONE'     }
+color['StorageClass'] = {'fg': blue1,                                         'deco': 'bold'     }
+color['Structure']    = {'fg': magenta1,                                      'deco': 'NONE'     }
+color['Typedef']      = {'fg': blue1,                                         'deco': 'bold'     }
+color['Special']      = {'fg': blue2,            'bg': 'NONE',                'deco': 'bold'     }
 color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
 color['Ignore']       = {'fg': 'bg'                                                              }
-color['Error']        = {'fg': red,              'bg': red_dark,              'deco': 'bold'     }
+color['Error']        = {'fg': red1,             'bg': red01,                 'deco': 'bold'     }
 color['Todo']         = {'fg': base2,            'bg': base03,                'deco': 'bold'     }
 
-color['IncSearch']    = {'fg': base03,           'bg': diff_add_fg,           'deco': 'bold'     }
-color['Search']       = {'fg': base03,           'bg': diff_add_hi,           'deco': 'NONE'     }
+color['IncSearch']    = {'fg': base03,           'bg': cyan1,                 'deco': 'bold'     }
+color['Search']       = {'fg': base03,           'bg': cyan2,                 'deco': 'NONE'     }
 color['Pmenu']        = {'fg': base2,            'bg': base02,                'deco': 'NONE'     }
 color['PmenuSel']     = {'fg': base3,            'bg': base01,                'deco': 'bold'     }
 color['PmenuSbar']    = {                        'bg': base02,                'deco': 'NONE'     }
 color['PmenuThumb']   = {                        'bg': base00,                'deco': 'NONE'     }
-color['TabLine']      = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
-color['TabLineSel']   = {'fg': base03,           'bg': blue,                  'deco': 'bold'     }
-color['TabLineFill']  = {'fg': base02,           'bg': base03,                'deco': 'underline'}
+color['TabLine']      = {'fg': base2,            'bg': base03,                'deco': 'NONE'     }
+color['TabLineSel']   = {'fg': base03,           'bg': magenta1,              'deco': 'bold'     }
+color['TabLineFill']  = {'fg': base2,            'bg': base03,                'deco': 'NONE'     }
 
 color['SpellBad']     = {                                                     'deco': 'undercurl'}
 color['SpellCap']     = {                                                     'deco': 'undercurl'}
 color['SpellRare']    = {                                                     'deco': 'undercurl'}
 color['SpellLocal']   = {                                                     'deco': 'undercurl'}
 
-color['DiffAdd']      = {'fg': diff_add_fg,      'bg': diff_add_bg,           'deco': 'NONE'     }
-color['DiffChange']   = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
-color['DiffDelete']   = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
-color['DiffText']     = {'fg': diff_rm_hi,       'bg': diff_rm_bg,            'deco': 'bold'     }
+color['DiffAdd']      = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
+color['DiffChange']   = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
+color['DiffDelete']   = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
+color['DiffText']     = {'fg': magenta3,         'bg': magenta01,             'deco': 'bold'     }
 
-color['diffAdded']    = {'fg': diff_add_fg,      'bg': diff_add_bg,           'deco': 'NONE'     }
-color['diffRemoved']  = {'fg': diff_rm_fg,       'bg': diff_rm_bg,            'deco': 'NONE'     }
+color['diffAdded']    = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
+color['diffRemoved']  = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
 
-color['Directory']    = {'fg': teal,                                          'deco': 'NONE'     }
-color['ErrorMsg']     = {'fg': red,              'bg': 'NONE',                'deco': 'NONE'     }
+color['Directory']    = {'fg': teal2,                                         'deco': 'NONE'     }
+color['ErrorMsg']     = {'fg': red1,             'bg': 'NONE',                'deco': 'NONE'     }
 color['SignColumn']   = {'fg': base2,            'bg': color['LineNr']['bg'], 'deco': 'NONE'     }
-color['MoreMsg']      = {'fg': blue,                                          'deco': 'NONE'     }
+color['MoreMsg']      = {'fg': blue1,                                         'deco': 'NONE'     }
 color['ModeMsg']      = {                                                     'deco': 'bold'     }
 color['Question']     = {'fg': 'fg',                                          'deco': 'NONE'     }
-color['WarningMsg']   = {'fg': red,                                           'deco': 'NONE'     }
+color['WarningMsg']   = {'fg': red1,                                          'deco': 'NONE'     }
 color['WildMenu']     = {'fg': base3,            'bg': base00,                'deco': 'bold'     }
-color['ColorColumn']  = {'fg': 'NONE',           'bg': red_dark,              'deco': 'NONE'     }
+color['ColorColumn']  = {'fg': 'NONE',           'bg': red01,                 'deco': 'NONE'     }
 
 # GitGutter
-color['GitGutterAdd']    = {'fg': diff_add_fg, 'bg': color['SignColumn']['bg'], 'deco': 'bold'}
-color['GitGutterChange'] = {'fg': diff_rm_fg,  'bg': color['SignColumn']['bg'], 'deco': 'bold'}
-color['GitGutterDelete'] = {'fg': diff_rm_fg,  'bg': color['SignColumn']['bg'], 'deco': 'bold'}
+color['GitGutterAdd']    = {'fg': cyan1,       'bg': color['SignColumn']['bg'], 'deco': 'bold'}
+color['GitGutterChange'] = {'fg': magenta1,    'bg': color['SignColumn']['bg'], 'deco': 'bold'}
+color['GitGutterDelete'] = {'fg': magenta1,    'bg': color['SignColumn']['bg'], 'deco': 'bold'}
 
 # make
 color['makeIdent']      = 'Type'
@@ -139,7 +142,7 @@ color['phpFunction']    = 'Function'
 color['phpClass']       = 'Type'
 
 # rust
-color['rustFuncCall'] = {'fg': blue_light}
+color['rustFuncCall'] = {'fg': blue2}
 color['rustQuestionMark'] = 'Operator'
 
 # vim
