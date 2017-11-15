@@ -22,6 +22,10 @@ This repository includes a color scheme file for Vim.
 Plug 'yuttie/hydrangea-vim'
 ```
 
+### For dein.vim users
+```viml
+call dein#add('yuttie/hydrangea-vim')
+```
 
 ## Configuration
 
