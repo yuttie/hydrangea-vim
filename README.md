@@ -47,3 +47,7 @@ let g:lightline = {
 ## Contribution
 Currently, the colors for terminals, i.e. `cterm*` values, are not tested well.
 Please create an issue when you find a problem.
+
+
+## See also
+If you are also interested in a light theme, have a look at my [Inkstained theme](https://github.com/yuttie/inkstained-vim)! 😎
