@@ -15,7 +15,7 @@ set background=dark
 hi Normal ctermfg=252 ctermbg=235 guifg=#8791a9 guibg=#171c26
 hi Cursor ctermfg=NONE ctermbg=252 cterm=NONE guifg=NONE guibg=#cdd8f1 gui=NONE
 hi CursorIM ctermfg=NONE ctermbg=252 guifg=NONE guibg=#cdd8f1
-hi CursorLine ctermfg=NONE ctermbg=236 cterm=bold guifg=NONE guibg=#232833 gui=bold
+hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
 hi Visual ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#303540 gui=NONE
 hi VisualNOS cterm=underline guifg=fg gui=underline
