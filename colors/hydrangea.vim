@@ -48,8 +48,8 @@ hi Underlined cterm=underline guifg=fg gui=underline
 hi Ignore guifg=bg
 hi Error ctermfg=161 ctermbg=52 cterm=bold guifg=#e91e63 guibg=#681c36 gui=bold
 hi Todo ctermfg=252 ctermbg=235 cterm=bold guifg=#8791a9 guibg=#171c26 gui=bold
-hi IncSearch ctermfg=235 ctermbg=38 cterm=bold guifg=#171c26 guibg=#1398bf gui=bold
-hi Search ctermfg=235 ctermbg=38 cterm=NONE guifg=#171c26 guibg=#1398bf gui=NONE
+hi IncSearch ctermfg=235 ctermbg=162 cterm=bold guifg=#171c26 guibg=#c44597 gui=bold
+hi Search ctermfg=235 ctermbg=162 cterm=NONE guifg=#171c26 guibg=#c44597 gui=NONE
 hi Pmenu ctermfg=252 ctermbg=236 cterm=NONE guifg=#8791a9 guibg=#232833 gui=NONE
 hi PmenuSel ctermfg=252 ctermbg=238 cterm=bold guifg=#cdd8f1 guibg=#303540 gui=bold
 hi PmenuSbar ctermbg=236 cterm=NONE guibg=#232833 gui=NONE
