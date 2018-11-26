@@ -88,8 +88,8 @@ color['Ignore']       = {'fg': 'bg'                                             
 color['Error']        = {'fg': red1,             'bg': red01,                 'deco': 'bold'     }
 color['Todo']         = {'fg': base1,            'bg': base03,                'deco': 'bold'     }
 
-color['IncSearch']    = {'fg': base03,           'bg': cyan1,                 'deco': 'bold'     }
-color['Search']       = {'fg': base03,           'bg': cyan1,                 'deco': 'NONE'     }
+color['IncSearch']    = {'fg': base03,           'bg': magenta1,              'deco': 'bold'     }
+color['Search']       = {'fg': base03,           'bg': magenta1,              'deco': 'NONE'     }
 color['Pmenu']        = {'fg': base1,            'bg': base02,                'deco': 'NONE'     }
 color['PmenuSel']     = {'fg': base2,            'bg': base01,                'deco': 'bold'     }
 color['PmenuSbar']    = {                        'bg': base02,                'deco': 'NONE'     }
