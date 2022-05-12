@@ -11,9 +11,11 @@ from collections import OrderedDict
 try:
     import vim
 
+    # When executed in Vim, directly execute a command (apply the theme)
     def execute(cmd):
         vim.command(cmd)
 except ImportError:
+    # When executed outside Vim, print the whole colorscheme to stdout
     print(HEADER)
 
     def execute(cmd):
