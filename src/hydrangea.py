@@ -32,6 +32,7 @@ base1        = ("#8791a9", 252)  # L = 60, C = 14, H = 270
 base2        = ("#cdd8f1", 252)  # L = 86, C = 14, H = 270
 red01        = ("#681c36",  52)  # L = ?, C = ?, H = ?
 red1         = ("#e91e63", 161)  # L = ?, C = ?, H = ?
+green1       = ("#98bf00", 106)  # L = ?, C = ?, H = ?
 teal01       = ("#013435",  23)  # L = ?, C = ?, H = ?
 teal2        = ("#019c9c",  44)  # L = ?, C = ?, H = ?
 cyan01       = ("#023342",  23)  # L = 19, C = 18, H = 232
@@ -88,7 +89,7 @@ color['Special']      = {'fg': blue2,            'bg': 'NONE',                'd
 color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
 color['Ignore']       = {'fg': 'bg'                                                              }
 color['Error']        = {'fg': red1,             'bg': red01,                 'deco': 'bold'     }
-color['Todo']         = {'fg': base1,            'bg': base03,                'deco': 'bold'     }
+color['Todo']         = {'fg': green1,                                        'deco': 'bold'     }
 
 color['IncSearch']    = {'fg': base03,           'bg': magenta1,              'deco': 'bold'     }
 color['Search']       = {'fg': base03,           'bg': magenta1,              'deco': 'NONE'     }
