@@ -39,7 +39,7 @@ return {
     b = { fg = base03, bg = base1 },
   },
   replace = {
-    a = { fg = base03, bg = violet1, gui = 'bold' },
+    a = { fg = base03, bg = magenta1, gui = 'bold' },
     b = { fg = base03, bg = base1 },
   },
   inactive = {
