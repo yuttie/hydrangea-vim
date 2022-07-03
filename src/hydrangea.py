@@ -55,75 +55,75 @@ magenta3     = ("#f7c5ef", 218)
 
 # Definitions
 color = OrderedDict()
-color['Normal']       = {'fg': base1,            'bg': base03,                                   }
-color['Cursor']       = {'fg': 'NONE',           'bg': base2,                 'deco': 'NONE'     }
-color['CursorIM']     = {'fg': 'NONE',           'bg': base2,                                    }
-color['CursorLine']   = {'fg': 'NONE',           'bg': base02,                'deco': 'NONE'     }
-color['CursorColumn'] = {'fg': 'NONE',           'bg': base02,                'deco': 'NONE'     }
-color['Visual']       = {'fg': 'NONE',           'bg': base01,                'deco': 'NONE'     }
-color['VisualNOS']    = {'fg': 'fg',                                          'deco': 'underline'}
+color['Normal']       = dict(fg=base1,    bg=base03,                                )
+color['Cursor']       = dict(fg='NONE',   bg=base2,                 deco='NONE'     )
+color['CursorIM']     = dict(fg='NONE',   bg=base2,                                 )
+color['CursorLine']   = dict(fg='NONE',   bg=base02,                deco='NONE'     )
+color['CursorColumn'] = dict(fg='NONE',   bg=base02,                deco='NONE'     )
+color['Visual']       = dict(fg='NONE',   bg=base01,                deco='NONE'     )
+color['VisualNOS']    = dict(fg='fg',                               deco='underline')
 
-color['Folded']       = {'fg': base1,            'bg': base02,                'deco': 'NONE'     }
-color['FoldColumn']   = {'fg': base1,            'bg': base03,                'deco': 'NONE'     }
-color['Title']        = {'fg': magenta1,         'bg': 'NONE',                'deco': 'bold'     }
-color['StatusLine']   = {'fg': base1,            'bg': base01,                'deco': 'NONE'     }
-color['StatusLineNC'] = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
-color['VertSplit']    = {'fg': base02,           'bg': base02,                'deco': 'NONE'     }
-color['LineNr']       = {'fg': base00,           'bg': base02,                'deco': 'NONE'     }
-color['CursorLineNr'] = {'fg': base2,            'bg': base00,                'deco': 'bold'     }
-color['SpecialKey']   = {'fg': cyan01,           'bg': cyan1,                 'deco': 'bold'     }
-color['NonText']      = {'fg': base00,           'bg': base03,                'deco': 'NONE'     }
-color['MatchParen']   = {'fg': red1,             'bg': 'NONE',                'deco': 'bold'     }
+color['Folded']       = dict(fg=base1,    bg=base02,                deco='NONE'     )
+color['FoldColumn']   = dict(fg=base1,    bg=base03,                deco='NONE'     )
+color['Title']        = dict(fg=magenta1, bg='NONE',                deco='bold'     )
+color['StatusLine']   = dict(fg=base1,    bg=base01,                deco='NONE'     )
+color['StatusLineNC'] = dict(fg=base00,   bg=base02,                deco='NONE'     )
+color['VertSplit']    = dict(fg=base02,   bg=base02,                deco='NONE'     )
+color['LineNr']       = dict(fg=base00,   bg=base02,                deco='NONE'     )
+color['CursorLineNr'] = dict(fg=base2,    bg=base00,                deco='bold'     )
+color['SpecialKey']   = dict(fg=cyan01,   bg=cyan1,                 deco='bold'     )
+color['NonText']      = dict(fg=base00,   bg=base03,                deco='NONE'     )
+color['MatchParen']   = dict(fg=red1,     bg='NONE',                deco='bold'     )
 
-color['Comment']      = {'fg': base0,                                         'deco': 'NONE'     }
-color['Constant']     = {'fg': cyan1,            'bg': 'NONE',                'deco': 'NONE'     }
-color['String']       = {'fg': skyblue1,         'bg': skyblue01,             'deco': 'NONE'     }
-color['Number']       = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
-color['Identifier']   = {'fg': base1,                                         'deco': 'NONE'     }
-color['Function']     = {'fg': base2,                                         'deco': 'NONE'     }
-color['Statement']    = {'fg': blue1,                                         'deco': 'bold'     }
-color['Operator']     = {'fg': violet2,                                       'deco': 'NONE'     }
-color['Include']      = {'fg': violet1,                                       'deco': 'NONE'     }
-color['PreProc']      = {'fg': violet2,                                       'deco': 'NONE'     }
-color['Type']         = {'fg': magenta1,                                      'deco': 'NONE'     }
-color['StorageClass'] = {'fg': blue1,                                         'deco': 'bold'     }
-color['Structure']    = {'fg': magenta1,                                      'deco': 'NONE'     }
-color['Typedef']      = {'fg': blue1,                                         'deco': 'bold'     }
-color['Special']      = {'fg': blue2,            'bg': 'NONE',                'deco': 'bold'     }
-color['Underlined']   = {'fg': 'fg',                                          'deco': 'underline'}
-color['Ignore']       = {'fg': 'bg'                                                              }
-color['Error']        = {'fg': red1,             'bg': red01,                 'deco': 'bold'     }
-color['Todo']         = {'fg': green1,           'bg': 'NONE',                'deco': 'bold'     }
+color['Comment']      = dict(fg=base0,                              deco='NONE'     )
+color['Constant']     = dict(fg=cyan1,    bg='NONE',                deco='NONE'     )
+color['String']       = dict(fg=skyblue1, bg=skyblue01,             deco='NONE'     )
+color['Number']       = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
+color['Identifier']   = dict(fg=base1,                              deco='NONE'     )
+color['Function']     = dict(fg=base2,                              deco='NONE'     )
+color['Statement']    = dict(fg=blue1,                              deco='bold'     )
+color['Operator']     = dict(fg=violet2,                            deco='NONE'     )
+color['Include']      = dict(fg=violet1,                            deco='NONE'     )
+color['PreProc']      = dict(fg=violet2,                            deco='NONE'     )
+color['Type']         = dict(fg=magenta1,                           deco='NONE'     )
+color['StorageClass'] = dict(fg=blue1,                              deco='bold'     )
+color['Structure']    = dict(fg=magenta1,                           deco='NONE'     )
+color['Typedef']      = dict(fg=blue1,                              deco='bold'     )
+color['Special']      = dict(fg=blue2,    bg='NONE',                deco='bold'     )
+color['Underlined']   = dict(fg='fg',                               deco='underline')
+color['Ignore']       = dict(fg='bg'                                                )
+color['Error']        = dict(fg=red1,     bg=red01,                 deco='bold'     )
+color['Todo']         = dict(fg=green1,   bg='NONE',                deco='bold'     )
 
-color['IncSearch']    = {'fg': magenta3,         'bg': magenta1,              'deco': 'bold'     }
-color['Search']       = {'fg': magenta3,         'bg': magenta1,              'deco': 'NONE'     }
-color['Pmenu']        = {'fg': base1,            'bg': base02,                'deco': 'NONE'     }
-color['PmenuSel']     = {'fg': base2,            'bg': base01,                'deco': 'bold'     }
-color['PmenuSbar']    = {                        'bg': base02,                'deco': 'NONE'     }
-color['PmenuThumb']   = {                        'bg': base00,                'deco': 'NONE'     }
-color['TabLine']      = {'fg': base1,            'bg': base03,                'deco': 'NONE'     }
-color['TabLineSel']   = {'fg': base03,           'bg': magenta1,              'deco': 'bold'     }
-color['TabLineFill']  = {'fg': base1,            'bg': base03,                'deco': 'NONE'     }
+color['IncSearch']    = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
+color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='NONE'     )
+color['Pmenu']        = dict(fg=base1,    bg=base02,                deco='NONE'     )
+color['PmenuSel']     = dict(fg=base2,    bg=base01,                deco='bold'     )
+color['PmenuSbar']    = dict(             bg=base02,                deco='NONE'     )
+color['PmenuThumb']   = dict(             bg=base00,                deco='NONE'     )
+color['TabLine']      = dict(fg=base1,    bg=base03,                deco='NONE'     )
+color['TabLineSel']   = dict(fg=base03,   bg=magenta1,              deco='bold'     )
+color['TabLineFill']  = dict(fg=base1,    bg=base03,                deco='NONE'     )
 
-color['SpellBad']     = {                                                     'deco': 'undercurl'}
-color['SpellCap']     = {                                                     'deco': 'undercurl'}
-color['SpellRare']    = {                                                     'deco': 'undercurl'}
-color['SpellLocal']   = {                                                     'deco': 'undercurl'}
+color['SpellBad']     = dict(                                       deco='undercurl')
+color['SpellCap']     = dict(                                       deco='undercurl')
+color['SpellRare']    = dict(                                       deco='undercurl')
+color['SpellLocal']   = dict(                                       deco='undercurl')
 
-color['DiffAdd']      = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
-color['DiffDelete']   = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
-color['DiffChange']   = {'fg': violet1,          'bg': violet01,              'deco': 'NONE'     }
-color['DiffText']     = {'fg': violet2,          'bg': violet0,               'deco': 'bold'     }
+color['DiffAdd']      = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
+color['DiffDelete']   = dict(fg=magenta1, bg=magenta01,             deco='NONE'     )
+color['DiffChange']   = dict(fg=violet1,  bg=violet01,              deco='NONE'     )
+color['DiffText']     = dict(fg=violet2,  bg=violet0,               deco='bold'     )
 
-color['Directory']    = {'fg': teal2,                                         'deco': 'NONE'     }
-color['ErrorMsg']     = {'fg': red1,             'bg': 'NONE',                'deco': 'NONE'     }
-color['SignColumn']   = {'fg': base1,            'bg': color['LineNr']['bg'], 'deco': 'NONE'     }
-color['MoreMsg']      = {'fg': blue1,                                         'deco': 'NONE'     }
-color['ModeMsg']      = {                                                     'deco': 'bold'     }
-color['Question']     = {'fg': 'fg',                                          'deco': 'NONE'     }
-color['WarningMsg']   = {'fg': red1,                                          'deco': 'NONE'     }
-color['WildMenu']     = {'fg': base2,            'bg': base00,                'deco': 'bold'     }
-color['ColorColumn']  = {'fg': 'NONE',           'bg': red01,                 'deco': 'NONE'     }
+color['Directory']    = dict(fg=teal2,                              deco='NONE'     )
+color['ErrorMsg']     = dict(fg=red1,     bg='NONE',                deco='NONE'     )
+color['SignColumn']   = dict(fg=base1,    bg=color['LineNr']['bg'], deco='NONE'     )
+color['MoreMsg']      = dict(fg=blue1,                              deco='NONE'     )
+color['ModeMsg']      = dict(                                       deco='bold'     )
+color['Question']     = dict(fg='fg',                               deco='NONE'     )
+color['WarningMsg']   = dict(fg=red1,                               deco='NONE'     )
+color['WildMenu']     = dict(fg=base2,    bg=base00,                deco='bold'     )
+color['ColorColumn']  = dict(fg='NONE',   bg=red01,                 deco='NONE'     )
 
 # [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 color['TSAttribute'] = 'Special'
@@ -135,7 +135,7 @@ color['TSConditional'] = 'Statement'
 color['TSConstant'] = 'Constant'
 color['TSConstBuiltin'] = 'Constant'
 color['TSConstMacro'] = 'Constant'
-color['TSDanger'] = {'fg': red1 }
+color['TSDanger'] = dict(fg=red1)
 color['TSError'] = 'Error'
 color['TSException'] = 'Statement'
 color['TSField'] = 'Identifier'
@@ -148,7 +148,7 @@ color['TSLabel'] = 'Special'
 color['TSNamespace'] = 'Constant'
 color['TSNumber'] = 'Number'
 color['TSOperator'] = 'Operator'
-color['TSParameter'] = {'fg': ('#dafd89', 0), }
+color['TSParameter'] = dict(fg=('#dafd89', 0))
 color['TSParameterReference'] = 'Normal'
 color['TSProperty'] = 'TSField'
 color['TSPunctDelimiter'] = 'Normal'
@@ -170,9 +170,9 @@ color['TSVariableBuiltin'] = 'Statement'
 color['TSWarning'] = 'Todo'
 
 # GitGutter
-color['GitGutterAdd']    = {'fg': cyan1,       'bg': color['SignColumn']['bg'], 'deco': 'bold'}
-color['GitGutterChange'] = {'fg': magenta1,    'bg': color['SignColumn']['bg'], 'deco': 'bold'}
-color['GitGutterDelete'] = {'fg': magenta1,    'bg': color['SignColumn']['bg'], 'deco': 'bold'}
+color['GitGutterAdd']    = dict(fg=cyan1,    bg=color['SignColumn']['bg'], deco='bold')
+color['GitGutterChange'] = dict(fg=magenta1, bg=color['SignColumn']['bg'], deco='bold')
+color['GitGutterDelete'] = dict(fg=magenta1, bg=color['SignColumn']['bg'], deco='bold')
 
 # make
 color['makeIdent']      = 'Type'
@@ -189,7 +189,7 @@ color['phpFunction']    = 'Function'
 color['phpClass']       = 'Type'
 
 # rust
-color['rustFuncCall'] = {'fg': blue2}
+color['rustFuncCall'] = dict(fg=blue2)
 color['rustQuestionMark'] = 'Operator'
 
 # vim
