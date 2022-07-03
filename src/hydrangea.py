@@ -167,6 +167,7 @@ color['TSType'] = 'Type'
 color['TSTypeBuiltin'] = 'Type'
 color['TSVariable'] = 'Identifier'
 color['TSVariableBuiltin'] = 'Statement'
+color['TSWarning'] = 'Todo'
 
 # GitGutter
 color['GitGutterAdd']    = {'fg': cyan1,       'bg': color['SignColumn']['bg'], 'deco': 'bold'}
