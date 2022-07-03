@@ -83,7 +83,7 @@ color['Number']       = dict(fg=cyan1,    bg=cyan01,                deco='NONE' 
 color['Identifier']   = dict(fg=base1,                              deco='NONE'     )
 color['Function']     = dict(fg=base2,                              deco='NONE'     )
 color['Statement']    = dict(fg=blue1,                              deco='bold'     )
-color['Operator']     = dict(fg=violet2,                            deco='NONE'     )
+color['Operator']     = dict(fg=base2,                              deco='bold'     )
 color['Include']      = dict(fg=violet1,                            deco='NONE'     )
 color['PreProc']      = dict(fg=violet2,                            deco='NONE'     )
 color['Type']         = dict(fg=magenta1,                           deco='NONE'     )
