@@ -33,6 +33,7 @@ base2        = ("#d3def7", 252)
 red01        = ("#681c36",  52)
 red1         = ("#e91e63", 161)
 green1       = ("#98bf00", 106)
+green3       = ('#dafd89', 0)
 teal01       = ("#013435",  23)
 teal2        = ("#019c9c",  44)
 cyan01       = ("#023342",  23)
@@ -148,7 +149,7 @@ color['TSLabel'] = 'Special'
 color['TSNamespace'] = 'Constant'
 color['TSNumber'] = 'Number'
 color['TSOperator'] = 'Operator'
-color['TSParameter'] = dict(fg=('#dafd89', 0))
+color['TSParameter'] = dict(fg=green3)
 color['TSParameterReference'] = 'Normal'
 color['TSProperty'] = 'TSField'
 color['TSPunctDelimiter'] = 'Normal'
