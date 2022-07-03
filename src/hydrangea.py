@@ -76,8 +76,8 @@ color['NonText']      = {'fg': base00,           'bg': base03,                'd
 color['MatchParen']   = {'fg': red1,             'bg': 'NONE',                'deco': 'bold'     }
 
 color['Comment']      = {'fg': base0,                                         'deco': 'NONE'     }
-color['Constant']     = {'fg': skyblue1,         "bg": skyblue01,             'deco': 'NONE'     }
-color['String']       = 'Constant'
+color['Constant']     = {'fg': cyan1,            'bg': 'NONE',                'deco': 'NONE'     }
+color['String']       = {'fg': skyblue1,         'bg': skyblue01,             'deco': 'NONE'     }
 color['Number']       = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
 color['Identifier']   = {'fg': base2,                                         'deco': 'bold'     }
 color['Function']     = {'fg': base2,                                         'deco': 'bold'     }
