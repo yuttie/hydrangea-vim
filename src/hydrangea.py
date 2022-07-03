@@ -43,6 +43,8 @@ skyblue1     = ("#0487d8", 0)
 blue1        = ("#3a69bf",  68)  # L = ?, C = ?, H = ?
 blue2        = ('#8baafe', 111)  # L = ?, C = ?, H = ?
 blue3        = ('#c9d4fd', 189)  # L = ?, C = ?, H = ?
+violet01     = ("#35264a",  98)  # L = ?, C = ?, H = ?
+violet0      = ("#5b4182",  98)  # L = ?, C = ?, H = ?
 violet1      = ("#996ddb",  98)  # L = ?, C = ?, H = ?
 violet2      = ("#c398fe", 183)  # L = ?, C = ?, H = ?
 violet3      = ("#e2ccfe", 225)  # L = ?, C = ?, H = ?
@@ -109,12 +111,9 @@ color['SpellRare']    = {                                                     'd
 color['SpellLocal']   = {                                                     'deco': 'undercurl'}
 
 color['DiffAdd']      = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
-color['DiffChange']   = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
 color['DiffDelete']   = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
-color['DiffText']     = {'fg': magenta3,         'bg': magenta01,             'deco': 'bold'     }
-
-color['diffAdded']    = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
-color['diffRemoved']  = {'fg': magenta1,         'bg': magenta01,             'deco': 'NONE'     }
+color['DiffChange']   = {'fg': violet1,          'bg': violet01,              'deco': 'NONE'     }
+color['DiffText']     = {'fg': violet2,          'bg': violet0,               'deco': 'bold'     }
 
 color['Directory']    = {'fg': teal2,                                         'deco': 'NONE'     }
 color['ErrorMsg']     = {'fg': red1,             'bg': 'NONE',                'deco': 'NONE'     }
