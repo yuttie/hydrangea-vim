@@ -36,8 +36,10 @@ green1       = ("#98bf00", 106)  # L = ?, C = ?, H = ?
 teal01       = ("#013435",  23)  # L = ?, C = ?, H = ?
 teal2        = ("#019c9c",  44)  # L = ?, C = ?, H = ?
 cyan01       = ("#023342",  23)  # L = 19, C = 18, H = 232
-cyan1        = ("#1398bf",  38)  # L = 58, C = 38, H = 232
+cyan1        = ("#0990b5",  38)  # L = 58, C = 38, H = 232
 cyan3        = ("#9bdffc", 153)  # L = 85, C = 27, H = 232
+skyblue01    = ("#002844", 0)
+skyblue1     = ("#0487d8", 0)
 blue1        = ("#3a69bf",  68)  # L = ?, C = ?, H = ?
 blue2        = ('#8baafe', 111)  # L = ?, C = ?, H = ?
 blue3        = ('#c9d4fd', 189)  # L = ?, C = ?, H = ?
@@ -72,7 +74,7 @@ color['NonText']      = {'fg': base00,           'bg': base03,                'd
 color['MatchParen']   = {'fg': red1,             'bg': 'NONE',                'deco': 'bold'     }
 
 color['Comment']      = {'fg': base0,                                         'deco': 'NONE'     }
-color['Constant']     = {'fg': teal2,            "bg": teal01,                'deco': 'NONE'     }
+color['Constant']     = {'fg': skyblue1,         "bg": skyblue01,             'deco': 'NONE'     }
 color['String']       = 'Constant'
 color['Number']       = {'fg': cyan1,            'bg': cyan01,                'deco': 'NONE'     }
 color['Identifier']   = {'fg': base2,                                         'deco': 'bold'     }
