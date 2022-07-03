@@ -46,9 +46,9 @@ blue3        = ('#c9d4fd', 189)  # L = ?, C = ?, H = ?
 violet1      = ("#996ddb",  98)  # L = ?, C = ?, H = ?
 violet2      = ("#c398fe", 183)  # L = ?, C = ?, H = ?
 violet3      = ("#e2ccfe", 225)  # L = ?, C = ?, H = ?
-magenta01    = ("#491f38",  89)  # L = 19, C = 30, H = 343
-magenta1     = ("#c44597", 162)  # L = 50, C = 60, H = 343
-magenta3     = ("#ffc3e4", 218)  # L = 85, C = 27, H = 343
+magenta01    = ("#4a1d45",  89)  # L = 19, C = 30, H = 330
+magenta1     = ("#a6549c", 162)  # L = ??, C = ??, H = 330
+magenta3     = ("#f7c5ef", 218)  # L = 85, C = 27, H = 330
 
 
 # Definitions
