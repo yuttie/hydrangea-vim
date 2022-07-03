@@ -135,6 +135,7 @@ color['TSConditional'] = 'Statement'
 color['TSConstant'] = 'Constant'
 color['TSConstBuiltin'] = 'Constant'
 color['TSConstMacro'] = 'Constant'
+color['TSDanger'] = {'fg': red1 }
 color['TSError'] = 'Error'
 color['TSException'] = 'Statement'
 color['TSField'] = 'Identifier'
