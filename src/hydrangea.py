@@ -176,7 +176,7 @@ color['TSTitle'] = 'Title'
 color['TSType'] = 'Type'
 color['TSTypeBuiltin'] = 'Type'
 color['TSVariable'] = 'Identifier'
-color['TSVariableBuiltin'] = 'Statement'
+color['TSVariableBuiltin'] = 'Constant'
 color['TSWarning'] = 'Todo'
 
 # Diagnostic
