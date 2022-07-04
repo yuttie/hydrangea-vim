@@ -2,6 +2,9 @@
 
 This repository includes a color scheme file for Vim.
 
+![Screenshot](https://raw.githubusercontent.com/yuttie/hydrangea-vim/gh-pages/screenshot.png)
+
+
 ## Features
 
 * A dark theme with main colors from hydrangea flowers
