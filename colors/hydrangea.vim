@@ -12,17 +12,17 @@ let g:colors_name = 'hydrangea'
 
 set background=dark
 
-hi Normal ctermfg=247 ctermbg=234 guifg=#96a1b9 guibg=#1b202a
+hi Normal ctermfg=247 ctermbg=234 guifg=#aeb9d2 guibg=#1b202a
 hi Cursor ctermfg=NONE ctermbg=189 cterm=NONE guifg=NONE guibg=#d3def7 gui=NONE
 hi CursorIM ctermfg=NONE ctermbg=189 guifg=NONE guibg=#d3def7
 hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
 hi Visual ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303540 gui=NONE
 hi VisualNOS cterm=underline guifg=fg gui=underline
-hi Folded ctermfg=247 ctermbg=235 cterm=NONE guifg=#96a1b9 guibg=#232833 gui=NONE
-hi FoldColumn ctermfg=247 ctermbg=234 cterm=NONE guifg=#96a1b9 guibg=#1b202a gui=NONE
-hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#a6549c guibg=NONE gui=bold
-hi StatusLine ctermfg=247 ctermbg=236 cterm=NONE guifg=#96a1b9 guibg=#303540 gui=NONE
+hi Folded ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
+hi FoldColumn ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
+hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#b966af guibg=NONE gui=bold
+hi StatusLine ctermfg=247 ctermbg=236 cterm=NONE guifg=#aeb9d2 guibg=#303540 gui=NONE
 hi StatusLineNC ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
 hi VertSplit ctermfg=235 ctermbg=235 cterm=NONE guifg=#232833 guibg=#232833 gui=NONE
 hi LineNr ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
@@ -34,41 +34,41 @@ hi Comment ctermfg=239 cterm=NONE guifg=#465166 gui=NONE
 hi Constant ctermfg=31 ctermbg=NONE cterm=NONE guifg=#0990b5 guibg=NONE gui=NONE
 hi String ctermfg=32 ctermbg=235 cterm=NONE guifg=#0487d8 guibg=#002844 gui=NONE
 hi Number ctermfg=31 ctermbg=236 cterm=NONE guifg=#0990b5 guibg=#023342 gui=NONE
-hi Identifier ctermfg=247 cterm=NONE guifg=#96a1b9 gui=NONE
+hi Identifier ctermfg=247 cterm=NONE guifg=#aeb9d2 gui=NONE
 hi Function ctermfg=189 cterm=NONE guifg=#73c5ff gui=NONE
 hi Statement ctermfg=25 cterm=bold guifg=#466bb6 gui=bold
 hi Operator ctermfg=189 cterm=bold guifg=#d3def7 gui=bold
 hi Include ctermfg=98 cterm=NONE guifg=#996ddb gui=NONE
 hi PreProc ctermfg=177 cterm=NONE guifg=#c398fe gui=NONE
-hi Type ctermfg=133 cterm=NONE guifg=#a6549c gui=NONE
+hi Type ctermfg=133 cterm=NONE guifg=#b966af gui=NONE
 hi StorageClass ctermfg=25 cterm=bold guifg=#466bb6 gui=bold
-hi Structure ctermfg=133 cterm=NONE guifg=#a6549c gui=NONE
+hi Structure ctermfg=133 cterm=NONE guifg=#b966af gui=NONE
 hi Typedef ctermfg=25 cterm=bold guifg=#466bb6 gui=bold
 hi Special ctermfg=68 ctermbg=NONE cterm=bold guifg=#6d88ce guibg=NONE gui=bold
 hi Underlined cterm=underline guifg=fg gui=underline
 hi Ignore guifg=bg
 hi Error ctermfg=197 ctermbg=237 cterm=bold guifg=#e91e63 guibg=#681c36 gui=bold
 hi Todo ctermfg=106 ctermbg=NONE cterm=bold guifg=#98bf00 guibg=NONE gui=bold
-hi IncSearch ctermfg=225 ctermbg=133 cterm=bold guifg=#f7c5ef guibg=#a6549c gui=bold
-hi Search ctermfg=225 ctermbg=133 cterm=NONE guifg=#f7c5ef guibg=#a6549c gui=NONE
-hi Pmenu ctermfg=247 ctermbg=235 cterm=NONE guifg=#96a1b9 guibg=#232833 gui=NONE
+hi IncSearch ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
+hi Search ctermfg=225 ctermbg=133 cterm=NONE guifg=#fdcbf5 guibg=#b966af gui=NONE
+hi Pmenu ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
 hi PmenuSel ctermfg=189 ctermbg=236 cterm=bold guifg=#d3def7 guibg=#303540 gui=bold
 hi PmenuSbar ctermbg=235 cterm=NONE guibg=#232833 gui=NONE
 hi PmenuThumb ctermbg=239 cterm=NONE guibg=#4b505d gui=NONE
-hi TabLine ctermfg=247 ctermbg=234 cterm=NONE guifg=#96a1b9 guibg=#1b202a gui=NONE
-hi TabLineSel ctermfg=234 ctermbg=133 cterm=bold guifg=#1b202a guibg=#a6549c gui=bold
-hi TabLineFill ctermfg=247 ctermbg=234 cterm=NONE guifg=#96a1b9 guibg=#1b202a gui=NONE
+hi TabLine ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
+hi TabLineSel ctermfg=234 ctermbg=133 cterm=bold guifg=#1b202a guibg=#b966af gui=bold
+hi TabLineFill ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
 hi SpellBad cterm=undercurl gui=undercurl
 hi SpellCap cterm=undercurl gui=undercurl
 hi SpellRare cterm=undercurl gui=undercurl
 hi SpellLocal cterm=undercurl gui=undercurl
 hi DiffAdd ctermfg=31 ctermbg=236 cterm=NONE guifg=#0990b5 guibg=#023342 gui=NONE
-hi DiffDelete ctermfg=133 ctermbg=53 cterm=NONE guifg=#a6549c guibg=#4a1d45 gui=NONE
+hi DiffDelete ctermfg=133 ctermbg=53 cterm=NONE guifg=#b966af guibg=#4a1d45 gui=NONE
 hi DiffChange ctermfg=98 ctermbg=236 cterm=NONE guifg=#996ddb guibg=#35264a gui=NONE
 hi DiffText ctermfg=177 ctermbg=60 cterm=bold guifg=#c398fe guibg=#5b4182 gui=bold
 hi Directory ctermfg=37 cterm=NONE guifg=#019c9c gui=NONE
 hi ErrorMsg ctermfg=197 ctermbg=NONE cterm=NONE guifg=#e91e63 guibg=NONE gui=NONE
-hi SignColumn ctermfg=247 ctermbg=235 cterm=NONE guifg=#96a1b9 guibg=#232833 gui=NONE
+hi SignColumn ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
 hi MoreMsg ctermfg=25 cterm=NONE guifg=#466bb6 gui=NONE
 hi ModeMsg cterm=bold gui=bold
 hi Question cterm=NONE guifg=fg gui=NONE
@@ -77,9 +77,13 @@ hi WildMenu ctermfg=189 ctermbg=239 cterm=bold guifg=#d3def7 guibg=#4b505d gui=b
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#681c36 gui=NONE
 hi TSDanger ctermfg=197 guifg=#e91e63
 hi TSParameter ctermfg=192 guifg=#dafd89
+hi DiagnosticError ctermfg=197 ctermbg=237 cterm=NONE guifg=#e91e63 guibg=#681c36 gui=NONE
+hi DiagnosticWarn ctermfg=177 ctermbg=60 cterm=NONE guifg=#c398fe guibg=#5b4182 gui=NONE
+hi DiagnosticInfo ctermfg=189 ctermbg=32 cterm=NONE guifg=#73c5ff guibg=#1c5280 gui=NONE
+hi DiagnosticHint ctermfg=192 ctermbg=106 cterm=NONE guifg=#dafd89 guibg=#66800d gui=NONE
 hi GitGutterAdd ctermfg=31 ctermbg=235 cterm=bold guifg=#0990b5 guibg=#232833 gui=bold
-hi GitGutterChange ctermfg=133 ctermbg=235 cterm=bold guifg=#a6549c guibg=#232833 gui=bold
-hi GitGutterDelete ctermfg=133 ctermbg=235 cterm=bold guifg=#a6549c guibg=#232833 gui=bold
+hi GitGutterChange ctermfg=133 ctermbg=235 cterm=bold guifg=#b966af guibg=#232833 gui=bold
+hi GitGutterDelete ctermfg=133 ctermbg=235 cterm=bold guifg=#b966af guibg=#232833 gui=bold
 hi makeCommands NONE
 hi phpIdentifier NONE
 hi phpFunctions NONE
@@ -128,7 +132,7 @@ hi link TSTitle Title
 hi link TSType Type
 hi link TSTypeBuiltin Type
 hi link TSVariable Identifier
-hi link TSVariableBuiltin Statement
+hi link TSVariableBuiltin Constant
 hi link TSWarning Todo
 hi link makeIdent Type
 hi link makeSpecTarget Special

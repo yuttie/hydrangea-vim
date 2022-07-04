@@ -57,6 +57,7 @@ magenta3  = ('#fdcbf5', 225)
 
 
 # Definitions
+# TODO 
 color = OrderedDict()
 color['Normal']       = dict(fg=base1,    bg=base03,                                )
 color['Cursor']       = dict(fg='NONE',   bg=base2,                 deco='NONE'     )
