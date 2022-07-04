@@ -35,7 +35,7 @@ hi Constant ctermfg=31 ctermbg=NONE cterm=NONE guifg=#0990b5 guibg=NONE gui=NONE
 hi String ctermfg=32 ctermbg=235 cterm=NONE guifg=#0487d8 guibg=#002844 gui=NONE
 hi Number ctermfg=31 ctermbg=236 cterm=NONE guifg=#0990b5 guibg=#023342 gui=NONE
 hi Identifier ctermfg=247 cterm=NONE guifg=#96a1b9 gui=NONE
-hi Function ctermfg=189 cterm=NONE guifg=#d3def7 gui=NONE
+hi Function ctermfg=189 cterm=NONE guifg=#73c5ff gui=NONE
 hi Statement ctermfg=25 cterm=bold guifg=#466bb6 gui=bold
 hi Operator ctermfg=189 cterm=bold guifg=#d3def7 gui=bold
 hi Include ctermfg=98 cterm=NONE guifg=#996ddb gui=NONE
@@ -86,6 +86,9 @@ hi phpFunctions NONE
 hi phpClasses NONE
 hi rustFuncCall ctermfg=68 guifg=#6d88ce
 hi vimVar NONE
+hi link diffAdded DiffAdd
+hi link diffRemoved DiffDelete
+hi link diffChanged DiffChange
 hi link TSAttribute Special
 hi link TSBoolean Constant
 hi link TSCharacter Constant
@@ -100,6 +103,7 @@ hi link TSException Statement
 hi link TSField Identifier
 hi link TSFloat Constant
 hi link TSFunction Function
+hi link TSFuncBuiltin Function
 hi link TSInclude Statement
 hi link TSKeyword Statement
 hi link TSKeywordFunction Statement
