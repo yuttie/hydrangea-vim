@@ -111,10 +111,16 @@ color['SpellCap']     = dict(                                       deco='underc
 color['SpellRare']    = dict(                                       deco='undercurl')
 color['SpellLocal']   = dict(                                       deco='undercurl')
 
+# vimdiff
 color['DiffAdd']      = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
 color['DiffDelete']   = dict(fg=magenta1, bg=magenta01,             deco='NONE'     )
 color['DiffChange']   = dict(fg=violet1,  bg=violet01,              deco='NONE'     )
 color['DiffText']     = dict(fg=violet2,  bg=violet0,               deco='bold'     )
+
+# syntax/diff.vim
+color['diffAdded']      = 'DiffAdd'
+color['diffRemoved']   = 'DiffDelete'
+color['diffChanged']   = 'DiffChange'
 
 color['Directory']    = dict(fg=teal2,                              deco='NONE'     )
 color['ErrorMsg']     = dict(fg=red1,     bg='NONE',                deco='NONE'     )
