@@ -22,30 +22,35 @@
 "     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "     THE SOFTWARE.
 
-let s:base03    = ["#1e222c", 235]  " L* = 44
-let s:base02    = ["#2a303b", 236]  " L* = 50
-let s:base01    = ["#3b4351", 238]  " L* = 58
-let s:base00    = ["#586374", 241]  " L* = 68
-let s:base2     = ["#c3d5ec", 252]  " L* = 93
-let s:base3     = ["#edf5ff", 255]  " L* = 99
-let s:red01     = ["#681c36",  52]
-let s:red1      = ["#e91e63", 161]
-let s:teal01    = ["#134242",  23]
-let s:teal2     = ["#36c2c2",  44]
-let s:cyan01    = ["#064253",  23]
-let s:cyan1     = ["#169ec4",  38]
-let s:cyan2     = ["#56c7ee",  81]
-let s:cyan3     = ["#bcebfe", 153]
-let s:blue1     = ["#537dd5",  68]
-let s:blue2     = ['#8baafe', 111]
-let s:blue3     = ['#c9d4fd', 189]
-let s:violet1   = ["#996ddb",  98]
-let s:violet2   = ["#c398fe", 183]
-let s:violet3   = ["#e2ccfe", 225]
-let s:magenta01 = ["#68024b",  89]
-let s:magenta1  = ["#e242ac", 162]
-let s:magenta2  = ["#fe7ecd", 213]
-let s:magenta3  = ["#ffc3e4", 218]
+let s:base03    = ['#1b202a', 234]
+let s:base02    = ['#232833', 235]
+let s:base01    = ['#303540', 236]
+let s:base00    = ['#4b505d', 239]
+let s:base0     = ['#465166', 239]
+let s:base1     = ['#96a1b9', 247]
+let s:base2     = ['#d3def7', 189]
+let s:red01     = ['#681c36', 237]
+let s:red1      = ['#e91e63', 197]
+let s:green1    = ['#98bf00', 106]
+let s:green3    = ['#dafd89', 192]
+let s:teal01    = ['#013435', 236]
+let s:teal2     = ['#019c9c',  37]
+let s:cyan01    = ['#023342', 236]
+let s:cyan1     = ['#0990b5',  31]
+let s:cyan3     = ['#9bdffc', 117]
+let s:skyblue01 = ['#002844', 235]
+let s:skyblue1  = ['#0487d8',  32]
+let s:skyblue3  = ['#73c5ff', 189]
+let s:blue1     = ['#466bb6',  25]
+let s:blue2     = ['#6d88ce',  68]
+let s:violet01  = ['#35264a', 236]
+let s:violet0   = ['#5b4182',  60]
+let s:violet1   = ['#996ddb',  98]
+let s:violet2   = ['#c398fe', 177]
+let s:violet3   = ['#e2ccfe', 189]
+let s:magenta01 = ['#4a1d45',  53]
+let s:magenta1  = ['#a6549c', 133]
+let s:magenta3  = ['#f7c5ef', 225]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base03,   s:blue1    ], [ s:base03, s:blue2    ] ]
