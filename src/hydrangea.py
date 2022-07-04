@@ -52,8 +52,8 @@ violet1   = ('#996ddb',  98)
 violet2   = ('#c398fe', 177)
 violet3   = ('#e2ccfe', 189)
 magenta01 = ('#4a1d45',  53)
-magenta1  = ('#a6549c', 133)
-magenta3  = ('#f7c5ef', 225)
+magenta1  = ('#b966af', 133)
+magenta3  = ('#fdcbf5', 225)
 
 
 # Definitions
