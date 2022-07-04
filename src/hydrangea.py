@@ -41,9 +41,9 @@ cyan1        = ("#0990b5",  31)
 cyan3        = ("#9bdffc", 117)
 skyblue01    = ("#002844", 235)
 skyblue1     = ("#0487d8",  32)
+skyblue3     = ('#73c5ff', 189)
 blue1        = ("#466bb6",  25)
 blue2        = ('#6d88ce',  68)
-blue3        = ('#c9d4fd', 189)
 violet01     = ("#35264a", 236)
 violet0      = ("#5b4182",  60)
 violet1      = ("#996ddb",  98)
@@ -81,7 +81,7 @@ color['Constant']     = dict(fg=cyan1,    bg='NONE',                deco='NONE' 
 color['String']       = dict(fg=skyblue1, bg=skyblue01,             deco='NONE'     )
 color['Number']       = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
 color['Identifier']   = dict(fg=base1,                              deco='NONE'     )
-color['Function']     = dict(fg=base2,                              deco='NONE'     )
+color['Function']     = dict(fg=skyblue3,                           deco='NONE'     )
 color['Statement']    = dict(fg=blue1,                              deco='bold'     )
 color['Operator']     = dict(fg=base2,                              deco='bold'     )
 color['Include']      = dict(fg=violet1,                            deco='NONE'     )
@@ -148,6 +148,7 @@ color['TSException'] = 'Statement'
 color['TSField'] = 'Identifier'
 color['TSFloat'] = 'Constant'
 color['TSFunction'] = 'Function'
+color['TSFuncBuiltin'] = 'Function'
 color['TSInclude'] = 'Statement'
 color['TSKeyword'] = 'Statement'
 color['TSKeywordFunction'] = 'Statement'
