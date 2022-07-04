@@ -32,7 +32,8 @@ base1     = ('#96a1b9', 247)
 base2     = ('#d3def7', 189)
 red01     = ('#681c36', 237)
 red1      = ('#e91e63', 197)
-green1    = ('#98bf00', 106)
+green1    = ('#66800d', 106)
+green2    = ('#98bf00', 106)
 green3    = ('#dafd89', 192)
 teal01    = ('#013435', 236)
 teal2     = ('#019c9c',  37)
@@ -40,7 +41,8 @@ cyan01    = ('#023342', 236)
 cyan1     = ('#0990b5',  31)
 cyan3     = ('#9bdffc', 117)
 skyblue01 = ('#002844', 235)
-skyblue1  = ('#0487d8',  32)
+skyblue1  = ('#1c5280',  32)
+skyblue2  = ('#0487d8',  32)
 skyblue3  = ('#73c5ff', 189)
 blue1     = ('#466bb6',  25)
 blue2     = ('#6d88ce',  68)
@@ -78,7 +80,7 @@ color['MatchParen']   = dict(fg=red1,     bg='NONE',                deco='bold' 
 
 color['Comment']      = dict(fg=base0,                              deco='NONE'     )
 color['Constant']     = dict(fg=cyan1,    bg='NONE',                deco='NONE'     )
-color['String']       = dict(fg=skyblue1, bg=skyblue01,             deco='NONE'     )
+color['String']       = dict(fg=skyblue2, bg=skyblue01,             deco='NONE'     )
 color['Number']       = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
 color['Identifier']   = dict(fg=base1,                              deco='NONE'     )
 color['Function']     = dict(fg=skyblue3,                           deco='NONE'     )
@@ -94,7 +96,7 @@ color['Special']      = dict(fg=blue2,    bg='NONE',                deco='bold' 
 color['Underlined']   = dict(fg='fg',                               deco='underline')
 color['Ignore']       = dict(fg='bg'                                                )
 color['Error']        = dict(fg=red1,     bg=red01,                 deco='bold'     )
-color['Todo']         = dict(fg=green1,   bg='NONE',                deco='bold'     )
+color['Todo']         = dict(fg=green2,   bg='NONE',                deco='bold'     )
 
 color['IncSearch']    = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
 color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='NONE'     )
@@ -176,6 +178,12 @@ color['TSTypeBuiltin'] = 'Type'
 color['TSVariable'] = 'Identifier'
 color['TSVariableBuiltin'] = 'Statement'
 color['TSWarning'] = 'Todo'
+
+# Diagnostic
+color['DiagnosticError'] = dict(fg=red1,     bg=red01,    deco='NONE')
+color['DiagnosticWarn']  = dict(fg=violet2,  bg=violet0,  deco='NONE')
+color['DiagnosticInfo']  = dict(fg=skyblue3, bg=skyblue1, deco='NONE')
+color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
 
 # GitGutter
 color['GitGutterAdd']    = dict(fg=cyan1,    bg=color['SignColumn']['bg'], deco='bold')
