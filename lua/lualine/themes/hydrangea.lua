@@ -31,20 +31,20 @@ local magenta3  = '#f7c5ef'
 
 return {
   normal = {
-    a = { fg = base03, bg = skyblue1, gui = 'bold' },
+    a = { fg = base2, bg = skyblue1, gui = 'bold' },
     b = { fg = base1, bg = base01 },
     c = { fg = base1, bg = base02 },
   },
   insert = {
-    a = { fg = base03, bg = cyan1, gui = 'bold' },
+    a = { fg = base2, bg = cyan1, gui = 'bold' },
   },
   visual = {
-    a = { fg = base03, bg = green1, gui = 'bold' },
+    a = { fg = base2, bg = green1, gui = 'bold' },
   },
   replace = {
-    a = { fg = base03, bg = magenta1, gui = 'bold' },
+    a = { fg = base2, bg = magenta1, gui = 'bold' },
   },
   inactive = {
-    a = { fg = base03, bg = base1, gui = 'bold' },
+    a = { fg = base2, bg = base1, gui = 'bold' },
   },
 }
