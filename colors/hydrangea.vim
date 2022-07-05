@@ -50,7 +50,7 @@ hi Ignore guifg=bg
 hi Error ctermfg=197 ctermbg=237 cterm=bold guifg=#e91e63 guibg=#681c36 gui=bold
 hi Todo ctermfg=106 ctermbg=NONE cterm=bold guifg=#98bf00 guibg=NONE gui=bold
 hi IncSearch ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
-hi Search ctermfg=225 ctermbg=133 cterm=NONE guifg=#fdcbf5 guibg=#b966af gui=NONE
+hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
 hi Pmenu ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
 hi PmenuSel ctermfg=189 ctermbg=236 cterm=bold guifg=#d3def7 guibg=#303540 gui=bold
 hi PmenuSbar ctermbg=235 cterm=NONE guibg=#232833 gui=NONE
