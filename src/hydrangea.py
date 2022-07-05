@@ -213,6 +213,15 @@ color['rustQuestionMark'] = 'Operator'
 # vim
 color['vimVar'] = 'NONE'
 
+# p00f/nvim-ts-rainbow
+color['rainbowcol1'] = dict(fg=red1)
+color['rainbowcol2'] = dict(fg=green3)
+color['rainbowcol3'] = dict(fg=teal2)
+color['rainbowcol4'] = dict(fg=cyan3)
+color['rainbowcol5'] = dict(fg=skyblue2)
+color['rainbowcol6'] = dict(fg=violet1)
+color['rainbowcol7'] = dict(fg=magenta3)
+
 
 # Apply
 execute("""hi clear
