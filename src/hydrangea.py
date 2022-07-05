@@ -101,7 +101,7 @@ color['Error']        = dict(fg=red1,     bg=red01,                 deco='bold' 
 color['Todo']         = dict(fg=green2,   bg='NONE',                deco='bold'     )
 
 color['IncSearch']    = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
-color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='NONE'     )
+color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
 color['Pmenu']        = dict(fg=base1,    bg=base02,                deco='NONE'     )
 color['PmenuSel']     = dict(fg=base2,    bg=base01,                deco='bold'     )
 color['PmenuSbar']    = dict(             bg=base02,                deco='NONE'     )
