@@ -24,7 +24,8 @@ hi FoldColumn ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui
 hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#b966af guibg=NONE gui=bold
 hi StatusLine ctermfg=247 ctermbg=236 cterm=NONE guifg=#aeb9d2 guibg=#303540 gui=NONE
 hi StatusLineNC ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
-hi VertSplit ctermfg=235 ctermbg=235 cterm=NONE guifg=#232833 guibg=#232833 gui=NONE
+hi VertSplit ctermfg=236 ctermbg=235 cterm=NONE guifg=#303540 guibg=#232833 gui=NONE
+hi WinSeparator ctermfg=236 ctermbg=235 cterm=NONE guifg=#303540 guibg=#232833 gui=NONE
 hi LineNr ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
 hi CursorLineNr ctermfg=189 ctermbg=239 cterm=bold guifg=#d3def7 guibg=#4b505d gui=bold
 hi SpecialKey ctermfg=236 ctermbg=31 cterm=bold guifg=#023342 guibg=#0990b5 gui=bold
@@ -104,17 +105,17 @@ hi link TSAttribute Special
 hi link TSBoolean Constant
 hi link TSCharacter Constant
 hi link TSComment Comment
-hi link TSConstructor Identifier
 hi link TSConditional Statement
-hi link TSConstant Constant
 hi link TSConstBuiltin Constant
 hi link TSConstMacro Constant
+hi link TSConstant Constant
+hi link TSConstructor Identifier
 hi link TSError Error
 hi link TSException Statement
 hi link TSField Identifier
 hi link TSFloat Constant
-hi link TSFunction Function
 hi link TSFuncBuiltin Function
+hi link TSFunction Function
 hi link TSInclude Statement
 hi link TSKeyword Statement
 hi link TSKeywordFunction Statement
@@ -124,13 +125,13 @@ hi link TSNumber Number
 hi link TSOperator Operator
 hi link TSParameterReference Normal
 hi link TSProperty TSField
-hi link TSPunctDelimiter Normal
 hi link TSPunctBracket Normal
+hi link TSPunctDelimiter Normal
 hi link TSPunctSpecial Special
 hi link TSRepeat Statement
 hi link TSString String
-hi link TSStringRegex String
 hi link TSStringEscape Special
+hi link TSStringRegex String
 hi link TSTag htmlTagName
 hi link TSTagAttribute htmlArg
 hi link TSTagDelimiter htmlTagName
