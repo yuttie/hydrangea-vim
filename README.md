@@ -28,6 +28,30 @@ call dein#add('yuttie/hydrangea-vim')
 
 ## Configuration
 
+### nvim-cmp
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) support is provided.
+
+Recommended configuration:
+
+```lua
+local cmp = require('cmp')
+
+local cmp_window_config = {
+  winhighlight = 'Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None',
+  ...
+}
+
+cmp.setup({
+  ...
+  window = {
+    completion = cmp.config.window.bordered(cmp_window_config),
+    documentation = cmp.config.window.bordered(cmp_window_config),
+  },
+  ...
+})
+```
+
+
 ### lightline.vim
 [lightline.vim](https://github.com/itchyny/lightline.vim) support is included.
 To use the bundled colorscheme for lightline.vim, specify `'hydrangea'` in a definition of your lightline as follows:
