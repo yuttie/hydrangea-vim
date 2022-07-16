@@ -14,6 +14,7 @@ set background=dark
 
 hi Normal ctermfg=247 ctermbg=234 guifg=#aeb9d2 guibg=#1b202a
 hi NormalFloat ctermfg=247 ctermbg=236 guifg=#aeb9d2 guibg=#303540
+hi FloatBorder ctermfg=247 ctermbg=236 guifg=#aeb9d2 guibg=#303540
 hi Cursor ctermfg=NONE ctermbg=189 cterm=NONE guifg=NONE guibg=#d3def7 gui=NONE
 hi CursorIM ctermfg=NONE ctermbg=189 guifg=NONE guibg=#d3def7
 hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
