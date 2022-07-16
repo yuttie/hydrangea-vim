@@ -61,6 +61,7 @@ magenta3  = ('#fdcbf5', 225)
 # TODO 
 color = OrderedDict()
 color['Normal']       = dict(fg=base1,    bg=base03,                                )
+color['NormalFloat']  = dict(fg=base1,    bg=base01,                                )
 color['Cursor']       = dict(fg='NONE',   bg=base2,                 deco='NONE'     )
 color['CursorIM']     = dict(fg='NONE',   bg=base2,                                 )
 color['CursorLine']   = dict(fg='NONE',   bg=base02,                deco='NONE'     )
