@@ -103,10 +103,10 @@ color['Todo']         = dict(fg=green2,   bg='NONE',                deco='bold' 
 
 color['IncSearch']    = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
 color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
-color['Pmenu']        = dict(fg=base1,    bg=base02,                deco='NONE'     )
-color['PmenuSel']     = dict(fg=base2,    bg=base01,                deco='bold'     )
-color['PmenuSbar']    = dict(             bg=base02,                deco='NONE'     )
-color['PmenuThumb']   = dict(             bg=base00,                deco='NONE'     )
+color['Pmenu']        = dict(fg=base1,    bg=base01,                deco='NONE'     )
+color['PmenuSel']     = dict(fg='NONE',   bg=base00,                deco='bold'     )
+color['PmenuSbar']    = dict(             bg=base01,                deco='NONE'     )
+color['PmenuThumb']   = dict(             bg=base2,                 deco='NONE'     )
 color['TabLine']      = dict(fg=base1,    bg=base03,                deco='NONE'     )
 color['TabLineSel']   = dict(fg=base03,   bg=magenta1,              deco='bold'     )
 color['TabLineFill']  = dict(fg=base1,    bg=base03,                deco='NONE'     )
@@ -187,6 +187,14 @@ color['DiagnosticError'] = dict(fg=red1,     bg=red01,    deco='NONE')
 color['DiagnosticWarn']  = dict(fg=violet2,  bg=violet0,  deco='NONE')
 color['DiagnosticInfo']  = dict(fg=skyblue3, bg=skyblue1, deco='NONE')
 color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
+
+# nvim-cmp
+color['CmpItemAbbr']           = dict(fg=base1)
+color['CmpItemAbbrDeprecated'] = dict(fg=base0)
+color['CmpItemAbbrMatch']      = dict(fg=green3)
+color['CmpItemAbbrMatchFuzzy'] = dict(fg=red1)
+color['CmpItemKind']           = dict(fg=cyan1)
+color['CmpItemMenu']           = dict(fg=violet0)
 
 # GitGutter
 color['GitGutterAdd']    = dict(fg=cyan1,    bg=color['SignColumn']['bg'], deco='bold')
