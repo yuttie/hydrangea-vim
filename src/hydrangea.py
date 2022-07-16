@@ -215,13 +215,16 @@ color['rustQuestionMark'] = 'Operator'
 color['vimVar'] = 'NONE'
 
 # p00f/nvim-ts-rainbow
-color['rainbowcol1'] = dict(fg=red1)
-color['rainbowcol2'] = dict(fg=green3)
-color['rainbowcol3'] = dict(fg=teal2)
-color['rainbowcol4'] = dict(fg=cyan3)
-color['rainbowcol5'] = dict(fg=skyblue2)
-color['rainbowcol6'] = dict(fg=violet1)
-color['rainbowcol7'] = dict(fg=magenta3)
+NVIM_TS_RAINBOW_DEFINITION = [
+    dict(fg=base2),
+    dict(fg=green3),
+    dict(fg=teal2),
+    dict(fg=skyblue2),
+    dict(fg=violet1),
+    dict(fg=magenta1),
+]
+for i, hi in enumerate(NVIM_TS_RAINBOW_DEFINITION):
+    color[f'rainbowcol{i + 1}'] = hi
 
 
 # Apply
