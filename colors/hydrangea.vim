@@ -84,7 +84,7 @@ hi DiagnosticError ctermfg=197 ctermbg=237 cterm=NONE guifg=#e91e63 guibg=#681c3
 hi DiagnosticWarn ctermfg=177 ctermbg=60 cterm=NONE guifg=#c398fe guibg=#5b4182 gui=NONE
 hi DiagnosticInfo ctermfg=189 ctermbg=32 cterm=NONE guifg=#73c5ff guibg=#1c5280 gui=NONE
 hi DiagnosticHint ctermfg=192 ctermbg=106 cterm=NONE guifg=#a8d544 guibg=#66800d gui=NONE
-hi BufferLineFill ctermbg=234 guibg=#1b202a
+hi BufferLineFill ctermbg=232 guibg=#0e141d
 hi BufferLineSeparator ctermfg=234 ctermbg=234 guifg=#1b202a guibg=#1b202a
 hi BufferLineBackground ctermfg=239 ctermbg=235 guifg=#465166 guibg=#232833
 hi BufferLineCloseButton ctermfg=239 ctermbg=235 guifg=#465166 guibg=#232833
