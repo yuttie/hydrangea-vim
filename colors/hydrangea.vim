@@ -52,10 +52,10 @@ hi Error ctermfg=197 ctermbg=237 cterm=bold guifg=#e91e63 guibg=#681c36 gui=bold
 hi Todo ctermfg=106 ctermbg=NONE cterm=bold guifg=#98bf00 guibg=NONE gui=bold
 hi IncSearch ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
 hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
-hi Pmenu ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
-hi PmenuSel ctermfg=189 ctermbg=236 cterm=bold guifg=#d3def7 guibg=#303540 gui=bold
-hi PmenuSbar ctermbg=235 cterm=NONE guibg=#232833 gui=NONE
-hi PmenuThumb ctermbg=239 cterm=NONE guibg=#4b505d gui=NONE
+hi Pmenu ctermfg=247 ctermbg=236 cterm=NONE guifg=#aeb9d2 guibg=#303540 gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=239 cterm=bold guifg=NONE guibg=#4b505d gui=bold
+hi PmenuSbar ctermbg=236 cterm=NONE guibg=#303540 gui=NONE
+hi PmenuThumb ctermbg=189 cterm=NONE guibg=#d3def7 gui=NONE
 hi TabLine ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
 hi TabLineSel ctermfg=234 ctermbg=133 cterm=bold guifg=#1b202a guibg=#b966af gui=bold
 hi TabLineFill ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
@@ -82,6 +82,12 @@ hi DiagnosticError ctermfg=197 ctermbg=237 cterm=NONE guifg=#e91e63 guibg=#681c3
 hi DiagnosticWarn ctermfg=177 ctermbg=60 cterm=NONE guifg=#c398fe guibg=#5b4182 gui=NONE
 hi DiagnosticInfo ctermfg=189 ctermbg=32 cterm=NONE guifg=#73c5ff guibg=#1c5280 gui=NONE
 hi DiagnosticHint ctermfg=192 ctermbg=106 cterm=NONE guifg=#a8d544 guibg=#66800d gui=NONE
+hi CmpItemAbbr ctermfg=247 guifg=#aeb9d2
+hi CmpItemAbbrDeprecated ctermfg=239 guifg=#465166
+hi CmpItemAbbrMatch ctermfg=192 guifg=#a8d544
+hi CmpItemAbbrMatchFuzzy ctermfg=197 guifg=#e91e63
+hi CmpItemKind ctermfg=31 guifg=#0990b5
+hi CmpItemMenu ctermfg=60 guifg=#5b4182
 hi GitGutterAdd ctermfg=31 ctermbg=235 cterm=bold guifg=#0990b5 guibg=#232833 gui=bold
 hi GitGutterChange ctermfg=133 ctermbg=235 cterm=bold guifg=#b966af guibg=#232833 gui=bold
 hi GitGutterDelete ctermfg=133 ctermbg=235 cterm=bold guifg=#b966af guibg=#232833 gui=bold
