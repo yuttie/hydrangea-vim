@@ -91,13 +91,12 @@ hi phpFunctions NONE
 hi phpClasses NONE
 hi rustFuncCall ctermfg=68 guifg=#6d88ce
 hi vimVar NONE
-hi rainbowcol1 ctermfg=197 guifg=#e91e63
+hi rainbowcol1 ctermfg=189 guifg=#d3def7
 hi rainbowcol2 ctermfg=192 guifg=#a8d544
 hi rainbowcol3 ctermfg=37 guifg=#019c9c
-hi rainbowcol4 ctermfg=117 guifg=#9bdffc
-hi rainbowcol5 ctermfg=32 guifg=#0487d8
-hi rainbowcol6 ctermfg=98 guifg=#996ddb
-hi rainbowcol7 ctermfg=225 guifg=#fdcbf5
+hi rainbowcol4 ctermfg=32 guifg=#0487d8
+hi rainbowcol5 ctermfg=98 guifg=#996ddb
+hi rainbowcol6 ctermfg=133 guifg=#b966af
 hi link diffAdded DiffAdd
 hi link diffRemoved DiffDelete
 hi link diffChanged DiffChange
