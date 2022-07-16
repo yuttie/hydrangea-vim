@@ -23,6 +23,7 @@ except ImportError:
 
 
 # Palette
+base04    = ('#0e141d', 232)
 base03    = ('#1b202a', 234)
 base02    = ('#232833', 235)
 base01    = ('#303540', 236)
@@ -191,7 +192,7 @@ color['DiagnosticInfo']  = dict(fg=skyblue3, bg=skyblue1, deco='NONE')
 color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
 
 # bufferline.nvim
-color['BufferLineFill']      = dict(bg=base03)
+color['BufferLineFill']      = dict(bg=base04)
 color['BufferLineSeparator'] = dict(fg=base03, bg=base03)
 
 color['BufferLineBackground']  = dict(fg=base0, bg=base02)
