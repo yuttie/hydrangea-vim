@@ -190,6 +190,17 @@ color['DiagnosticWarn']  = dict(fg=violet2,  bg=violet0,  deco='NONE')
 color['DiagnosticInfo']  = dict(fg=skyblue3, bg=skyblue1, deco='NONE')
 color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
 
+# bufferline.nvim
+color['BufferLineFill']      = dict(bg=base03)
+color['BufferLineSeparator'] = dict(fg=base03, bg=base03)
+# 
+color['BufferLineCloseButton'] = dict(fg=base0, bg=base02)
+color['BufferLineBackground']  = dict(fg=base0, bg=base02)
+
+color['BufferLineIndicatorSelected']   = dict(fg=skyblue2, bg=skyblue2)
+color['BufferLineBufferSelected']      = dict(fg=base2, bg=base00, deco='bold')
+color['BufferLineCloseButtonSelected'] = dict(fg=base2,  bg=base00)
+
 # nvim-cmp
 color['CmpItemAbbr']           = dict(fg=base1)
 color['CmpItemAbbrDeprecated'] = dict(fg=base0)
