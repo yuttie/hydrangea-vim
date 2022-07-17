@@ -193,16 +193,17 @@ color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
 
 # bufferline.nvim
 color['BufferLineFill']      = dict(bg=base04)
-color['BufferLineSeparator'] = dict(fg=base03, bg=base03)
 
-color['BufferLineBackground']  = dict(fg=base0, bg=base02)
-color['BufferLineCloseButton'] = dict(fg=base0, bg=base02)
+color['BufferLineSeparator']   = dict(fg=base02, bg=base04)
+color['BufferLineBackground']  = dict(fg=base0, bg=base04)
+color['BufferLineCloseButton'] = dict(fg=base0, bg=base04)
 color['BufferLineModified']    = dict(fg=violet1, bg=base02)
 
-color['BufferLineIndicatorSelected']   = dict(fg=skyblue2, bg=skyblue2)
-color['BufferLineBufferSelected']      = dict(fg=base2, bg=base00, deco='bold')
-color['BufferLineCloseButtonSelected'] = dict(fg=base2,  bg=base00)
-color['BufferLineModifiedSelected']    = dict(fg=violet1,  bg=base00)
+color['BufferLineSeparatorSelected']   = dict(fg=base02, bg=base04)
+color['BufferLineIndicatorSelected']   = dict(fg=base03, bg=base03)
+color['BufferLineBufferSelected']      = dict(fg=base2, bg=base03, deco='NONE')
+color['BufferLineCloseButtonSelected'] = dict(fg=base2,  bg=base03)
+color['BufferLineModifiedSelected']    = dict(fg=violet1,  bg=base03)
 
 # nvim-cmp
 color['CmpItemAbbr']           = dict(fg=base1)
