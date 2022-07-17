@@ -28,6 +28,27 @@ call dein#add('yuttie/hydrangea-vim')
 
 ## Configuration
 
+### bufferline.nvim
+
+This colorscheme provides a set of highlight groups for overriding default ones defined by bufferline.nvim. 
+However, it is impossible to provide one-size-fits-all highlight definitions that can be used with any kinds of separators.
+Therefore, the current one is designed specifically for the following configuration:
+
+```lua
+require('bufferline').setup {
+  options = {
+    mode = 'tabs',
+    themable = true,
+    separator_style = { '|', '|' },
+    ...
+  },
+  ...
+}
+```
+
+Please note that you have to set `themable` to `true` to apply the colorscheme-defined appearance.
+
+
 ### nvim-cmp
 [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) support is provided.
 
