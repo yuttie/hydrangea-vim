@@ -26,8 +26,8 @@ hi FoldColumn ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui
 hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#b966af guibg=NONE gui=bold
 hi StatusLine ctermfg=247 ctermbg=236 cterm=NONE guifg=#aeb9d2 guibg=#303540 gui=NONE
 hi StatusLineNC ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
-hi VertSplit ctermfg=236 ctermbg=235 cterm=NONE guifg=#303540 guibg=#232833 gui=NONE
-hi WinSeparator ctermfg=236 ctermbg=235 cterm=NONE guifg=#303540 guibg=#232833 gui=NONE
+hi VertSplit ctermfg=32 ctermbg=234 cterm=NONE guifg=#1c5280 guibg=#1b202a gui=NONE
+hi WinSeparator ctermfg=32 ctermbg=234 cterm=NONE guifg=#1c5280 guibg=#1b202a gui=NONE
 hi LineNr ctermfg=239 ctermbg=235 cterm=NONE guifg=#4b505d guibg=#232833 gui=NONE
 hi CursorLineNr ctermfg=189 ctermbg=239 cterm=bold guifg=#d3def7 guibg=#4b505d gui=bold
 hi SpecialKey ctermfg=236 ctermbg=31 cterm=bold guifg=#023342 guibg=#0990b5 gui=bold
