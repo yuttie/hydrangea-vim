@@ -13,8 +13,8 @@ let g:colors_name = 'hydrangea'
 set background=dark
 
 hi Normal ctermfg=247 ctermbg=234 guifg=#aeb9d2 guibg=#1b202a
-hi NormalFloat ctermfg=247 ctermbg=236 guifg=#aeb9d2 guibg=#303540
-hi FloatBorder ctermfg=247 ctermbg=236 guifg=#aeb9d2 guibg=#303540
+hi NormalFloat ctermfg=247 ctermbg=234 guifg=#aeb9d2 guibg=#1b202a
+hi FloatBorder ctermfg=247 ctermbg=234 guifg=#aeb9d2 guibg=#1b202a
 hi Cursor ctermfg=NONE ctermbg=189 cterm=NONE guifg=NONE guibg=#d3def7 gui=NONE
 hi CursorIM ctermfg=NONE ctermbg=189 guifg=NONE guibg=#d3def7
 hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#232833 gui=NONE
@@ -54,9 +54,9 @@ hi Error ctermfg=197 ctermbg=237 cterm=bold guifg=#e91e63 guibg=#681c36 gui=bold
 hi Todo ctermfg=106 ctermbg=NONE cterm=bold guifg=#98bf00 guibg=NONE gui=bold
 hi IncSearch ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
 hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#fdcbf5 guibg=#b966af gui=bold
-hi Pmenu ctermfg=247 ctermbg=236 cterm=NONE guifg=#aeb9d2 guibg=#303540 gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=239 cterm=bold guifg=NONE guibg=#4b505d gui=bold
-hi PmenuSbar ctermbg=236 cterm=NONE guibg=#303540 gui=NONE
+hi Pmenu ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=235 cterm=bold guifg=NONE guibg=#232833 gui=bold
+hi PmenuSbar ctermbg=234 cterm=NONE guibg=#1b202a gui=NONE
 hi PmenuThumb ctermbg=189 cterm=NONE guibg=#d3def7 gui=NONE
 hi TabLine ctermfg=247 ctermbg=234 cterm=NONE guifg=#aeb9d2 guibg=#1b202a gui=NONE
 hi TabLineSel ctermfg=234 ctermbg=133 cterm=bold guifg=#1b202a guibg=#b966af gui=bold
@@ -65,10 +65,13 @@ hi SpellBad cterm=undercurl gui=undercurl
 hi SpellCap cterm=undercurl gui=undercurl
 hi SpellRare cterm=undercurl gui=undercurl
 hi SpellLocal cterm=undercurl gui=undercurl
-hi DiffAdd ctermfg=31 ctermbg=236 cterm=NONE guifg=#0990b5 guibg=#023342 gui=NONE
-hi DiffDelete ctermfg=133 ctermbg=53 cterm=NONE guifg=#b966af guibg=#4a1d45 gui=NONE
-hi DiffChange ctermfg=98 ctermbg=236 cterm=NONE guifg=#996ddb guibg=#35264a gui=NONE
-hi DiffText ctermfg=177 ctermbg=60 cterm=bold guifg=#c398fe guibg=#5b4182 gui=bold
+hi DiffAdd ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#041e28 gui=NONE
+hi DiffDelete ctermfg=53 ctermbg=53 cterm=NONE guifg=#4a1d45 guibg=#271624 gui=NONE
+hi DiffChange ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#1f1728 gui=NONE
+hi DiffText ctermfg=NONE ctermbg=236 cterm=bold guifg=NONE guibg=#35264a gui=bold
+hi diffAdded ctermfg=31 ctermbg=236 cterm=NONE guifg=#0990b5 guibg=#041e28 gui=NONE
+hi diffRemoved ctermfg=133 ctermbg=53 cterm=NONE guifg=#b966af guibg=#271624 gui=NONE
+hi diffChanged ctermfg=98 ctermbg=236 cterm=NONE guifg=#996ddb guibg=#1f1728 gui=NONE
 hi Directory ctermfg=37 cterm=NONE guifg=#019c9c gui=NONE
 hi ErrorMsg ctermfg=197 ctermbg=NONE cterm=NONE guifg=#e91e63 guibg=NONE gui=NONE
 hi SignColumn ctermfg=247 ctermbg=235 cterm=NONE guifg=#aeb9d2 guibg=#232833 gui=NONE
@@ -115,9 +118,6 @@ hi rainbowcol3 ctermfg=37 guifg=#019c9c
 hi rainbowcol4 ctermfg=32 guifg=#0487d8
 hi rainbowcol5 ctermfg=98 guifg=#996ddb
 hi rainbowcol6 ctermfg=133 guifg=#b966af
-hi link diffAdded DiffAdd
-hi link diffRemoved DiffDelete
-hi link diffChanged DiffChange
 hi link TSAttribute Special
 hi link TSBoolean Constant
 hi link TSCharacter Constant
