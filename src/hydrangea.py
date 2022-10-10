@@ -39,6 +39,7 @@ green3    = ('#a8d544', 192)
 green4    = ('#dafd89', 192)
 teal01    = ('#013435', 236)
 teal2     = ('#019c9c',  37)
+cyan03    = ('#041e28', 236)
 cyan01    = ('#023342', 236)
 cyan1     = ('#0990b5',  31)
 cyan3     = ('#9bdffc', 117)
@@ -48,11 +49,13 @@ skyblue2  = ('#0487d8',  32)
 skyblue3  = ('#73c5ff', 189)
 blue1     = ('#466bb6',  25)
 blue2     = ('#6d88ce',  68)
+violet03  = ('#1f1728', 236)
 violet01  = ('#35264a', 236)
 violet0   = ('#5b4182',  60)
 violet1   = ('#996ddb',  98)
 violet2   = ('#c398fe', 177)
 violet3   = ('#e2ccfe', 189)
+magenta03 = ('#271624',  53)
 magenta01 = ('#4a1d45',  53)
 magenta1  = ('#b966af', 133)
 magenta3  = ('#fdcbf5', 225)
@@ -120,15 +123,15 @@ color['SpellRare']    = dict(                                       deco='underc
 color['SpellLocal']   = dict(                                       deco='undercurl')
 
 # vimdiff
-color['DiffAdd']      = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
-color['DiffDelete']   = dict(fg=magenta1, bg=magenta01,             deco='NONE'     )
-color['DiffChange']   = dict(fg=violet1,  bg=violet01,              deco='NONE'     )
-color['DiffText']     = dict(fg=violet2,  bg=violet0,               deco='bold'     )
+color['DiffAdd']      = dict(fg='NONE',    bg=cyan03,               deco='NONE'     )
+color['DiffDelete']   = dict(fg=magenta01, bg=magenta03,            deco='NONE'     )
+color['DiffChange']   = dict(fg='NONE',    bg=violet03,             deco='NONE'     )
+color['DiffText']     = dict(fg='NONE',    bg=violet01,             deco='bold'     )
 
 # syntax/diff.vim
-color['diffAdded']      = 'DiffAdd'
-color['diffRemoved']   = 'DiffDelete'
-color['diffChanged']   = 'DiffChange'
+color['diffAdded']    = dict(fg=cyan1,    bg=cyan03,                deco='NONE'     )
+color['diffRemoved']  = dict(fg=magenta1, bg=magenta03,             deco='NONE'     )
+color['diffChanged']  = dict(fg=violet1,  bg=violet03,              deco='NONE'     )
 
 color['Directory']    = dict(fg=teal2,                              deco='NONE'     )
 color['ErrorMsg']     = dict(fg=red1,     bg='NONE',                deco='NONE'     )
