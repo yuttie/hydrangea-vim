@@ -274,10 +274,10 @@ for name, cdef in color.items():
         if cdef == 'NONE':
             # Disable
             execute('hi ' + name + ' NONE')
-            links.append('hi link ' + name + ' NONE')
+            links.append('hi! link ' + name + ' NONE')
         else:
             # Link
-            links.append('hi link ' + name + ' ' + cdef)
+            links.append('hi! link ' + name + ' ' + cdef)
     elif type(cdef) is dict and len(cdef) > 0:
         # The definition is a dictionary
         def2 = {}
