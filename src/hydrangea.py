@@ -5,8 +5,33 @@ HEADER = """" Name:     hydrangea.vim --- Hydrangea theme for Vim
 " License:  MIT License
 """
 
-
 from collections import OrderedDict
+import warnings
+warnings.filterwarnings('ignore')
+
+from skimage.color import rgb2lab, lab2lch, lch2lab, lab2rgb
+
+def hex2rgb(hex: str) -> tuple[float, float, float]:
+    if hex[0] != '#':
+        raise ValueError('Arg hex must start with "#"')
+    r = int(hex[1:3], 16) / 0xff
+    g = int(hex[3:5], 16) / 0xff
+    b = int(hex[5:7], 16) / 0xff
+    return (r, g, b)
+
+def rgb2hex(rgb: tuple[float, float, float]) -> str:
+    r, g, b = map(lambda x: int(0xff * x), rgb)
+    return f'#{r:02x}{g:02x}{b:02x}'
+
+def hex2lch(hex: str) -> tuple[float, float, float]:
+    return tuple(lab2lch(rgb2lab(hex2rgb(hex), illuminant='D65')))
+
+def lch2hex(lch: tuple[float, float, float]) -> str:
+    return rgb2hex(lab2rgb(lch2lab(lch), illuminant='D65'))
+
+def adjust_lch(hex: str, delta_l: float, delta_c: float, delta_h: float) -> str:
+    l, c, h = hex2lch(hex)
+    return lch2hex((l + delta_l, c + delta_c, h + delta_h))
 
 try:
     import vim
@@ -21,205 +46,270 @@ except ImportError:
     def execute(cmd):
         print(cmd)
 
-
 # Palette
-base04    = ('#0e141d', 232)
-base03    = ('#1b202a', 234)
-base02    = ('#232833', 235)
-base01    = ('#303540', 236)
-base00    = ('#4b505d', 239)
-base0     = ('#465166', 239)
-base1     = ('#aeb9d2', 247)
-base2     = ('#d3def7', 189)
-red01     = ('#681c36', 237)
-red1      = ('#e91e63', 197)
-green1    = ('#66800d', 106)
-green2    = ('#98bf00', 106)
-green3    = ('#a8d544', 192)
-green4    = ('#dafd89', 192)
-teal01    = ('#013435', 236)
-teal2     = ('#019c9c',  37)
-cyan03    = ('#041e28', 236)
-cyan01    = ('#023342', 236)
-cyan1     = ('#0990b5',  31)
-cyan3     = ('#9bdffc', 117)
-skyblue01 = ('#002844', 235)
-skyblue1  = ('#1c5280',  32)
-skyblue2  = ('#0487d8',  32)
-skyblue3  = ('#73c5ff', 189)
-blue1     = ('#466bb6',  25)
-blue2     = ('#6d88ce',  68)
-violet03  = ('#1f1728', 236)
-violet01  = ('#35264a', 236)
-violet0   = ('#5b4182',  60)
-violet1   = ('#996ddb',  98)
-violet2   = ('#c398fe', 177)
-violet3   = ('#e2ccfe', 189)
-magenta03 = ('#271624',  53)
-magenta01 = ('#4a1d45',  53)
-magenta1  = ('#b966af', 133)
-magenta3  = ('#fdcbf5', 225)
+color_names = [
+    'gray',
+    'red',
+    'green',
+    'teal',
+    'cyan',
+    'skyblue',
+    'blue',
+    'violet',
+    'magenta',
+]
 
+# Base colors
+# L: [0, 100]
+# C: [0, 100]
+# H: [0, 2 * PI]
+base_l = 24
+base_color = dict()
+base_color['gray']    = lch2hex((base_l,  7.554, 4.888))
+base_color['red']     = lch2hex((base_l, 76.168, 0.202))
+base_color['green']   = lch2hex((base_l, 33.038, 2.019))
+base_color['teal']    = lch2hex((base_l, 34.680, 3.427))
+base_color['cyan']    = lch2hex((base_l, 22.086, 4.135))
+base_color['skyblue'] = lch2hex((base_l, 24.056, 4.701))
+base_color['blue']    = lch2hex((base_l, 31.778, 4.930))
+base_color['violet']  = lch2hex((base_l, 57.453, 5.386))
+base_color['magenta'] = lch2hex((base_l, 32.716, 5.769))
+
+p = dict()
+for cname in color_names:
+    if cname in p:
+        continue
+    p[cname] = {
+        '06': (adjust_lch(base_color[cname], -30, 0, 0),  53),
+        '05': (adjust_lch(base_color[cname], -28, 0, 0),  53),
+        '04': (adjust_lch(base_color[cname], -24, 0, 0),  53),
+        '03': (adjust_lch(base_color[cname], -20, 0, 0),  53),
+        '02': (adjust_lch(base_color[cname], -16, 0, 0), 133),
+        '01': (adjust_lch(base_color[cname],  -8, 0, 0), 133),
+        '0':  (adjust_lch(base_color[cname],   0, 0, 0), 133),
+        '1':  (adjust_lch(base_color[cname],   8, 0, 0), 133),
+        '2':  (adjust_lch(base_color[cname],  16, 0, 0), 225),
+        '3':  (adjust_lch(base_color[cname],  24, 0, 0), 225),
+        '4':  (adjust_lch(base_color[cname],  32, 0, 0), 225),
+        '5':  (adjust_lch(base_color[cname],  40, 0, 0), 225),
+        '6':  (adjust_lch(base_color[cname],  48, 0, 0), 225),
+    }
 
 # Definitions
-# TODO 
+# TODO NOTE 
 color = OrderedDict()
-color['Normal']       = dict(fg=base1,    bg=base03,                                )
-color['NormalFloat']  = dict(fg=base1,    bg=base03,                                )
-color['FloatBorder']  = dict(fg=base1,    bg=base03,                                )
-color['Cursor']       = dict(fg='NONE',   bg=base2,                 deco='NONE'     )
-color['CursorIM']     = dict(fg='NONE',   bg=base2,                                 )
-color['CursorLine']   = dict(fg='NONE',   bg=base02,                deco='NONE'     )
-color['CursorColumn'] = dict(fg='NONE',   bg=base02,                deco='NONE'     )
-color['Visual']       = dict(fg='NONE',   bg=base01,                deco='NONE'     )
+color['Normal']       = dict(fg=p['gray']['2'], bg=p['gray']['03'],                 )
+color['NormalFloat']  = dict(fg=p['gray']['1'], bg=p['gray']['03'],                 )
+color['FloatBorder']  = dict(fg=p['gray']['1'], bg=p['gray']['03'],                 )
+color['Cursor']       = dict(fg='NONE',         bg=p['gray']['2'],  deco='NONE'     )
+color['CursorIM']     = dict(fg='NONE',         bg=p['gray']['2'],                  )
+color['CursorLine']   = dict(fg='NONE',         bg=p['gray']['02'], deco='NONE'     )
+color['CursorColumn'] = dict(fg='NONE',         bg=p['gray']['02'], deco='NONE'     )
+color['Visual']       = dict(fg='NONE',         bg=p['gray']['01'], deco='NONE'     )
 color['VisualNOS']    = dict(fg='fg',                               deco='underline')
 
-color['Folded']       = dict(fg=base1,    bg=base02,                deco='NONE'     )
-color['FoldColumn']   = dict(fg=base1,    bg=base03,                deco='NONE'     )
-color['Title']        = dict(fg=magenta1, bg='NONE',                deco='bold'     )
-color['StatusLine']   = dict(fg=base1,    bg=base01,                deco='NONE'     )
-color['StatusLineNC'] = dict(fg=base00,   bg=base02,                deco='NONE'     )
-color['VertSplit']    = dict(fg=skyblue1, bg=base03,                deco='NONE'     )
-color['WinSeparator'] = dict(fg=skyblue1, bg=base03,                deco='NONE'     )
-color['LineNr']       = dict(fg=base00,   bg=base02,                deco='NONE'     )
-color['CursorLineNr'] = dict(fg=base2,    bg=base00,                deco='bold'     )
-color['SpecialKey']   = dict(fg=cyan01,   bg=cyan1,                 deco='bold'     )
-color['NonText']      = dict(fg=base00,   bg=base03,                deco='NONE'     )
-color['MatchParen']   = dict(fg=red1,     bg='NONE',                deco='bold'     )
+color['Folded']       = dict(fg=p['gray']['1'],    bg=p['gray']['02'], deco='NONE')
+color['FoldColumn']   = dict(fg=p['gray']['1'],    bg=p['gray']['03'], deco='NONE')
+color['Title']        = dict(fg=p['magenta']['1'], bg='NONE',          deco='bold')
+color['StatusLine']   = dict(fg=p['gray']['1'],    bg=p['gray']['01'], deco='NONE')
+color['StatusLineNC'] = dict(fg=p['gray']['0'],    bg=p['gray']['02'], deco='NONE')
+color['VertSplit']    = dict(fg=p['skyblue']['1'], bg=p['gray']['03'], deco='NONE')
+color['WinSeparator'] = dict(fg=p['skyblue']['1'], bg=p['gray']['03'], deco='NONE')
+color['LineNr']       = dict(fg=p['gray']['0'],    bg=p['gray']['02'], deco='NONE')
+color['CursorLineNr'] = dict(fg=p['gray']['2'],    bg=p['gray']['0'],  deco='bold')
+color['SpecialKey']   = dict(fg=p['cyan']['01'],   bg=p['cyan']['1'],  deco='bold')
+color['NonText']      = dict(fg=p['gray']['0'],    bg=p['gray']['03'], deco='NONE')
+color['MatchParen']   = dict(fg=p['red']['1'],     bg='NONE',          deco='bold')
 
-color['Comment']      = dict(fg=base0,                              deco='NONE'     )
-color['Constant']     = dict(fg=cyan1,    bg='NONE',                deco='NONE'     )
-color['String']       = dict(fg=skyblue2, bg=skyblue01,             deco='NONE'     )
-color['Number']       = dict(fg=cyan1,    bg=cyan01,                deco='NONE'     )
-color['Identifier']   = dict(fg=base1,                              deco='NONE'     )
-color['Function']     = dict(fg=skyblue3,                           deco='NONE'     )
-color['Statement']    = dict(fg=blue1,                              deco='bold'     )
-color['Operator']     = dict(fg=base2,                              deco='bold'     )
-color['Include']      = dict(fg=violet1,                            deco='NONE'     )
-color['PreProc']      = dict(fg=violet2,                            deco='NONE'     )
-color['Type']         = dict(fg=magenta1,                           deco='NONE'     )
-color['StorageClass'] = dict(fg=blue1,                              deco='bold'     )
-color['Structure']    = dict(fg=magenta1,                           deco='NONE'     )
-color['Typedef']      = dict(fg=blue1,                              deco='bold'     )
-color['Special']      = dict(fg=blue2,    bg='NONE',                deco='bold'     )
-color['Underlined']   = dict(fg='fg',                               deco='underline')
-color['Ignore']       = dict(fg='bg'                                                )
-color['Error']        = dict(fg=red1,     bg=red01,                 deco='bold'     )
-color['Todo']         = dict(fg=green2,   bg='NONE',                deco='bold'     )
+color['Comment']      = dict(fg=p['gray']['0'],                           deco='NONE'     )
+color['Constant']     = dict(fg=p['cyan']['2'],    bg='NONE',             deco='NONE'     )
+color['String']       = dict(fg=p['skyblue']['1'], bg=p['skyblue']['02'], deco='NONE'     )
+color['Number']       = dict(fg=p['cyan']['1'],    bg=p['cyan']['02'],    deco='NONE'     )
+color['Identifier']   = dict(fg=p['gray']['4'],                           deco='NONE'     )
+color['Function']     = dict(fg=p['skyblue']['4'],                        deco='NONE'     )
+color['Statement']    = dict(fg=p['blue']['1'],                           deco='bold'     )
+color['Operator']     = dict(fg=p['gray']['2'],                           deco='bold'     )
+color['Include']      = dict(fg=p['violet']['1'],                         deco='NONE'     )
+color['PreProc']      = dict(fg=p['violet']['2'],                         deco='NONE'     )
+color['Type']         = dict(fg=p['magenta']['2'],                        deco='NONE'     )
+color['StorageClass'] = dict(fg=p['blue']['1'],                           deco='bold'     )
+color['Structure']    = dict(fg=p['magenta']['1'],                        deco='NONE'     )
+color['Typedef']      = dict(fg=p['blue']['1'],                           deco='bold'     )
+color['Special']      = dict(fg=p['blue']['2'],    bg='NONE',             deco='bold'     )
+color['Underlined']   = dict(fg='fg',                                     deco='underline')
+color['Ignore']       = dict(fg='bg'                                                      )
+color['Error']        = dict(fg=p['red']['1'],     bg=p['red']['01'],     deco='bold'     )
+color['Todo']         = dict(fg=p['green']['3'],   bg=p['green']['01'],   deco='bold'     )
 
-color['IncSearch']    = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
-color['Search']       = dict(fg=magenta3, bg=magenta1,              deco='bold'     )
-color['Pmenu']        = dict(fg=base1,    bg=base03,                deco='NONE'     )
-color['PmenuSel']     = dict(fg='NONE',   bg=base02,                deco='bold'     )
-color['PmenuSbar']    = dict(             bg=base03,                deco='NONE'     )
-color['PmenuThumb']   = dict(             bg=base2,                 deco='NONE'     )
-color['TabLine']      = dict(fg=base1,    bg=base03,                deco='NONE'     )
-color['TabLineSel']   = dict(fg=base03,   bg=magenta1,              deco='bold'     )
-color['TabLineFill']  = dict(fg=base1,    bg=base03,                deco='NONE'     )
+color['IncSearch']    = dict(fg=p['magenta']['6'], bg=p['magenta']['2'], deco='bold')
+color['Search']       = dict(fg=p['magenta']['6'], bg=p['magenta']['0'], deco='bold')
+color['Pmenu']        = dict(fg=p['gray']['4'],    bg=p['gray']['03'],   deco='NONE')
+color['PmenuSel']     = dict(fg='NONE',            bg=p['gray']['02'],   deco='bold')
+color['PmenuSbar']    = dict(                      bg=p['gray']['03'],   deco='NONE')
+color['PmenuThumb']   = dict(                      bg=p['gray']['2'],    deco='NONE')
+color['TabLine']      = dict(fg=p['gray']['1'],    bg=p['gray']['03'],   deco='NONE')
+color['TabLineSel']   = dict(fg=p['gray']['03'],   bg=p['magenta']['1'], deco='bold')
+color['TabLineFill']  = dict(fg=p['gray']['1'],    bg=p['gray']['03'],   deco='NONE')
 
-color['SpellBad']     = dict(                                       deco='undercurl')
-color['SpellCap']     = dict(                                       deco='undercurl')
-color['SpellRare']    = dict(                                       deco='undercurl')
-color['SpellLocal']   = dict(                                       deco='undercurl')
+color['SpellBad']     = dict(deco='undercurl')
+color['SpellCap']     = dict(deco='undercurl')
+color['SpellRare']    = dict(deco='undercurl')
+color['SpellLocal']   = dict(deco='undercurl')
 
 # vimdiff
-color['DiffAdd']      = dict(fg='NONE',    bg=cyan03,               deco='NONE'     )
-color['DiffDelete']   = dict(fg=magenta01, bg=magenta03,            deco='NONE'     )
-color['DiffChange']   = dict(fg='NONE',    bg=violet03,             deco='NONE'     )
-color['DiffText']     = dict(fg='NONE',    bg=violet01,             deco='bold'     )
+color['DiffAdd']      = dict(fg='NONE',             bg=p['cyan']['03'],    deco='NONE')
+color['DiffDelete']   = dict(fg=p['magenta']['01'], bg=p['magenta']['03'], deco='NONE')
+color['DiffChange']   = dict(fg='NONE',             bg=p['violet']['03'],  deco='NONE')
+color['DiffText']     = dict(fg='NONE',             bg=p['violet']['01'],  deco='bold')
 
 # syntax/diff.vim
-color['diffAdded']    = dict(fg=cyan1,    bg=cyan03,                deco='NONE'     )
-color['diffRemoved']  = dict(fg=magenta1, bg=magenta03,             deco='NONE'     )
-color['diffChanged']  = dict(fg=violet1,  bg=violet03,              deco='NONE'     )
+color['diffAdded']    = dict(fg=p['cyan']['1'],    bg=p['cyan']['03'],    deco='NONE')
+color['diffRemoved']  = dict(fg=p['magenta']['1'], bg=p['magenta']['03'], deco='NONE')
+color['diffChanged']  = dict(fg=p['violet']['1'],  bg=p['violet']['03'],  deco='NONE')
 
-color['Directory']    = dict(fg=teal2,                              deco='NONE'     )
-color['ErrorMsg']     = dict(fg=red1,     bg='NONE',                deco='NONE'     )
-color['SignColumn']   = dict(fg=base1,    bg=color['LineNr']['bg'], deco='NONE'     )
-color['MoreMsg']      = dict(fg=blue1,                              deco='NONE'     )
-color['ModeMsg']      = dict(                                       deco='bold'     )
-color['Question']     = dict(fg='fg',                               deco='NONE'     )
-color['WarningMsg']   = dict(fg=red1,                               deco='NONE'     )
-color['WildMenu']     = dict(fg=base2,    bg=base00,                deco='bold'     )
-color['ColorColumn']  = dict(fg='NONE',   bg=red01,                 deco='NONE'     )
+color['Directory']    = dict(fg=p['teal']['2'],                           deco='NONE')
+color['ErrorMsg']     = dict(fg=p['red']['1'],  bg='NONE',                deco='NONE')
+color['SignColumn']   = dict(fg=p['gray']['1'], bg=color['LineNr']['bg'], deco='NONE')
+color['MoreMsg']      = dict(fg=p['blue']['1'],                           deco='NONE')
+color['ModeMsg']      = dict(                                             deco='bold')
+color['Question']     = dict(fg='fg',                                     deco='NONE')
+color['WarningMsg']   = dict(fg=p['red']['1'],                            deco='NONE')
+color['WildMenu']     = dict(fg=p['gray']['2'], bg=p['gray']['0'],        deco='bold')
+color['ColorColumn']  = dict(fg='NONE',         bg=p['red']['01'],        deco='NONE')
 
-# [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
-color['TSAttribute'] = 'Special'
-color['TSBoolean'] = 'Constant'
-color['TSCharacter'] = 'Constant'
-color['TSComment'] = 'Comment'
-color['TSConditional'] = 'Statement'
-color['TSConstBuiltin'] = 'Constant'
-color['TSConstMacro'] = 'Constant'
-color['TSConstant'] = 'Constant'
-color['TSConstructor'] = 'Identifier'
-color['TSDanger'] = dict(fg=red1)
-color['TSError'] = 'Error'
-color['TSException'] = 'Statement'
-color['TSField'] = 'Identifier'
-color['TSFloat'] = 'Constant'
-color['TSFuncBuiltin'] = 'Function'
-color['TSFunction'] = 'Function'
-color['TSInclude'] = 'Statement'
-color['TSKeyword'] = 'Statement'
-color['TSKeywordFunction'] = 'Statement'
-color['TSLabel'] = 'Special'
-color['TSNamespace'] = 'Constant'
-color['TSNumber'] = 'Number'
-color['TSOperator'] = 'Operator'
-color['TSParameter'] = dict(fg=green4)
-color['TSParameterReference'] = 'Normal'
-color['TSProperty'] = 'TSField'
-color['TSPunctBracket'] = 'Normal'
-color['TSPunctDelimiter'] = 'Normal'
-color['TSPunctSpecial'] = 'Special'
-color['TSRepeat'] = 'Statement'
-color['TSString'] = 'String'
-color['TSStringEscape'] = 'Special'
-color['TSStringRegex'] = 'String'
-color['TSTag'] = 'htmlTagName'
-color['TSTagAttribute'] = 'htmlArg'
-color['TSTagDelimiter'] = 'htmlTagName'
-color['TSText'] = 'Normal'
-color['TSTitle'] = 'Title'
-color['TSType'] = 'Type'
-color['TSTypeBuiltin'] = 'Type'
-color['TSVariable'] = 'Identifier'
-color['TSVariableBuiltin'] = 'Constant'
-color['TSWarning'] = 'Todo'
+# Tree-sitter (https://github.com/nvim-treesitter/nvim-treesitter/blob/3a74b5831058d0daf8952a5b8c556c61b30a3f46/CONTRIBUTING.md)
+# Identifiers
+color['@variable'] = 'Identifier'
+color['@variable.builtin'] = 'Constant'
+color['@variable.parameter'] = dict(fg=p['green']['4'])
+color['@variable.parameter.builtin'] = dict(fg=p['green']['4'])
+color['@variable.member'] = 'Identifier'
+color['@constant'] = 'Constant'
+color['@constant.builtin'] = 'Constant'
+color['@constant.macro'] = 'Constant'
+color['@module'] = 'Constant'
+color['@module.builtin'] = 'Constant'
+color['@label'] = 'Special'
+# Literals
+color['@string'] = 'String'
+color['@string.documentation'] = 'Special'
+color['@string.regexp'] = 'String'
+color['@string.escape'] = 'Special'
+color['@string.special'] = 'Special'
+color['@string.special.symbol'] = 'Special'
+color['@string.special.url'] = 'Special'
+color['@string.special.path'] = 'Special'
+color['@character'] = 'Constant'
+color['@character.special'] = 'Special'
+color['@boolean'] = 'Constant'
+color['@number'] = 'Number'
+color['@number.float'] = 'Number'
+# Types
+color['@type'] = 'Type'
+color['@type.builtin'] = 'Type'
+color['@type.definition'] = 'Type'
+color['@attribute'] = 'Special'
+color['@attribute.builtin'] = 'Special'
+color['@property'] = 'Identifier'
+# Functions
+color['@function'] = 'Function'
+color['@function.builtin'] = 'Function'
+color['@function.call'] = 'Function'
+color['@function.macro'] = 'Function'
+color['@function.method'] = 'Function'
+color['@function.method.call'] = 'Function'
+color['@constructor'] = 'Identifier'
+color['@operator'] = 'Operator'
+# Keywords
+color['@keyword'] = 'Statement'
+color['@keyword.coroutine'] = 'Statement'
+color['@keyword.function'] = 'Statement'
+color['@keyword.operator'] = 'Statement'
+color['@keyword.import'] = 'Statement'
+color['@keyword.type'] = 'Statement'
+color['@keyword.modifier'] = 'Statement'
+color['@keyword.repeat'] = 'Statement'
+color['@keyword.return'] = 'Statement'
+color['@keyword.debug'] = 'Statement'
+color['@keyword.exception'] = 'Statement'
+color['@keyword.conditional'] = 'Statement'
+color['@keyword.conditional.ternary'] = 'Statement'
+color['@keyword.directive'] = 'Statement'
+color['@keyword.directive.define'] = 'Statement'
+# Punctuation
+color['@punctuation.delimiter'] = 'Normal'
+color['@punctuation.bracket'] = 'Normal'
+color['@punctuation.special'] = 'Special'
+# Comments
+color['@comment'] = 'Comment'
+color['@comment.documentation'] = 'Comment'
+color['@comment.error'] = 'Error'
+color['@comment.warning'] = 'Error'
+color['@comment.todo'] = 'Todo'
+color['@comment.note'] = 'Todo'
+# Markup
+# TODO Currently not provided
+# color['@markup.strong'] = ''
+# color['@markup.italic'] = ''
+# color['@markup.strikethrough'] = ''
+# color['@markup.underline'] = ''
+# color['@markup.heading'] = ''
+# color['@markup.heading.1'] = ''
+# color['@markup.heading.2'] = ''
+# color['@markup.heading.3'] = ''
+# color['@markup.heading.4'] = ''
+# color['@markup.heading.5'] = ''
+# color['@markup.heading.6'] = ''
+# color['@markup.quote'] = ''
+# color['@markup.math'] = ''
+# color['@markup.link'] = ''
+# color['@markup.link.label'] = ''
+# color['@markup.link.url'] = ''
+# color['@markup.raw'] = ''
+# color['@markup.raw.block'] = ''
+# color['@markup.list'] = ''
+# color['@markup.list.checked'] = ''
+# color['@markup.list.unchecked'] = ''
+# color['@diff.plus'] = ''
+# color['@diff.minus'] = ''
+# color['@diff.delta'] = ''
+# color['@tag'] = ''
+# color['@tag.builtin'] = ''
+# color['@tag.attribute'] = ''
+# color['@tag.delimiter'] = ''
 
 # Diagnostic
-color['DiagnosticError'] = dict(fg=red1,     bg=red01,    deco='NONE')
-color['DiagnosticWarn']  = dict(fg=violet2,  bg=violet0,  deco='NONE')
-color['DiagnosticInfo']  = dict(fg=skyblue3, bg=skyblue1, deco='NONE')
-color['DiagnosticHint']  = dict(fg=green3,   bg=green1,   deco='NONE')
+color['DiagnosticError'] = dict(fg=p['red']['1'],     bg=p['red']['01'],    deco='NONE')
+color['DiagnosticWarn']  = dict(fg=p['violet']['2'],  bg=p['violet']['0'],  deco='NONE')
+color['DiagnosticInfo']  = dict(fg=p['skyblue']['3'], bg=p['skyblue']['1'], deco='NONE')
+color['DiagnosticHint']  = dict(fg=p['green']['3'],   bg=p['green']['1'],   deco='NONE')
 
 # bufferline.nvim
-color['BufferLineFill']      = dict(bg=base04)
+color['BufferLineFill']      = dict(bg=p['gray']['04'])
 
-color['BufferLineSeparator']   = dict(fg=base02, bg=base04)
-color['BufferLineBackground']  = dict(fg=base0, bg=base04)
-color['BufferLineCloseButton'] = dict(fg=base0, bg=base04)
-color['BufferLineModified']    = dict(fg=violet1, bg=base02)
+color['BufferLineSeparator']   = dict(fg=p['gray']['02'],  bg=p['gray']['04'])
+color['BufferLineBackground']  = dict(fg=p['gray']['0'],   bg=p['gray']['04'])
+color['BufferLineCloseButton'] = dict(fg=p['gray']['0'],   bg=p['gray']['04'])
+color['BufferLineModified']    = dict(fg=p['violet']['1'], bg=p['gray']['02'])
 
-color['BufferLineSeparatorSelected']   = dict(fg=base02, bg=base04)
-color['BufferLineIndicatorSelected']   = dict(fg=base03, bg=base03)
-color['BufferLineBufferSelected']      = dict(fg=base2, bg=base03, deco='NONE')
-color['BufferLineCloseButtonSelected'] = dict(fg=base2,  bg=base03)
-color['BufferLineModifiedSelected']    = dict(fg=violet1,  bg=base03)
+color['BufferLineSeparatorSelected']   = dict(fg=p['gray']['02'],  bg=p['gray']['04']             )
+color['BufferLineIndicatorSelected']   = dict(fg=p['gray']['03'],  bg=p['gray']['03']             )
+color['BufferLineBufferSelected']      = dict(fg=p['gray']['2'],   bg=p['gray']['03'], deco='NONE')
+color['BufferLineCloseButtonSelected'] = dict(fg=p['gray']['2'],   bg=p['gray']['03']             )
+color['BufferLineModifiedSelected']    = dict(fg=p['violet']['1'], bg=p['gray']['03']             )
 
 # nvim-cmp
-color['CmpItemAbbr']           = dict(fg=base1)
-color['CmpItemAbbrDeprecated'] = dict(fg=base0)
-color['CmpItemAbbrMatch']      = dict(fg=green3)
-color['CmpItemAbbrMatchFuzzy'] = dict(fg=red1)
-color['CmpItemKind']           = dict(fg=cyan1)
-color['CmpItemMenu']           = dict(fg=violet0)
+color['CmpItemAbbr']           = dict(fg=p['gray']['1']  )
+color['CmpItemAbbrDeprecated'] = dict(fg=p['gray']['0']  )
+color['CmpItemAbbrMatch']      = dict(fg=p['green']['3'] )
+color['CmpItemAbbrMatchFuzzy'] = dict(fg=p['red']['1']   )
+color['CmpItemKind']           = dict(fg=p['cyan']['1']  )
+color['CmpItemMenu']           = dict(fg=p['violet']['0'])
 
 # GitGutter
-color['GitGutterAdd']    = dict(fg=cyan1,    bg=color['SignColumn']['bg'], deco='bold')
-color['GitGutterChange'] = dict(fg=magenta1, bg=color['SignColumn']['bg'], deco='bold')
-color['GitGutterDelete'] = dict(fg=magenta1, bg=color['SignColumn']['bg'], deco='bold')
+color['GitGutterAdd']    = dict(fg=p['cyan']['1'],    bg=color['SignColumn']['bg'], deco='bold')
+color['GitGutterChange'] = dict(fg=p['magenta']['1'], bg=color['SignColumn']['bg'], deco='bold')
+color['GitGutterDelete'] = dict(fg=p['magenta']['1'], bg=color['SignColumn']['bg'], deco='bold')
 
 # make
 color['makeIdent']      = 'Type'
@@ -236,7 +326,7 @@ color['phpFunction']    = 'Function'
 color['phpClass']       = 'Type'
 
 # rust
-color['rustFuncCall'] = dict(fg=blue2)
+color['rustFuncCall'] = dict(fg=p['blue']['2'])
 color['rustQuestionMark'] = 'Operator'
 
 # vim
@@ -244,16 +334,15 @@ color['vimVar'] = 'NONE'
 
 # p00f/nvim-ts-rainbow
 NVIM_TS_RAINBOW_DEFINITION = [
-    dict(fg=base2),
-    dict(fg=green3),
-    dict(fg=teal2),
-    dict(fg=skyblue2),
-    dict(fg=violet1),
-    dict(fg=magenta1),
+    dict(fg=p['gray']['2']),
+    dict(fg=p['green']['3']),
+    dict(fg=p['teal']['2']),
+    dict(fg=p['skyblue']['2']),
+    dict(fg=p['violet']['1']),
+    dict(fg=p['magenta']['1']),
 ]
 for i, hi in enumerate(NVIM_TS_RAINBOW_DEFINITION):
     color[f'rainbowcol{i + 1}'] = hi
-
 
 # Apply
 execute("""hi clear
