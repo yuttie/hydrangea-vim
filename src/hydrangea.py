@@ -137,7 +137,7 @@ color['Typedef']      = dict(fg=p['blue']['1'],                           deco='
 color['Special']      = dict(fg=p['blue']['2'],    bg='NONE',             deco='bold'     )
 color['Underlined']   = dict(fg='fg',                                     deco='underline')
 color['Ignore']       = dict(fg='bg'                                                      )
-color['Error']        = dict(fg=p['red']['1'],     bg=p['red']['01'],     deco='bold'     )
+color['Error']        = dict(fg=p['red']['1'],     bg=p['red']['04'],     deco='bold'     )
 color['Todo']         = dict(fg=p['green']['3'],   bg=p['green']['01'],   deco='bold'     )
 
 color['IncSearch']    = dict(fg=p['magenta']['6'], bg=p['magenta']['2'], deco='bold')
