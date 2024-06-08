@@ -96,7 +96,6 @@ for cname in color_names:
     }
 
 # Definitions
-# TODO NOTE 
 color = OrderedDict()
 color['Normal']       = dict(fg=p['gray']['2'], bg=p['gray']['03'],                 )
 color['NormalFloat']  = dict(fg=p['gray']['1'], bg=p['gray']['03'],                 )
