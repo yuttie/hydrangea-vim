@@ -278,7 +278,7 @@ color['@comment.note'] = 'Todo'
 # color['@tag.delimiter'] = ''
 
 # Diagnostic
-color['DiagnosticError'] = dict(fg=p['red']['1'],     bg=p['red']['01'],    deco='NONE')
+color['DiagnosticError'] = dict(fg=p['red']['01'],    bg=p['red']['05'],    deco='NONE')
 color['DiagnosticWarn']  = dict(fg=p['violet']['2'],  bg=p['violet']['0'],  deco='NONE')
 color['DiagnosticInfo']  = dict(fg=p['skyblue']['3'], bg=p['skyblue']['1'], deco='NONE')
 color['DiagnosticHint']  = dict(fg=p['green']['3'],   bg=p['green']['1'],   deco='NONE')
