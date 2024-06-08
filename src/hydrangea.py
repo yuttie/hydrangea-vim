@@ -140,8 +140,8 @@ color['Ignore']       = dict(fg='bg'                                            
 color['Error']        = dict(fg=p['red']['1'],     bg=p['red']['04'],     deco='bold'     )
 color['Todo']         = dict(fg=p['green']['3'],   bg=p['green']['01'],   deco='bold'     )
 
-color['IncSearch']    = dict(fg=p['magenta']['6'], bg=p['magenta']['2'], deco='bold')
-color['Search']       = dict(fg=p['magenta']['6'], bg=p['magenta']['0'], deco='bold')
+color['IncSearch']    = dict(fg=p['magenta']['4'], bg=p['magenta']['2'], deco='bold')
+color['Search']       = dict(fg=p['magenta']['4'], bg=p['magenta']['0'], deco='bold')
 color['Pmenu']        = dict(fg=p['gray']['4'],    bg=p['gray']['03'],   deco='NONE')
 color['PmenuSel']     = dict(fg='NONE',            bg=p['gray']['02'],   deco='bold')
 color['PmenuSbar']    = dict(                      bg=p['gray']['03'],   deco='NONE')
