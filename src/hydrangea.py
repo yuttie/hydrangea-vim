@@ -310,6 +310,40 @@ color['GitGutterAdd']    = dict(fg=p['cyan']['1'],    bg=color['SignColumn']['bg
 color['GitGutterChange'] = dict(fg=p['magenta']['1'], bg=color['SignColumn']['bg'], deco='bold')
 color['GitGutterDelete'] = dict(fg=p['magenta']['1'], bg=color['SignColumn']['bg'], deco='bold')
 
+# lazy.nvim
+color['LazyButton']        = dict(fg=p['gray']['4'], bg=p['gray']['01'])
+color['LazyButtonActive']  = dict(fg=p['gray']['03'], bg=p['green']['4'], deco='bold')
+color['LazyComment']       = dict(fg=p['skyblue']['2'], bg='NONE')
+color['LazyCommit']        = '@variable.builtin'
+color['LazyCommitIssue']   = 'Number'
+color['LazyCommitScope']   = 'Italic'
+color['LazyCommitType']    = 'Title'
+color['LazyDimmed']        = 'Conceal'
+color['LazyDir']           = '@markup.link'
+color['LazyH1']            = dict(fg=p['magenta']['3'], bg=p['magenta']['0'])
+color['LazyH2']            = dict(fg=p['skyblue']['2'], bg='NONE')
+color['LazyLocal']         = 'LineNr'
+color['LazyNoCond']        = 'DiagnosticWarn'
+color['LazyNormal']        = dict(fg=p['gray']['3'], bg=p['gray']['02'],                 )
+color['LazyProgressDone']  = 'Constant'
+color['LazyProgressTodo']  = 'LineNr'
+color['LazyProp']          = 'Conceal'
+color['LazyReasonCmd']     = '@variable.parameter'
+color['LazyReasonEvent']   = '@variable.parameter'
+color['LazyReasonFt']      = '@variable.parameter'
+color['LazyReasonImport']  = '@variable.parameter'
+color['LazyReasonKeys']    = '@variable.parameter'
+color['LazyReasonPlugin']  = '@variable.parameter'
+color['LazyReasonRequire'] = '@variable.parameter'
+color['LazyReasonRuntime'] = '@variable.parameter'
+color['LazyReasonSource']  = '@variable.parameter'
+color['LazyReasonStart']   = '@variable.parameter'
+color['LazySpecial']       = dict(fg=p['gray']['6'], bg='NONE')
+color['LazyTaskError']     = 'ErrorMsg'
+color['LazyTaskOutput']    = dict(fg=p['gray']['4'], bg=p['gray']['02'])
+color['LazyUrl']           = '@markup.link'
+color['LazyValue']         = '@string'
+
 # make
 color['makeIdent']      = 'Type'
 color['makeSpecTarget'] = 'Special'
