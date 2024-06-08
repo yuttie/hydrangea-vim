@@ -300,7 +300,7 @@ color['BufferLineModifiedSelected']    = dict(fg=p['violet']['1'], bg=p['gray'][
 # nvim-cmp
 color['CmpItemAbbr']           = dict(fg=p['gray']['1']  )
 color['CmpItemAbbrDeprecated'] = dict(fg=p['gray']['0']  )
-color['CmpItemAbbrMatch']      = dict(fg=p['green']['3'] )
+color['CmpItemAbbrMatch']      = dict(fg=p['magenta']['3'] )
 color['CmpItemAbbrMatchFuzzy'] = dict(fg=p['red']['1']   )
 color['CmpItemKind']           = dict(fg=p['cyan']['1']  )
 color['CmpItemMenu']           = dict(fg=p['violet']['0'])
