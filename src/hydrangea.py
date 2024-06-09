@@ -15,8 +15,8 @@ def generate_palette(base_lightness: float):
     -------
     dict[str, dict[int, str]]
         Palette data structure.
-        The first str key is a color name.
-        The second int key is a lightness level.
+        First str keys are color names.
+        Second int keys are lightness levels.
     """
     color_names = [
         'gray',
