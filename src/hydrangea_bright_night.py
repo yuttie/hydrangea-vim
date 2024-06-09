@@ -18,4 +18,4 @@ from hydrangea_night import define
 
 palette = generate_palette(32)
 color = define(palette)
-generate(color)
+generate('Hydrangea Bright Night', color)

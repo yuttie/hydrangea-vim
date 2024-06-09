@@ -1,5 +1,5 @@
-def generate(color):
-    HEADER = """" Name:     hydrangea.vim --- Hydrangea theme for Vim
+def generate(name, color):
+    header = f"""" Name:     hydrangea.vim --- {name} theme for Vim
     " Author:   Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
     " URL:      https://github.com/yuttie/hydrangea-vim
     " Version:  6.2.0
@@ -14,16 +14,16 @@ def generate(color):
             vim.command(cmd)
     except ImportError:
         # When executed outside Vim, print the whole colorscheme to stdout
-        print(HEADER)
+        print(header)
 
         def execute(cmd):
             print(cmd)
 
-    execute("""hi clear
+    execute(f"""hi clear
     if exists('syntax_on')
     syntax reset
     endif
-    let g:colors_name = 'hydrangea'
+    let g:colors_name = '{name.lower().replace(' ', '_')}'
 
     set background=dark
     """)
