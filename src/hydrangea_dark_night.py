@@ -16,6 +16,6 @@ from colorscheme import generate
 from hydrangea import generate_palette
 from hydrangea_night import define
 
-palette = generate_palette(24)
+palette = generate_palette(20)
 color = define(palette)
 generate('Hydrangea Dark Night', color)
