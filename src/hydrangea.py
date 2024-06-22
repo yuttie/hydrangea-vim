@@ -21,6 +21,7 @@ def generate_palette(base_lightness: float):
     color_names = [
         'gray',
         'red',
+        'yellowgreen',
         'green',
         'teal',
         'cyan',
@@ -35,15 +36,16 @@ def generate_palette(base_lightness: float):
     # C: [0, 100]
     # H: [0, 2 * PI]
     base_color = dict()
-    base_color['gray']    = lch2hex((base_lightness,  7.554, 4.888))
-    base_color['red']     = lch2hex((base_lightness, 76.168, 6.100))
-    base_color['green']   = lch2hex((base_lightness, 33.038, 1.926))
-    base_color['teal']    = lch2hex((base_lightness, 34.680, 3.427))
-    base_color['cyan']    = lch2hex((base_lightness, 22.086, 4.135))
-    base_color['skyblue'] = lch2hex((base_lightness, 24.056, 4.701))
-    base_color['blue']    = lch2hex((base_lightness, 31.778, 4.930))
-    base_color['violet']  = lch2hex((base_lightness, 57.453, 5.386))
-    base_color['magenta'] = lch2hex((base_lightness, 32.716, 5.769))
+    base_color['gray']        = lch2hex((base_lightness,  7.554, 4.888))
+    base_color['red']         = lch2hex((base_lightness, 76.168, 6.100))
+    base_color['yellowgreen'] = lch2hex((base_lightness, 33.038, 1.926))
+    base_color['green']       = lch2hex((base_lightness, 33.038, 2.321))
+    base_color['teal']        = lch2hex((base_lightness, 34.680, 3.427))
+    base_color['cyan']        = lch2hex((base_lightness, 22.086, 4.135))
+    base_color['skyblue']     = lch2hex((base_lightness, 24.056, 4.701))
+    base_color['blue']        = lch2hex((base_lightness, 31.778, 4.930))
+    base_color['violet']      = lch2hex((base_lightness, 57.453, 5.386))
+    base_color['magenta']     = lch2hex((base_lightness, 32.716, 5.769))
 
     palette = dict()
     for cname in color_names:

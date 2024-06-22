@@ -40,25 +40,25 @@ def define(p):
     color['NonText']      = dict(fg=p['gray'][0],     bg='NONE',        deco='NONE')
     color['MatchParen']   = dict(fg=p['red'][+1],     bg='NONE',        deco='bold')
 
-    color['Comment']      = dict(fg=p['gray'][0],                          deco='NONE'     )
-    color['Constant']     = dict(fg=p['cyan'][+2],    bg='NONE',           deco='NONE'     )
-    color['String']       = dict(fg=p['skyblue'][+1], bg=p['skyblue'][-2], deco='NONE'     )
-    color['Number']       = dict(fg=p['cyan'][+1],    bg=p['cyan'][-2],    deco='NONE'     )
-    color['Identifier']   = dict(fg=p['gray'][+4],                         deco='NONE'     )
-    color['Function']     = dict(fg=p['skyblue'][+4],                      deco='NONE'     )
-    color['Statement']    = dict(fg=p['blue'][+1],                         deco='bold'     )
-    color['Operator']     = dict(fg=p['gray'][+2],                         deco='bold'     )
-    color['Include']      = dict(fg=p['violet'][+1],                       deco='NONE'     )
-    color['PreProc']      = dict(fg=p['violet'][+2],                       deco='NONE'     )
-    color['Type']         = dict(fg=p['magenta'][+2],                      deco='NONE'     )
-    color['StorageClass'] = dict(fg=p['blue'][+1],                         deco='bold'     )
-    color['Structure']    = dict(fg=p['magenta'][+1],                      deco='NONE'     )
-    color['Typedef']      = dict(fg=p['blue'][+1],                         deco='bold'     )
-    color['Special']      = dict(fg=p['blue'][+2],    bg='NONE',           deco='bold'     )
-    color['Underlined']   = dict(fg='fg',                                  deco='underline')
-    color['Ignore']       = dict(fg='bg'                                                   )
-    color['Error']        = dict(fg=p['red'][+1],     bg=p['red'][-4],     deco='bold'     )
-    color['Todo']         = dict(fg=p['green'][+3],   bg=p['green'][-1],   deco='bold'     )
+    color['Comment']      = dict(fg=p['gray'][0],                                  deco='NONE'     )
+    color['Constant']     = dict(fg=p['cyan'][+2],        bg='NONE',               deco='NONE'     )
+    color['String']       = dict(fg=p['skyblue'][+1],     bg=p['skyblue'][-2],     deco='NONE'     )
+    color['Number']       = dict(fg=p['cyan'][+1],        bg=p['cyan'][-2],        deco='NONE'     )
+    color['Identifier']   = dict(fg=p['gray'][+4],                                 deco='NONE'     )
+    color['Function']     = dict(fg=p['skyblue'][+4],                              deco='NONE'     )
+    color['Statement']    = dict(fg=p['blue'][+1],                                 deco='bold'     )
+    color['Operator']     = dict(fg=p['gray'][+2],                                 deco='bold'     )
+    color['Include']      = dict(fg=p['violet'][+1],                               deco='NONE'     )
+    color['PreProc']      = dict(fg=p['violet'][+2],                               deco='NONE'     )
+    color['Type']         = dict(fg=p['magenta'][+2],                              deco='NONE'     )
+    color['StorageClass'] = dict(fg=p['blue'][+1],                                 deco='bold'     )
+    color['Structure']    = dict(fg=p['magenta'][+1],                              deco='NONE'     )
+    color['Typedef']      = dict(fg=p['blue'][+1],                                 deco='bold'     )
+    color['Special']      = dict(fg=p['blue'][+2],        bg='NONE',               deco='bold'     )
+    color['Underlined']   = dict(fg='fg',                                          deco='underline')
+    color['Ignore']       = dict(fg='bg'                                                           )
+    color['Error']        = dict(fg=p['red'][+1],         bg=p['red'][-4],         deco='bold'     )
+    color['Todo']         = dict(fg=p['yellowgreen'][+3], bg=p['yellowgreen'][-1], deco='bold'     )
 
     color['IncSearch']    = dict(fg=p['magenta'][+4], bg=p['magenta'][+2], deco='bold')
     color['Search']       = dict(fg=p['magenta'][+4], bg=p['magenta'][0],  deco='bold')
@@ -100,8 +100,8 @@ def define(p):
     # Identifiers
     color['@variable'] = 'Identifier'
     color['@variable.builtin'] = 'Constant'
-    color['@variable.parameter'] = dict(fg=p['green'][+4])
-    color['@variable.parameter.builtin'] = dict(fg=p['green'][+4])
+    color['@variable.parameter'] = dict(fg=p['yellowgreen'][+4])
+    color['@variable.parameter.builtin'] = dict(fg=p['yellowgreen'][+4])
     color['@variable.member'] = 'Identifier'
     color['@constant'] = 'Constant'
     color['@constant.builtin'] = 'Constant'
@@ -185,8 +185,8 @@ def define(p):
     color['@markup.link.label'] = dict(fg=p['skyblue'][+3], bg=p['skyblue'][-2], deco='underline')
     color['@markup.link.url'] = dict(fg=p['gray'][+3], bg=p['skyblue'][-2], deco='NONE')
     color['CodeBlock'] = dict(bg=p['gray'][-2])
-    color['@markup.raw'] = dict(fg=p['green'][+4])
-    color['@markup.raw.block'] = dict(fg=p['green'][+4])
+    color['@markup.raw'] = dict(fg=p['yellowgreen'][+4])
+    color['@markup.raw.block'] = dict(fg=p['yellowgreen'][+4])
     color['@markup.list'] = dict(fg=p['magenta'][+2])
     color['@markup.list.checked'] = dict(fg=p['cyan'][+3])
     color['@markup.list.unchecked'] = 'Normal'
@@ -199,10 +199,10 @@ def define(p):
     # color['@tag.delimiter'] = ''
 
     # Diagnostic
-    color['DiagnosticError'] = dict(fg=p['red'][-4],     bg='NONE', deco='NONE')
-    color['DiagnosticWarn']  = dict(fg=p['violet'][-1],  bg='NONE', deco='NONE')
-    color['DiagnosticInfo']  = dict(fg=p['skyblue'][-1], bg='NONE', deco='NONE')
-    color['DiagnosticHint']  = dict(fg=p['green'][-1],   bg='NONE', deco='NONE')
+    color['DiagnosticError'] = dict(fg=p['red'][-4],         bg='NONE', deco='NONE')
+    color['DiagnosticWarn']  = dict(fg=p['violet'][-1],      bg='NONE', deco='NONE')
+    color['DiagnosticInfo']  = dict(fg=p['skyblue'][-1],     bg='NONE', deco='NONE')
+    color['DiagnosticHint']  = dict(fg=p['yellowgreen'][-1], bg='NONE', deco='NONE')
 
     # bufferline.nvim
     color['BufferLineFill']      = dict(bg=p['gray'][-4])
@@ -233,7 +233,7 @@ def define(p):
 
     # lazy.nvim
     color['LazyButton']        = dict(fg=p['gray'][+4], bg=p['gray'][-1])
-    color['LazyButtonActive']  = dict(fg=p['gray'][-3], bg=p['green'][+4], deco='bold')
+    color['LazyButtonActive']  = dict(fg=p['gray'][-3], bg=p['yellowgreen'][+4], deco='bold')
     color['LazyComment']       = dict(fg=p['skyblue'][+2], bg='NONE')
     color['LazyCommit']        = '@variable.builtin'
     color['LazyCommitIssue']   = 'Number'
@@ -289,7 +289,7 @@ def define(p):
     # p00f/nvim-ts-rainbow
     NVIM_TS_RAINBOW_DEFINITION = [
         dict(fg=p['gray'][+2]),
-        dict(fg=p['green'][+3]),
+        dict(fg=p['yellowgreen'][+3]),
         dict(fg=p['teal'][+2]),
         dict(fg=p['skyblue'][+2]),
         dict(fg=p['violet'][+1]),
