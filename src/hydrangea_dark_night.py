@@ -12,10 +12,15 @@ import os
 import sys
 sys.path.insert(0, os.path.dirname(__file__))
 
-from colorscheme import generate
-from hydrangea import generate_palette
-from hydrangea_night import define
+import colorscheme
+import hydrangea
+import hydrangea_night
+if 'vim' in vars() or 'vim' in globals():
+    import importlib
+    importlib.reload(colorscheme)
+    importlib.reload(hydrangea)
+    importlib.reload(hydrangea_night)
 
-palette = generate_palette(20)
-color = define(palette)
-generate('Hydrangea Dark Night', color)
+palette = hydrangea.generate_palette(20)
+color = hydrangea_night.define(palette)
+colorscheme.generate('Hydrangea Dark Night', color)
