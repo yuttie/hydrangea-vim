@@ -108,7 +108,7 @@ def define(p):
     color['@constant.macro'] = 'Constant'
     color['@module'] = 'Constant'
     color['@module.builtin'] = 'Constant'
-    color['@label'] = 'Special'
+    color['@label'] = dict(fg=p['gray'][+4])
     # Literals
     color['@string'] = 'String'
     color['@string.documentation'] = 'Special'
@@ -167,31 +167,32 @@ def define(p):
     color['@comment.todo'] = 'Todo'
     color['@comment.note'] = 'Todo'
     # Markup
-    # TODO Currently not provided
-    # color['@markup.strong'] = ''
-    # color['@markup.italic'] = ''
-    # color['@markup.strikethrough'] = ''
-    # color['@markup.underline'] = ''
-    # color['@markup.heading'] = ''
-    # color['@markup.heading.1'] = ''
-    # color['@markup.heading.2'] = ''
-    # color['@markup.heading.3'] = ''
-    # color['@markup.heading.4'] = ''
-    # color['@markup.heading.5'] = ''
-    # color['@markup.heading.6'] = ''
-    # color['@markup.quote'] = ''
+    color['@markup.strong'] = dict(deco='bold')
+    color['@markup.italic'] = dict(deco='italic')
+    color['@markup.strikethrough'] = dict(deco='strikethrough')
+    color['@markup.underline'] = dict(deco='underline')
+    color['Headline'] = dict(bg=p['cyan'][-2], deco='bold')
+    color['@markup.heading'] = dict(fg=p['gray'][+5])
+    color['@markup.heading.1'] = dict(fg=p['gray'][+5], deco='bold')
+    color['@markup.heading.2'] = dict(fg=p['gray'][+5], deco='underdouble')
+    color['@markup.heading.3'] = dict(fg=p['gray'][+5])
+    color['@markup.heading.4'] = dict(fg=p['gray'][+5])
+    color['@markup.heading.5'] = dict(fg=p['gray'][+5])
+    color['@markup.heading.6'] = dict(fg=p['gray'][+5])
+    color['@markup.quote'] = dict(fg=p['magenta'][+2], bg=p['gray'][-2])
     # color['@markup.math'] = ''
-    # color['@markup.link'] = ''
-    # color['@markup.link.label'] = ''
-    # color['@markup.link.url'] = ''
-    # color['@markup.raw'] = ''
-    # color['@markup.raw.block'] = ''
-    # color['@markup.list'] = ''
-    # color['@markup.list.checked'] = ''
-    # color['@markup.list.unchecked'] = ''
-    # color['@diff.plus'] = ''
-    # color['@diff.minus'] = ''
-    # color['@diff.delta'] = ''
+    color['@markup.link'] = dict(fg=p['skyblue'][+1], bg=p['skyblue'][-2], deco='NONE')
+    color['@markup.link.label'] = dict(fg=p['skyblue'][+3], bg=p['skyblue'][-2], deco='underline')
+    color['@markup.link.url'] = dict(fg=p['gray'][+3], bg=p['skyblue'][-2], deco='NONE')
+    color['CodeBlock'] = dict(bg=p['gray'][-2])
+    color['@markup.raw'] = dict(fg=p['green'][+4])
+    color['@markup.raw.block'] = dict(fg=p['green'][+4])
+    color['@markup.list'] = dict(fg=p['magenta'][+2])
+    color['@markup.list.checked'] = dict(fg=p['cyan'][+3])
+    color['@markup.list.unchecked'] = 'Normal'
+    color['@diff.plus'] = 'diffAdded'
+    color['@diff.minus'] = 'diffRemoved'
+    color['@diff.delta'] = 'diffChanged'
     # color['@tag'] = ''
     # color['@tag.builtin'] = ''
     # color['@tag.attribute'] = ''
