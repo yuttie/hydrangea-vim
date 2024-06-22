@@ -37,7 +37,7 @@ def define(p):
     color['LineNr']       = dict(fg=p['gray'][-1],    bg=p['gray'][-2], deco='NONE')
     color['CursorLineNr'] = dict(fg=p['gray'][+1],    bg=p['gray'][-1], deco='bold')
     color['SpecialKey']   = dict(fg=p['cyan'][-1],    bg=p['cyan'][+1], deco='bold')
-    color['NonText']      = dict(fg=p['gray'][0],     bg=p['gray'][-3], deco='NONE')
+    color['NonText']      = dict(fg=p['gray'][0],     bg='NONE',        deco='NONE')
     color['MatchParen']   = dict(fg=p['red'][+1],     bg='NONE',        deco='bold')
 
     color['Comment']      = dict(fg=p['gray'][0],                          deco='NONE'     )
