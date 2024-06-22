@@ -1,0 +1,31 @@
+# Hydrangea Dark Night
+[colors]
+foreground = "#505460"
+background = "#000010"
+cursor_bg = "#6b0034"
+cursor_border = "#6b0034"
+cursor_fg = "#000010"
+selection_bg = "#1b1f29"
+selection_fg = "#000010"
+
+ansi = [
+    "#2c2f3a",
+    "#820045",
+    "#2c3200",
+    "#003b3c",
+    "#0d2e5d",
+    "#3a1b73",
+    "#00364a",
+    "#2c2f3a",
+]
+brights = [
+    "#636774",
+    "#c75080",
+    "#656b38",
+    "#437476",
+    "#51669a",
+    "#7954b2",
+    "#456e86",
+    "#636774",
+]
+

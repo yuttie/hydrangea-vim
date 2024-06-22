@@ -1,0 +1,31 @@
+# Hydrangea Bright Night
+[colors]
+foreground = "#818592"
+background = "#2c303a"
+cursor_bg = "#a60062"
+cursor_border = "#a60062"
+cursor_fg = "#2c303a"
+selection_bg = "#474b56"
+selection_fg = "#2c303a"
+
+ansi = [
+    "#595e6a",
+    "#bd0076",
+    "#5c6228",
+    "#006c6c",
+    "#475c8f",
+    "#6e4aa7",
+    "#27647a",
+    "#595e6a",
+]
+brights = [
+    "#969aa7",
+    "#ff61b4",
+    "#9a9f62",
+    "#56aaab",
+    "#8699d1",
+    "#b086eb",
+    "#69a2ba",
+    "#969aa7",
+]
+
