@@ -5,8 +5,8 @@ background = "#000010"
 cursor_bg = "#6b0034"
 cursor_border = "#6b0034"
 cursor_fg = "#000010"
-selection_bg = "#1b1f29"
-selection_fg = "#000010"
+selection_bg = "#1b485e"
+selection_fg = "#5a829b"
 
 ansi = [
     "#2c2f3a",

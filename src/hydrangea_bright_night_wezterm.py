@@ -17,8 +17,8 @@ background = "{p['gray'][-3][0]}"
 cursor_bg = "{p['red'][-1][0]}"
 cursor_border = "{p['red'][-1][0]}"
 cursor_fg = "{p['gray'][-3][0]}"
-selection_bg = "{p['gray'][-1][0]}"
-selection_fg = "{p['gray'][-3][0]}"
+selection_bg = "{p['cyan'][+1][0]}"
+selection_fg = "{p['cyan'][+4][0]}"
 
 ansi = [
     "{p['gray'       ][+0][0]}",
