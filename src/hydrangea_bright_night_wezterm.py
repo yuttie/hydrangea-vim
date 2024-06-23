@@ -22,9 +22,9 @@ selection_fg = "{p['gray'][-3][0]}"
 
 ansi = [
     "{p['gray'       ][+0][0]}",
-    "{p['red'        ][+0][0]}",
+    "{p['red'        ][-2][0]}",
     "{p['green'      ][+0][0]}",
-    "{p['yellowgreen'][+0][0]}",
+    "{p['yellowgreen'][+1][0]}",
     "{p['blue'       ][+0][0]}",
     "{p['violet'     ][+0][0]}",
     "{p['cyan'       ][+0][0]}",
@@ -32,9 +32,9 @@ ansi = [
 ]
 brights = [
     "{p['gray'       ][+3][0]}",
-    "{p['red'        ][+3][0]}",
+    "{p['red'        ][+1][0]}",
     "{p['green'      ][+3][0]}",
-    "{p['yellowgreen'][+3][0]}",
+    "{p['yellowgreen'][+5][0]}",
     "{p['blue'       ][+3][0]}",
     "{p['violet'     ][+3][0]}",
     "{p['cyan'       ][+3][0]}",

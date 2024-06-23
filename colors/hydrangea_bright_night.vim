@@ -51,7 +51,7 @@ hi Special ctermfg=225 ctermbg=NONE cterm=bold guifg=#7084bb guibg=NONE gui=bold
 hi Underlined cterm=underline guifg=fg gui=underline
 hi Ignore guifg=bg
 hi Error ctermfg=133 ctermbg=53 cterm=bold guifg=#d62d8a guibg=#77003c gui=bold
-hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#9a9f62 guibg=#484e16 gui=bold
+hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#97a063 guibg=#454f17 gui=bold
 hi IncSearch ctermfg=225 ctermbg=225 cterm=bold guifg=#d69ecd guibg=#a974a1 gui=bold
 hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#d69ecd guibg=#7e4d78 gui=bold
 hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#abb0bd guibg=#2c303a gui=NONE
@@ -81,8 +81,8 @@ hi Question cterm=NONE guifg=fg gui=NONE
 hi WarningMsg ctermfg=133 cterm=NONE guifg=#d62d8a gui=NONE
 hi WildMenu ctermfg=225 ctermbg=133 cterm=bold guifg=#818592 guibg=#595e6a gui=bold
 hi ColorColumn ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#a60062 gui=NONE
-hi @variable.parameter ctermfg=225 guifg=#b0b476
-hi @variable.parameter.builtin ctermfg=225 guifg=#b0b476
+hi @variable.parameter ctermfg=225 guifg=#acb577
+hi @variable.parameter.builtin ctermfg=225 guifg=#acb577
 hi @label ctermfg=225 guifg=#abb0bd
 hi @markup.strong cterm=bold gui=bold
 hi @markup.italic cterm=italic gui=italic
@@ -101,14 +101,14 @@ hi @markup.link ctermfg=133 ctermbg=133 cterm=NONE guifg=#557399 guibg=#153a5c g
 hi @markup.link.label ctermfg=225 ctermbg=133 cterm=underline guifg=#7f9cc5 guibg=#153a5c gui=underline
 hi @markup.link.url ctermfg=225 ctermbg=133 cterm=NONE guifg=#969aa7 guibg=#153a5c gui=NONE
 hi CodeBlock ctermbg=133 guibg=#343843
-hi @markup.raw ctermfg=225 guifg=#b0b476
-hi @markup.raw.block ctermfg=225 guifg=#b0b476
+hi @markup.raw ctermfg=225 guifg=#acb577
+hi @markup.raw.block ctermfg=225 guifg=#acb577
 hi @markup.list ctermfg=225 guifg=#a974a1
 hi @markup.list.checked ctermfg=225 guifg=#69a2ba
 hi DiagnosticError ctermfg=53 ctermbg=NONE cterm=NONE guifg=#77003c guibg=NONE gui=NONE
 hi DiagnosticWarn ctermfg=133 ctermbg=NONE cterm=NONE guifg=#593692 guibg=NONE gui=NONE
 hi DiagnosticInfo ctermfg=133 ctermbg=NONE cterm=NONE guifg=#2c4d70 guibg=NONE gui=NONE
-hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#484e16 guibg=NONE gui=NONE
+hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#454f17 guibg=NONE gui=NONE
 hi BufferLineFill ctermbg=53 guibg=#232731
 hi BufferLineSeparator ctermfg=133 ctermbg=53 guifg=#343843 guibg=#232731
 hi BufferLineBackground ctermfg=133 ctermbg=53 guifg=#595e6a guibg=#232731
@@ -129,7 +129,7 @@ hi GitGutterAdd ctermfg=133 ctermbg=133 cterm=bold guifg=#3d788f guibg=#343843 g
 hi GitGutterChange ctermfg=133 ctermbg=133 cterm=bold guifg=#94608c guibg=#343843 gui=bold
 hi GitGutterDelete ctermfg=133 ctermbg=133 cterm=bold guifg=#94608c guibg=#343843 gui=bold
 hi LazyButton ctermfg=225 ctermbg=133 guifg=#abb0bd guibg=#474b56
-hi LazyButtonActive ctermfg=53 ctermbg=225 cterm=bold guifg=#2c303a guibg=#b0b476 gui=bold
+hi LazyButtonActive ctermfg=53 ctermbg=225 cterm=bold guifg=#2c303a guibg=#acb577 gui=bold
 hi LazyComment ctermfg=225 ctermbg=NONE guifg=#6a87af guibg=NONE
 hi LazyH1 ctermfg=225 ctermbg=133 guifg=#bf89b7 guibg=#7e4d78
 hi LazyH2 ctermfg=225 ctermbg=NONE guifg=#6a87af guibg=NONE
@@ -143,7 +143,7 @@ hi phpClasses NONE
 hi rustFuncCall ctermfg=225 guifg=#7084bb
 hi vimVar NONE
 hi rainbowcol1 ctermfg=225 guifg=#818592
-hi rainbowcol2 ctermfg=225 guifg=#9a9f62
+hi rainbowcol2 ctermfg=225 guifg=#97a063
 hi rainbowcol3 ctermfg=225 guifg=#3f9595
 hi rainbowcol4 ctermfg=225 guifg=#6a87af
 hi rainbowcol5 ctermfg=133 guifg=#845dbd
