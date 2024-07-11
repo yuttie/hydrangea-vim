@@ -13,8 +13,8 @@ hi clear
     set background=dark
     
 hi Normal ctermfg=225 ctermbg=53 guifg=#505460 guibg=#000010
-hi NormalFloat ctermfg=133 ctermbg=53 guifg=#3d414d guibg=#000010
-hi FloatBorder ctermfg=133 ctermbg=53 guifg=#3d414d guibg=#000010
+hi NormalFloat ctermfg=225 ctermbg=53 guifg=#505460 guibg=#000003
+hi FloatBorder ctermfg=225 ctermbg=53 guifg=#505460 guibg=#000003
 hi Cursor ctermfg=NONE ctermbg=225 cterm=NONE guifg=NONE guibg=#505460 gui=NONE
 hi CursorIM ctermfg=NONE ctermbg=225 guifg=NONE guibg=#505460
 hi CursorLine ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#080d19 gui=NONE

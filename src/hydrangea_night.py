@@ -18,8 +18,8 @@ def define(p):
     """
     color = OrderedDict()
     color['Normal']       = dict(fg=p['gray'][+2], bg=p['gray'][-3],                 )
-    color['NormalFloat']  = dict(fg=p['gray'][+1], bg=p['gray'][-3],                 )
-    color['FloatBorder']  = dict(fg=p['gray'][+1], bg=p['gray'][-3],                 )
+    color['NormalFloat']  = dict(fg=p['gray'][+2], bg=p['gray'][-4],                 )
+    color['FloatBorder']  = dict(fg=p['gray'][+2], bg=p['gray'][-4],                 )
     color['Cursor']       = dict(fg='NONE',        bg=p['gray'][+2], deco='NONE'     )
     color['CursorIM']     = dict(fg='NONE',        bg=p['gray'][+2],                 )
     color['CursorLine']   = dict(fg='NONE',        bg=p['gray'][-2], deco='NONE'     )
