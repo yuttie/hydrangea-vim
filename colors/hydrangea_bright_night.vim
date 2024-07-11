@@ -54,10 +54,10 @@ hi Error ctermfg=133 ctermbg=53 cterm=bold guifg=#d62d8a guibg=#77003c gui=bold
 hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#97a063 guibg=#454f17 gui=bold
 hi IncSearch ctermfg=225 ctermbg=225 cterm=bold guifg=#d69ecd guibg=#a974a1 gui=bold
 hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#d69ecd guibg=#7e4d78 gui=bold
-hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#abb0bd guibg=#2c303a gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=133 cterm=bold guifg=NONE guibg=#343843 gui=bold
-hi PmenuSbar ctermbg=53 cterm=NONE guibg=#2c303a gui=NONE
-hi PmenuThumb ctermbg=225 cterm=NONE guibg=#818592 gui=NONE
+hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#818592 guibg=#232731 gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=53 cterm=bold guifg=NONE guibg=#2c303a gui=bold
+hi PmenuSbar ctermbg=53 cterm=NONE guibg=#232731 gui=NONE
+hi PmenuThumb ctermbg=133 cterm=NONE guibg=#6d717e gui=NONE
 hi TabLine ctermfg=133 ctermbg=53 cterm=NONE guifg=#6d717e guibg=#2c303a gui=NONE
 hi TabLineSel ctermfg=53 ctermbg=133 cterm=bold guifg=#2c303a guibg=#94608c gui=bold
 hi TabLineFill ctermfg=133 ctermbg=53 cterm=NONE guifg=#6d717e guibg=#2c303a gui=NONE

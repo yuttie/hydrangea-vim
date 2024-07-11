@@ -54,10 +54,10 @@ hi Error ctermfg=133 ctermbg=53 cterm=bold guifg=#982258 guibg=#400012 gui=bold
 hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#636c38 guibg=#1c2200 gui=bold
 hi IncSearch ctermfg=225 ctermbg=225 cterm=bold guifg=#9f6a97 guibg=#75436e gui=bold
 hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#9f6a97 guibg=#4d1d47 gui=bold
-hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#777b88 guibg=#000010 gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=133 cterm=bold guifg=NONE guibg=#080d19 gui=bold
-hi PmenuSbar ctermbg=53 cterm=NONE guibg=#000010 gui=NONE
-hi PmenuThumb ctermbg=225 cterm=NONE guibg=#505460 gui=NONE
+hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#505460 guibg=#000003 gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=53 cterm=bold guifg=NONE guibg=#000010 gui=bold
+hi PmenuSbar ctermbg=53 cterm=NONE guibg=#000003 gui=NONE
+hi PmenuThumb ctermbg=133 cterm=NONE guibg=#3d414d gui=NONE
 hi TabLine ctermfg=133 ctermbg=53 cterm=NONE guifg=#3d414d guibg=#000010 gui=NONE
 hi TabLineSel ctermfg=53 ctermbg=133 cterm=bold guifg=#000010 guibg=#60305a gui=bold
 hi TabLineFill ctermfg=133 ctermbg=53 cterm=NONE guifg=#3d414d guibg=#000010 gui=NONE
