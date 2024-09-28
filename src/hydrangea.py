@@ -37,16 +37,16 @@ def generate_palette(base_lightness: float):
     # C: [0, 100]
     # H: [0, 360]
     base_color = dict()
-    base_color['gray']        = oklch2hex((base_lightness,  7.554, 360 * 4.888 / 2 * pi))
-    base_color['red']         = oklch2hex((base_lightness, 76.168, 360 * 6.100 / 2 * pi))
-    base_color['yellowgreen'] = oklch2hex((base_lightness, 33.038, 360 * 1.972 / 2 * pi))
-    base_color['green']       = oklch2hex((base_lightness, 33.038, 360 * 2.269 / 2 * pi))
-    base_color['teal']        = oklch2hex((base_lightness, 34.680, 360 * 3.427 / 2 * pi))
-    base_color['cyan']        = oklch2hex((base_lightness, 22.086, 360 * 4.135 / 2 * pi))
-    base_color['skyblue']     = oklch2hex((base_lightness, 24.056, 360 * 4.701 / 2 * pi))
-    base_color['blue']        = oklch2hex((base_lightness, 31.778, 360 * 4.930 / 2 * pi))
-    base_color['violet']      = oklch2hex((base_lightness, 57.453, 360 * 5.386 / 2 * pi))
-    base_color['magenta']     = oklch2hex((base_lightness, 32.716, 360 * 5.769 / 2 * pi))
+    base_color['gray']        = oklch2hex((base_lightness,  2.0, 271.04))
+    base_color['red']         = oklch2hex((base_lightness, 22.0, 352.63))
+    base_color['yellowgreen'] = oklch2hex((base_lightness,  8.0, 117.85))
+    base_color['green']       = oklch2hex((base_lightness,  8.0, 133.66))
+    base_color['teal']        = oklch2hex((base_lightness,  8.0, 195.89))
+    base_color['cyan']        = oklch2hex((base_lightness,  7.0, 224.90))
+    base_color['skyblue']     = oklch2hex((base_lightness,  7.0, 253.51))
+    base_color['blue']        = oklch2hex((base_lightness,  9.0, 265.57))
+    base_color['violet']      = oklch2hex((base_lightness, 15.0, 299.18))
+    base_color['magenta']     = oklch2hex((base_lightness,  9.0, 332.05))
 
     palette = dict()
     for cname in color_names:
