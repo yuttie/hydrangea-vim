@@ -6,8 +6,9 @@ authors = ["Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-scikit-image = "^0.23.2"
+python = ">=3.9,<3.13"
+colour-science = "^0.4.4"
+numpy = "<2"
 pynvim = "^0.5.0"
 
 
