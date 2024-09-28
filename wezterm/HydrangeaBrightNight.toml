@@ -1,31 +1,31 @@
 # Hydrangea Bright Night
 [colors]
-foreground = "#6f737f"
-background = "#12151e"
-cursor_bg = "#76003c"
-cursor_border = "#76003c"
-cursor_fg = "#12151e"
-selection_bg = "#2a657a"
-selection_fg = "#73aec4"
+foreground = "#8c909e"
+background = "#292c38"
+cursor_bg = "#980057"
+cursor_border = "#980057"
+cursor_fg = "#292c38"
+selection_bg = "#488299"
+selection_fg = "#91cde6"
 
 ansi = [
-    "#2e323c",
-    "#5c0028",
-    "#355021",
-    "#59632b",
-    "#304577",
-    "#542c8b",
-    "#0e4f63",
-    "#868b97",
+    "#484b58",
+    "#7d0041",
+    "#506d3c",
+    "#758048",
+    "#4a6196",
+    "#704aab",
+    "#306b81",
+    "#a5a9b7",
 ]
 brights = [
-    "#6f737f",
-    "#ad2968",
-    "#779664",
-    "#b8c589",
-    "#718ac2",
-    "#9874d9",
-    "#5a95ab",
-    "#d1d6e4",
+    "#8c909e",
+    "#d12f85",
+    "#96b681",
+    "#d8e5a8",
+    "#8fa9e3",
+    "#b793fb",
+    "#78b4cb",
+    "#f2f7ff",
 ]
 
