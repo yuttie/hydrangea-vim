@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 import hydrangea
 
-p = hydrangea.generate_palette(20)
+p = hydrangea.generate_palette(35)
 
 print(f'''\
 # Hydrangea Dark Night

@@ -12,142 +12,142 @@ hi clear
 
     set background=dark
     
-hi Normal ctermfg=225 ctermbg=53 guifg=#383c47 guibg=#000000
-hi NormalFloat ctermfg=225 ctermbg=53 guifg=#383c47 guibg=#000000
-hi FloatBorder ctermfg=225 ctermbg=53 guifg=#383c47 guibg=#000000
-hi Cursor ctermfg=NONE ctermbg=225 cterm=NONE guifg=NONE guibg=#383c47 gui=NONE
-hi CursorIM ctermfg=NONE ctermbg=225 guifg=NONE guibg=#383c47
-hi CursorLine ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#000001 gui=NONE
-hi CursorColumn ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#000001 gui=NONE
-hi Visual ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#03040c gui=NONE
+hi Normal ctermfg=225 ctermbg=53 guifg=#616571 guibg=#070a13
+hi NormalFloat ctermfg=225 ctermbg=53 guifg=#616571 guibg=#02040a
+hi FloatBorder ctermfg=225 ctermbg=53 guifg=#616571 guibg=#02040a
+hi Cursor ctermfg=NONE ctermbg=225 cterm=NONE guifg=NONE guibg=#616571 gui=NONE
+hi CursorIM ctermfg=NONE ctermbg=225 guifg=NONE guibg=#616571
+hi CursorLine ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#0f131c gui=NONE
+hi CursorColumn ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#0f131c gui=NONE
+hi Visual ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#222530 gui=NONE
 hi VisualNOS cterm=underline guifg=fg gui=underline
-hi Folded ctermfg=133 ctermbg=133 cterm=NONE guifg=#242732 guibg=#000001 gui=NONE
-hi FoldColumn ctermfg=133 ctermbg=53 cterm=NONE guifg=#242732 guibg=#000000 gui=NONE
-hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#3f133b guibg=NONE gui=bold
-hi StatusLine ctermfg=133 ctermbg=133 cterm=NONE guifg=#242732 guibg=#03040c gui=NONE
-hi StatusLineNC ctermfg=133 ctermbg=133 cterm=NONE guifg=#12151f guibg=#000001 gui=NONE
-hi VertSplit ctermfg=225 ctermbg=53 cterm=NONE guifg=#383c47 guibg=#000000 gui=NONE
-hi WinSeparator ctermfg=225 ctermbg=53 cterm=NONE guifg=#383c47 guibg=#000000 gui=NONE
-hi LineNr ctermfg=133 ctermbg=133 cterm=NONE guifg=#03040c guibg=#000001 gui=NONE
-hi CursorLineNr ctermfg=133 ctermbg=133 cterm=bold guifg=#242732 guibg=#03040c gui=bold
-hi SpecialKey ctermfg=133 ctermbg=133 cterm=bold guifg=#000719 guibg=#112d42 gui=bold
-hi NonText ctermfg=133 ctermbg=NONE cterm=NONE guifg=#12151f guibg=NONE gui=NONE
-hi MatchParen ctermfg=133 ctermbg=NONE cterm=bold guifg=#641a31 guibg=NONE gui=bold
-hi Comment ctermfg=133 cterm=NONE guifg=#12151f gui=NONE
-hi Constant ctermfg=225 ctermbg=NONE cterm=NONE guifg=#264258 guibg=NONE gui=NONE
-hi String ctermfg=133 ctermbg=133 cterm=NONE guifg=#0f2949 guibg=#00000b gui=NONE
-hi Number ctermfg=133 ctermbg=133 cterm=NONE guifg=#112d42 guibg=#000006 gui=NONE
-hi Identifier ctermfg=225 cterm=NONE guifg=#636774 gui=NONE
-hi Function ctermfg=225 cterm=NONE guifg=#4e6a90 gui=NONE
-hi Statement ctermfg=133 cterm=bold guifg=#112453 gui=bold
-hi Operator ctermfg=225 cterm=bold guifg=#383c47 gui=bold
-hi Include ctermfg=133 cterm=NONE guifg=#351a64 gui=NONE
-hi PreProc ctermfg=225 cterm=NONE guifg=#49317c gui=NONE
-hi Type ctermfg=225 cterm=NONE guifg=#562851 gui=NONE
-hi StorageClass ctermfg=133 cterm=bold guifg=#112453 gui=bold
-hi Structure ctermfg=133 cterm=NONE guifg=#3f133b gui=NONE
-hi Typedef ctermfg=133 cterm=bold guifg=#112453 gui=bold
-hi Special ctermfg=225 ctermbg=NONE cterm=bold guifg=#24396b guibg=NONE gui=bold
+hi Folded ctermfg=133 ctermbg=133 cterm=NONE guifg=#4b4f5a guibg=#0f131c gui=NONE
+hi FoldColumn ctermfg=133 ctermbg=53 cterm=NONE guifg=#4b4f5a guibg=#070a13 gui=NONE
+hi Title ctermfg=133 ctermbg=NONE cterm=bold guifg=#6b3b64 guibg=NONE gui=bold
+hi StatusLine ctermfg=133 ctermbg=133 cterm=NONE guifg=#4b4f5a guibg=#222530 gui=NONE
+hi StatusLineNC ctermfg=133 ctermbg=133 cterm=NONE guifg=#363a45 guibg=#0f131c gui=NONE
+hi VertSplit ctermfg=225 ctermbg=53 cterm=NONE guifg=#616571 guibg=#070a13 gui=NONE
+hi WinSeparator ctermfg=225 ctermbg=53 cterm=NONE guifg=#616571 guibg=#070a13 gui=NONE
+hi LineNr ctermfg=133 ctermbg=133 cterm=NONE guifg=#222530 guibg=#0f131c gui=NONE
+hi CursorLineNr ctermfg=133 ctermbg=133 cterm=bold guifg=#4b4f5a guibg=#222530 gui=bold
+hi SpecialKey ctermfg=133 ctermbg=133 cterm=bold guifg=#002b3f guibg=#1e576b gui=bold
+hi NonText ctermfg=133 ctermbg=NONE cterm=NONE guifg=#363a45 guibg=NONE gui=NONE
+hi MatchParen ctermfg=133 ctermbg=NONE cterm=bold guifg=#9a2559 guibg=NONE gui=bold
+hi Comment ctermfg=133 cterm=NONE guifg=#363a45 gui=NONE
+hi Constant ctermfg=225 ctermbg=NONE cterm=NONE guifg=#376d83 guibg=NONE gui=NONE
+hi String ctermfg=133 ctermbg=133 cterm=NONE guifg=#335074 guibg=#001230 gui=NONE
+hi Number ctermfg=133 ctermbg=133 cterm=NONE guifg=#1e576b guibg=#00172a gui=NONE
+hi Identifier ctermfg=225 cterm=NONE guifg=#8f94a1 gui=NONE
+hi Function ctermfg=225 cterm=NONE guifg=#7697be gui=NONE
+hi Statement ctermfg=133 cterm=bold guifg=#374d81 gui=bold
+hi Operator ctermfg=225 cterm=bold guifg=#616571 gui=bold
+hi Include ctermfg=133 cterm=NONE guifg=#5c3594 gui=NONE
+hi PreProc ctermfg=225 cterm=NONE guifg=#724cad gui=NONE
+hi Type ctermfg=225 cterm=NONE guifg=#83517b gui=NONE
+hi StorageClass ctermfg=133 cterm=bold guifg=#374d81 gui=bold
+hi Structure ctermfg=133 cterm=NONE guifg=#6b3b64 gui=NONE
+hi Typedef ctermfg=133 cterm=bold guifg=#374d81 gui=bold
+hi Special ctermfg=225 ctermbg=NONE cterm=bold guifg=#4c6399 guibg=NONE gui=bold
 hi Underlined cterm=underline guifg=fg gui=underline
 hi Ignore guifg=bg
-hi Error ctermfg=133 ctermbg=53 cterm=bold guifg=#641a31 guibg=#050000 gui=bold
-hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#4e5638 guibg=#040700 gui=bold
-hi IncSearch ctermfg=225 ctermbg=225 cterm=bold guifg=#85547f guibg=#562851 gui=bold
-hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#85547f guibg=#2a0027 gui=bold
-hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#383c47 guibg=#000000 gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=53 cterm=bold guifg=NONE guibg=#000000 gui=bold
-hi PmenuSbar ctermbg=53 cterm=NONE guibg=#000000 gui=NONE
-hi PmenuThumb ctermbg=133 cterm=NONE guibg=#242732 gui=NONE
-hi TabLine ctermfg=133 ctermbg=53 cterm=NONE guifg=#242732 guibg=#000000 gui=NONE
-hi TabLineSel ctermfg=53 ctermbg=133 cterm=bold guifg=#000000 guibg=#3f133b gui=bold
-hi TabLineFill ctermfg=133 ctermbg=53 cterm=NONE guifg=#242732 guibg=#000000 gui=NONE
+hi Error ctermfg=133 ctermbg=53 cterm=bold guifg=#9a2559 guibg=#31000a gui=bold
+hi Todo ctermfg=225 ctermbg=133 cterm=bold guifg=#78834a guibg=#232a00 gui=bold
+hi IncSearch ctermfg=225 ctermbg=225 cterm=bold guifg=#b580ac guibg=#83517b gui=bold
+hi Search ctermfg=225 ctermbg=133 cterm=bold guifg=#b580ac guibg=#54264e gui=bold
+hi Pmenu ctermfg=225 ctermbg=53 cterm=NONE guifg=#616571 guibg=#02040a gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=53 cterm=bold guifg=NONE guibg=#070a13 gui=bold
+hi PmenuSbar ctermbg=53 cterm=NONE guibg=#02040a gui=NONE
+hi PmenuThumb ctermbg=133 cterm=NONE guibg=#4b4f5a gui=NONE
+hi TabLine ctermfg=133 ctermbg=53 cterm=NONE guifg=#4b4f5a guibg=#070a13 gui=NONE
+hi TabLineSel ctermfg=53 ctermbg=133 cterm=bold guifg=#070a13 guibg=#6b3b64 gui=bold
+hi TabLineFill ctermfg=133 ctermbg=53 cterm=NONE guifg=#4b4f5a guibg=#070a13 gui=NONE
 hi SpellBad cterm=undercurl gui=undercurl
 hi SpellCap cterm=undercurl gui=undercurl
 hi SpellRare cterm=undercurl gui=undercurl
 hi SpellLocal cterm=undercurl gui=undercurl
-hi DiffAdd ctermfg=NONE ctermbg=53 cterm=NONE guifg=NONE guibg=#000001 gui=NONE
-hi DiffDelete ctermfg=133 ctermbg=53 cterm=NONE guifg=#140013 guibg=#000000 gui=NONE
-hi DiffChange ctermfg=NONE ctermbg=53 cterm=NONE guifg=NONE guibg=#030015 gui=NONE
-hi DiffText ctermfg=NONE ctermbg=133 cterm=bold guifg=NONE guibg=#120036 gui=bold
-hi diffAdded ctermfg=133 ctermbg=53 cterm=NONE guifg=#112d42 guibg=#000001 gui=NONE
-hi diffRemoved ctermfg=133 ctermbg=53 cterm=NONE guifg=#3f133b guibg=#000000 gui=NONE
-hi diffChanged ctermfg=133 ctermbg=53 cterm=NONE guifg=#351a64 guibg=#030015 gui=NONE
-hi Directory ctermfg=225 cterm=NONE guifg=#284749 gui=NONE
-hi ErrorMsg ctermfg=133 ctermbg=NONE cterm=NONE guifg=#641a31 guibg=NONE gui=NONE
-hi SignColumn ctermfg=133 ctermbg=133 cterm=NONE guifg=#242732 guibg=#000001 gui=NONE
-hi MoreMsg ctermfg=133 cterm=NONE guifg=#112453 gui=NONE
+hi DiffAdd ctermfg=NONE ctermbg=53 cterm=NONE guifg=NONE guibg=#000e20 gui=NONE
+hi DiffDelete ctermfg=133 ctermbg=53 cterm=NONE guifg=#3d1038 guibg=#1d001a gui=NONE
+hi DiffChange ctermfg=NONE ctermbg=53 cterm=NONE guifg=NONE guibg=#18003e gui=NONE
+hi DiffText ctermfg=NONE ctermbg=133 cterm=bold guifg=NONE guibg=#330062 gui=bold
+hi diffAdded ctermfg=133 ctermbg=53 cterm=NONE guifg=#1e576b guibg=#000e20 gui=NONE
+hi diffRemoved ctermfg=133 ctermbg=53 cterm=NONE guifg=#6b3b64 guibg=#1d001a gui=NONE
+hi diffChanged ctermfg=133 ctermbg=53 cterm=NONE guifg=#5c3594 guibg=#18003e gui=NONE
+hi Directory ctermfg=225 cterm=NONE guifg=#387373 gui=NONE
+hi ErrorMsg ctermfg=133 ctermbg=NONE cterm=NONE guifg=#9a2559 guibg=NONE gui=NONE
+hi SignColumn ctermfg=133 ctermbg=133 cterm=NONE guifg=#4b4f5a guibg=#0f131c gui=NONE
+hi MoreMsg ctermfg=133 cterm=NONE guifg=#374d81 gui=NONE
 hi ModeMsg cterm=bold gui=bold
 hi Question cterm=NONE guifg=fg gui=NONE
-hi WarningMsg ctermfg=133 cterm=NONE guifg=#641a31 gui=NONE
-hi WildMenu ctermfg=225 ctermbg=133 cterm=bold guifg=#383c47 guibg=#12151f gui=bold
-hi ColorColumn ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#33000c gui=NONE
-hi @variable.parameter ctermfg=225 guifg=#646d4e
-hi @variable.parameter.builtin ctermfg=225 guifg=#646d4e
-hi @label ctermfg=225 guifg=#636774
+hi WarningMsg ctermfg=133 cterm=NONE guifg=#9a2559 gui=NONE
+hi WildMenu ctermfg=225 ctermbg=133 cterm=bold guifg=#616571 guibg=#363a45 gui=bold
+hi ColorColumn ctermfg=NONE ctermbg=133 cterm=NONE guifg=NONE guibg=#65002f gui=NONE
+hi @variable.parameter ctermfg=225 guifg=#909b62
+hi @variable.parameter.builtin ctermfg=225 guifg=#909b62
+hi @label ctermfg=225 guifg=#8f94a1
 hi @markup.strong cterm=bold gui=bold
 hi @markup.italic cterm=italic gui=italic
 hi @markup.strikethrough cterm=strikethrough gui=strikethrough
 hi @markup.underline cterm=underline gui=underline
-hi Headline ctermbg=133 cterm=bold guibg=#000006 gui=bold
-hi @markup.heading ctermfg=225 guifg=#7a7f8c
-hi @markup.heading.1 ctermfg=225 cterm=bold guifg=#7a7f8c gui=bold
-hi @markup.heading.2 ctermfg=225 cterm=underdouble guifg=#7a7f8c gui=underdouble
-hi @markup.heading.3 ctermfg=225 guifg=#7a7f8c
-hi @markup.heading.4 ctermfg=225 guifg=#7a7f8c
-hi @markup.heading.5 ctermfg=225 guifg=#7a7f8c
-hi @markup.heading.6 ctermfg=225 guifg=#7a7f8c
-hi @markup.quote ctermfg=225 ctermbg=133 guifg=#562851 guibg=#000001
-hi @markup.link ctermfg=133 ctermbg=133 cterm=NONE guifg=#0f2949 guibg=#00000b gui=NONE
-hi @markup.link.label ctermfg=225 ctermbg=133 cterm=underline guifg=#385377 guibg=#00000b gui=underline
-hi @markup.link.url ctermfg=225 ctermbg=133 cterm=NONE guifg=#4d515d guibg=#00000b gui=NONE
-hi CodeBlock ctermbg=133 guibg=#000001
-hi @markup.raw ctermfg=225 guifg=#646d4e
-hi @markup.raw.block ctermfg=225 guifg=#646d4e
-hi @markup.list ctermfg=225 guifg=#562851
-hi @markup.list.checked ctermfg=225 guifg=#3b586e
-hi DiagnosticError ctermfg=53 ctermbg=NONE cterm=NONE guifg=#050000 guibg=NONE gui=NONE
-hi DiagnosticWarn ctermfg=133 ctermbg=NONE cterm=NONE guifg=#120036 guibg=NONE gui=NONE
-hi DiagnosticInfo ctermfg=133 ctermbg=NONE cterm=NONE guifg=#00031f guibg=NONE gui=NONE
-hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#040700 guibg=NONE gui=NONE
-hi BufferLineFill ctermbg=53 guibg=#000000
-hi BufferLineSeparator ctermfg=133 ctermbg=53 guifg=#000001 guibg=#000000
-hi BufferLineBackground ctermfg=133 ctermbg=53 guifg=#12151f guibg=#000000
-hi BufferLineCloseButton ctermfg=133 ctermbg=53 guifg=#12151f guibg=#000000
-hi BufferLineModified ctermfg=133 ctermbg=133 guifg=#351a64 guibg=#000001
-hi BufferLineSeparatorSelected ctermfg=133 ctermbg=53 guifg=#000001 guibg=#000000
-hi BufferLineIndicatorSelected ctermfg=53 ctermbg=53 guifg=#000000 guibg=#000000
-hi BufferLineBufferSelected ctermfg=225 ctermbg=53 cterm=NONE guifg=#383c47 guibg=#000000 gui=NONE
-hi BufferLineCloseButtonSelected ctermfg=225 ctermbg=53 guifg=#383c47 guibg=#000000
-hi BufferLineModifiedSelected ctermfg=133 ctermbg=53 guifg=#351a64 guibg=#000000
-hi CmpItemAbbr ctermfg=133 guifg=#242732
-hi CmpItemAbbrDeprecated ctermfg=133 guifg=#12151f
-hi CmpItemAbbrMatch ctermfg=225 guifg=#6d3e67
-hi CmpItemAbbrMatchFuzzy ctermfg=133 guifg=#641a31
-hi CmpItemKind ctermfg=133 guifg=#112d42
-hi CmpItemMenu ctermfg=133 guifg=#23004d
-hi GitGutterAdd ctermfg=133 ctermbg=133 cterm=bold guifg=#112d42 guibg=#000001 gui=bold
-hi GitGutterChange ctermfg=133 ctermbg=133 cterm=bold guifg=#3f133b guibg=#000001 gui=bold
-hi GitGutterDelete ctermfg=133 ctermbg=133 cterm=bold guifg=#3f133b guibg=#000001 gui=bold
-hi LazyButton ctermfg=225 ctermbg=133 guifg=#636774 guibg=#03040c
-hi LazyButtonActive ctermfg=53 ctermbg=225 cterm=bold guifg=#000000 guibg=#646d4e gui=bold
-hi LazyComment ctermfg=225 ctermbg=NONE guifg=#233d60 guibg=NONE
-hi LazyH1 ctermfg=225 ctermbg=133 guifg=#6d3e67 guibg=#2a0027
-hi LazyH2 ctermfg=225 ctermbg=NONE guifg=#233d60 guibg=NONE
-hi LazyNormal ctermfg=225 ctermbg=133 guifg=#4d515d guibg=#000001
-hi LazySpecial ctermfg=225 ctermbg=NONE guifg=#9297a4 guibg=NONE
-hi LazyTaskOutput ctermfg=225 ctermbg=133 guifg=#636774 guibg=#000001
+hi Headline ctermbg=133 cterm=bold guibg=#00172a gui=bold
+hi @markup.heading ctermfg=225 guifg=#a8adba
+hi @markup.heading.1 ctermfg=225 cterm=bold guifg=#a8adba gui=bold
+hi @markup.heading.2 ctermfg=225 cterm=underdouble guifg=#a8adba gui=underdouble
+hi @markup.heading.3 ctermfg=225 guifg=#a8adba
+hi @markup.heading.4 ctermfg=225 guifg=#a8adba
+hi @markup.heading.5 ctermfg=225 guifg=#a8adba
+hi @markup.heading.6 ctermfg=225 guifg=#a8adba
+hi @markup.quote ctermfg=225 ctermbg=133 guifg=#83517b guibg=#0f131c
+hi @markup.link ctermfg=133 ctermbg=133 cterm=NONE guifg=#335074 guibg=#001230 gui=NONE
+hi @markup.link.label ctermfg=225 ctermbg=133 cterm=underline guifg=#5f7ea5 guibg=#001230 gui=underline
+hi @markup.link.url ctermfg=225 ctermbg=133 cterm=NONE guifg=#787c89 guibg=#001230 gui=NONE
+hi CodeBlock ctermbg=133 guibg=#0f131c
+hi @markup.raw ctermfg=225 guifg=#909b62
+hi @markup.raw.block ctermfg=225 guifg=#909b62
+hi @markup.list ctermfg=225 guifg=#83517b
+hi @markup.list.checked ctermfg=225 guifg=#4f859b
+hi DiagnosticError ctermfg=53 ctermbg=NONE cterm=NONE guifg=#31000a guibg=NONE gui=NONE
+hi DiagnosticWarn ctermfg=133 ctermbg=NONE cterm=NONE guifg=#330062 guibg=NONE gui=NONE
+hi DiagnosticInfo ctermfg=133 ctermbg=NONE cterm=NONE guifg=#082646 guibg=NONE gui=NONE
+hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#232a00 guibg=NONE gui=NONE
+hi BufferLineFill ctermbg=53 guibg=#02040a
+hi BufferLineSeparator ctermfg=133 ctermbg=53 guifg=#0f131c guibg=#02040a
+hi BufferLineBackground ctermfg=133 ctermbg=53 guifg=#363a45 guibg=#02040a
+hi BufferLineCloseButton ctermfg=133 ctermbg=53 guifg=#363a45 guibg=#02040a
+hi BufferLineModified ctermfg=133 ctermbg=133 guifg=#5c3594 guibg=#0f131c
+hi BufferLineSeparatorSelected ctermfg=133 ctermbg=53 guifg=#0f131c guibg=#02040a
+hi BufferLineIndicatorSelected ctermfg=53 ctermbg=53 guifg=#070a13 guibg=#070a13
+hi BufferLineBufferSelected ctermfg=225 ctermbg=53 cterm=NONE guifg=#616571 guibg=#070a13 gui=NONE
+hi BufferLineCloseButtonSelected ctermfg=225 ctermbg=53 guifg=#616571 guibg=#070a13
+hi BufferLineModifiedSelected ctermfg=133 ctermbg=53 guifg=#5c3594 guibg=#070a13
+hi CmpItemAbbr ctermfg=133 guifg=#4b4f5a
+hi CmpItemAbbrDeprecated ctermfg=133 guifg=#363a45
+hi CmpItemAbbrMatch ctermfg=225 guifg=#9c6893
+hi CmpItemAbbrMatchFuzzy ctermfg=133 guifg=#9a2559
+hi CmpItemKind ctermfg=133 guifg=#1e576b
+hi CmpItemMenu ctermfg=133 guifg=#471c7b
+hi GitGutterAdd ctermfg=133 ctermbg=133 cterm=bold guifg=#1e576b guibg=#0f131c gui=bold
+hi GitGutterChange ctermfg=133 ctermbg=133 cterm=bold guifg=#6b3b64 guibg=#0f131c gui=bold
+hi GitGutterDelete ctermfg=133 ctermbg=133 cterm=bold guifg=#6b3b64 guibg=#0f131c gui=bold
+hi LazyButton ctermfg=225 ctermbg=133 guifg=#8f94a1 guibg=#222530
+hi LazyButtonActive ctermfg=53 ctermbg=225 cterm=bold guifg=#070a13 guibg=#909b62 gui=bold
+hi LazyComment ctermfg=225 ctermbg=NONE guifg=#48678c guibg=NONE
+hi LazyH1 ctermfg=225 ctermbg=133 guifg=#9c6893 guibg=#54264e
+hi LazyH2 ctermfg=225 ctermbg=NONE guifg=#48678c guibg=NONE
+hi LazyNormal ctermfg=225 ctermbg=133 guifg=#787c89 guibg=#0f131c
+hi LazySpecial ctermfg=225 ctermbg=NONE guifg=#c1c6d4 guibg=NONE
+hi LazyTaskOutput ctermfg=225 ctermbg=133 guifg=#8f94a1 guibg=#0f131c
 hi makeCommands NONE
 hi phpIdentifier NONE
 hi phpFunctions NONE
 hi phpClasses NONE
-hi rustFuncCall ctermfg=225 guifg=#24396b
+hi rustFuncCall ctermfg=225 guifg=#4c6399
 hi vimVar NONE
-hi rainbowcol1 ctermfg=225 guifg=#383c47
-hi rainbowcol2 ctermfg=225 guifg=#4e5638
-hi rainbowcol3 ctermfg=225 guifg=#284749
-hi rainbowcol4 ctermfg=225 guifg=#233d60
-hi rainbowcol5 ctermfg=133 guifg=#351a64
-hi rainbowcol6 ctermfg=133 guifg=#3f133b
+hi rainbowcol1 ctermfg=225 guifg=#616571
+hi rainbowcol2 ctermfg=225 guifg=#78834a
+hi rainbowcol3 ctermfg=225 guifg=#387373
+hi rainbowcol4 ctermfg=225 guifg=#48678c
+hi rainbowcol5 ctermfg=133 guifg=#5c3594
+hi rainbowcol6 ctermfg=133 guifg=#6b3b64
 hi! link @variable Identifier
 hi! link @variable.builtin Constant
 hi! link @variable.member Identifier

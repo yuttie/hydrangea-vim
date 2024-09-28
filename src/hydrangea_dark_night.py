@@ -21,6 +21,6 @@ if 'vim' in vars() or 'vim' in globals():
     importlib.reload(hydrangea)
     importlib.reload(hydrangea_night)
 
-palette = hydrangea.generate_palette(20)
+palette = hydrangea.generate_palette(35)
 color = hydrangea_night.define(palette)
 colorscheme.generate('Hydrangea Dark Night', color)
