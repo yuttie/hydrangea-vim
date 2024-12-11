@@ -105,10 +105,10 @@ hi @markup.raw ctermfg=225 guifg=#becb8f
 hi @markup.raw.block ctermfg=225 guifg=#becb8f
 hi @markup.list ctermfg=225 guifg=#b27da9
 hi @markup.list.checked ctermfg=225 guifg=#78b4cb
-hi DiagnosticError ctermfg=53 ctermbg=NONE cterm=NONE guifg=#61002c guibg=NONE gui=NONE
-hi DiagnosticWarn ctermfg=133 ctermbg=NONE cterm=NONE guifg=#593291 guibg=NONE gui=NONE
-hi DiagnosticInfo ctermfg=133 ctermbg=NONE cterm=NONE guifg=#304e71 guibg=NONE gui=NONE
-hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#495219 guibg=NONE gui=NONE
+hi DiagnosticError ctermfg=133 ctermbg=NONE cterm=NONE guifg=#996591 guibg=NONE gui=NONE
+hi DiagnosticWarn ctermfg=225 ctermbg=NONE cterm=NONE guifg=#a5b177 guibg=NONE gui=NONE
+hi DiagnosticInfo ctermfg=133 ctermbg=NONE cterm=NONE guifg=#5c7ca2 guibg=NONE gui=NONE
+hi DiagnosticHint ctermfg=133 ctermbg=NONE cterm=NONE guifg=#668452 guibg=NONE gui=NONE
 hi BufferLineFill ctermbg=53 guibg=#1f222d
 hi BufferLineSeparator ctermfg=133 ctermbg=53 guifg=#333642 guibg=#1f222d
 hi BufferLineBackground ctermfg=133 ctermbg=53 guifg=#5e626f guibg=#1f222d

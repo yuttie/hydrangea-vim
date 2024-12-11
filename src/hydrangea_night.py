@@ -199,10 +199,10 @@ def define(p):
     # color['@tag.delimiter'] = ''
 
     # Diagnostic
-    color['DiagnosticError'] = dict(fg=p['red'][-4],         bg='NONE', deco='NONE')
-    color['DiagnosticWarn']  = dict(fg=p['violet'][-1],      bg='NONE', deco='NONE')
-    color['DiagnosticInfo']  = dict(fg=p['skyblue'][-1],     bg='NONE', deco='NONE')
-    color['DiagnosticHint']  = dict(fg=p['yellowgreen'][-1], bg='NONE', deco='NONE')
+    color['DiagnosticError'] = dict(fg=p['magenta'][1],     bg='NONE', deco='NONE')
+    color['DiagnosticWarn']  = dict(fg=p['yellowgreen'][3], bg='NONE', deco='NONE')
+    color['DiagnosticInfo']  = dict(fg=p['skyblue'][1],     bg='NONE', deco='NONE')
+    color['DiagnosticHint']  = dict(fg=p['green'][1],       bg='NONE', deco='NONE')
 
     # bufferline.nvim
     color['BufferLineFill']      = dict(bg=p['gray'][-4])
